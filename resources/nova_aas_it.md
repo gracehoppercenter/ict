@@ -7,11 +7,14 @@ In addition, we would like to explore:
 * [Information Systems Technology: Artificial Intelligence and Data Analytics, C.S.C.](https://catalog.nvcc.edu/preview_program.php?catoid=15&poid=3835&returnto=1877)
 	* For this one, we'd need to add a few new data science courses
 * [Cybersecurity, A.A.S.](https://catalog.nvcc.edu/preview_program.php?catoid=15&poid=3745)
-	* We don't currently offer Cyber III, and there is one course that would still be missing after that: [ITN 276: Computer Forensics I](https://catalog.nvcc.edu/preview_program.php?catoid=15&poid=3745#)
+	* 
 
 (Note that this page includes only the courses that are unique to these three pathways. It does not include general education requirements or electives that are already covered in our other AS Pathways.)
 ## Proposed Changes
-To accommodate all of this, I'm proposing these changes:
+
+With our current course mappings, students would have to take a lot of APS courses (and accumulate a lot of unneeded DE credits) to achieve any of these new degrees. For example, For the IT AAS, they would need to take all three years of Cyber and three years of CS courses, and along the way would need to earn 30 DE credits that are not required.
+
+With a few tweaks to accelerate the required courses, we should be able to make all of these more attainable. I'm proposing these changes:
 
 - Remove [ITD 210: Web Design II](https://www.nvcc.edu/dist/files/sites/academics/summaries/ITD210.pdf) from DE Web Design
 - Move [ITE 152: Intro to Digital and Information Literacy](https://www.nvcc.edu/dist/files/sites/academics/summaries/ITE152.pdf) from DE Cyber I to DE Web Design
