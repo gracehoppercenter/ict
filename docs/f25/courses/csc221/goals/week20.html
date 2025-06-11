@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA CSC 221 Week 20</title>
+<style>
+@import url(../../css/goals.css);
+img {
+    width: 80%;
+}
+pre {
+    margin-left: 2vw;
+}
+</style>
+<script src="../../js/init.js"></script>
+<script>
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<div id="logo">
+<a href="index.html"><img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+</div>
+<div class="desktop">
+<h2>Governor's Career & Technical Academy Arlington</h2>
+<h1>CSC 221 Weekly Assignments: Week 20</h1>
+</div>
+<div class="mobile">
+<h1>CSC 221</h1>
+</div>
+</header>
+<hr>
+
+<main>
+<time datetime="2025-01-21">Week of Tuesday, January 21, 2025</time>
+
+<h2>Overview</h2>
+<p>
+This is it, the last week of <i>CSC 221: Introduction to Problem Solving and
+Programming</i>! We explored <i>a lot</i> this semester, and you are leaving
+this course with a better understanding of what computer programs are and what
+they can do, and with a solid advanced beginner's level knowledge of the
+Python programming language. We'll tack on next Tuesday to this last week. When
+you come in at the start of February, you will be in <i>ITP 225: Web Scripting
+Language</i>. 
+</p><p>
+That said, from a practical point of view you won't feel any difference, since
+we've fused these two courses together in our study plan, and have already
+made the transition from this course, with its introduction to Python to the
+next one, in which we will use the large Python web application framework
+Django to learn to build web applications.
+</p>
+
+<section>
+<h2>Tuesday, January 28th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+Welcome to our final class of <i>CSC 221: Introduction to Problem Solving and
+Programming</i>!
+</p><p>
+We have accomplished <i>a lot</i> this semester - deepening and developing our
+programming skills using Python, getting Python certification, and beginning
+to apply our program skills toward
+<a href="https://en.wikipedia.org/wiki/Web_application">web application</a>
+development.
+</p><p>
+As we've mentioned several times already, when you arrive in class next
+Monday you will be in a different course, <i>ITP 225: Web Scripting
+Languages</i>, but from a learning perspective, we will simply pick up where
+we left off here.
+</p>
+
+<p>
+    Today we'll chat about security - we know enough now to be dangerous, 
+    so there is some responsibility involved in building the kinds of dynamic web applications
+    what we'll build this semester.
+</p><p>
+    We'll spend a few minutes reviewing <a href="https://www.dj4e.com/lessons/django_views#">
+        Dr. Chuck's danger example</a>
+        and then we'll play with some of our own examples.
+
+        Specifically, we'll layer in our knowledge of SQL to investigate 
+        <a href="https://en.wikipedia.org/wiki/SQL_injection">SQL Injection Attacks</a>
+        and our knowledge of JavaScript to investigate <a href="https://en.wikipedia.org/wiki/Cross-site_scripting">
+            Cross-site scripting attacks</a>
+        </p>
+
+        <p>Once we understand the theory, we'll try it out by hacking a bank (... a pretend one!)
+            <a href="https://demo.testfire.net/index.jsp">Here's our victim</a>
+    </p>
+
+    <p>Finally, we'll look at the silly story of <a href="https://xkcd.com/327/">
+        Little Bobby Tables</a>
+    </p>
+
+<h3>Homework</h3>
+<p>No homework! Let's all take the long weekend to rest, reset, and prepare for the new semester!</p>
+</div>
+</section>
+
+<section>
+<h2>Friday, January 24th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+We will begin class today with a quiz on our Django views homework lectures.
+</p><p>
+We'll then spend the rest of class getting to know the
+<a href="https://git.gctaa.net/ACCICT/django_projects">django_projects</a>
+repo that you <i>forked</i> last class.
+</p>
+</div>
+
+<h3>Homework</h3>
+<div>
+<ol>
+<li>Watch <i>Using Templates in Django</i> (10:05) and
+<i>Using the Django Template Language (DTL)</i> (11:00) from the
+<a href="https://www.dj4e.com/lessons/django_views">Django View and
+Templates</a> lesson.</li>
+
+<li>Prepare a 8 x 11 1/2 sheet of paper (front and back) with notes that you
+could use on a possible quiz on these lectures at the beginning of our
+next class.</li>
+</ol>
+</div>
+</section>
+
+<section>
+<h2>Wednesday, January 22nd</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+We will begin class today with the promised quiz on your homework lectures.
+</p><p>
+After which we will take a quick look back at where we have been recently:
+</p>
+<ol>
+<li>We did a brief study of
+<a href="https://en.wikipedia.org/wiki/SQL">SQL</a> and learned how to use
+<a href="https://en.wikipedia.org/wiki/SQLite">SQLite</a> to create and query
+database tables.</li>
+
+<li>We learned about
+<a href="https://docs.djangoproject.com/en/5.1/topics/db/models/">Django
+Models</a> and how the
+<a href="https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping">ORM
+</a> enables us to write Python code which controls our application's data
+base.</li>
+
+<li>During your last homework assignment, you were introduced to the
+<a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">
+MVC</a> software design pattern and how Django implements this pattern in its
+own unique (and somewhat confusing) way.</li>
+</ol>
+<p>
+connecting it with another look at Dr. Chuck's <q>big picture</q> diagram:
+</p><p>
+<img src="resources/DJ4E_BigPicture.png" alt="DJ4E Big Picture">
+</p><p>
+in light of our new understanding.
+</p><p>
+Next we will guide you through forking our
+<a href="https://git.gctaa.net/ACCICT/django_projects">Django Projects</a>
+repo, and we will talk about how we plan to use it and how it will relate to
+the <a href="https://git.gctaa.net/ACCICT/dj4e_samples">DJ4E Samples</a>
+repo that you cloned last week (<i>Note</i>: we'll talk about why you
+<a href="https://git-scm.com/docs/git-clone">cloned</a> last week, but we want
+you to
+<a href="https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project.html#_forking_projects">
+fork</a> today).
+</p>
+</div>
+
+<h3>Homework</h3>
+<div>
+<ol>
+<li>Watch Dr. Chuck's videos, <i>URL Routing in Django</i> (6:59 min)
+and <i>Django Views</i> (6:19 min).</li>
+
+</ol>
+</div>
+</section>
+</main>
+
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

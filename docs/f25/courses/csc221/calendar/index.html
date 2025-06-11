@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>CSC 221 Planning Calendar Fall 2024</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/init.js"></script>
+<script>
+window.onload = setUp;
+</script>
+</head>
+<body>
+<header>
+<h1>CSC 221 Planning Calendar Fall 2024</h1>
+<h2>Lesson Key</h2>
+<table id="key">
+<tr>
+<td class="chap1"></td>
+<td class="chap2"></td>
+<td class="chap3"></td>
+<td class="chap4"></td>
+<td class="chap5"></td>
+<td class="chap6"></td>
+<td class="review"></td>
+<td class="exam"></td>
+<td class="chap7"></td>
+<td class="chap8"></td>
+<td class="chap9"></td>
+<td class="chap10"></td>
+<td class="chap11"></td>
+<td class="project"></td>
+</tr>
+</table>
+</header>
+
+<table id="cal">
+  <tr id="colheadings">
+    <th id="blank" scope="col"> </th>
+    <th scope="col">Sunday</th>
+    <th scope="col">Monday</th>
+    <th scope="col">Tuesday</th>
+    <th scope="col">Wednesday</th>
+    <th scope="col">Thursday</th>
+    <th scope="col">Friday</th>
+    <th scope="col">Saturday</th>
+  </tr>
+  <!-- August 2024 -->
+  <tr>
+    <th class="rotated"><p>August</p></th>
+    <td class="end"></td>
+    <td class="end chap1">26</td>
+    <td class="end chap1">27 A</td>
+    <td class="end chap1">28 B</td>
+    <td class="end chap1">29 A</td>
+    <td class="end chap1">30</td>
+    <td class="end chap1">31</td>
+  </tr>
+  <tr>
+  <!-- September 2024 -->
+    <th rowspan="5"><p>September</p></th>
+    <td class="chap1">1</td>
+    <td class="chap1">2</td>
+    <td class="chap1">3 B</td>
+    <td class="chap1">4 A</td>
+    <td class="chap2">5 B</td>
+    <td class="chap2">6 A</td>
+    <td class="chap2">7</td>
+  </tr>
+  <tr>
+    <td class="chap2">8</td>
+    <td class="chap2">9 B</td>
+    <td class="chap2">10 A</td>
+    <td class="chap3">11 B</td>
+    <td class="chap3">12 A</td>
+    <td class="chap3">13 B</td>
+    <td class="chap3">14</td>
+  </tr>
+  <tr>
+    <td class="chap3">15</td>
+    <td class="chap3">16 A</td>
+    <td class="chap4">17 B</td>
+    <td class="chap4">18 A</td>
+    <td class="chap4">19 B</td>
+    <td class="chap4">20 A</td>
+    <td class="chap4">21</td>
+  </tr>
+  <tr>
+    <td class="chap4">22</td>
+    <td class="chap4">23 B</td>
+    <td class="chap4">24 A</td>
+    <td class="chap5">25 B</td>
+    <td class="chap5">26 A</td>
+    <td class="chap5">27 B</td>
+    <td class="chap5">28</td>
+  </tr>
+  <!-- October 2024 -->
+  <tr>
+    <td class="end chap5">29</td>
+    <td class="last chap5">30 A</td>
+    <td class="start chap5">1 B</td>
+    <td class="start chap5">2 A</td>
+    <td class="start chap5">3</td>
+    <td class="start chap5">4 B</td>
+    <td class="start chap5">5</td>
+  </tr>
+  <tr>
+    <th rowspan="4"><p>October</p></th>
+    <td class="chap5">6</td>
+    <td class="chap5">7 A</td>
+    <td class="chap6">8 B</td>
+    <td class="chap6">9</td>
+    <td class="review">10 A</td>
+    <td class="review">11</td>
+    <td class="review">12</td>
+  </tr>
+  <tr>
+    <td class="review">13</td>
+    <td class="review">14</td>
+    <td class="review">15 B</td>
+    <td class="review">16 A</td>
+    <td class="review">17 B</td>
+    <td class="review">18 A</td>
+    <td class="review">19</td>
+  </tr>
+  <tr>
+    <td class="review">20</td>
+    <td class="review">21 B</td>
+    <td class="review">22 A</td>
+    <td class="review">23 B</td>
+    <td class="review">24 A</td>
+    <td class="review">25 B</td>
+    <td class="review">26</td>
+  </tr>
+  <tr>
+    <td class="end review">27</td>
+    <td class="end review">28 A</td>
+    <td class="end review">29 B</td>
+    <td class="end exam">30 A</td>
+    <td class="last chap7">31 B</td>
+    <td class="start chap7">1</td>
+    <td class="start chap7">2</td>
+  </tr>
+  <!-- November 2024 -->
+  <tr>
+    <th rowspan="4"><p>November</p></th>
+    <td class="chap7">3</td>
+    <td class="chap7">4</td>
+    <td class="chap7">5</td>
+    <td class="chap7">6 A</td>
+    <td class="chap7">7 B</td>
+    <td class="chap7">8 A</td>
+    <td class="chap8">9</td>
+  </tr>
+  <tr>
+    <td class="chap8">10</td>
+    <td class="chap8">11</td>
+    <td class="chap8">12 B</td>
+    <td class="chap8">13 A</td>
+    <td class="chap8">14 B</td>
+    <td class="chap8">15 A</td>
+    <td class="chap9">16</td>
+  </tr>
+  <tr>
+    <td class="chap9">17</td>
+    <td class="chap9">18 B</td>
+    <td class="chap9">19 A</td>
+    <td class="chap9">20 B</td>
+    <td class="chap9">21 A</td>
+    <td class="chap9">22 B</td>
+    <td class="chap9">23</td>
+  </tr>
+  <tr>
+    <td class="end chap9">24</td>
+    <td class="end chap9">25 A</td>
+    <td class="end chap9">26 B</td>
+    <td class="end">27</td>
+    <td class="end">28</td>
+    <td class="end">29</td>
+    <td class="end">30</td>
+  </tr>
+  <!-- December 2024 -->
+  <tr>
+    <th rowspan="5"><p>December</p></th>
+    <td>1</td>
+    <td class="chap9">2 A</td>
+    <td class="chap9">3 B</td>
+    <td class="chap9">4 A</td>
+    <td class="chap9">5 B</td>
+    <td class="chap9">6 A</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td class="chap10">9 B</td>
+    <td class="chap10">10 A</td>
+    <td class="chap10">11 B</td>
+    <td class="chap10">12 A</td>
+    <td class="chap10">13 B</td>
+    <td>14</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td class="chap10">16 A</td>
+    <td class="chap11">17 B</td>
+    <td class="chap11">18 A</td>
+    <td class="chap11">19 B</td>
+    <td class="chap11">20 A</td>
+    <td>21</td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>23</td>
+    <td>24</td>
+    <td>25</td>
+    <td>26</td>
+    <td>27</td>
+    <td>28</td>
+  </tr>
+  <tr>
+    <td class="end">29</td>
+    <td class="end">30</td>
+    <td class="last">31</td>
+    <td class="start">1</td>
+    <td class="start">2</td>
+    <td class="start">3</td>
+    <td class="start">4</td>
+  </tr>
+  <!-- January 2025 -->
+  <tr>
+    <th rowspan="4"><p>January</p></th>
+    <td>5</td>
+    <td class="project">6 B</td>
+    <td class="project">7 A</td>
+    <td class="project">8 B</td>
+    <td class="project">9 A</td>
+    <td class="project">10 B</td>
+    <td>11</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td class="project">13 A</td>
+    <td class="project">14 B</td>
+    <td class="project">15 A</td>
+    <td class="project">16 B</td>
+    <td class="project">17 A</td>
+    <td>18</td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>20</td>
+    <td class="project">21 B</td>
+    <td class="project">22 A</td>
+    <td class="project">23 B</td>
+    <td class="project">24 A</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td class="end">26</td>
+    <td class="end project">27 B</td>
+    <td class="end project">28 A</td>
+    <td class="end project">29 B</td>
+    <td class="end">30</td>
+    <td class="last">31</td>
+    <td class="start">1</td>
+  </tr>
+</table>
+
+<footer>
+<p>
+<a id="vLink1"><strong> HTML </strong> Valid! </a> |
+<a id="vLink2"><strong> CSS </strong> Valid! </a>
+</p>
+</footer>
+
+</body>
+</html>  
