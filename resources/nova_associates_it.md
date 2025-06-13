@@ -3,8 +3,9 @@
 
 We would like to offer this program here at Arlington Tech: [Information Technology, A.S.](https://catalog.nvcc.edu/preview_program.php?catoid=15&poid=3797).
 
-We identified two "flavors" of this program that we can offer to students: one that focuses on cybersecurity, and one that focuses on web/databases
+This program gives students a lot of freedom to mix and match elective courses. We identified two "flavors" of this program that we can promote to students: one that focuses on cybersecurity, and one that focuses on web/databases
 
+Other courses that might satisfy this technical elective include DE Statistics (MTH 245/246).
 
 ## Other NOVA Programs
 
