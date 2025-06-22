@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA CSC 215 Week 15</title>
+<style>
+@import url(../../css/goals.css);
+pre {
+    margin-left: 3vw;
+}
+</style>
+<script src="../../js/init.js"></script>
+<script>
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<div id="logo">
+<a href="index.html"><img src="../../images/gctaa_nvcc.png" alt="GCTAA Logo">
+</a>
+</div>
+<div class="desktop">
+<h2>Governor's Career & Technical Academy Arlington</h2>
+<h1>CSC 215 Weekly Assignments: Week 15</h1>
+</div>
+<div class="mobile">
+<h1>CSC 215</h1>
+</div>
+</header>
+<hr>
+
+<main>
+<time datetime="2024-12-02">Week of Monday, December 2, 2024</time>
+
+<h2>Overview</h2>
+<p>
+I hope everyone had a restful Thanksgiving holiday and you've come back ready
+to start programming in
+<a href="https://en.wikipedia.org/wiki/C_(programming_language)">C</a>!  After
+programming in binary, and then assembly langauge, I think you will
+<i>greatly</i> appreciate the usability and power that a higher level
+<a href="https://en.wikipedia.org/wiki/Structured_programming"> structured
+programming</a> language like C gives us.
+</p><p>
+This will be an opportunity for those of you who struggled with the previous
+project to start fresh!
+</p>
+
+<section>
+<h2>Friday, December 6th</h2>
+
+<h3>Start of Class</h3>
+<div>
+<p>
+Last Wednesday I said my homework was to investigate that problem I showed you
+with <code>EOF</code> not being found. It turns out that I had caused the
+problem by changing the type of the <code>ch</code> variable I was reading from
+<code>int</code> to <code>char</code>. This caused the problem because
+<a href="https://ruslanspivak.com/eofnotchar/">EOF is not a character</a>!
+That link is to a wonderful blog post, by the way, well worth a quick reading.
+</p><p>
+We will discuss the problems assigned for homework, and then pair you up again
+and give you time to begin working on the new classwork / homework problems.
+A few programs I'd like to share include
+<a href="https://codeberg.org/ACC/csc215/raw/branch/master/C/CPM_BDSC/Programs/MYCOPY.C">MYCOPY.C</a>,
+<a href="https://codeberg.org/ACC/csc215/raw/branch/master/C/CPM_BDSC/Programs/PNUM.C">PNUM.C</a>, 
+<a href="https://codeberg.org/ACC/csc215/raw/branch/master/C/CPM_BDSC/Programs/UCASE.C">UCASE.C</a>, and especially 
+<a href="https://codeberg.org/ACC/csc215/raw/branch/master/C/CPM_BDSC/Programs/WRDLINE.C">WRDLINE.C</a> and
+<a href="https://codeberg.org/ACC/csc215/raw/branch/master/C/CPM_BDSC/Programs/WC.C">WC.C</a>.
+</p><p>
+I'll demo the last two of these and <i>highly</i> encourage you to study them!
+</p>
+</div>
+
+<h3>Classwork / Homework / Evaluation</h3>
+<div>
+<p>
+I ran the random pair program, which generated the following pairs for this
+next assignment:
+</p><pre>
+Anfal and Ved
+Turner and Trostin
+Adonis and Cody
+Caleb and Luis
+Johan and Jamethiel
+Anar and Marin
+Parker and Issac
+Akshay and Jeff (the fix was in on this one ;-)
+</pre><p>
+We meet next on Tuesday, December 10th. Please come to class with working
+solutions to the following problems:
+</p>
+<ol>
+<li><p>Write a program in a file named <code>CHRNUMS.C</code>to prepend each
+line of a text file with the number of characters in that line. Given a
+file named <code>LINES.TXT</code> with content:
+</p><pre>
+This is a file
+containing lines of
+different
+lengths.
+</pre><p>
+Running <code>CHRNUMS LINES.TXT</code> would print:
+</p><pre>
+15: This is a file
+20: containing lines of
+10: different
+8:  lengths.
+</pre></li>
+
+<li>Complete <i>Exercise 1-17</i> on page 28 of <i>The C Programming
+Language</i>.  Use the <code>reverse(s)</code> function you complete
+in that exercise to write a program in a file named <code>BACKWARD.C</code>
+that takes a text file as a command line argument and prints out each line in
+the file backwards.</li>
+</ol>
+<p style="color: red;">
+NOTE: Since I neglected to assign a due date to this, it will be evaluted
+(by commit history) along with the next assignment on Tuesday, December
+10th.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Wednesday, December 4th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+As I started experimenting with more and more C programs, I quickly ended up with a mess of files on my <code>I</code> drive.  I wanted to just run:
+</p><pre>
+I&gt;era *.*
+</pre><p>
+to start fresh, but then I realized that this would remove all the files needed
+to compile C programs.  And what if I wanted to work on drive <code>J</code> or
+drive <code>D</code>?
+</p><p>
+My familiarity with <a href="https://en.wikipedia.org/wiki/DOS">DOS</a> files
+called
+<a href="https://en.wikipedia.org/wiki/Batch_file">batch files</a>, which are
+similiar (if much less powerful) to Unix
+<a href="https://en.wikipedia.org/wiki/Shell_script">shell scripts</a> led me
+to wonder if <code>CP/M</code> had something similar. It turns out it does.
+They are less powerful still than batch files (not surprisingly), but they
+can help us out here. They work with the
+<a href="http://www.gaby.de/cpm/manuals/archive/cpm22htm/ch1.htm#Section_1.6.7">SUBMIT command</a>, and they use the file extention <code>.SUB</code>.
+Here is the source to <code>CSTUFF.SUB</code>:
+</p><pre>
+PIP $1:=C:CC.COM
+PIP $1:=C:CC2.COM
+PIP $1:=C:CLINK.COM
+PIP $1:=C:C.CCC
+PIP $1:=C:DEFF.CRL
+PIP $1:=C:DEFF2.CRL
+PIP $1:=C:STDIO.H
+</pre><p>
+Copy this file to your <code>C</code> drive.  Then, if you want to use say
+drive <code>J</code> for compiling C programs, you can just run:
+</p><pre>
+submit c:cstuff J
+</pre><p>
+and it will copy the 7 files you need from drive <code>C</code> to
+<code>J</code>.
+</p><p>
+As I made my way through your repos this morning, I found the following
+programs we should share today:
+<a href="https://raw.githubusercontent.com/PB22-School/csc215/refs/heads/main/MP2/C_stuff/clisum.c">Parker and Caleb</a>,
+<a href="https://raw.githubusercontent.com/dudegod1/csc215/refs/heads/main/CLISUM.c">
+Ved and Trostin</a>,
+<a href="https://codeberg.org/Cody/csc215/raw/branch/main/C/clisum.c">Cody</a>
+(<i>note:</i> Cody does the checking for numeric string I was hoping for),
+<a href="https://raw.githubusercontent.com/johan-franco/csc215/refs/heads/main/Cprogams/CLISUM.C">Johan and Anar</a>,
+</p><p>
+Far and away the top prize for best <q>do it yourself</q> solution goes to
+<a href="https://codeberg.org/Jamethiel/csc215/raw/branch/main/c_code/CLISUM.C">
+Jamethiel</a>. Her's is the one you should study if you want to really learn
+C! My partner
+<a href="https://raw.githubusercontent.com/AkshayKuchibhatla/csc215/refs/heads/main/Programs/C_programs/clisum2.c">Akshay</a> has another one you should
+review. Finally there is the one
+<a href="https://codeberg.org/ACC/csc215/raw/branch/master/C/CPM_BDSC/Programs/CLISUM.C">
+José Ejemplo</a> wrote before I gave you this assignment.
+</p><p>
+It turns out file I/O is not very difficult after all. Using <i>The Buffered
+File I/O Functions</i> section on page 133 of the <i>BDS C User's Guide</i>,
+José Ejemplo was able to write
+<a href="https://codeberg.org/ACC/csc215/raw/branch/master/C/CPM_BDSC/Programs/MYCOPY.C">
+MYCOPY.C</a>. We will look over this in class before you begin work on your
+next assignment.
+</p>
+</div>
+
+<h3>End of Classwork / Homework / Evaluation</h3>
+<div>
+<p>
+Continue working with your same partner for this iteration. Complete as many
+of the following exercises as class time plus 90 minutes of homework time
+allow: Exercises 1-6, 1-7 and 1-8 on page 18, and 1-9, 1-10 and 1-11 on
+page 19 of <i>The C Programming Language</i>.
+</p><p style="color: red;">
+Your evaluation will be based on how well your git repo shows evidence of
+<b>iterative development</b>. A single commit of completed work will only
+earn you a D! <i>This assignment is due at 11:59 pm on Thursday, December
+5th</i> so that I can evaluate it before class starts on Friday.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Monday, December 2nd</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+The grade distribution for the assembly language programming projects was:
+<b>A</b>: 8, <b>B</b>: 3, and <b>E</b>: 4. I am fully aware how challenging it
+is to understand a computer at the level needed to write in assembly. Those of
+you who struggled will now get some welcome relief and an opportunity for a
+fresh start. Hopefully you at least gained an appreciation for the challenge.
+C provides enough <i>abstraction</i> of the machine that you will be able
+to write C programs without reference to the details of the hardware on which
+they are running.
+</p><p>
+We'll start class today by setting up a new development environment for
+learning C programming on CP/M using BDS C.  I've created a
+<a href="https://linuxize.com/post/how-to-create-and-extract-archives-using-the-tar-command-in-linux/">
+tar zip</a> file containing everything you'll need, and I developed
+step-by-step instructions for getting you through <code>helloworld.c</code>.
+</p><p>
+Read
+<a href="../resources/helloworld_with_bds_c.html">Hello World with BDS C</a>
+and follow the steps until you have a running
+<a href="https://en.wikipedia.org/wiki/%22Hello%2C_World!%22_program">Hello,
+World! program</a>.
+</p>
+</div>
+
+<h3>Homework / Evaluation</h3>
+<div>
+<p>
+I ran the random pair chooser, which gave us the following programming pairs
+for this first assignment:
+</p><pre>
+Parker and Caleb
+Johan and Anar
+Issac and Anfal
+Luis and Cody
+Jamethiel and Turner
+Ved and Trostin
+Marin and Adonis
+Akshay and Jeff
+</pre><p>
+Your task is to write a program named CLISUM that takes a sequence of integer
+values at the CP/M command line and prints out their sum. An A submission
+should gracefully handle invalid input. Sample runs might include:
+</p><pre>
+I&gt;clisum 5 15 22 8
+Sum is 50
+I&gt;clisum 1 1 1 1 1 1 1 
+Sum is 7
+I&gt;clisum 5 15 icecream 8
+OOPS! ICECREAM is not a number
+</pre><p>
+In addition to the <code>ARGS.C</code> program I will share with you in class,
+you should use the <code>ndigit</code> discussion beginning on page 20, and the
+<code>atoi</code> discussion beginning on page 39 of <i>The C Programming
+Language</i> as resources.
+</p><p>
+<span style="color: red;">This assignment is due <i>before</i> class starts
+on Wednesday!</span> Pairs will have 5 minutes to present their solutions
+during the first part of class. Credit will only be earned if you have the
+presented source in your repo before class starts.
+<i style="color: red;">Each of you must have it in your own repo to earn
+credit!</i></span>
+</p>
+</div>
+</section>
+</main>
+
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>
