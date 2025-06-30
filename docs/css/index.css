@@ -9,7 +9,7 @@ body {
 }
 header.desktop {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 20% 80%;
   grid-template-rows: auto;
   background: #B9F6FB;
   border-bottom: 1px solid #999;
