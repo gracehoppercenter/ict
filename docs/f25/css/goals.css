@@ -27,15 +27,16 @@ header>div {
   padding: 1vw;
   display: inline-block;
   vertical-align: middle;
-  text-align: center;
 }
 header>div.desktop {
-  margin-left: 2.6vw;
+  margin-left: 15vw;
 }
 header img {
   width: 15vw;
 }
 header h1, header h2 {
+  width: 100%;
+  text-align: center;
   padding: 0;
   margin: 0;
 }
