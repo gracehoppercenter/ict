@@ -5,12 +5,12 @@ function addElement(parentElem, childTag, childText) {
    parentElem.appendChild(childElem);
 }
 
-function addChapterDays(dayNum) {
-    const className = "chap" + dayNum.toString();
-    const label = "Chapter " + dayNum.toString(); 
-    const chapterDays = document.getElementsByClassName(className);
-    for (let i = 0; i < chapterDays.length; i++) {
-      addElement(chapterDays[i], "span", label);
+function addUnitDays(dayNum) {
+    const className = "unit" + dayNum.toString();
+    const label = "Unit " + dayNum.toString(); 
+    const unitDays = document.getElementsByClassName(className);
+    for (let i = 0; i < unitDays.length; i++) {
+      addElement(unitDays[i], "span", label);
     }
 }
 
@@ -24,9 +24,9 @@ function setUp() {
   document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
 
   for (let i = 1; i < 12; i++) {
-    addChapterDays(i);
+    addUnitDays(i);
   }
-
+/*
   const reviewDays = document.getElementsByClassName("review");
   for (let i = 0; i < reviewDays.length; i++) {
     addElement(reviewDays[i], "span", "Review");
@@ -36,7 +36,7 @@ function setUp() {
   for (let i = 0; i < examDays.length; i++) {
     addElement(examDays[i], "span", "EXAM");
   }
-
+*/
   const projectDays = document.getElementsByClassName("project");
   console.log("found " + projectDays.length + " projectDays");
   for (let i = 0; i < projectDays.length; i++) {

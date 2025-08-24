@@ -99,18 +99,19 @@ table#cal td span {
   border-radius: 3vw;
   opacity: 0.5;
 }
-.chap1 {
+.unit1 {
   background-color: Gold;
 }
-.chap2 {
+.unit2 {
   background-color: Tomato;
 }
-.chap3 {
+.unit3 {
   background-color: LimeGreen;
 }
-.chap4 {
+.unit4 {
   background-color: Chocolate;
 }
+/*
 .chap5 {
   background-color: Aqua;
 }
@@ -138,6 +139,7 @@ table#cal td span {
 .exam {
   background-color: Silver;
 }
+*/
 .project {
   background-color: Green;
 }
