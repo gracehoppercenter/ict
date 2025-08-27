@@ -19,7 +19,15 @@ If you're interested in today's discussion about how people communicated before 
 
 ## Homework
 
-### Part 1 - Write an email
+### Part 1 - Make a Github Account
+
+We'll use a website called Github a lot this year. For now, just make an account at <https://github.com/signup>. Use a personal email address, and choose a professional username. Make sure you know your password, and be ready to login next class.
+
+### Part 2 - Practice with the command line
+
+Read through the instructions here: [https://www.davidbaumgold.com/tutorials/command-line/](https://www.davidbaumgold.com/tutorials/command-line/). I want you to be very comfortable using the commands `cd`, `ls`, and `pwd`, and understanding where files are on your computer. In the terminal, practice using these three commands to move around on your computer (see the section on that page called "Moving Around the Computer").
+
+### Part 3 - Write an email
 
 **Using your VCCS email account**, send me an email to my VCCS email address: <code>cmj2310@email.vccs.edu</code> introducing yourself to me by answering the following questions. Feel free to copy/paste these questions and type your answers below the questions.
 
@@ -36,6 +44,3 @@ If you're interested in today's discussion about how people communicated before 
 
 **Evaluation**: This first assignment will count as a formative grade during the first quarter. An **A** will be earned for specific, detailed, and thoughtful answers to my questions with the photo and signed PDF attached. **B** will be earned if all questions are answered, but specific details are lacking or the photo or PDF is missing or not signed. **C** will be earned for at least answering each question, and **D** will be earned for sending me any email.
 
-### Part 2 - Practice with the command line
-
-Read through the instructions here: [https://www.davidbaumgold.com/tutorials/command-line/](https://www.davidbaumgold.com/tutorials/command-line/). I want you to be very comfortable using the commands `cd`, `ls`, and `pwd`, and understanding where files are on your computer. In the terminal, practice using these three commands to move around on your computer (see the section on that page called "Moving Around the Computer").
