@@ -1,9 +1,9 @@
 ## Lesson Objectives
 By the end of this lesson, you should:
-- Understand the importance of the Terminal on your computer
-- Be able to open the Terminal
-- Understand how to run programs in the Terminal
-- Be able to use the `cd` and `ls` commands to interact with directories in the terminal.
+- ⌨ Understand the importance of the Terminal on your computer
+- 💻 Be able to open the Terminal
+- 🏃 Understand how to run programs in the Terminal
+- 📂 Be able to use the `cd` and `ls` commands to interact with directories in the terminal.
 
 ### Today's Vocabulary:
 - Terminal (aka command line, CLI, command prompt, console, or shell)
@@ -13,6 +13,14 @@ By the end of this lesson, you should:
 
 ## What We'll Do In Class
 
+
+### Reading Quiz
+As promised, we'll start class with your first reading quiz.
+
+### DE Contract
+I'll have printed copies of the DE Contract. We'll take a second to re-read and sign it. If you ever want to review a digital copy, you can find it on our course homepage.
+
+### Client Server Model
 Today we'll spend some time talking about how the internet works, with a focus on the [client server model](https://www.geeksforgeeks.org/client-server-model/). I will also introduce the [Unix Command Line](https://en.wikipedia.org/wiki/Unix_shell) (it has a lot of names that I'll use interchangeably, including terminal, console,  shell, and command prompt), which is a tool we will use very frequently in this class. We'll run a few simple terminal commands that help us explore how the internet works, including [curl](https://curl.se/), [traceroute](https://www.fortinet.com/resources/cyberglossary/traceroutes), [ping](https://en.wikipedia.org/wiki/Ping_(networking_utility), [ifconfig](https://en.wikipedia.org/wiki/Ifconfig). We'll also spend some time making sure everyone can login to your VCCS email address.
 
 If you're interested in today's discussion about how people communicated before the internet, [I highly recommend this article](https://www.history.com/news/rise-fall-telephone-switchboard-operators") about the impact women had on the telephone operator role.
@@ -42,5 +50,5 @@ Read through the instructions here: [https://www.davidbaumgold.com/tutorials/com
 
 **Due:** Get this email to me ASAP. We're still waiting for some students to get their official NOVA email accounts, so I won't set a specific due date until I know that everyone can complete this assignment.
 
-**Evaluation**: This first assignment will count as a formative grade during the first quarter. An **A** will be earned for specific, detailed, and thoughtful answers to my questions with the photo and signed PDF attached. **B** will be earned if all questions are answered, but specific details are lacking or the photo or PDF is missing or not signed. **C** will be earned for at least answering each question, and **D** will be earned for sending me any email.
+**Evaluation**: This first assignment will count as a formative grade. An **A** will be earned for specific, detailed, and thoughtful answers to my questions with the photo and signed PDF attached. **B** will be earned if all questions are answered, but specific details are lacking or the photo or PDF is missing or not signed. **C** will be earned for at least answering each question, and **D** will be earned for sending me any email.
 
