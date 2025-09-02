@@ -50,5 +50,5 @@ Read through the instructions here: [https://www.davidbaumgold.com/tutorials/com
 
 **Due:** Get this email to me ASAP. We're still waiting for some students to get their official NOVA email accounts, so I won't set a specific due date until I know that everyone can complete this assignment.
 
-**Evaluation**: This first assignment will count as a formative grade. An **A** will be earned for specific, detailed, and thoughtful answers to my questions with the photo and signed PDF attached. **B** will be earned if all questions are answered, but specific details are lacking or the photo or PDF is missing or not signed. **C** will be earned for at least answering each question, and **D** will be earned for sending me any email.
+**Evaluation**: This first assignment will count as a formative grade. An **A** will be earned for specific, detailed, and thoughtful answers to my questions with the photo attached. **B** will be earned if all questions are answered, but specific details are lacking or the photo is missing. **C** will be earned for at least answering each question, and **D** will be earned for sending me any email.
 
