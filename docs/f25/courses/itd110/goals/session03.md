@@ -32,7 +32,6 @@ If you're still working to get into your myVCCS account, follow the instructions
 Use the terminal on your computer (and/or continue using Terminus) to practice with the terminal. I will expect that you are very comfortable with the structure of the directory tree (using vocabulary words like `root` and `directory`, and the special `.`, `..`, and `~` locations), and the following commands:
 
 - **`cd`, `ls`, and `pwd`**: You should already be comfortable with these from last class.
-- **`cat`**: Display the contents of a file.
 - **`mkdir`**: Create new directories.
 - **`rm`**: Remove files or directories you no longer need.
 - **`cp`**: Copy files between directories.
