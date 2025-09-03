@@ -17,17 +17,21 @@ Today, we'll take a break from learning about the internet and focus on developi
 
 ## Homework
 
+### Read about phone pouches
+
+Here is the presentation I briefly showed in class. If you have any questions about
+phone pouches, ask an administrator. <https://docs.google.com/presentation/d/10b-lS-gEeYfg0hDKNQgjnWd7jq6q2oWg/edit?usp=sharing&ouid=115573401263645491463&rtpof=true&sd=true>
+
 ### Send me an Email
 If you haven't yet, please continue checking the myNVCC website. As soon as you see a gmail account appear, open it and send me an email. Follow the specific instructions from [Session 2](./session.html?num=02).
 
 If you're still working to get into your myVCCS account, follow the instructions from [Session 1](./session.html?num=01).
 
-### Part 1 - Practice with the Terminal
+### Practice with the Terminal
 
 Use the terminal on your computer (and/or continue using Terminus) to practice with the terminal. I will expect that you are very comfortable with the structure of the directory tree (using vocabulary words like `root` and `directory`, and the special `.`, `..`, and `~` locations), and the following commands:
 
 - **`cd`, `ls`, and `pwd`**: You should already be comfortable with these from last class.
-- **`echo`**: Create a new file and add text to it using `echo "text" > filename`.
 - **`cat`**: Display the contents of a file.
 - **`mkdir`**: Create new directories.
 - **`rm`**: Remove files or directories you no longer need.
@@ -35,7 +39,6 @@ Use the terminal on your computer (and/or continue using Terminus) to practice w
 - **`mv`**: Move or rename files and directories.
 - **`grep`**: Search for specific text within files.
 - **`less`**: View the contents of a large file.
-- **`>` and `|`**: Redirect command output to a file or pipe it to another command.
 
 Make sure you understand how each command works by trying different combinations and scenarios.
 
