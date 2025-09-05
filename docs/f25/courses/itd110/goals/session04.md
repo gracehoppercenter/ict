@@ -13,14 +13,8 @@ By the end of this lesson, you should:
 
 We'll start class with a quiz that is very similar in format to the cd/ls quiz that we did last time.
 
-Here is a list of terminal commands that I'll include on the quiz:
-- `cd` / `ls` / `pwd`
-- `mkdir`
-- `rm`
-- `cp`
-- `mv`
-- `less`
-- `echo` with `>` to create a text file
+This one is a little bit trickier - so make sure you're very comfortable with the commands
+listed on last class's homework assignment.
 
 ## What We'll Do In Class
 
