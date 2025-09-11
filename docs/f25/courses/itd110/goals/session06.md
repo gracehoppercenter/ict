@@ -1,14 +1,3 @@
-<!--
-Instructor notes: 
-
-To enable md syntax highlighting in vim
-:syntax on
-
-
-
--->
-
-
 ## Lesson Objectives
 By the end of this lesson, you should:
 - **Know**: 👩‍💻 That HTML is the language of web pages. 
@@ -29,7 +18,25 @@ While you're working today, I'll walk around and record everyone's github websit
 ## What We'll Do In Class
 
 ### Our First HTML Page!
-I think you'll find writing HTML in vim much more comfortable. We'll go over a demo together to write an HTML file in vim and view it in your browser.
+Now that you're comfortable with the terminal, vim, and git, we can finally start learning HTML.
+
+We'll go over a demo together where we'll write an HTML file in vim and view it in your browser.
+
+### Repo Organization
+I'm going to use an auto-grader in class this year. For this to work, it will be very important that all of our websites are organized exactly the same way. We'll spend a few minutes getting organized.
+
+By the end of class, I hope that your website directory will be organized like this:
+
+- website/
+    - js/
+        - [init.js](./resources/init.js)
+    - practice/
+        - minimal.html
+    - index.html
+    - README.md
+
+### Register for HTML course
+For the next several classes, we'll be following this online textbook: <https://edube.org/study/html-essentials>. Create an account on this website, register for this class, and start reading through Module 1.
 
 ## Homework
 
