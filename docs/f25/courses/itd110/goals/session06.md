@@ -28,8 +28,6 @@ I'm going to use an auto-grader in class this year. For this to work, it will be
 By the end of class, I hope that your website directory will be organized like this:
 
 - website/
-    - js/
-        - [init.js](./resources/init.js)
     - practice/
         - minimal.html
     - index.html
