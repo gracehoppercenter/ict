@@ -59,10 +59,6 @@ retab
 "enable python syntax
 let python_highlight_all = 1
 
-" Enhanced keyboard mappings
-" switch between header/source with F4
-map <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
-
 " Build gcc, g++ or python code from here <Shift F8>
 autocmd FileType c nnoremap <buffer> <F8> :update<bar>!gcc -Werror % && ./a.out<CR>
 autocmd FileType c nnoremap <buffer> <F9> :update<bar>!gcc -g -Werror % && gdb ./a.out<CR>
@@ -74,36 +70,3 @@ autocmd FileType python nnoremap <buffer> <F8> :update<bar>!python3 %<CR>
 map <F5> :make<CR>
 " Auto build using make with <F7>
 map <F9> :make clean all<CR>
-
-" auto cmd to add c header
-autocmd bufnewfile *.c so ~/.vim/c_header
-autocmd bufnewfile *.c exe "1," . 10 . "g/File Name :.*/s//File Name : " .expand("%")
-autocmd bufnewfile *.c exe "1," . 10 . "g/Creation Date :.*/s//Creation Date : " .strftime("%d-%m-%Y")
-autocmd Bufwritepre,filewritepre *.c execute "normal ma"
-autocmd Bufwritepre,filewritepre *.c exe "1," . 10 . "g/Last Modified :.*/s/Last Modified :.*/Last Modified : " .strftime("%c")
-autocmd bufwritepost,filewritepost *.c execute "normal `a"
-" auto cmd to add cpp header
-autocmd bufnewfile *.cpp so ~/.vim/cpp_header
-autocmd bufnewfile *.cpp exe "1," . 10 . "g/File Name :.*/s//File Name : " .expand("%")
-autocmd bufnewfile *.cpp exe "1," . 10 . "g/Creation Date :.*/s//Creation Date : " .strftime("%d-%m-%Y")
-autocmd Bufwritepre,filewritepre *.cpp execute "normal ma"
-autocmd Bufwritepre,filewritepre *.cpp exe "1," . 10 . "g/Last Modified :.*/s/Last Modified :.*/Last Modified : " .strftime("%c")
-autocmd bufwritepost,filewritepost *.cpp execute "normal `a"
-"execute retab  on write
-autocmd BufWritePost,filewritepost *.c :retab
-autocmd BufWritePost,filewritepost *.py :retab
-autocmd BufWritePost,filewritepost *.cpp :retab
-autocmd BufWritePost,filewritepost *.js :retab
-
-if has("autocmd")
-  " When editing a file, always jump to the last known cursor position.
-  " Don't do it when the position is invalid or when inside an event handler
-  " (happens when dropping a file on gvim).
-  " Also don't do it when the mark is in the first line, that is the default
-  " position when opening a file.
-  autocmd BufReadPost *
-    \ if line("'\"") > 1 && line("'\"") <= line("$") |
-    \   exe "normal! g`\"" |
-    \ endif
-
-endif
