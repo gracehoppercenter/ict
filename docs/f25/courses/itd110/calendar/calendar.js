@@ -108,7 +108,7 @@ async function setUp(semester="") {
 
   // Call the HTML validator API and add the result to the footer
   try {
-      const response = await fetch("https://html5.validator.nu/?out=json&doc=" + encodeURIComponent(loc));
+      const response = await fetch("https://validator.w3.org/nu/?out=json&doc=" + encodeURIComponent(loc));
       const data = await response.json();
       if (data.messages.length === 0) {
           console.log("No Errors");

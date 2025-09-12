@@ -33,7 +33,7 @@ function init() {
 
 
   // Call the HTML validator API and add the result to the footer
-  fetch("https://html5.validator.nu/?out=json&doc=" + encodeURIComponent(loc), {
+  fetch("https://validator.w3.org/nu/?out=json&doc=" + encodeURIComponent(loc), {
       method: "GET"
   })
   .then(response => response.json())
