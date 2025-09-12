@@ -64,16 +64,16 @@ let python_highlight_all = 1
 map <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 
 " Build gcc, g++ or python code from here <Shift F8>
-autocmd FileType c nnoremap <buffer> <S-F8> :update<bar>!gcc -Werror % && ./a.out<CR>
-autocmd FileType c nnoremap <buffer> <S-F9> :update<bar>!gcc -g -Werror % && gdb ./a.out<CR>
-autocmd FileType cpp nnoremap <buffer> <S-F8> :update<bar>!g++ -Werror -std=c++17 % && ./a.out<CR>
-autocmd FileType cpp nnoremap <buffer> <S-F9> :update<bar>!g++ -g -Werror % && gdb ./a.out<CR>
-autocmd FileType python nnoremap <buffer> <S-F8> :update<bar>!python3 %<CR>
+autocmd FileType c nnoremap <buffer> <F8> :update<bar>!gcc -Werror % && ./a.out<CR>
+autocmd FileType c nnoremap <buffer> <F9> :update<bar>!gcc -g -Werror % && gdb ./a.out<CR>
+autocmd FileType cpp nnoremap <buffer> <F8> :update<bar>!g++ -Werror -std=c++17 % && ./a.out<CR>
+autocmd FileType cpp nnoremap <buffer> <F9> :update<bar>!g++ -g -Werror % && gdb ./a.out<CR>
+autocmd FileType python nnoremap <buffer> <F8> :update<bar>!python3 %<CR>
 
 " Auto build using make with <F5>
 map <F5> :make<CR>
-" Auto build using make with <S-F7>
-map <S-F9> :make clean all<CR>
+" Auto build using make with <F7>
+map <F9> :make clean all<CR>
 
 " auto cmd to add c header
 autocmd bufnewfile *.c so ~/.vim/c_header
