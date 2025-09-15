@@ -10,11 +10,14 @@ By the end of this lesson, you should:
 ### Quiz
 As promised, we'll start the class with a quiz where you'll demonstrate that you've memorized the minimal HTML page.
 
-### HTML Validators
-We'll play with the official HTML validation service [here](https://validator.w3.org/detailed.html#validate-by-upload), then I'll share a template HTML page that automatically includes validation.
+### My Auto-grader
+I'll show you how I'm grading classwork this year. You can follow along with the link on the homepage.
 
 ### Meet the Trifecta: HTML, CSS, and Javascript
 We'll briefly discuss the three languages that make up a website: HTML, CSS, and Javascript. We'll be focusing on HTML for now, but I want you to understand what HTML does, and what it leaves to CSS/Javascript.
+
+### HTML Validators
+We'll play with the official HTML validation service [here](https://validator.w3.org/detailed.html#validate-by-upload), then I'll share a template HTML page that automatically includes validation.
 
 ### Independent Classwork - update your index.html homepage
 The index.html page that we've written so far in your git website does not pass validation. Update your page to use my template, and write a bit more.
@@ -26,7 +29,7 @@ By the end of class, I hope that your website directory will be organized like t
         - index.html
         - minimal.html
     - js/
-        - [init.js](./resources/init.js)
+        - [validate.js](./resources/validate.js)
     - index.html
     - README.md
 
