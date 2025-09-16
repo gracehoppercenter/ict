@@ -19,24 +19,12 @@ We'll briefly discuss the three languages that make up a website: HTML, CSS, and
 ### HTML Validators
 We'll play with the official HTML validation service [here](https://validator.w3.org/detailed.html#validate-by-upload), then I'll share a template HTML page that automatically includes validation.
 
-### Independent Classwork - update your index.html homepage
-The index.html page that we've written so far in your git website does not pass validation. Update your page to use my template, and write a bit more.
 
-By the end of class, I hope that your website directory will be organized like this:
-
-- website/
-    - practice/
-        - index.html
-        - minimal.html
-    - js/
-        - [validate.js](./resources/validate.js)
-    - index.html
-    - README.md
 
 By the beginning of next class, I'd like everyone to have an index.html page that includes:
 - My validation template, and passes the validation
 - A link to your practice index
-- At least one header, using the `<h1>` tag
+- At least one header, using the `<h0>` tag
 - Some text that introduces your website and what you plan to write about. Use `<p>` tags as appropriate.
 
 ## Homework

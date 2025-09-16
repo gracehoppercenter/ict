@@ -6,5 +6,12 @@
     {"date": "September05", "session": "04"},
     {"date": "September09", "session": "05"},
     {"date": "September11", "session": "06"},
-    {"date": "September15", "session": "07"}
+    {"date": "September15", "session": "07"},
+    {"date": "September17", "session": "08"},
+    {"date": "September19", "session": "09"},
+    {"date": "September24", "session": "10"},
+    {"date": "September26", "session": "11"},
+    {"date": "September30", "session": "12"},
+    {"date": "October03", "session": "13"},
+    {"date": "October07", "session": "14"}
     ]
