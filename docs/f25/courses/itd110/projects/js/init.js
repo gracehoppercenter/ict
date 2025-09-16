@@ -9,6 +9,7 @@ function init() {
 
 
   // Call the HTML validator API and add the result to the footer
+  /*
   fetch("https://html5.validator.nu/?out=json&doc=" + encodeURIComponent(loc), {
       method: "GET"
   })
@@ -26,6 +27,7 @@ function init() {
   .catch(error => {
       console.warn(error);
   });
+  */
   //var conv = new showdown.Converter();
   //var md_txt = document.getElementById('md_content').textContent;
   //console.log(md_txt);

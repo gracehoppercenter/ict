@@ -8,6 +8,7 @@ function init() {
   
   
     // Call the HTML validator API and add the result to the footer
+    /*2025-09-16: Turn this off. We're getting rate-limited by the validator
     fetch("https://html5.validator.nu/?out=json&doc=" + encodeURIComponent(loc), {
         method: "GET"
     })
@@ -25,4 +26,5 @@ function init() {
     .catch(error => {
         console.warn(error);
     });
+    */
 }
