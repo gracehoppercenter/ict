@@ -59,7 +59,7 @@ retab
 "enable python syntax
 let python_highlight_all = 1
 
-" Build gcc, g++ or python code from here <Shift F8>
+" Build gcc, g++ or python code from here <F8>
 autocmd FileType c nnoremap <buffer> <F8> :update<bar>!gcc -Werror % && ./a.out<CR>
 autocmd FileType c nnoremap <buffer> <F9> :update<bar>!gcc -g -Werror % && gdb ./a.out<CR>
 autocmd FileType cpp nnoremap <buffer> <F8> :update<bar>!g++ -Werror -std=c++17 % && ./a.out<CR>
