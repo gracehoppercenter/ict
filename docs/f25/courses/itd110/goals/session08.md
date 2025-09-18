@@ -25,11 +25,25 @@ Here's what your repo should look like at the end of this part:
     - README.md
     - .gitignore
 
-### Semantic HTML
-We'll continue our discussion about the difference between HTML content and CSS formatting. We'll discuss [Semantic HTML](https://en.wikipedia.org/wiki/Semantic_HTML) and Web Agents - computer programs that automatically read and compile information from the internet.
+#### .gitignore
+I discussed this at length in class. If you were out, I still want you to create this file. Here is what it should look like: <https://github.com/cj0ne5/cj0ne5.github.io/blob/main/.gitignore>. You should read more about this file here: [gitignore Documentation](https://git-scm.com/docs/gitignore)
 
-### Document Object Model
-We'll discuss the [Document Object Model](https://en.wikipedia.org/wiki/Document_Object_Model) - an important concept that we use to understand and organize HTML pages. We'll play with [This DOM Visualizer](https://0xedward.github.io/dom-visualizer/).
+#### vimrc
+In class, we also spent a while talking about our vimrc file. If you were out, here's what you might want to put in your vimrc file. You can read more about this file here: 
+[Vimrc | Learn Vim](https://learnvim.irian.to/customize/vimrc)
+
+```
+syntax enable
+
+syntax enable
+
+filetype indent on
+
+set background=dark
+colorscheme desert
+
+set number
+```
 
 ### Practice
 Update your index.html page to include everything we've learned so far about HTML.
