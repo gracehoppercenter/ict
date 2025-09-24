@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA CSC 208 Week 5</title>
+<style>
+@import url(../../css/goals.css);
+p.illustration>img {
+    width: 80%;
+}
+</style>
+<script src="../../js/init.js"></script>
+<script>
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<div id="logo">
+<a href="index.html"><img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+</div>
+<div class="desktop">
+<h2>Governor's Career & Technical Academy Arlington</h2>
+<h1>CSC 208 Weekly Goals and Tasks: Week 5</h1>
+</div>
+<div class="mobile">
+<h1>CSC 208</h1>
+</div>
+</header>
+<hr>
+
+<main>
+<time datetime="2025-03-03">Week of Monday, March 3, 2025</time>
+
+<h2>Overview</h2>
+<p>
+This week we will finish
+<a href="https://discrete.openmathbooks.org/dmoi4/ch_logic.html">Chapter 1:
+Logic and Proofs</a> and begin
+<a href="https://discrete.openmathbooks.org/dmoi4/ch_graphtheory.html">Chapter
+2: Graph Theory</a>.
+</p>
+
+<section>
+<h2>Friday, March 7th</h2>
+
+<h3>Test Review</h3>
+<div>
+<p>
+We'll begin class by reviewing the results of Wednesday's test. The grade
+distribution was: <b>A</b>: 9, <b>B</b>: 8, <b>C</b>: 4, <b>D</b>: 5, and
+<b>E</b>: 5. That is an improvement over last time, but I'll share a few ideas
+I have about how we can improve on it still further going forward.
+</p><p>
+Our good friend José Ejemplo has kindly shared
+<a href="https://codeberg.org/GraceHopperCenter/csc208/src/branch/main/ch1_logic/resources/ProofsTestSolutions.pdf">
+his solutions</a>, which we can use as a guide in our discussion.
+</p><p>
+Things from the test that we should pay special attention to:
+</p><ol>
+<li>
+<pre>
+$ ttg_cli.py "['P', 'Q', 'R']" -p "['~(~P =&gt; (Q and R))', '~P and (~Q or ~R)']" -i False
+
++-------+-------+-------+----------------------+---------------------+
+|   P   |   Q   |   R   |  ~(~P =&gt; (Q and R))  |  ~P and (~Q or ~R)  |
+|-------+-------+-------+----------------------+---------------------|
+| True  | True  | True  |        False         |        False        |
+| True  | True  | False |        False         |        False        |
+| True  | False | True  |        False         |        False        |
+| True  | False | False |        False         |        False        |
+| False | True  | True  |        False         |        False        |
+| False | True  | False |         True         |        True         |
+| False | False | True  |         True         |        True         |
+| False | False | False |         True         |        True         |
++-------+-------+-------+----------------------+---------------------+
+</pre>
+<p>
+Anyone who got this first question wrong on the test is probably still
+struggling with the following relationship:
+</p><blockquote>
+<code>P =&gt; Q</code> <i>is logically equivalent to</i> <code>~P or Q</code>
+</blockquote><p>
+You need to commit this to the very essence of your being, so that you just
+<i>know it</i>!</p>
+</li><li>
+<p>The main tools you have when writting a proof are:</p>
+<ul>
+<li>definitions</li>
+<li>propositions</li>
+<li><i>specific</i> givens</li>
+</ul>
+<p>We'll talk about how each of these are used in the proof on the test.
+We'll also highlight alternative approaches to a given proof, with
+Gabriel C.'s proof for problem 2 using a set theory instead of alegraic
+argument as an example, which José has kindly reproduced for us
+<a href="https://codeberg.org/GraceHopperCenter/csc208/src/branch/main/ch1_logic/sect1.6.md">
+here</a></li>
+</ol>
+</div>
+
+<h3>Introducing Graphs</h3>
+<div>
+<p>
+Let's start with a discussion of the three <i>Reading Questions</i> at the end
+of the section.
+</p>
+
+<h4>Is there more than one graph with 5 vertices and 6 edges?</h4>
+<p>
+When working with graphs, we need to understand what it means to
+<q>be a graph</q>. The definition of <b>graph</b> is:
+</p><blockquote>
+An ordered pair G = (V, E) consisting of a nonempty set V (called the vertices) and a set E (called the edges) of two-element subsets of V.
+</blockquote><p>
+Graphs are <b>equal</b> when V and E are equal, but when we talk about
+<q>more than one graph</q> we are interested in the concept of
+<b>isomorphism</b>:
+</p><blockquote>
+An isomorphism between two graphs G1 and G2 is a bijection f: V1 -&gt; V2
+between the vertices of the graphs such that {a, b} is an edge in G1 if and
+only if {f(a), f(b)}  is an edge in G2.
+</blockquote><p>
+I want to draw your attention to the fact that isomorphism is an
+<a href="https://en.wikipedia.org/wiki/Equivalence_relation">equivalence
+relation</a>, which means it is
+<a href="https://en.wikipedia.org/wiki/Reflexive_relation">reflexive</a>,
+<a href="https://en.wikipedia.org/wiki/Symmetric_relation">symetric</a>, and
+<a href="https://en.wikipedia.org/wiki/Transitive_relation">transitive</a>.
+When we ask if two graphs are the same, we are usually asking if they are
+isometric.
+</p><p>
+In this first reading question, we are really asking is: <q>Is there more than
+one <b>isomorphism class</b> with 5 vertices and 6 edges?</q>
+</p><p>
+Take a look at this:
+</p><p class="illustration">
+<img src="images/non-isomorphic_graphs.png" alt="non-isomorphic graphs">
+</p><p>
+Well, what do you think?
+</p>
+
+<h4>A graph with 10 vertices of degree 4 has how many edges?</h4>
+<p>
+The answer to this question is a straight up application of the
+<i>Handshake Lemma</i>. So what is it?
+</p>
+</div>
+
+<h3>Homework</h3>
+<div>
+<p>
+Complete all <i>Practice Problems</i> and as many <i>Additional Problems</i>
+from <i>Section 2.1: Problems and Definitions</i> as time enables. Come to
+class on Tuesday prepared with questions on any problems that give you pause.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Wednesday, March 5th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+We will have a test today on <i>Chapter 1: Logic and Proofs</i>.
+</p>
+</div>
+
+<h3>Homework</h3>
+<div>
+<p>
+Read section <i>2.1: Graph Theory: Problems and Definitions</i>. Spend some
+time thinking about the famous
+<a href="https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg">Seven
+Bridges of Königsberg</a> problem presented at the beginning of the chapter.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Monday, March 3rd</h2>
+
+<h3>Classwork / Homework</h3>
+<div>
+<p>
+We'll begin class by discussing any questions you have from the exercises
+assigned last Thursday. You'll have the rest of class and homework time
+to continue working exercises from the lists below.
+</p><p>
+Prepare a single sheet of 8 1/2 by 11 inch paper, front and back, with notes
+you can use on Wednesday's test. I recommend you include the definitions
+and propositions presented in the chapter. 
+</p>
+</div>
+
+<h3>Blu's List</h3>
+<div>
+<p>
+Here is the promised <i>Blu's list</i> for the test on Wednesday:
+</p>
+<h4>Section 1.5: Proofs about Discrete Structues</h4> 
+<ul>
+<li><b>Practice Problems</b>: 1 through 5</li>
+<li><b>Additional Exercises</b>: 1 through 12</li>
+</ul>
+<h4>Section 1.6: Chapter Summary</h4> 
+<ul>
+<li><b>Chapter Review</b>: 1 through 7, 8a, 9 and 10</li>
+</ul><p>
+Be sure you are comfortable generating truth tables, and can do the kinds of
+proofs presented in the examples and exercises, which means being able to use
+the <i>definitions</i> and <i>propositions</i> effectively. Having these handy
+on your 8 1/2 by 11 inch resource sheet will be most useful to you.
+</p>
+</div>
+</section>
+</main>
+
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>
