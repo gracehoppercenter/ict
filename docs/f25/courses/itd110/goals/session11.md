@@ -17,6 +17,9 @@ Today, we'll focus on how to embed images into your HTML pages. We'll have a lit
 
 We'll have a short chat about which images are/ are not appropriate to add to your website. The most important takeaway is that images are protected by copyright law, and you must have the photographer's permission to use an image. I'll share some specific places you might look for images you're allowed to use.
 
+Regardless of where your image comes from, you must document your sources.
+We'll eventually learn more-official ways to credit your images. For now, include an HTML comment that explains where your image comes from. If you took the image yourself, that's all you need to say. If you found your image online, give the URL of the site you got the image from, and a link to any licensing information on that website.
+
 ### Image Practice
 
 Start thinking about the website that you'll build for your year-long project. Update the text on your `index.html` page to reflect that purpose, and add a meaningful, professional picture. If your page is a personal portfolio, you might choose a picture of yourself or a picture from a project you're especially proud of.
