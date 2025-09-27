@@ -34,77 +34,32 @@ window.onload = init;
 
 <h2>Overview</h2>
 <p>
-This week will finish
-<a href="https://www.openbookproject.net/books/bpp4awd/ch05.html">Chapter 5:
-Functions</a>, and begin planning for the 
-<a href="https://pythoninstitute.org/pcep">PCEP</a> certification.
+This week will study 
+<a href="https://www.openbookproject.net/books/bpp4awd/ch06.html">Chapter 6:
+Dictionaries, sets, files and modules</a>, our last chapter before we focus
+on planning for the <a href="https://pythoninstitute.org/pcep">PCEP</a>
+certification.
 </p>
 
+<!--
 <section>
-<h2>Wednesday, October 2nd</h2>
+<h2>Wednesday, October 1st</h2>
 
 <h3>Classwork</h3>
 <div>
 <p>
-After class on Monday, our co-teacher Chris mentioned to me that the solution
-I shared for <code>lots_of_letters</code>:
+During the first half of class today we will have a 30 question PCEP practice
+test.
 </p>
-<pre>
-def lots_of_letters(word):
-    s = ''
-    for i in range(1, len(word) + 1):
-        s += i * word[i-1]
-    return s
-</pre>
-<p>
-Could be improved:
-</p>
-<pre>
-def lots_of_letters(word):
-    s = ''
-    for index, letter in enumerate(word):
-        s += (index + 1) * letter 
-    return s
-</pre>
-<p>
-Study this example. It is indeed a big improvement over the first solution,
-since it is clearly more
-<q><a href="https://www.lenovo.com/us/en/glossary/pythonic/">pythonic</a></q>.
-Python can be a beautiful language, especially in the hands of programmers who
-know how to use it.
-</p><p>
-We will start class today with presentations by
-Gizelle and Erij of the <code>replace</code> function from
-excercise set 2 exercise 7, and by Chris and Antoan of
-the <code>find_mode</code> function from exercise set 0 exercise 9.
-</p><p>
-After that I want to present a few short topics inspired by a conversation I
-had with Lucy in class last Thursday:
-</p>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Namespace">Namespaces</a> and
-the <code>dir()</code> function (with a big shoutout to Tim Peters for his
-<a href="https://en.wikipedia.org/wiki/Zen_of_Python">Zen of Python</a>.)</li>
-
-<li><a href="https://en.wikipedia.org/wiki/Docstring">Docstrings</a> and
-<a href="https://blog.finxter.com/what-is-__-doc-__-in-python/">__doc__</a>
-(with another shoutout to Tim Peters for using these for
-<a href="https://docs.python.org/3/library/doctest.html">doctests</a>.)</li>
-
-<li><code>python -m pydoc -p 8000</code></li>
-</ul>
 </div>
 
 <h3>Homework</h3>
 <div>
 <p>
-Complete all the exercise in
-<a href="https://www.openbookproject.net/books/bpp4awd/exercises/ch05/ch05s05.html">
-Chapter 5 Exercise Set 5: PCEP Practice</a> in preparation for a quiz based on
-these exercises at the beginning of class next Monday.
 </p>
 </div>
 </section>
+-->
 
 <section>
 <h2>Monday, September 30th</h2>
@@ -112,17 +67,28 @@ these exercises at the beginning of class next Monday.
 <h3>Classwork / Homework</h3>
 <div>
 <p>
-We will begin class with a quiz based on the exercises from 
+We will begin class with the promised quiz based on the exercises from 
 <a href="https://www.openbookproject.net/books/bpp4awd/ch05.html">Chapter 5:
 Functions</a>.
-
-I will start things off with 
-<a href="https://en.wikipedia.org/wiki/Exception_handling">exception
-handling</a> in Python.
 </p><p>
 After that we will be introduced to a new Python data type, the
 <a href="https://docs.python.org/3/tutorial/datastructures.html#dictionaries">
-dictionary</a>.
+dictionary</a>, as we discuss the last chapter we will study before you take
+the PCEP,
+<a href="https://www.openbookproject.net/books/bpp4awd/ch06.html">Chapter 6:
+Dictionaries, sets, files and modules</a>.
+</p>
+</div>
+
+<h3>Homework</h3>
+<div>
+<p>
+Complete exercises 1 and 2 from
+<a href="https://www.openbookproject.net/books/bpp4awd/exercises/ch06/ch06s00.html">Exercise
+Set 0</a>
+and exercises 1, 2 and 3 from
+<a href="https://www.openbookproject.net/books/bpp4awd/exercises/ch06/ch06s01.html">Exercise
+Set 1</a>
 </p>
 </div>
 </section>
