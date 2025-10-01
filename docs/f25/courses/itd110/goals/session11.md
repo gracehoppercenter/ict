@@ -33,6 +33,13 @@ Follow these steps:
     - large (1024 × 768 pixels)
 - Give each of these files reasonable names and add them to your `images` folder.
 - Add this image to your `index.html` file, and use the srcset attribute to link the alternate versions.
+- This is a classwork assignment that is due at the beginning of next class.
+Here is how I will grade it:
+    - 5 points: The image loads, you have valid srcset code, and attributed the source
+    - 4 points: The image loads and your srcset code is close, but has minor errors, and you attributed your source
+    - 3 points: The image loads but you are missing srcset entirely or it is very wrong, and you attributed your source
+    - 2 points: You tried to add an image but it doesn't load, or you did not attribute your source
+    - 0 points: No image
 
 ## Homework
 
