@@ -30,26 +30,26 @@ You should make it a habit to check your public website when you complete an ass
 Here are a list of topics that are fair game for the test. 
 
 - Terminal commands:
-  - cd
-  - ls
-  - cp
-  - mv
-  - pwd
-  - mkdir
-  - open
-  - the file system tree
-  - the home directory (`~`)
+    - cd
+    - ls
+    - cp
+    - mv
+    - pwd
+    - mkdir
+    - open
+    - the file system tree
+    - the home directory (`~`)
 - Vim:
-  - Modes: Normal, Insert, Visual, Visual Line, and how to switch between them
-  - insert (`i`) vs append (`a`)
-  - Movement with h,j,k,l
-  - How to get out of vim, and the differences between `:q`, `:w`, `:wq`, `:q!`
-  - Navigation motions: `0`, `$`, `w`, `e`
-  - Copy/pasting with `y` and `p`
+    - Modes: Normal, Insert, Visual, Visual Line, and how to switch between them
+    - insert (`i`) vs append (`a`)
+    - Movement with h,j,k,l
+    - How to get out of vim, and the differences between `:q`, `:w`, `:wq`, `:q!`
+    - Navigation motions: `0`, `$`, `w`, `e`
+    - Copy/pasting with `y` and `p`
 - HTML vs Javascript vs CSS
-  - Why Semantic HTML is important
+    - Why Semantic HTML is important
 - HTML Tags
-  - I won't list them all here. You're responsible for all of the tags listed in the reading assignments!
+    - I won't list them all here. You're responsible for all of the tags listed in the reading assignments!
 
 I will not ask about these topics:
 - .vimrc, or any vim settings we put in that file
