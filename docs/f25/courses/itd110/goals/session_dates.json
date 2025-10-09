@@ -13,5 +13,17 @@
     {"date": "September26", "session": "11"},
     {"date": "September30", "session": "12"},
     {"date": "October03", "session": "13"},
-    {"date": "October07", "session": "14"}
+    {"date": "October07", "session": "14"},
+    {"date": "October10", "session": "15"},
+    {"date": "October15", "session": "16"},
+    {"date": "October17", "session": "17"},
+    {"date": "October22", "session": "18"},
+    {"date": "October24", "session": "19"},
+    {"date": "October28", "session": "20"},
+    {"date": "October30", "session": "21"},
+    {"date": "November03", "session": "22"},
+    {"date": "November06", "session": "23"},
+    {"date": "November10", "session": "24"}
+
+
     ]
