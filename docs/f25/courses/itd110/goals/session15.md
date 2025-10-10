@@ -60,7 +60,7 @@ You'll take the test in Edube. To do that:
 Free". (This is the course that matches the HTML course that we'll use most of 
 the Spring)
 - In that course, navigate to the "Final Test", or just click this 
-link: <https://edube.org/study/jse1>
+link: <https://edube.org/quiz/jse1-1-0-1/jse1-final-test-1>
 - It will ask you to take an honor code - don't worry about that - this isn't
 for a grade.
 - Do your best on the exam, and don't stress about the score. When you finish, 
