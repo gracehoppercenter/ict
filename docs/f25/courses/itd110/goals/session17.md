@@ -45,6 +45,9 @@ use for everything.
 
 ### Journal Entry - TCP/IP Layers
 
+We'll start writing this together in class. For classwork, finish filling
+in this with the rest of the details we learned today in class.
+
 ## Homework
 
 ### Binary Practice
