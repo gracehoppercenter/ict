@@ -36,6 +36,11 @@ Include:
 - A screenshot of your recreation
 - Your binary (so that I can copy/paste it into the code.org website)
 
+### Extension - there aren't enough colors
+
+Here's a link to the youtube video we'll watch in class: <https://www.youtube.com/watch?v=h9j89L8eQQk>
+. I highly recommend checking out the rest of the video - it's really interesting!
+
 ## Homework
 
 ### Reading
