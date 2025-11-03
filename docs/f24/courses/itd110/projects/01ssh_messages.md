@@ -2,12 +2,14 @@
 
 ### Part 1: Encrypt a message
 
-1. **Make sure you're working inside your git repository:**
+1. **Make a new directory for this activity:**
    Start by making sure that you're in your GitHub repository where you'll store all the files for this activity.
 
    (You might need to change this line to match your GitHub repository folder name)
       ```bash
-      cd ~/Desktop/website 
+      cd ~/Desktop/website/practice
+      mkdir encryption 
+      cd encryption
       ```
 
 2. **Download and run the encryption script:**
@@ -99,7 +101,11 @@
 ### Part 3: Reflection
 
 13. **Write a README:**
-Add a README.md file to your rsa_encryption_activity folder. In this file, use Markdown to answer these prompts:
+Add a README.md file at this path:
+
+`practice/encryption/README.md`
+
+In this file, use Markdown to answer these prompts:
       - What is the difference between symmetric and asymmetric encryption?
       - Explain the steps of the encryption and decryption process
       - Why is it important that you never share your secret key?
@@ -108,12 +114,12 @@ This journal entry, and the files in your rsa_encryption_activity repo, are due 
 
 ### Final GitHub Repository Structure
 
-At the end of this activity, your `rsa_encryption_activity` folder in your GitHub repository should contain:
+At the end of this activity, your `practice/encryption` folder in your GitHub repository should contain:
 
-- `partners_public_key.pub`: Your partner's original public key (downloaded from GitHub).
+- `rsa_encryption_activity/partners_public_key.pub`: Your partner's original public key (downloaded from GitHub).
 - `README.md`: with answers to the journal prompts.
-- `send/encrypted_message.b64`: The encrypted message you sent to your partner.
-- `receive/encrypted_message.b64` (from partner): The encrypted message you received from your partner.
-- `receive/decrypted_message.txt`: The decrypted message you received from your partner.
+- `rsa_encryption_activity/send/encrypted_message.b64`: The encrypted message you sent to your partner.
+- `rsa_encryption_activity/receive/encrypted_message.b64` (from partner): The encrypted message you received from your partner.
+- `rsa_encryption_activity/receive/decrypted_message.txt`: The decrypted message you received from your partner.
 
 **Important:** **NEVER commit your private key (`~/.ssh/id_rsa`) to your repository or share it with anyone!**
