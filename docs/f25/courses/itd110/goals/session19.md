@@ -7,8 +7,6 @@ By the end of this lesson, you should:
 ### Today's Vocabulary:
 
 - ASCII
-- XOR
-- Bit Shift
 
 ## What We'll Do In Class
 
@@ -38,12 +36,7 @@ We can do math with numbers, so we'll do a bit of that.
 
 We'll do some addition and subtraction together. (Note - we're only using whole, positive numbers in binary, so I won't give you any subtraction problems that result in a negative answer. We're also not doing multiplication, division, fractions, or decimals.)
 
-We'll also discuss some operations that are unique to binary:
-- AND (&)
-- OR (|)
-- XOR (^)
-- NOT (~)
-- Shifts (<< and >>)
+(this page originally said that we would cover a few other binary math concepts. I ended up rethinking that plan and removing them.)
 
 ### Encoding Text in Binary
 
