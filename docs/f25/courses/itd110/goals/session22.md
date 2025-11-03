@@ -10,8 +10,8 @@ By the end of this lesson, you should:
 
 ### Today's Slides
 I have a lot of pictures and
-videos to show today, so I've put them in some [Google slides here](
-https://docs.google.com/presentation/d/1V846nBeKNbHsatM_kQcLmgB31RpsK33k8zRz7P40yiA/edit?usp=sharing)
+videos to show today, so I've put them in some 
+[Google slides here](https://docs.google.com/presentation/d/1V846nBeKNbHsatM_kQcLmgB31RpsK33k8zRz7P40yiA/edit?usp=sharing)
 
 ## What We'll Do In Class
 
