@@ -55,88 +55,30 @@ still struggling to learn to effectively read C++.
 <h3>Classwork</h3>
 <div>
 <p>
-<p>
-Today in class I will present a little program I wrote last year to choose
-random pairs of students for programming assignments. I'll use this opportunity
-to talk about
-<a href="https://en.wikipedia.org/wiki/Iterative_and_incremental_development">
-iterative and incremental development</a> and
-<a href="https://en.wikipedia.org/wiki/Unit_testing">unit testing</a>.
+Today in class we will discuss
+<a href="https://openbookproject.net/thinkcs/cpp/ch11.html">Chapter 11: Member
+functions</a> in our textbook, in which we begin our study of <a
+href="https://en.wikipedia.org/wiki/Object-oriented_programming">object-oriented
+programming</a> proper.
 </p><p>
-For my first iteration I knew the program would have to support choosing
-between the two sections of this course we had last year: periods 1B and 4B. I
-decided I wanted to store class lists for each section in a text file, and to
-be able to read in two groups of students from each section depending on their
-CPE status. I decided I wanted to choose the section on the command line, and
-that the <code>main</code> function should test for correct input and that the
-needed file exists befor calling other functions to do the processing of
-student pairs.  Here is my first iteration of <code>main</code>, which tests
-for correct cli input:
-</p><pre>
-#include &lt;iostream&gt;
-#include &lt;fstream&gt;
-#include &lt;cstring&gt;
-using namespace std;
-
-int main(int argc, char* argv[]) {
-    if (argc != 2) {
-        cerr &lt;&lt; "Too few arguments: enter 1B or 4B for 2nd argument." &lt;&lt; endl;
-        return 1;
-    }
-    if (strcmp(argv[1], "1B") &amp;&amp; strcmp(argv[1], "4B")) {
-        cerr &lt;&lt; "Second argument must be either 1B or 4B,";
-        cerr &lt;&lt; " not " &lt;&lt; argv[1] &lt;&lt; '.' &lt;&lt; endl;
-        return 2;
-    }
-    cout &lt;&lt; "You made it!" &lt;&lt; endl;
-    return 0;
-}
-</pre><p>
-Now that the command line input is processed, for my next iteration I'll open
-the proper classlist file. Remove the last two lines of the code above and
-insert:
-</p><pre>
-    char filename[16];
-    strcpy(filename, "classlist");
-    strcat(filename, argv[1]);
-    strcat(filename, ".dat");
-    ifstream infile(filename);
-    if (!infile.is_open()) {
-        cerr &lt;&lt; "Error openning file " &lt;&lt;  filename &lt;&lt; endl;
-        return 3;
-    }
-    return 0;
-</pre><p>
-Now it's time to process the input file data into a list of students from
-which random pairs can be chosen. I want to use a
-<a href="https://en.wikipedia.org/wiki/Test-driven_development">TDD</a>
-approach for this, so I'll start with three files that compile successfully
-with a failing test:
-</p>
-<ul>
-<li><a href="https://codeberg.org/ACC/csc222/raw/commit/3123b2e10dad74b14c2fc20b9b4b0abc8f357fde/choose_pairs/test_pairs_utils.cpp">
-test_pairs_utils.cpp</a></li>
-<li><a href="https://codeberg.org/ACC/csc222/raw/commit/3123b2e10dad74b14c2fc20b9b4b0abc8f357fde/choose_pairs/pairs_utils.h">
-pairs_utils.h</a></li>
-<li><a href="https://codeberg.org/ACC/csc222/raw/commit/3123b2e10dad74b14c2fc20b9b4b0abc8f357fde/choose_pairs/pairs_utils.cpp">
-pairs_utils.cpp</a></li>
-</ul>
-<p>
-That's as far as we'll get today. You'll have the rest of class and homework
-time to finish setting up a working
-<a href="https://openbookproject.net/thinkcs/cpp/app_c.html">unit testing
-development environment</a> and learning how to use it.
+We will start with <code>struct</code>s and add <b>member functions</b> to
+them, turning them into objects. We will use two objects as examples,
+<code>Time</code> objects and <code>Point</code> objects. 
+</p><p>
+We'll then see how to move our member function declarations into a separate
+file, called a <b>header</b> file, from their definitions, and talk about
+why you only need to include these header files in other source code that
+uses the functions declared in them.
+</p><p>
+Finally, we'll learn C++'s suppport for <b>operator overloading</b> and be
+introduced to the <a href="https://en.wikipedia.org/wiki/Ncurses">ncurses</b>
+UI library that we can use to create nice console based user interfaces.
 </p>
 </div>
 
 <h3>Homework / Evaluation</h3>
 <div>
 <p>
-First make sure you have a working unit testing development environment
-as we discussed in class.  Spend your remaining homework time reviewing
-the skills you will need this quarter: <i>using the unix cli to manage
-files and directories</i>, <i>editing text files with vim</i>, and
-<i>using git for revision control</i>.
 </p>
 </div>
 </section>
@@ -180,11 +122,15 @@ for what can be done.
 <h3>Homework</h3>
 <div>
 <p>
-Create an account for yourself on
-<a href="https://codeberg.org/">Codeberg</a> and a git repository named
-<code>csc222</code>. If you don't see your name linked from our
-<a href="../students.html">Students</a> page, send me an email with a link to
-your repo so I can add it to the page.
+Create an account for yourself on <a href="https://codeberg.org/">Codeberg</a>
+and a git repository named <code>csc222</code>. If you don't see your name
+linked from our <a href="../students.html">Students</a> page, send me an email
+with a link to your repo so I can add it to the page.  Spend your remaining
+homework time reviewing the skills you will need this quarter: <i>using the
+unix cli to manage files and directories</i>, <i>editing text files with
+vim</i>, and <i>using git for revision control</i>.
+</p><p>
+We'll begin applying these skills in class on Friday.
 </p>
 </div>
 </section>
