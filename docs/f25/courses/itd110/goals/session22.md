@@ -8,6 +8,11 @@ By the end of this lesson, you should:
 ### Today's Vocabulary:
 - Adversary in the Middle
 
+### Today's Slides
+I have a lot of pictures and
+videos to show today, so I've put them in some 
+[Google slides here](https://docs.google.com/presentation/d/1V846nBeKNbHsatM_kQcLmgB31RpsK33k8zRz7P40yiA/edit?usp=sharing)
+
 ## What We'll Do In Class
 
 
@@ -24,7 +29,21 @@ We'll define what security means in terms of the internet, and we'll discuss som
 We'll learn about "symmetric" or "shared secret" encryption, and we'll play with this website:
 - [Caesar cipher Wheel](https://computerscienced.co.uk/site/caesar-cipher-wheel/caesar-cipher/)
 
+Here are some  messages we can try to decrypt:
+
+| Message | Shift |
+| ------- | ----- |
+| snuuh knjw | 9 |
+| HJJ Hyjolyzx | 7 |
+| nqn ybirynpr | 13 |
+| Ofobidrsxq iye mkx swkqsxo sc bokv | ? |
+| Jcypl yq gd wms ucpc rm jgtc dmpctcp. | ? |
+| Grkdofob iye kbo, lo k qyyn yxo | ? |
+
 ### Activity - Asymmetric Encryption
+
+(we probably won't get to this today - so we'll save it for next time)
+
 For this activity, we'll send and receive cryptographically secure messages the same way that your terminal communicates with github - using your `id_rsa.pub` files that you created at the beginning of the year. 
 
 You'll do this activity with a partner. Pair up with someone who sits next to you. You each will write and encode a secret message, you'll swap messages, and then you will decode the message you receive.
@@ -34,4 +53,4 @@ You'll do this activity with a partner. Pair up with someone who sits next to yo
 ## Homework
 
 ### Start preparing for our first test
-Today is our last day of learning for this unit. 
+Today is our last day of learning for this unit. No other homework, and no reading assignment tonight.
