@@ -163,4 +163,12 @@ At the end of this activity, your `practice/encryption` folder in your GitHub re
 - `rsa_encryption_activity/receive/encrypted_message.b64` (from partner): The encrypted message you received from your partner.
 - `rsa_encryption_activity/receive/decrypted_message.txt`: The decrypted message you received from your partner.
 
-**Important:** **NEVER commit your private key (`~/.ssh/id_rsa`) to your repository or share it with anyone!**
+
+### Disclaimers:
+
+- **Important:** **NEVER commit your private key (`~/.ssh/id_rsa`) to your repository or share it with anyone!**
+- The actual protocol follows similar steps, but the math is way more complex. I'm happy to 
+chat with anyone who wants to understand more, but here are a few links to get you started:
+   - The actual key-exchange algorithm: [https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange]
+   - The algorithm that generates new keys for each message: [https://en.wikipedia.org/wiki/Double_Ratchet_Algorithm]
+   - The symmetric encryption algorithm that Signal uses: [https://en.wikipedia.org/wiki/Advanced_Encryption_Standard]
