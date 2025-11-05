@@ -10,6 +10,18 @@ to the concepts we've learned in class this unit
 ### No Quiz
 No quiz today! We'll spend the whole time working on your unit project.
 
+### Q1 Report Card Checkin
+
+Q1 Grades are finalized and submitted. Here's the breakdown:
+
+| Grade | Count |
+| ----- | ----- |
+| A | 28 |
+| B | 13 |
+| C | 9 |
+| D | 2 |
+| E | 8 |
+
 
 ### Error Correction
 
