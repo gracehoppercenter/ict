@@ -40,16 +40,6 @@ Here are some  messages we can try to decrypt:
 | Jcypl yq gd wms ucpc rm jgtc dmpctcp. | ? |
 | Grkdofob iye kbo, lo k qyyn yxo | ? |
 
-### Activity - Asymmetric Encryption
-
-(we probably won't get to this today - so we'll save it for next time)
-
-For this activity, we'll send and receive cryptographically secure messages the same way that your terminal communicates with github - using your `id_rsa.pub` files that you created at the beginning of the year. 
-
-You'll do this activity with a partner. Pair up with someone who sits next to you. You each will write and encode a secret message, you'll swap messages, and then you will decode the message you receive.
-
-[Follow the instructions here](../projects/project.html?id=02_encryption)
-
 ## Homework
 
 ### Start preparing for our first test

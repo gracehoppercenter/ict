@@ -22,7 +22,7 @@
   {"session": "20", "unit": 2, "topic": "TCP/IP - Hex, Colors"},
   {"session": "21", "unit": 2, "topic": "TCP/IP - HTTP"},
   {"session": "22", "unit": 2, "topic": "Internet Security: Symmetric/Asymmetric"},
-  {"session": "23", "unit": 2, "topic": "Internet Security: RSA"},
+  {"session": "23", "unit": 2, "topic": "Introduce Unit 2 Project"},
   {"session": "24", "unit": 2, "topic": "Internet Test Practice"},
   {"session": "25", "unit": 2, "topic": "Internet Test"},
   {"session": "NWEA Testing", "unit": "other_school", "topic": ""},

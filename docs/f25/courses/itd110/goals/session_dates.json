@@ -23,7 +23,12 @@
     {"date": "October30", "session": "21"},
     {"date": "November03", "session": "22"},
     {"date": "November06", "session": "23"},
-    {"date": "November10", "session": "24"}
+    {"date": "November10", "session": "24"},
+    {"date": "November13", "session": "25"},
+    {"date": "November17", "session": "26"},
+    {"date": "November19", "session": "27"},
+    {"date": "November21", "session": "28"},
+    {"date": "November25", "session": "29"}
 
 
     ]

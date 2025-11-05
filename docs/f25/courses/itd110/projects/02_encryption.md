@@ -141,6 +141,9 @@ To send a message:
     - Use a Caesar Cipher to encode your message using your key
     - Send the message to your partner. They will decrypt and respond
 
+You'll be manually encoding/decoding these messages, so you'll probably want
+to keep them short.
+
 (You and your partner can choose together how you want to share these messages, 
 a google doc might be the most convenient. You'll copy the entire
 conversation into a Markdown file at the end)
@@ -172,3 +175,22 @@ chat with anyone who wants to understand more, but here are a few links to get y
    - The actual key-exchange algorithm: [https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange]
    - The algorithm that generates new keys for each message: [https://en.wikipedia.org/wiki/Double_Ratchet_Algorithm]
    - The symmetric encryption algorithm that Signal uses: [https://en.wikipedia.org/wiki/Advanced_Encryption_Standard]
+
+## Grading Rubric
+
+This project will be graded in two parts: half of the project grade will come 
+from your repo and Markdown files, based on the rubric below. 
+The remaining half will come from an 
+in-class writing exercise that will require you to explain your code.
+
+In the gradebook, It will be weighted at 10 points.
+
+
+# Encryption Project Rubric
+
+| Assessment Criteria | Meets Expectations - 4 points | Partially Meets Expectations - 3 points | Does Not Meet Expectations - 2 points | Not Present - 0 points |
+|---------------------|-------------------------------|-----------------------------------------|---------------------------------------|------------------------|
+| **Asymmetric Encryption Process** | Successfully encrypts and decrypts initial key exchange using SSH keys; all encrypted files are properly committed to GitHub repository. | Encryption/decryption process is mostly complete but may have minor errors or missing files in repository. | Major errors in encryption process or multiple missing files from required repository structure. | No evidence of asymmetric encryption process completed. |
+| **Symmetric Encryption & Key Evolution** | Successfully exchanges at least 4 messages using evolving keys; demonstrates correct application of key evolution formula and Caesar cipher for all messages. | Message exchange is partially complete or contains errors in key evolution or encryption/decryption process. | Significant errors in symmetric encryption or key evolution that prevent successful message exchange. | No symmetric message exchange completed. |
+| **Technical Documentation** | README contains complete and accurate tables,  binary conversion, packet diagrams | Documentation is mostly complete but may lack detail, contain minor inaccuracies, or miss some required elements. | Documentation is incomplete, contains significant errors, or lacks required tables and reflections. | README entirely missing or barely changed from the template. |
+| **Protocol Understanding** | Reflection demonstrates clear understanding of symmetric vs. asymmetric encryption, purpose of key evolution, TCP/IP layer connections, and security principles. | Reflection shows basic understanding but may lack depth or contain minor misconceptions about cryptographic concepts. | Reflection demonstrates significant misunderstandings of core encryption concepts or TCP/IP connections. | No reflection provided or shows no understanding of concepts. |
