@@ -39,7 +39,8 @@ This message is represented as a string of letters, numbers, and symbols. But we
 
 Select the first six characters from this message and copy them here:
 
-Using the ASCII table, convert these five characters to binary: 
+Using the ASCII table, convert these five characters to binary (if necessary,
+include leading zeroes so that each character is 8 bits): 
 
 ### Transport Layer: Break your message into packets
 
@@ -74,7 +75,6 @@ Assume that each packet can hold two bytes. Fill in the packet information below
 - Why is it important that this protocol uses a new key for each message?
 - Why is it important that you never share your secret key?
 - In the transport layer, do these messages use TCP or UDP? Why?
-
-
-
-
+- Now that you've created packets in the transport layer, give a short explanation of what happens to these packets in the internet layer and in the link layer.
+- This protocol successfully encrypts the **content** of the message. Even though and adversary in the middle can't read the content of the message, what other
+information can they still see?
