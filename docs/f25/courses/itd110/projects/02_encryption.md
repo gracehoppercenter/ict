@@ -1,7 +1,7 @@
 # Asymmetric Encryption Project
 
 For this project, you'll explore a complex, modern application-layer protocol that includes encryption, the Signal Protocol, which 
-is used inside of WhatsApp, Facebook Messenger, Google Messages, and may others (iMessage is similar but not exaclty the same).
+is used inside of WhatsApp, Facebook Messenger, Google Messages, and may others (iMessage is similar but not exactly the same).
 
 Signal uses a variety of strategies to protect communication, and those strategies use just about everything that we've
 learned in this unit. We'll touch on many of them in this project.
@@ -20,7 +20,7 @@ As an overview, in this project you'll work with a partner to simulate how messa
 
    (You might need to change this line to match your GitHub repository folder name)
       ```bash
-      cd ~/Desktop/website/practice
+      cd ~/Desktop/website/projects
       mkdir encryption 
       cd encryption
       ```
@@ -152,13 +152,13 @@ conversation into a Markdown file at the end)
 
 Add a README.md file at this path:
 
-`practice/encryption/README.md`
+`projects/encryption/README.md`
 
 copy/paste the Markdown [from this template](https://raw.githubusercontent.com/gracehoppercenter/ict/refs/heads/main/docs/f25/courses/itd110/goals/resources/ssh_activity/reflection_template.md) and answer each of the questions.
 
 ### Final GitHub Repository Structure
 
-At the end of this activity, your `practice/encryption` folder in your GitHub repository should contain:
+At the end of this activity, your `projects/encryption` folder in your GitHub repository should contain:
 
 - `rsa_encryption_activity/partners_public_key.pub`: Your partner's original public key (downloaded from GitHub).
 - `README.md`: with the completed template.
