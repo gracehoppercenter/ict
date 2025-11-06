@@ -39,6 +39,14 @@ As an overview, in this project you'll work with a partner to simulate how messa
          chmod +x encrypt_message.sh
          ```
 
+      - While you're here, go ahead and download the matching decryption script that you'll use later:
+
+         ```bash
+         curl -s -O https://ict.gctaa.net/f25/courses/itd110/goals/resources/ssh_activity/decrypt_message.sh
+         
+         chmod +x decrypt_message.sh
+         ```
+
 3. **Run the asymmetric encryption script:**
    
       Execute the script, which will:
@@ -50,7 +58,10 @@ As an overview, in this project you'll work with a partner to simulate how messa
         and your message should say something like "The number I chose is: 5" (or whatever number you chose)
       - Encrypt the message and save the encrypted message to your computer.
 
-      ```bash
+   Here's the command you should run to execute
+   the script:
+
+      ```
       ./encrypt_message.sh
       ```
 
@@ -62,6 +73,7 @@ As an overview, in this project you'll work with a partner to simulate how messa
 
 5. **Commit these files to your Git repository:**
    Once the message is encrypted, share it with you partner by committing to your repository. This code will add all of the new files you created in the previous step.
+
       ```bash
       git add .
       git commit -m "Added public key and encrypted message"
@@ -70,23 +82,20 @@ As an overview, in this project you'll work with a partner to simulate how messa
 
 ### Part 2: Decrypt the Received Message
 
-7. **Download and run the decryption script:**
-   Download the provided `decrypt_message.sh` script, which will decrypt the message sent to you by your partner.
+7. **Return to projects/encryption/**
 
-      - Use the `curl` command to download my decryption script, and then make it executable:
+   If you've gone into another folder, might need to run:
 
-         ```bash
-         curl -s -O https://ict.gctaa.net/f25/courses/itd110/goals/resources/ssh_activity/decrypt_message.sh
-         
-         chmod +x decrypt_message.sh
-         ```
+   ```bash
+   cd ..
+   ```
 
+8. **Download your partner's encrypted message**
 
+   Visit your partner's GitHub repository and download their file `send/encrypted_message.b64`. You'll need to move it into your `receive` folder. It's easiest to open your `downloads` folder in finder and drag it to the right place. You could also use the `mv` command in the terminal.
 
-8. **Download your partner's encrypted message:**
-   Visit your partner's GitHub repository and download their file `send/encrypted_message.b64` into your `receive` folder. You can use `curl` or download it manually through your browser.
+9. **Run the decryption script**
 
-9. **Run the decryption script:**
    Execute the decryption script, which will:
       - Ask for the location of your private key (you should be able to accept the default: `~/.ssh/id_rsa`).
       - Decrypt the received message and save the decrypted file to the `receive` folder.
@@ -96,16 +105,18 @@ As an overview, in this project you'll work with a partner to simulate how messa
       ```
 
 10. **Verify the decrypted message**
+
    After running the script, it will output the decrypted message to your screen. It will also save the decrypted file `receive/decrypted_message.txt`.
 
 11. **Commit the decrypted message to your Git repository:**
+
    Once you have successfully decrypted your partner’s message, commit all the remaining files to your repository:
 
-      ```bash
-      git add .
-      git commit -m "Added decrypted message and plaintext secret message"
-      git push
-      ```
+   ```bash
+   git add .
+   git commit -m "Added decrypted message and plaintext secret message"
+   git push
+   ```
 
 ### Part 3: Generate your message-specific keys
 
