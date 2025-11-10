@@ -10,7 +10,7 @@ to the concepts we've learned in class this unit
 ### No Quiz
 No quiz today! We'll spend the whole time working on your unit project.
 
-### Q1 Report Card Checkin
+### Q1 Report Card Check-in
 
 Q1 Grades are finalized and submitted. Here's the breakdown:
 
@@ -28,6 +28,8 @@ Q1 Grades are finalized and submitted. Here's the breakdown:
 There is one final topic that we haven't explored yet - how does the internet 
 identify when a message has changed in transit? We'll do a short simulation
 to play with this idea.
+
+If you are absent or want to learn more about error correction, [Here is an online write-up about this activity](https://www.csunplugged.org/en/topics/error-detection-and-correction/parity-magic-junior/)
 
 ### Project - Protocol Deep Dive
 

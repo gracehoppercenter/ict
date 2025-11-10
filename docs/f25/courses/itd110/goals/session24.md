@@ -4,6 +4,10 @@ By the end of this lesson, you should:
 
 ## What We'll Do In Class
 
+### Project Extended
+
+We'll have time to work on our project in class today, and will continue working after class on Monday. I think that's plenty of time, but I've extended the project so that it feels less rushed. It's now due at the end of the day on Monday, Nov 17th.
+
 ### Test-review Game
 
 Just like last unit, I'll have a little warmup review game on Juicemind.
@@ -23,6 +27,7 @@ Here are a list of topics that are fair game for the test.
 - The four layers of the TCP/IP Model, and what they each do
     - Application Layer:
         - HTTP request/response cycle, GET vs POST requests
+        - The World Wide Web is just an application that runs over the internet
     - Transport Layer:
         - TCP vs UDP
     - Internet Layer:
@@ -31,7 +36,6 @@ Here are a list of topics that are fair game for the test.
     - Transport Layer:
         - Recognize some protocols: ethernet, wifi, bluetooth
     - Header vs Payload
-    - Encapsulation / De-Encapsulation
     - Error Correction
 - Data representation in Binary:
     - Numbers in Binary, Hex, and Decimal
