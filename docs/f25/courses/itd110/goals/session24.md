@@ -12,6 +12,9 @@ We'll have time to work on our project in class today, and will continue working
 
 Just like last unit, I'll have a little warmup review game on Juicemind.
 
+(Update at the end of the day: Here's the link to the Juicemind quiz that
+we played in class - you're welcome to use this to review on your own! <https://play.juicemind.com/quizzes/I8Tj1ZroSD6rBK0O2Mdx>)
+
 ### Test Prep
 
 - Format: This test will look and feel just like the last one. Here's a summary
