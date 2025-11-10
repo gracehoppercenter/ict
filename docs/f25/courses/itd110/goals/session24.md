@@ -33,7 +33,7 @@ Here are a list of topics that are fair game for the test.
     - Internet Layer:
         - IP addresses
         - Routing Tables
-    - Transport Layer:
+    - Link Layer:
         - Recognize some protocols: ethernet, wifi, bluetooth
     - Header vs Payload
     - Error Correction
