@@ -32,27 +32,16 @@ alt="GCTAA Logo">
 <hr>
 
 <main>
-<time datetime="2024-11-18">Week of Monday, November 18, 2024</time>
+<time datetime="2025-11-17">Week of Monday, November 17, 2025</time>
 
 <h2>Overview</h2>
 <p>
-We will tack on Tuesday, November 26th to this <q>week</q>, so it will
-include plans for 4 class meetings. We will use this time to complete
-<a href="https://openbookproject.net/thinkcs/cpp/ch11.html">Chapter 11:
-Member functions</a>, at which we finally arrive at writing our own
-objects in C++.
-</p><blockquote>
-<h3 style="text-align: center;">Notice</h3>
-I received an email from the Georgetown University neuroscience research
-study some of you heard about several weeks back letting me know no one from
-my classes had responded to the request for participants. So here is the
-recruitment flyer again. You can still sign on, and I'll free up classtime
-for participation if you are willing.
-</blockquote>
-<p style="text-align: center;">
-<img id="Flex" src="resources/FlexRecruitmentFlyer.png" alt="FLEX Recruitment
-Flyer">
+We will tack on Monday, November 24th to this <q>week</q>, so it will
+include plans for 3 class meetings. We will use this time to complete
+<a href="https://openbookproject.net/thinkcs/cpp/ch12.html">Chapter 12:
+Vectors of objects</a>.
 </p>
+
 
 <section>
 <h2>Tuesday, November 26th</h2>
@@ -80,37 +69,18 @@ other with questions still remaining from our homework.
 </div>
 </section>
 
+<!--
 <section>
-<h2>Friday, November 22nd</h2>
+<h2>Monday, November 24th</h2>
 
 <h3>Classwork / Homework / Evaluation</h3>
 <div>
 <p>
-Using our <q>TDD dance</q>, complete as many of the exercise in
-<a href="https://openbookproject.net/thinkcs/cpp/exercises/ch11/ch11s01.html">
-Chapter 11 Exercise Set 1: Doctest Exercises</a> as time permits you to.
-</p><p style="color: red;">
-This assignment is due tomorrow, Saturday, November 22nd at 11:59 pm so that
-I can begin looking over your work early Sunday morning.
-</p><p>
-Next Tuesday we'll follow the same process we used last time, randomly
-selecting students who did A work to share their solutions. <i>There will be no
-homework assignment during Thanksgiving break!</i>
-</p>
-</div>
-</section>
-
-<section>
-<h2>Wednesday, November 20th</h2>
-
-<h3>Classwork</h3>
-<div>
-<p>
-We'll begin class today with a quick update on what I've done to our textbook.
-</p><p>
-Then we will watch
-<a href="https://en.wikipedia.org/wiki/Robert_C._Martin">Uncle Bob's</a>
-video, <a href="https://cleancoders.com/episode/clean-code-episode-8">Clean
+<i>There will be no homework assignment during Thanksgiving break,</i> so
+today is an ideal day to watch the second of the two 
+<a href="https://en.wikipedia.org/wiki/Robert_C._Martin">Uncle Bob</a> videos
+I promised you,
+<a href="https://cleancoders.com/episode/clean-code-episode-8">Clean
 Code: SOLID Principles, Episode 8</a>.
 </p><p>
 As you watch the video, be prepared to answer the following questions afterward:
@@ -126,31 +96,36 @@ Create a markdown file in your git repo named <code>essence_of_oo.md</code>
 where you answer these questions. I'm looking for a serious answer to the last
 question in particular that shows you understand what what presented in the
 video.
+</div>
+</section>
+
+<section>
+<h2>Thursday, November 20th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+</p><p>
 </p>
 </div>
 
 <h3>Homework</h3>
 <div>
 <p>
-Finish the <code>essence_of_oo.md</code> reflection you started in class if you
-have not already done so. Use the remainder of your homework time to begin
-using TDD to develop a <code>Time</code> object by completing the exercises in
-<a href="https://openbookproject.net/thinkcs/cpp/exercises/ch11/ch11s01.html">
-Chapter 11 Exercise Set 1: Doctest Exercises</a>. Be sure to <q>do the
-dance</q> as you work through these exercises!
 </p>
 </div>
 </section>
+-->
 
 <section>
-<h2>Monday, November 18th</h2>
+<h2>Tuesday, November 18th</h2>
 
 <h3>Classwork</h3>
 <div>
 <p>
-We'll begin class by reflecting on what we can learn from our first programming
-assignment. The grade distribution was: <b>A</b>: 17, <b>B</b>: 6, <b>C</b>:3,
-<b>E</b>: 4. Not bad, but I would be happier still if there were even more
+We'll begin class by reflecting on what we can learn from our last programming
+assignment. The grade distribution was: <b>A</b>: , <b>B</b>: , <b>C</b>:,
+<b>E</b>: . Not bad, but I would be happier still if there were even more
 A's, and the main thing preventing that from happening came from students not
 knowing how to do <q>the dance</q>:
 </p><ol>
@@ -160,40 +135,17 @@ fail).</li>
 <li>Write code to make the test pass.</li>
 <li><b>Commit again!</b></li>
 </ol><p>
-We also need to talk about how to keep unwanted things (meta data, binary files
-and things that don't belong) out of your git repos.  I filed issues for many
-of you when I found <code>a.out</code> files, or <code>.swp</code> files, but
-I want to take a minute in class to talk more about this. Also, <i>never
-put private information in a git repo!</i> I found at least one private key,
-which is just such private information.
 </p><p>
-The <a href="https://github.com/BlueZeeKing">Blue Zee King</a> is always
-playing the tunes I want to hear, and this time was no exception. I asked
-him to write a program to assign exercises to random students, and he
-delivered. He did such a fine job that I just stole
-<a href="https://codeberg.org/ACC/csc222/src/branch/master/choosers/exercises">
-his code</a> (with attribution, of course!) so we could use it in class.
-</p><p>
-I highly recommend taking at look at this code, looking for his improvements
-to the
-<a href="https://codeberg.org/ACC/csc222/src/branch/master/choosers/pairs">
-pairs</a> chooser from which I asked him to derive it. I'll discuss briefly
-how he has written a <i>generalization</i> of the specific problem given him
-to make his code potentially more useful. This is just the kind of
-<q>conversation in code</q> that I hope we will do more of.
-</p><p>
-We will use this today to select students to present solutions to our
-homework exercises. Only students who had A evaluations will be called upon
-to share their solutions.
 </p>
 </div>
 
 <h3>Homework</h3>
 <div>
 <p>
-Read <a href="https://openbookproject.net/thinkcs/cpp/ch11.html">Chapter 11:
-Member functions</a>, trying the examples yourself and commiting them to your
-git repos.
+Read <a href="https://openbookproject.net/thinkcs/cpp/ch12.html">Chapter 12:
+Vectors of objects</a>, taking notes in a markdown file named
+<code>ch12notes.md</code>, and trying the examples from the chapter yourself
+and commiting them to your git repos.
 </p>
 </div>
 </section>
