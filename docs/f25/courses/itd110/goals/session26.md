@@ -22,7 +22,7 @@ Here is the distribution:
 ### Upcoming Schedule
 
 Welcome to unit 3! This unit will wrap up the content that we need to know for our 
-(WDE Exam)[https://jsinstitute.org/wde-exam-syllabus], which will be the final exam for ITD110. I've updated our calendar with my plan for when we'll take the exam. We'll briefly talk through the calendar.
+[WDE Exam](https://jsinstitute.org/wde-exam-syllabus) , which will be the final exam for ITD110. I've updated our calendar with my plan for when we'll take the exam. We'll briefly talk through the calendar.
 
 ### Project Time
 
@@ -44,7 +44,7 @@ At the beginning of next class, we'll be doing our writing about the project, so
 
 Your website need a favicon! 
 
-Draw your own icon using this website: http://www.faviconer.com/ 
+Draw your own icon using this website: <https://www.favicon.cc/> 
 
 (remember, the website that we're building this year should be professional,  school-approprite, and unique to you. Your favicon should be the same!)
 
