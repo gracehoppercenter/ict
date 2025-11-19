@@ -1,7 +1,7 @@
 # Asymmetric Encryption Project
 
 For this project, you'll explore a complex, modern application-layer protocol that includes encryption, the Signal Protocol, which 
-is used inside of WhatsApp, Facebook Messenger, Google Messages, and may others (iMessage is similar but not exactly the same).
+is used inside of WhatsApp, Facebook Messenger, Google Messages, and many others (iMessage is similar but not exactly the same).
 
 Signal uses a variety of strategies to protect communication, and those strategies use just about everything that we've
 learned in this unit. We'll touch on many of them in this project.
