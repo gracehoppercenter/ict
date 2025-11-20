@@ -121,6 +121,38 @@ in your Doctest.
 
 ```python
 
+class DummyTarget:
+    """
+    >>> dummy = DummyTarget()
+    >>> dummy.health
+    100
+    >>> dummy.take_damage(25)
+    >>> dummy.health
+    75
+    >>> dummy.is_alive
+    True
+    >>> dummy.take_damage(100)
+    >>> dummy.health
+    0
+    >>> dummy.is_alive
+    False
+    """
+    
+    def __init__(self, health=100):
+        self.health = health
+        self.is_alive = True
+        self.name = "Training Dummy"
+    
+    def take_damage(self, damage):
+        """Take damage without any special effects."""
+        self.health -= damage
+        if self.health <= 0:
+            self.health = 0
+            self.is_alive = False
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
 
 ```
 
