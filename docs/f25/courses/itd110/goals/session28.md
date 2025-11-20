@@ -20,6 +20,11 @@ We'll spend the day continuing with our [sample zoo website](https://github.com/
 
 This time, we'll try to keep all of our styles in an external stylesheet.
 
+### CSS Selectors: span, div, id, class
+
+We'll play with some techniques that helps us target specific parts of the page
+from CSS.
+
 ### Fonts
 
 Fonts are lowkey cool. If you disagree, [this 30-minute youtube video 
