@@ -7,9 +7,7 @@ By the end of this lesson, you should:
 
 ## What We'll Do In Class
 
-
-
-### Project Reflection
+### Project Narrative
 
 Just like we did at the end of last unit, we'll have a short writing exercise
 about the encryption project. I'll time this for 45 minutes, but I expect that
