@@ -25,6 +25,30 @@ This time, we'll try to keep all of our styles in an external stylesheet.
 We'll play with some techniques that helps us target specific parts of the page
 from CSS.
 
+### Fonts
+
+Fonts are lowkey cool. If you disagree, [this 30-minute youtube video 
+is a great introduction](https://www.youtube.com/watch?v=WVfRxFwVHQc). We'll
+focus on understanding web-safe fonts today.
+
+### Box Model
+
+We'll look at the calculation for how much space an element takes up on the 
+screen.
+
+### UTF-8, Device-Width
+
+We now have the foundation to learn about two important tags that we should
+include in modern HTML pages:
+
+```html
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+We'll discuss why these are important and how they relate to the other
+style topics we're discussing.
+
 ## Homework
 
 ### Style the zoo website
