@@ -35,7 +35,8 @@ alt="GCTAA Logo">
 <div>
 <p>
 This week we will take time to reinforce and deepen our understanding of
-how to create objects in C++.
+how to create objects in C++, and practice separating our objects into
+header (<code>.h</code>) and source (<code>.cpp</code>) files.
 </p>
 </div>
 
@@ -56,76 +57,79 @@ these parts.</li>
 </ol>
 
 <h3>Process</h3>
+<p>
+With me, we have 12 students in this class, which will make 3 project
+groups of 4 people each. I let Python choose, and it gave us the following
+teams:
+</p>
 <ol>
-<li>Meet your new partner.
-    
-This is a paired project, and the psuedorandomly selected pairs for it are:
-and , and , and , and , and , and , and , and .
-.</li>
-
-<li>Come up with an idea for an object you could implement in C++. Think of
-the two objects we've met thus far: <code>Point</code> and <code>Time</code>.
-Keep your object simple for this project.</li>
-
-<li>Assuming your object is <code>MyObject</code>, create three files:
-<code>MyObject.h</code>, <code>MyObject.cpp</code>, and
-<code>test_myobject.cpp</code>.  The first of these will hold your object
+<li><h4>Meet your new team</h4>
+<p>    
+This is a group project, and the psuedorandomly selected groups for it are:
+</p><ul>
+  <li>Evan, Sean, Robbie and Stephan</li>
+  <li>Giselle, Jeff, Waleed and Dimitrios</li>
+  <li>Delanie, Mason, Antoan and Nathan</li>
+</ul>
+</li><li>
+Choose one of the projects listed in
+<a href="https://openbookproject.net/thinkcs/cpp/exercises/ch11/ch11s02.html">
+Chapter 11 Exercise Set 2: ncurses Projects</a>.
+</li><li>
+Assuming your project is <code>ourproject</code>, create three files:
+<code>ourproject.h</code>, <code>ourproject.cpp</code>, and
+<code>test_ourproject.cpp</code>.  The first of these will hold your object
 definition and member function prototypes, and the second the member function
-definitions.</li>
-
-<li>
+definitions.
+</li><li>
 <p>In the third file, start out with this:</p>
 <pre>
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include &lt;doctest.h&gt;
-#include "MyObject.h"
+#include "ourproject.h"
 using namespace std;
 
-TEST_CASE("Test can create and render MyObject") {
-    MyObject myobj();
-    CHECK(myobj.to_string() == "This is MyObject");
+TEST_CASE("Test can create and render OurObject") {
+    OurObject our_obj();
+    CHECK(ourobj.to_string() == "This is Our Object");
 }
 </pre>
 <p>Fill in the header and source files so that this first test passes.</p>
 </li>
 </ol>
 <p>
-To help stimulate your thinking,
-<a href="https://codeberg.org/ACC/csc222/src/branch/master/DocTestedObjects">
-here</a> are the OO projects from last year.
-</p><p>
-I leave it open ended where you take it from here. Keeping the learning goals
-in mind, add more tests and then more features to your object.
-</p><p style="color: red;">
-This project is due by 11:59 pm on Friday, December 5th so that I can have
-the weekend to evaluate your work.
+We meet three times this week, so we'll see how far we can get during those
+class periods and decide how to proceed on Friday.
 </p>
 </div>
 </section>
 
 <section>
-<h2>Tuesday, November 26th</h2>
+<h2>Monday, December 1st</h2>
 
 <h3>Classwork</h3>
 <div>
 <p>
-I was very pleased with what I saw in your git repos over the weekend, and
-the grade distribution reflects that: <b>A</b>: 23, <b>B</b>: 6, <b>C</b>: 2.
-</p><p>
-Notes on <i>What is OO?</i> were also very good, though not everyone got the
-key idea I was hoping you would get from a course on object-oriented
-programming. To quote Uncle Bob, <q>The essence of OO is the inversion of
-key dependencies to separate high level policies from low level
-implementations.</q>
-<a href="https://github.com/jackaaburk/csc222/blob/main/ChapterExercises/UncleBobVideoNotes/essence_of_oo.md">
-Jack's notes</a> were among my favorites - clear, concise, with all important
-takeaways simply stated. He also knows how to use Markdown to make them look
-nice - something you will all need to do before we start our Spring course.
-</p><p>
-Today I'll share the project you will work on
-<a href="week15.html">next week</a>, and we'll use class time to help each
-other with questions still remaining from our homework.
+During class we will work in our groups on our projects.
 </p>
+</div>
+
+<h3>Homework</h3>
+<div>
+<p>
+In a file in your git repo named <code>essence_of_oo.md</code>, answer the
+three questions that were given to you before we watched Uncle Bob's video
+<a href="week13.html">last week</a>:
+</p>
+<ol>
+<li>What is <i>code rot</i>, and why does it happen?</li>
+<li>What is the <i>design</i> of a software product?</li>
+<li>According to Uncle Bob, what is the essential characteristic of
+<i>Object-Oriented</i> design?</li>
+</ol>
+<p style="color: red;">
+This is due by 3 pm on Tuesday, December 2nd so that I can have time to
+evaluate it before class on Wednesday.
 </div>
 </section>
 </main>
