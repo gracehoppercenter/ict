@@ -1,18 +1,17 @@
 ## Lesson Objectives
 
 By the end of this lesson, you should:
-- Be able to add simple styles to your HTML pages
 - Be able to select and use web-safe fonts 
 - Be able to adjust how much space an object takes up on the page
 
 ## What We'll Do In Class
 
-Today's class is a grab-bag of various topics in CSS. We'll come back to 
-all of these next semester.
+We'll continue with the topics we didn't get to last time.
 
 ### Reading Quiz
 
-Yep.
+I decided that a reading quiz on the last day before Thanksgiving was mean. So
+we'll skip it today.
 
 ### Styling the zoo website
 
@@ -38,16 +37,7 @@ screen.
 
 ### UTF-8, Device-Width
 
-We now have the foundation to learn about two important tags that we should
-include in modern HTML pages:
-
-```html
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-```
-
-We'll discuss why these are important and how they relate to the other
-style topics we're discussing.
+We ran out of time before we got to this topic. We'll save it for another time.
 
 ## Homework
 
