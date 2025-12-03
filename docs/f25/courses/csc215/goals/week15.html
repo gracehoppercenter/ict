@@ -32,43 +32,95 @@ T<h1>CSC 215 Weekly Assignments: Week 15</h1>
 <hr>
 
 <main>
-<time datetime="2024-12-08">Two weeks beginning, December 8, 2025</time>
+<time datetime="2024-12-08">Week of Monday, December 8, 2025</time>
 
 <h2>Overview</h2>
 <p>
-In the two weeks we have until Winter break, we will begin a fairly large
-project which can use to transition from BDS C on CP/M to C++ on Unix.
-</p><p>
-The random pairs Python choose for this project are:
-</p><pre>
-and 
-and 
-</pre><p>
-To motivate what we are going to do, I want you to download, compile and run
-<a href="https://codeberg.org/ACC/csc215/raw/branch/master/C/CPM_BDSC/Programs/BIGGEST.C">
-BIGGEST.C</a> and
-<a href="https://codeberg.org/ACC/csc215/raw/branch/master/C/CPM_BDSC/Programs/FIXEDPT.C">
-FIXEDPT.C</a>. Then download
-<a href="https://secure-media.collegeboard.org/apc/ap01.pdf.lr_7928.pdf">The
-Large Integer Case Study in C++</a>. To quote the problem statement on page one
-of the case study,
-</p><blockquote>
-Arithmetic operations are fundamental in computing and programming. In many
-programming environments the largest value of an integer variable is much too
-small to represent large quantities such as the population of the world, the
-U.S. national debt, the number of occurrences of the letter 'e' in Melville’s
-Moby Dick.
-</blockquote><p>
-This is <i>definitely true</i> in our Altair 8800 BSD C environment. As you
-can see from running the <code>BIGGEST.C</code> program, the largest signed
-integer we can store is <code>32767</code>. That's not even large enough to
-hold an APS teacher's yearly salary! ;-)
-</p><p>
-In this project we will use <i>The Large Integer Case Study in C++</i> as a
-guide to implement a <code>bigint</code> 
-<a href="https://en.wikipedia.org/wiki/Struct_(C_programming_language)">
-struct</a> in BSD C.
+This week we will continue our study of the C programming language.
 </p>
+
+<!--
+<section>
+<h2>Thursday and Friday, December 11th and 12th</h2>
+
+<h3>Classwork / Homework / Evaluation</h3>
+<div>
+<p>
+The <code>day_of_year</code> and <code>month_day</code> functions are presented
+on page 104 of <i>The C Programming Language</i>. Study these functions until
+you understand how they work (i.e. write a small test program to experiment
+with them). 
+</p><p>
+Then complete <i>Exercise 5-6</i> on page 110, which asks you to rewrite these
+functions using pointers instead of indexing.
+</p><p style="color: red;">
+To earn an A on your next evaluation, <i>commits made both during class and
+between classes</i> must contain evidence of the effective use of the 3 hours
+of time you have allotted to work on this, even if you can't complete it.
+This and the previous assignment are both due tomorrow, Wednesday, December
+11 at 1 pm so I have time to evaluate them before we meet on Thursday. If
+you've been slacking, you need to put in more than 3 hours to make up for
+what you didn't do last class!
+</p>
+</div>
+</section>
+-->
+
+<section>
+<h2>Tuesday and Wednesday, December 9th and 10th</h2>
+
+<h3>Start of Class</h3>
+<div>
+<p>
+We will share the program assigned for homework, and then pair you up and give
+you time to begin working on a set of classwork / homework problems.
+</p><p>
+I'll then share a few programs which will be useful to you in completing your
+next assignment, including:
+<a href="https://gitlab.com/gracehoppercenter/csc215/-/raw/main/C/CPM_BDSC/Programs/PNUM.C">
+PNUM.C</a>, 
+<a href="https://gitlab.com/gracehoppercenter/csc215/-/raw/main/C/CPM_BDSC/Programs/UCASE.C">
+UCASE.C</a>, and especially 
+<a href="https://gitlab.com/gracehoppercenter/csc215/-/raw/main/C/CPM_BDSC/Programs/WRDLINE.C">
+WRDLINE.C</a> and
+<a href="https://gitlab.com/gracehoppercenter/csc215/-/raw/main/C/CPM_BDSC/Programs/WC.C">
+WC.C</a>.
+</p><p>
+I'll demo the last two of these and <i>highly</i> encourage you to study them!
+</p>
+</div>
+
+<h3>Classwork / Homework / Evaluation</h3>
+<div>
+<p>
+Please come to our next class with working solutions to the following problems:
+</p>
+<ol>
+<li><p>Write a program in a file named <code>CHRNUMS.C</code> to prepend each
+line of a text file with the number of characters in that line. Given a
+file named <code>LINES.TXT</code> with content:
+</p><pre>
+This is a file
+containing lines of
+different
+lengths.
+</pre><p>
+Running <code>CHRNUMS LINES.TXT</code> would print:
+</p><pre>
+15: This is a file
+20: containing lines of
+10: different
+8:  lengths.
+</pre></li>
+
+<li>Complete <i>Exercise 1-17</i> on page 28 of <i>The C Programming
+Language</i>.  Use the <code>reverse(s)</code> function you complete
+in that exercise to write a program in a file named <code>BACKWARD.C</code>
+that takes a text file as a command line argument and prints out each line in
+the file backwards.</li>
+</ol>
+</div>
+</section>
 
 <section>
 <h2>Week of Monday, December 15th</h2>
@@ -136,90 +188,6 @@ we are trying to solve and the technical challenges we face to doing it.
 </div>
 </section>
 
-<section>
-<h2>Thursday, December 12th</h2>
-
-<h3>Classwork / Homework / Evaluation</h3>
-<div>
-<p>
-A number of you emailed me about problems with the assignment I gave you
-(thanks!).  Parker figured it out first, and even identified the problem. On
-page 76 of the <i>BSD C Reference Manual</i> it states:
-</p><blockquote>
-The following is a section-by-section annotation to the <b>C Reference
-Manual</b>. For the sake of brevity, some of the items mentioned above will not
-be pointed out again; any references to floats, longs, statics,
-initializations, etc., found in the book should be ignored.
-</blockquote><p>
-On the previous page (75), it states that:
-</p><blockquote>
-There are no explicitly declarable storage classes. <b>Static</b> and
-<b>register</b> variables do not exist; all variables are either external or
-automatic, depending on the context in which they are declared.
-</blockquote><p>
-After recieving Parker's email, I put our friend José Ejemplo to work on this,
-and he came up with a work around,
-<a href="https://codeberg.org/ACC/csc215/src/branch/master/C/CPM_BDSC/Programs/DATES.C">
-DATES.C</a>. We will talk about this in class today.
-</p><p>
-Next we will get a copy of
-<a href="https://codeberg.org/ACC/csc215/raw/branch/master/C/CPM_BDSC/BigInt/CALC.C">
-CALC.C</a>, which implements a BDS C version of the calculator program from
-<i>Appendix A: The Calculator</i> in <i>The Large Integer Case Study in
-C++</i>.
-</p><p>
-Then we will discuss the assignment given last class (when I was out), and
-decide on a good path forward.
-</p>
-</div>
-
-<h3>Tasks</h3>
-<div>
-<p>
-Complete each of the following tasks:
-</p>
-<ol>
-<li>Download a copy of
-<a href="https://secure-media.collegeboard.org/apc/ap01.pdf.lr_7928.pdf">The
-Large Integer Case Study in C++</a>.</li>
-<li>Read <i>Introduction</i>, <i>Problem Statement</i> and <i>Description
-of the Calculator</i>. Create a sub-directory in your git repo named
-<code>BigInt</code>. Add a markdown file with your responses to the
-<i>Study Questions</i>.</li>
-<li>Download
-<a href="https://codeberg.org/ACC/csc215/raw/branch/master/C/CPM_BDSC/Programs/CALC.C">
-CALC.C</a>, compile it and run it.</li>
-</ol><p style="color: red;">
-These tasks are due by Saturday, December 14th at 11:59 pm so that I can look
-them over early Sunday morning.
-</p>
-</div>
-</section>
-
-<section>
-<h2>Tuesday, December 9th</h2>
-
-<h3>Classwork / Homework / Evaluation</h3>
-<div>
-<p>
-The <code>day_of_year</code> and <code>month_day</code> functions are presented
-on page 104 of <i>The C Programming Language</i>. Study these functions until
-you understand how they work (i.e. write a small test program to experiment
-with them). 
-</p><p>
-Then complete <i>Exercise 5-6</i> on page 110, which asks you to rewrite these
-functions using pointers instead of indexing.
-</p><p style="color: red;">
-To earn an A on your next evaluation, <i>commits made both during class and
-between classes</i> must contain evidence of the effective use of the 3 hours
-of time you have allotted to work on this, even if you can't complete it.
-This and the previous assignment are both due tomorrow, Wednesday, December
-11 at 1 pm so I have time to evaluate them before we meet on Thursday. If
-you've been slacking, you need to put in more than 3 hours to make up for
-what you didn't do last class!
-</p>
-</div>
-</section>
 </main>
 
 <footer class="desktop">
