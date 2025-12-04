@@ -1,6 +1,7 @@
 ## Lesson Objectives
 
 By the end of this lesson, you should:
+
 - Be prepared for the forms part of our HTML certification exam
 - 
 
@@ -20,8 +21,8 @@ discussing the writing questions, because there is some interesting stuff in the
 
 In case you're interested, here are some articles:
 
-- (Interoperablity)[https://techcrunch.com/2024/03/06/to-comply-with-dma-whatsapp-and-messenger-will-become-interoperable-via-signal/]
-- (Chat Control)[https://www.computerweekly.com/news/366631949/EU-Chat-Control-plans-pose-existential-catastrophic-risk-to-encryption-says-Signal]
+- [Interoperablity](https://techcrunch.com/2024/03/06/to-comply-with-dma-whatsapp-and-messenger-will-become-interoperable-via-signal/)
+- [Chat Control](https://www.computerweekly.com/news/366631949/EU-Chat-Control-plans-pose-existential-catastrophic-risk-to-encryption-says-Signal)
 
 
 ### Finish up forms
@@ -47,9 +48,10 @@ standards can lead to lawsuits and fines. [A recent report](https://info.usablen
 
 ### Check your website for accessibility
 
-It's easy to do! Try putting your website in the [Accessibility Checker](https://www.accessibilitychecker.org/audit/?website=cjonesexample.github.io&flag=us#). 
+It's easy to do! I'll show you in class how to use Firefox's 
+[Accessibility inspector](https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/)
 
-To see what a failing report looks like, [here's what it says about my `cjonesexample` website](https://www.accessibilitychecker.org/audit/?website=cjonesexample.github.io&flag=us#). My actual personal website [does pass the checker](https://www.accessibilitychecker.org/audit/?website=chrismjon.es&flag=us)
+To see what a failing report looks like, [we'll see what it says about my `cjonesexample` website](https://cjonesexample.github.io).
 
 For classwork today, clean up your website homepage (index.html). If you don't have one already, add an external stylesheet. Then 
 add some fonts and colors, ensuring that your page meets the WCAG AA standards.
