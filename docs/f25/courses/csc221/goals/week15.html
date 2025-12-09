@@ -31,10 +31,11 @@ window.onload = init;
 
 <h2>Overview</h2>
 <p>
-This week we will continue with our study of Django, with a focus on the
-<a href="https://en.wikipedia.org/wiki/Database">database</a> component of our
-<a href="https://en.wikipedia.org/wiki/Solution_stack">web application
-stack</a>.
+This week we will continue with our chat project, with a focus on the
+<a href="https://en.wikipedia.org/wiki/Database">database</a> "tier" of our
+<a href="https://en.wikipedia.org/wiki/Multitier_architecture">three-tier 
+    application stack, and using Django's ORM for the logic tier.
+</a>. 
 </p><p style="color: red;">
 <b>NOTE:</b> <i>Jeff will be available for students interested in reviewing for
 a retake of the PCEP this Saturday, December 13 from 9 am to 12 noon.</i>
@@ -63,19 +64,62 @@ a retake of the PCEP this Saturday, December 13 from 9 am to 12 noon.</i>
 
 <h3>Classwork</h3>
 <div>
+    <p>Today's class is going to be a whirlwind. Hang on to your seats =)</p>
 <p>
 We'll begin class with a short quiz on the material presented in your
 homework lectures.
 </p><p>
-After the quiz Chris will walk you through using the
+After the quiz Chris will talk about databases. Chris gets very passionate about
+databases, so he might talk too long =). As part of this discussion, 
+We'll do a quick demo using the
 <a href="https://sqlite.org">SQLite</a> command shell to practice the
-SQL commands presented in the second lecture.
+SQL commands from your videos.
+
+(Chris will also make a plug here for 
+<a href="https://careercenter.apsva.us/database-design-management/">
+    DE Databases
+</a>, which you should all take next year).
 </p>
+<p>
+    We'll quickly introduce the <a href="https://mystery.knightlab.com/">
+        SQL Murder Mystery</a>, which is a great place to practice
+        with SQL syntax. 
+    </p>
+<p>After a quick overview of databases, we'll pivot to talking about three-tier
+    web applications, and how 
+    <a href="https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping">
+        ORMs</a> are useful for developing them.
+
+<p>Our goal for the next few classes between now and winter break is to turn our
+    chat project into a complete three-tier application that uses Curses
+    and Django's ORM. For the remainder of class, work with your partner on 
+    the curses front-end. You can find some starter
+    code in <a href="https://www.openbookproject.net/books/bpp4awd/app_b.html">
+        Appendix B of our textbook</a>
+    
+<p>Next class, we'll complete the application
+    by adding the Django ORM.</p>
+
 </div>
 
 <h3>Homework</h3>
+<p>
+    For your 90 minutes of homework time, work on solving the SQL Murder
+    Mystery. Keep notes about your progress in a Markdown file in your
+    class repo. Remember to put your queries in code blocks, like this:
+    <pre>
+``` sql
+SELECT name 
+FROM sqlite_master
+WHERE type = 'table'
+```
+    </pre>
+</p>
+
 <div>
 <p>
+
+
 </p>
 </div>
 </section>
