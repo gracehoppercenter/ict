@@ -52,14 +52,43 @@ a retake of the PCEP this Saturday, December 13 from 9 am to 12 noon.</i>
 
 <p>Our goal for the next few classes between now and winter break is to turn our
     chat project into a complete three-tier application that uses Curses, 
-    sqlite, and Django's ORM. Today, work with your 
-    partner on 
-    the curses front-end. You can find some starter
-    code in <a href="https://www.openbookproject.net/books/bpp4awd/app_b.html">
-        Appendix B of our textbook</a>
+    sqlite, and Django's ORM. Today, we'll introduce Django's ORM.
+</p>
+<p>
+    I've written you <a href="https://github.com/cj0ne5/django_orm_for_csc221">
+        some starter code here</a>. We'll talk through this code together in 
+        class.
+    </p>
+    <p>
+        There is a lot to keep track of, so here are some reminders:
+    </p>
+    <ul>
+        <li>First, we'll download this code and place it in your repo alongside
+            your existing messaging code</li>
+        <li>You'll need to create a virtual environment, activate it, and then
+            run <code>pip install -r requirements.txt</code></li>
+        <li>You'll define your model(s) in the file <code>db/models.py</code>. 
+            For more details about that file, see 
+            <a href="https://docs.djangoproject.com/en/5.2/ref/models/fields/#field-types">
+                the official documentation</a>
+        </li>
+        <li>If you want to use the Django Admin interface, you'll need to 
+            create a superuser (<code>python3 manage.py createsuperuser</code>)
+            and add your model to <code>db/admin.py</code>.</li>
+        <li>Use the existing main.py as a template for your code. You can 
+            copy your existing chat code there</li>
+        <li>To apply your model changes to the database, you'll run these 
+            two commands:
+            <ul>
+                <li><code>python3 manage.py makemigrations db</code></li>
+                <li><code>python3 manage.py migrate</code></li>
+            </ul>
+        </li>
+    </ul>
     
-<p>Next class, we'll complete the application
-    by adding the Django ORM.</p>
+    
+<p>Next week, we'll complete the application
+    by adding a nice Curses frontend.</p>
 
 </p>
 </div>
@@ -67,6 +96,11 @@ a retake of the PCEP this Saturday, December 13 from 9 am to 12 noon.</i>
 <h3>Homework</h3>
 <div>
 <p>
+    Your homework is to review the theory. We went through this fast today, and 
+    Dr. Chuck does a great job of explaining. Watch Dr Chuck's videos in 
+    <a href="https://www.dj4e.com/lessons/dj4e_modules">Lesson 8</a> and take
+    notes in your repo for credit. As always, we reserve the right to have
+    a quiz on the Django orm next class!
 </p>
 </div>
 </section>
