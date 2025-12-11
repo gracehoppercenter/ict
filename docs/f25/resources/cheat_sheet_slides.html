@@ -39,6 +39,11 @@
             display: flex;
             flex-direction: column;
         }
+
+        /* Section headers that only show when printing */
+        .section-header {
+            display: none;
+        }
         
         /* Print view - each slide on its own page */
         @media print {
@@ -46,6 +51,13 @@
                 background-color: white;
                 padding: 0;
                 margin: 0;
+            }
+
+            .command-list {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                max-height: 5in; /* Adjust based on your slide height needs */
             }
             
             /* Hide everything except slides when printing */
@@ -66,23 +78,11 @@
                 border: none;
                 box-shadow: none;
                 border-radius: 0;
-                min-height: 10in; /* Letter paper height minus margins */
-                height: 10in;
+                min-height: 7.5in; /* Letter paper landscape height minus margins */
+                height: 7.5in;
                 display: block;
             }
             
-            /* Hide the slide number on the last slide of each section */
-            .slide:last-of-type .slide-number {
-                display: none;
-            }
-        }
-        
-        /* Section headers that only show when printing */
-        .section-header {
-            display: none;
-        }
-        
-        @media print {
             .section-header {
                 display: block;
                 text-align: center;
@@ -160,14 +160,14 @@
         
         .command {
             font-weight: bold;
-            font-size: 18px;
+            font-size: 30px;
             color: #2c3e50;
             margin-bottom: 5px;
             font-family: 'Courier New', monospace;
         }
         
         .description {
-            font-size: 16px;
+            font-size: 18px;
             color: #555;
             line-height: 1.4;
         }
@@ -205,13 +205,6 @@
             margin-bottom: 8px;
         }
         
-        .slide-number {
-            text-align: center;
-            margin-top: 15px;
-            color: #95a5a6;
-            font-size: 14px;
-        }
-        
         .mode-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -245,31 +238,7 @@
             margin-bottom: 15px;
         }
         
-        .print-instructions {
-            background-color: #e8f4fc;
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 20px;
-            border-left: 4px solid #3498db;
-        }
         
-        .print-button {
-            display: inline-block;
-            background-color: #3498db;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 10px;
-            cursor: pointer;
-            border: none;
-            font-size: 16px;
-        }
-        
-        .print-button:hover {
-            background-color: #2980b9;
-        }
     </style>
 </head>
 <body>
@@ -305,6 +274,19 @@
                     <div class="description">Go to home directory</div>
                 </li>
                 <li class="command-item">
+                    <div class="command">pwd</div>
+                    <div class="description">Print working directory (show current path)</div>
+                </li>
+        </ul>
+        </div>
+
+        <!-- Terminal Slide 1: Navigation -->
+        <div class="slide terminal">
+            <div class="section-header">TERMINAL</div>
+            <h2 class="slide-title">Terminal Navigation</h2>
+            
+            <ul class="command-list">
+                <li class="command-item">
                     <div class="command">ls</div>
                     <div class="description">List directory contents</div>
                 </li>
@@ -313,8 +295,14 @@
                     <div class="description">List all files (including hidden) with details</div>
                 </li>
                 <li class="command-item">
-                    <div class="command">pwd</div>
-                    <div class="description">Print working directory (show current path)</div>
+                    <div class="command">cat &lt;file&gt;</div>
+                    <div class="description">Display file contents</div>
+                </li>
+                <li class="command-item">
+                    <div class="command">less &lt;file&gt;</div>
+                    <div class="description">Display file contents, with paging
+                        for long files
+                    </div>
                 </li>
             </ul>
             
@@ -323,7 +311,6 @@
                 <div class="description">Use <span class="key">Tab</span> for auto-completion</div>
             </div>
             
-            <div class="slide-number">Terminal 1 of 3</div>
         </div>
         
         <!-- Terminal Slide 2: File Operations -->
@@ -352,19 +339,9 @@
                     <div class="command">mkdir &lt;name&gt;</div>
                     <div class="description">Create a new directory</div>
                 </li>
-                <li class="command-item">
-                    <div class="command">cat &lt;file&gt;</div>
-                    <div class="description">Display file contents</div>
-                </li>
-                <li class="command-item">
-                    <div class="command">less &lt;file&gt;</div>
-                    <div class="description">Display file contents, with paging
-                        for long files
-                    </div>
-                </li>
+
             </ul>
             
-            <div class="slide-number">Terminal 2 of 3</div>
         </div>
         
         <!-- Terminal Slide 3: Essential Commands -->
@@ -387,7 +364,6 @@
                 </li>
             </ul>
             
-            <div class="slide-number">Terminal 3 of 3</div>
         </div>
         
         <!-- VIM SLIDES -->
@@ -395,9 +371,8 @@
         <!-- Vim Slide 1: File Operations & Basics -->
         <div class="slide vim">
             <div class="section-header">VIM</div>
-            <h2 class="slide-title">Vim Basics</h2>
+            <h2 class="slide-title">File Operations</h2>
             
-            <h3 class="sub-title">File Operations</h3>
             <ul class="command-list">
                 <li class="command-item">
                     <div class="command">vim &lt;file&gt;</div>
@@ -421,19 +396,18 @@
                 </li>
             </ul>
             
-            <div class="slide-number">Vim 1 of 5</div>
         </div>
         
         <!-- Vim Slide 2: Navigation -->
         <div class="slide vim">
             <div class="section-header">VIM</div>
-            <h2 class="slide-title">Vim Navigation</h2>
-            
-            <h3 class="sub-title">Movement Keys</h3>
+            <h2 class="slide-title">Vim Movements</h2>
             <ul class="command-list">
                 <li class="command-item">
                     <div class="command">
                         <span class="key">h</span> <span class="key">j</span> <span class="key">k</span> <span class="key">l</span>
+                        <p>or</p>
+                        <span class="key">←</span> <span class="key">↓</span> <span class="key">↑</span><span class="key">→</span>
                     </div>
                     <div class="description">Left, Down, Up, Right</div>
                 </li>
@@ -463,15 +437,12 @@
                 </li>
             </ul>
             
-            <div class="slide-number">Vim 2 of 5</div>
         </div>
 
         <!-- Vim Slide 2: Navigation -->
         <div class="slide vim">
             <div class="section-header">VIM</div>
-            <h2 class="slide-title">More Vim Navigation</h2>
-            
-            <h3 class="sub-title">Movement Keys</h3>
+            <h2 class="slide-title">More Vim Movements</h2>
             <ul class="command-list">
       
                     <li class="command-item">
@@ -497,37 +468,55 @@
                 
             </ul>
             
-            <div class="slide-number">Vim 3 of 5</div>
         </div>
         
         <!-- Vim Slide 3: Modes & Editing -->
         <div class="slide vim">
             <div class="section-header">VIM</div>
-            <h2 class="slide-title">Vim Modes & Editing</h2>
-            
-            <h3 class="sub-title">Mode Switching</h3>
-            <div class="mode-grid">
-                <div class="mode-item">
-                    <span class="key">i</span> Insert mode
-                </div>
-                <div class="mode-item">
-                    <span class="key">A</span> Insert at line end
-                </div>
-                <div class="mode-item">
-                    <span class="key">o</span> Insert to new line below
-                </div>
-                <div class="mode-item">
-                    <span class="key">v</span> Visual mode
-                </div>
-                <div class="mode-item">
-                    <span class="key">V</span> Visual-line mode
-                </div>
-                <div class="mode-item">
-                    <span class="key">Esc</span> Normal mode
-                </div>
+            <h2 class="slide-title">Mode Switching</h2>
+            <ul class="command-list">
+      
+                    <li class="command-item">
+                        <div class="command">i</div>
+                        <div class="description">Insert mode</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">i</div>
+                        <div class="description">Insert mode</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">A</div>
+                        <div class="description">Insert at line end</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">o</div>
+                        <div class="description">Insert to new line below</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">v</div>
+                        <div class="description">Visual mode</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">V</div>
+                        <div class="description">Visual mode (full lines)</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">Esc</div>
+                        <div class="description">Return to Normal Mode</div>
+                    </li>
+                </ul>
+
+
+            <div class="tip">
+                <div class="tip-title">Pro Tip:</div>
+                <div class="description">Remap your <span class="key">Caps Lock</span>
+                    key to <span class="key">Esc</span> in Mac System Settings</div>
             </div>
-            
-            <h3 class="sub-title" style="margin-top: 20px;">Basic Editing</h3>
+        </div>
+        <div class="slide vim">
+            <div class="section-header">VIM</div>
+            <h2 class="slide-title">Copy/Paste</h2>
+
             <ul class="command-list">
                 <li class="command-item">
                     <div class="command">yy</div>
@@ -551,15 +540,13 @@
                 </li>
             </ul>
             
-            <div class="slide-number">Vim 4 of 5</div>
         </div>
         
         <!-- Vim Slide 4: Advanced Features -->
         <div class="slide vim">
             <div class="section-header">VIM</div>
-            <h2 class="slide-title">Vim Advanced Features</h2>
+            <h2 class="slide-title">Window Splits</h2>
             
-            <h3 class="sub-title">Window Splits</h3>
             <ul class="command-list">
                 <li class="command-item">
                     <div class="command">:vsp</div>
@@ -583,18 +570,12 @@
                 </li>
             </ul>
             
-            
-            
-            <div class="slide-number">Vim 5 of 5</div>
         </div>
 
         <!-- Vim Slide 4: Advanced Features -->
         <div class="slide vim">
             <div class="section-header">VIM</div>
             <h2 class="slide-title">Vim Registers and Buffers</h2>
-            
-            
-            <h3 class="sub-title" style="margin-top: 20px;">Registers & Buffers</h3>
             <ul class="command-list">
                 <li class="command-item">
                     <div class="command">:reg</div>
@@ -614,7 +595,6 @@
                 </li>
             </ul>
             
-            <div class="slide-number">Vim 5 of 5</div>
         </div>
         
         <!-- GIT SLIDES -->
@@ -655,7 +635,6 @@
                 </li>
             </ul>
             
-            <div class="slide-number">Git 1 of 3</div>
         </div>
         
         <!-- Git Slide 2: Branch Management -->
@@ -686,7 +665,6 @@
                 </li>
             </ul>
             
-            <div class="slide-number">Git 2 of 3</div>
         </div>
         
         <!-- Git Slide 3: Useful Commands -->
@@ -721,31 +699,23 @@
                 </li>
             </ul>
             
-            <div class="slide-number">Git 3 of 3</div>
         </div>
         
         <!-- SUMMARY SLIDE -->
-        <div class="slide" style="border-color: #9b59b6;">
-            <h2 class="slide-title" style="color: #9b59b6; border-color: #9b59b6;">Config Files</h2>
+        <div class="slide" >
+            <h2 class="slide-title" >Config Files</h2>
             
-            <h3 class="sub-title" style="color: #2ecc71;">Terminal</h3>
             <ul class="command-list">
                 <li class="command-item" style="border-left-color: #2ecc71;">
                     <div class="command">~/.bashrc or ~/.zshrc</div>
                     <div class="description">Aliases, Path</div>
                 </li>
-            </ul>
-            
-            <h3 class="sub-title" style="color: #3498db;">Vim</h3>
-            <ul class="command-list">
+
                 <li class="command-item" style="border-left-color: #3498db;">
                     <div class="command">~/.vimrc</div>
                     <div class="description">Colors, line numbers</div>
                 </li>
-            </ul>
-            
-            <h3 class="sub-title" style="color: #e74c3c;">Git</h3>
-            <ul class="command-list">
+
                 <li class="command-item" style="border-left-color: #e74c3c;">
                     <div class="command">~/.gitconfig</div>
                     <div class="description">User information, preferred tools</div>
@@ -754,10 +724,7 @@
                     <div class="command">.git/config</div>
                     <div class="description">Remote and branch configuration for each repo</div>
                 </li>
-            </ul>
-            
-            <h3 class="sub-title" style="color: #000000;">Keys</h3>
-            <ul class="command-list">
+
                 <li class="command-item" style="border-left-color: #000000;">
                     <div class="command">~/.ssh</div>
                     <div class="description">All of your SSH keys should live here</div>
@@ -768,6 +735,5 @@
         </div>
     </div>
     
-
 </body>
 </html>
