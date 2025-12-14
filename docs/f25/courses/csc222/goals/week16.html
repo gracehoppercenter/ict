@@ -5,6 +5,12 @@
 <title>GHC CSC 222 Week 16</title>
 <style>
 @import url(../../../css/goals.css);
+blockquote.shout {
+  color: #530;
+  font-size: 1.6vw;
+  font-weight: bold;
+  font-style: italic;
+}
 </style>
 <script src="../../../js/init.js"></script>
 <script>
@@ -33,6 +39,12 @@ alt="GCTAA Logo">
 
 <h2>Overview</h2>
 <p>
+We'll begin class on Monday with a check-in on our projects. We need to
+decide whether we will benefit more from continuing to work on them this week
+or whether it makes more sense to continue on with
+<a href="https://openbookproject.net/thinkcs/cpp/ch13.html">Chapter 13: Objects
+of vectors</a>, leaving more time for a final project at the end of January
+after we complete chapters 13, 14 and 15.
 </p>
 
 <!--
@@ -86,28 +98,70 @@ made during and between the last two class sessions.
 <h3>Classwork</h3>
 <div>
 <p>
-Only two students showed up on Saturday. You will have two other opportunies
-to meet to review for the CPE: Saturday, January 10th and Saturday, January
-17th from 9 am to 12 noon both days.
+Only two students showed up on Saturday. <span style="color: red;">You will
+have two other opportunies to meet to review for the CPE: Saturday, January
+10th and Saturday, January 17th from 9 am to 12 noon both days.</span>
 </p><p>
-A lesson we learned in our study last Saturday can be shared under the
-heading:
-</p>
-</div>
+Delainie and Jeff spent what seemed to be way more time then they should have
+on understanding this practice problem:
+</p><p>
+<b>What is the output of the program below?</b>
+</p><pre style="margin-left: 4vw;">
+#include &lt;iostream&gt;
+using namespace std;
 
-<h4>Don't PlusPlus at the End of a <code>return</code>!</h4>
-<div>
-<p>
+char f(char *cp) {
+    *cp = *cp + 3;
+    return (*cp)++;
+}
+char *g(char &amp;ch) {
+    ++ch;
+    return &amp;ch;
+}
+char h(char ch) {
+    return ch++;
+}
+int main() {
+    char ch = 'a';
+    char ch2 = h(ch);
+    cout &lt;&lt; f(g(ch2)) &lt;&lt; endl;
+    return 0;
+}
+</pre><p>
+Working it out by hand, they both came up with <code>g</code> as the expected
+output, and it took them quite a while to understand why it was instead
+<code>e</code>. As the person who wrote this question in the first place,
+Jeff should have known better, but gradually encroaching senility means he gets
+to experience the thrill of learning these lessons anew each year.
+</p><p>
+When they finally figured it out, what they learned, and what even senile Jeff
+will not soon forget, could best be stated as a rule of thumb:
+</p><blockquote class="shout">
+Don't ++ at the end of an expression in a <code>return</code> statement!
+</blockquote><p>
 Take a look at
 <a href="https://gitlab.com/gracehoppercenter/csc222/-/raw/main/CPE/Module2/09_returnplusplus.cpp">09_returnplusplus.cpp</a>.
+Run it and observe what happens.
 </p><p>
-Run it and observe what happens. What is the moral of this sordid tale?
+What is the moral of this tale? Well, I am now completely convinced that
+Delaine groks pointers in a way she didn't the last time she sat for the CPE,
+and I'll go out on a limb and predict that with the approach she is taking to
+prep, she will nail the CPE next time. Success in earning this certification
+requires a deep engagement with the C++ langauge, and that requires
+<i>time</i>.  There's just no getting around it, which is why I'm making myself
+available on Saturdays and why I strongly encourage those of you who want to
+earn your certification to join me in January.
 </p>
 </div>
 
 <h3>Homework</h3>
 <div>
 <p>
+Read <a href="https://openbookproject.net/thinkcs/cpp/ch13.html">Chapter 13:
+Objects of vectors</a>, taking notes and trying out the examples in your git
+repos. <span style="color: red;">
+This is due by Tuesday December 16th at 11:59 pm so that I can look them over
+early Wednesday morning before we meet for class.</span>
 </p>
 </div>
 </section>
