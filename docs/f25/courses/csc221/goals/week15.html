@@ -70,17 +70,15 @@ rates, so I will nag relentlessly until you get this done :-)
         <li>First, we'll download this code and place it in your repo alongside
             your existing messaging code</li>
         <li>You'll need to create a virtual environment, activate it, and then
-            run <code>pip install -r requirements.txt</code></li>
+            run <code>pip install -r requirements.txt</code>. This didn't work
+            for some of us, so for you can just say <code>pip install django</code>
+            instead.        
+        </li>
         <li>You'll define your model(s) in the file <code>db/models.py</code>. 
             For more details about that file, see 
             <a href="https://docs.djangoproject.com/en/5.2/ref/models/fields/#field-types">
                 the official documentation</a>
         </li>
-        <li>If you want to use the Django Admin interface, you'll need to 
-            create a superuser (<code>python3 manage.py createsuperuser</code>)
-            and add your model to <code>db/admin.py</code>.</li>
-        <li>Use the existing main.py as a template for your code. You can 
-            copy your existing chat code there</li>
         <li>To apply your model changes to the database, you'll run these 
             two commands:
             <ul>
@@ -88,6 +86,12 @@ rates, so I will nag relentlessly until you get this done :-)
                 <li><code>python3 manage.py migrate</code></li>
             </ul>
         </li>
+        <li>If you want to use the Django Admin interface, you'll need to 
+            create a superuser (<code>python3 manage.py createsuperuser</code>)
+            and add your model to <code>db/admin.py</code>.</li>
+        <li>Use the existing main.py as a template for your code. You can 
+            copy your existing chat code there</li>
+
     </ul>
     
     
