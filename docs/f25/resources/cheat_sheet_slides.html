@@ -398,16 +398,17 @@
             
         </div>
         
+
         <!-- Vim Slide 2: Navigation -->
         <div class="slide vim">
             <div class="section-header">VIM</div>
-            <h2 class="slide-title">Vim Movements</h2>
+            <h2 class="slide-title">Movements</h2>
             <ul class="command-list">
                 <li class="command-item">
                     <div class="command">
                         <span class="key">h</span> <span class="key">j</span> <span class="key">k</span> <span class="key">l</span>
                         <p>or</p>
-                        <span class="key">←</span> <span class="key">↓</span> <span class="key">↑</span><span class="key">→</span>
+                        <span class="key">←</span> <span class="key">↓</span> <span class="key">↑</span> <span class="key">→</span>
                     </div>
                     <div class="description">Left, Down, Up, Right</div>
                 </li>
@@ -438,32 +439,17 @@
             </ul>
             
         </div>
-
         <!-- Vim Slide 2: Navigation -->
         <div class="slide vim">
             <div class="section-header">VIM</div>
-            <h2 class="slide-title">More Vim Movements</h2>
+            <h2 class="slide-title">Repeat Commands</h2>
             <ul class="command-list">
-      
                     <li class="command-item">
-                        <div class="command">*</div>
-                        <div class="description">Move to next repeat of word under cursor</div>
-                    </li>
-                    <li class="command-item">
-                        <div class="command">%</div>
-                        <div class="description">Move to matching bracket</div>
-                    </li>
-                    <li class="command-item">
-                        <div class="command">/&lt;pattern&gt;</div>
-                        <div class="description">Search forward for pattern</div>
-                    </li>
-                    <li class="command-item">
-                        <div class="command">n</div>
-                        <div class="description">Move to next search result</div>
-                    </li>
-                    <li class="command-item">
-                        <div class="command">N</div>
-                        <div class="description">Move to previous search result</div>
+                    <div class="command">&lt;#&gt;&lt;command&gt;</div>
+                        <div class="description">Repeat a command multiple
+                            times. Example: <span class="key">5k</span> 
+                            moves up 5 lines.
+                        </div>
                     </li>
                 
             </ul>
@@ -519,6 +505,78 @@
 
             <ul class="command-list">
                 <li class="command-item">
+                    <div class="command">y</div>
+                    <div class="description">Yank (copy) selection (from visual 
+                        mode)</div>
+                </li>
+                <li class="command-item">
+                    <div class="command">p</div>
+                    <div class="description">Paste after cursor</div>
+                </li>
+                <li class="command-item">
+                    <div class="command">"ay</div>
+                    <div class="description">Yank to register a (you can
+                        substitute for any register name here).
+                    </div>
+                </li>
+                <li class="command-item">
+                    <div class="command">"ap</div>
+                    <div class="description">Paste from register a</div>
+                </li>
+
+            </ul>
+            
+        </div>
+        
+        <div class="slide vim">
+            <div class="section-header">VIM</div>
+            <h2 class="slide-title">Shortcuts</h2>
+
+            <ul class="command-list">
+                <li class="command-item">
+                    <div class="command">x</div>
+                    <div class="description">Delete character under cursor</div>
+                </li>
+                <li class="command-item">
+                    <div class="command">r</div>
+                    <div class="description">Replace character under cursor</div>
+                </li>
+            </ul>
+            
+        </div>
+        <div class="slide vim">
+            <div class="section-header">VIM</div>
+            <h2 class="slide-title">Macros</h2>
+
+            <ul class="command-list">
+                <li class="command-item">
+                    <div class="command">qa</div>
+                    <div class="description">Start recording actions into
+                    register a</div>
+                </li>
+                <li class="command-item">
+                    <div class="command">q</div>
+                    <div class="description">Stop recording</div>
+                </li>
+                <li class="command-item">
+                    <div class="command">@a</div>
+                    <div class="description">Play back register a</div>
+                </li>
+            </ul>
+            
+            <div class="tip">
+                <div class="tip-title">Pro Tip:</div>
+                <div class="description">Macros are just text in registers. Use
+                :reg to inspect all registers</div>
+            </div>
+        </div>
+        
+        <div class="slide vim">
+            <div class="section-header">VIM</div>
+            <h2 class="slide-title">One-Line Shortcuts</h2>
+
+            <ul class="command-list">
+                <li class="command-item">
                     <div class="command">yy</div>
                     <div class="description">Yank (copy) current line</div>
                 </li>
@@ -527,16 +585,9 @@
                     <div class="description">Delete (cut) current line</div>
                 </li>
                 <li class="command-item">
-                    <div class="command">p</div>
-                    <div class="description">Paste after cursor</div>
-                </li>
-                <li class="command-item">
-                    <div class="command">u</div>
-                    <div class="description">Undo last change</div>
-                </li>
-                <li class="command-item">
-                    <div class="command">Ctrl+r</div>
-                    <div class="description">Redo</div>
+                    <div class="command">gqq</div>
+                    <div class="description">Break current line into multiple
+                    lines.</div>
                 </li>
             </ul>
             
@@ -567,6 +618,32 @@
                 <li class="command-item">
                     <div class="command">Ctrl+w =</div>
                     <div class="description">Equalize split sizes</div>
+                </li>
+            </ul>
+            
+        </div>
+
+        <!-- Vim Slide 4: Advanced Features -->
+        <div class="slide vim">
+            <div class="section-header">VIM</div>
+            <h2 class="slide-title">Tabs</h2>
+            
+            <ul class="command-list">
+                <li class="command-item">
+                    <div class="command">:tabnew</div>
+                    <div class="description">New Tab</div>
+                </li>
+                <li class="command-item">
+                    <div class="command">:tabclose</div>
+                    <div class="description">Close current tab</div>
+                </li>
+                <li class="command-item">
+                    <div class="command">:gt</div>
+                    <div class="description">Next Tab</div>
+                </li>
+                <li class="command-item">
+                    <div class="command">:gT</div>
+                    <div class="description">Previous Tab</div>
                 </li>
             </ul>
             
