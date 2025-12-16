@@ -8,7 +8,24 @@ By the end of this lesson, you should:
 ## What We'll Do In Class
 
 ### Quiz
-No reading quiz today!
+No reading quiz today
+
+Instead, please give course evaluations another shot. I've been told that the
+login issues we had last week are fixed 🤞
+
+Here are the instructions:
+
+<p>
+It's that time again, NVCC Course Evaluations! Please visit
+<a href="https://nova.direct.iota360.cc">https://nova.direct.iota360.cc</a>,
+enter your VCCS email and your NVCC student number and complete your
+evaluations. NVCC will provide me with regular updates as to your participation
+rates, so I will nag relentlessly until you get this done :-)
+</p>
+
+### A pitch: Help out with Programming Contest on Feb 7
+
+I'll make a quick pitch in class.
 
 ### CSS Positioning
 
