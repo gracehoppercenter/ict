@@ -8,10 +8,8 @@ By the end of this lesson, you should:
 ### Quiz
 No reading quiz!
 
-Instead, please give course evaluations another shot. I've been told that the
-login issues we had last week are fixed 🤞
-
-Here are the instructions:
+Today is the last day to complete course evaluations. If you haven't yet,
+please do this today. Here are the instructions:
 
 <p>
 It's that time again, NVCC Course Evaluations! Please visit
@@ -36,6 +34,11 @@ use grid to keep our shapes a little more orderly.
 
 To save today, I've written you some starter code: 
 <https://github.com/cj0ne5/cj0ne5.github.io/blob/main/practice/chocolates.html>.
+
+For classwork, fill in the rest of the chocolate box, using divs that you 
+shape with code from <https://css-shape.com/>. There are a lot of boxes to fill,
+so feel free to add a big chocolate bar that spans a few boxes, and to repeat
+shapes.
 
 ## Homework
 No homework - have a great break =)
