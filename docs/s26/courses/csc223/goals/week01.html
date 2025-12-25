@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA CSC 223 Week 1</title>
+<style>
+@import url(../css/goals.css);
+li {
+  margin-top: 1vw;
+}
+dd {
+  margin-bottom: 1vw;
+}
+</style>
+<script src="../../../js/init.js"></script>
+<script>
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<div id="logo">
+<a href="index.html"><img src="../../images/gctaa_nvcc.png" alt="GCTAA Logo">
+</a>
+</div>
+<div class="desktop">
+<h2>Governor's Career & Technical Academy Arlington</h2>
+<h1>CSC 223 Weekly Goals and Tasks: Week 1</h1>
+</div>
+<div class="mobile">
+<h1>CSC 223</h1>
+</div>
+</header>
+<hr>
+
+<main>
+<time datetime="2026-02-02">Week of Monday, February 2, 2026</time>
+
+<h2>Overview</h2>
+<p>
+Welcome to <a href="https://courses.vccs.edu/courses/CSC223-DataStructuresandAnalysisofAlgorithms/detail">CSC
+223: Data Structures and Analysis of Algorithms</a>! Since we made the jump
+from 1975 forward to 2025 about a month ago there will be a lot of continuity
+in our study as we move to this new course.
+</p>
+
+<section>
+<h2>Friday, February 7th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+Today we will learn how to use
+<a href="https://devdocs.io/cpp/language/class_template">class templates</a>
+in C++ and discuss how they can be used to implement generic
+<a href="https://xlinux.nist.gov/dads/HTML/dataStructure.html">data
+structures</a> such as the
+<a href="https://xlinux.nist.gov/dads/HTML/linkedList.html">linked list</a>
+that we have been studying.
+</p>
+</div>
+
+<h3>Homework</h3>
+<div>
+<p>
+I asked Python to choose groups, and it gave me back the following:
+</p><ul>
+  <li>Akshay, Luis, Adonis, and Parker</li>
+  <li>Johan, Anfal, Anar and Cody</li>
+  <li>Jamethiel, Ved, Trostin and Marin</li>
+  <li>Turner, Issac and Caleb</li>
+</ul><p>
+We will divide up the exercises in
+<a href="https://openbookproject.net/thinkcs/cpp/exercises/ch17/ch17s01.html">
+Chapter 17 Exercise Set 1: Templates</a> among these groups.
+</p>
+</div>
+</section>
+
+
+<section>
+<h2>Wednesday, February 5th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+The grade distribution for this first assignment in CSC 223 was
+<b>A</b>: 10, <b>C</b>: 1, <b>D</b>: 2, and <b>E</b>: 2. That means that 2/3
+of the class was <q>on point</q>, and 1/3, to varying degrees, was not. Not
+a terrible result, but I'm convinced we can do better.
+</p><p>
+We have a short class today, so we will use it to:
+</p><ol>
+<li>
+Properly set up your git repos so that:
+  <ul>
+      <li>they have a <code>.gitignore</code> file that excludes unwanted
+      digital artifacts from creeping into your repo.</li>
+
+      <li>unwanted digital artifacts that already have crept into your
+      repos (<code>.vscode</code> subdirectories, <code>.DS_Store</code>
+      subdirectories, <code>build</code> subdirectories, etc.) are removed,
+      never to return. <span style="color: red;"> <b>Note:</b> after today,
+      the presence of such unwanted artifacts will result in a letter grade
+      reduction on repo evaluations.</span></li>
+  </ul>
+</li><li>
+Help those of you who do not have your <code>LinkedList</code> files arranged
+properly to get them so arranged.
+</li><li>
+Introduce <a href="https://devdocs.io/cpp/language/class_template">class
+templates</a> and finish
+<a href="https://openbookproject.net/thinkcs/cpp/ch17.html">Chapter 17: Linked
+lists</a>, if time allows.
+</li>
+</ol><p>
+</p>
+</div>
+
+<h3>Homework</h3>
+<div>
+<p>
+Complete the new exercises just added to
+<a href="https://openbookproject.net/thinkcs/cpp/exercises/ch17/ch17s00.html">
+Chapter 17 Exercise Set 0: Chapter Review</a>.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Monday, February 3rd</h2>
+<div>
+
+<h3>Classwork</h3>
+<p>
+At the beginning of class you should create a new git repo for this class named
+<code>csc223</code> on your favorit git host and email me a link. Please
+confirm that the link on the <a href="../students.html">students page</a>
+(Jose's already does ;-) from your name works before you leave class today.
+</p><p>
+We will then have a discussion of the following:
+</p>
+
+<h4>First Definitions</h4>
+<dl>
+<dt>Efficient Program</dt>
+<dd>
+An <b>efficient program</b> is one that executes in the minimum time using
+the minimum memory space.
+</dd>
+<dt>Data Structure</dt>
+<dd>
+A <b>data structure</b> is a collection of data elements grouped under one
+name that are organized and stored so they can be used efficiently.
+</dd>
+<dt>Abstract Data Type (ADT)</dt>
+<dd>
+An <a href="https://xlinux.nist.gov/dads/HTML/abstractDataType.html">abstract
+data type</a> (ADT) consists of a set of data values and the associated
+operations which can be performed on them precisely specified independent of
+any particular implementation.
+</dd>
+<dt>Algorithm</dt>
+<dd>
+An <a href="https://en.wikipedia.org/wiki/Algorithm">algorithm</a> is a finite
+sequence of instructions used to solve a class of specific problems or to
+perform a computation.
+</dd>
+</dl>
+
+<h4>Steps for Choosing a Data Structure</h4>
+<ol>
+<li>Analyze the problem to determine the operations on the data that must be
+supported.</li>
+<li>Quantify the resource constraints for each of these operations.</li>
+<li>Select the data structure that provides the required operations within
+the resource constraints as efficiently as possible.</li>
+</ol>
+<p>
+The we will then look through
+<a href="https://openbookproject.net/thinkcs/cpp/ch17.html">Chapter 17: Linked
+lists</a> in our textbook together and discuss the things you should pay
+particular attention to as you read through it on your own during your
+homework.
+</p>
+
+<h3>Homework</h3>
+<p>
+Use TDD to complete all the test cases in
+<a href="https://openbookproject.net/thinkcs/cpp/exercises/ch17/ch17s00.html">
+Chapter 17 Exercise Set 0: Chapter Review</a>, reading (and <i>rereading</i>
+<a href="https://openbookproject.net/thinkcs/cpp/ch17.html">the chapter</a>
+as you do, with the aim of truly understanding what you read.
+</p><p style="color: red;">
+This assignment is due at 11:59 pm on Tuesday, February 4th.
+</p>
+</div>
+</section>
+</main>
+
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>
