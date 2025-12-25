@@ -1,0 +1,28 @@
+[
+     {"date": "February03", "session": "01"}
+    ,{"date": "February05", "session": "02"}
+    ,{"date": "February07", "session": "03"}
+    ,{"date": "February11", "session": "04"}
+    ,{"date": "February13", "session": "05"}
+    ,{"date": "February18", "session": "06"}
+    ,{"date": "February20", "session": "07"}
+    ,{"date": "February24", "session": "08"}
+    ,{"date": "February26", "session": "09"}
+    ,{"date": "February28", "session": "10"}
+    ,{"date": "March04", "session": "11"}
+    ,{"date": "March06", "session": "12"}
+    ,{"date": "March10", "session": "13"}
+    ,{"date": "March12", "session": "14"}
+    ,{"date": "March17", "session": "15"}
+    ,{"date": "March19", "session": "16"}
+    ,{"date": "March21", "session": "17"}
+    ,{"date": "March25", "session": "18"}
+    ,{"date": "March27", "session": "19"}
+    ,{"date": "April01", "session": "20"}
+    ,{"date": "April03", "session": "21"}
+    ,{"date": "April07", "session": "22"}
+    ,{"date": "April09", "session": "23"}
+    ,{"date": "April11", "session": "24"}
+    ,{"date": "May28", "session": "30"}
+
+]
