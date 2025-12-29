@@ -44,9 +44,15 @@ break.
 <h3>Intro</h3>
 <div>
 <p>
-Over Winter break I worked on a start for the <code>struct</code> we will use
-for our <code>bigint</code> data type.
-I split it two files: <code>BIGINT.H</code>:
+We'll start the new year by introducing a testing tool that two students,
+Akshay Kuchibhatla and Caleb O'Neil, developed last year. You can find their
+code and documentation
+<a href="https://gitlab.com/gracehoppercenter/csc215/-/tree/main/C/CPM_BDSC/BDSCtest">
+here</a>.
+</p><p>
+Here is a <code>struct</code> we can use to start our <code>bigint</code> data
+type, split it two files:
+<code>BIGINT.H</code>:
 </p><pre>
 struct bigint {
     char negative;
@@ -94,7 +100,7 @@ struct bigint *num;
    return numstr;
 }
 </pre><p>
-The I wrote <code>BIGINTTD.C</code> to test it:
+Here is a program, <code>BIGINTTD.C</code>, to test it:
 </p><pre>
 #include "BIGINT.H"
 #include "BDSCTEST.H"
@@ -111,7 +117,8 @@ main() {
     END_TESTING();
 }
 </pre><p>
-I compiled and linked these with the following sequence of commands:
+Over the winter break I compiled and linked these with the following sequence
+of commands:
 </p><pre>
 I&gt;cc bigint
 I&gt;cc biginttd
@@ -121,9 +128,8 @@ which generated <code>BIGINTTD.COM</code>. Running it, I got:
 </p><p>
 <img src="resources/biginttd_failing_test.png" alt="BigInt failing test">
 </p><p>
-Hopefully our classroom super stars, Caleb and Akshay (with welcome assistance
-from any aspiring classroom super stars), will be able to figure out why this
-is failing and get us on our way.
+I did not figure out why these tests are failing. That will be our first task
+for 2026.
 </p>
 </div>
 
