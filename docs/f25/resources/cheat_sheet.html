@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal, Vim & Git Cheat Sheet</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: white;
+            color: #333;
+            padding: 10px;
+            max-width: 8.5in;
+            margin: 0 auto;
+            font-size: 14px;
+            line-height: 1.3;
+        }
+        
+        /* Page break controls for printing */
+        .page-break {
+            page-break-before: always;
+            break-before: page;
+            margin-top: 30px;
+        }
+        
+        .avoid-break {
+            page-break-inside: avoid;
+            break-inside: avoid;
+        }
+        
+        .cheat-sheet {
+            background-color: white;
+        }
+        
+        .section {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+        
+        .section-title {
+            font-size: 1.6em;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 3px solid;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .terminal .section-title {
+            color: #2ecc71;
+            border-color: #2ecc71;
+        }
+        
+        .vim .section-title {
+            color: #3498db;
+            border-color: #3498db;
+        }
+        
+        .git .section-title {
+            color: #e74c3c;
+            border-color: #e74c3c;
+        }
+        
+        .command-list {
+            list-style-type: none;
+            columns: 2;
+            column-gap: 20px;
+        }
+        
+        .command-item {
+            margin-bottom: 12px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            border-left: 4px solid;
+            page-break-inside: avoid;
+            break-inside: avoid;
+        }
+        
+        .terminal .command-item {
+            border-left-color: #2ecc71;
+        }
+        
+        .vim .command-item {
+            border-left-color: #3498db;
+        }
+        
+        .git .command-item {
+            border-left-color: #e74c3c;
+        }
+        
+        .command {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #2c3e50;
+            margin-bottom: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .description {
+            font-size: 0.9em;
+            color: #555;
+            line-height: 1.3;
+        }
+        
+        .sub-section {
+            margin-top: 20px;
+            padding-top: 12px;
+            border-top: 1px dashed #ddd;
+            page-break-inside: avoid;
+            break-inside: avoid;
+        }
+        
+        .sub-title {
+            font-size: 1.2em;
+            margin-bottom: 12px;
+            color: #444;
+            font-weight: bold;
+        }
+
+        .config-file {
+            font-size: 1.2em;
+            margin-bottom: 12px;
+            color: #444;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .mode-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 8px;
+            margin-top: 10px;
+        }
+        
+        .mode-item {
+            padding: 6px;
+            background-color: #f0f7ff;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+        
+        .key {
+            display: inline-block;
+            padding: 2px 5px;
+            background-color: #2c3e50;
+            color: white;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            margin-right: 5px;
+            font-size: 0.9em;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #ddd;
+        }
+        
+        .header h1 {
+            font-size: 2em;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .header h2 {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            font-weight: normal;
+        }
+        
+        .header h3 {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            font-weight: normal;
+        }
+        
+        .tip {
+            background-color: #fffde7;
+            padding: 12px;
+            border-radius: 5px;
+            margin-top: 15px;
+            border-left: 4px solid #f1c40f;
+            font-size: 0.9em;
+            page-break-inside: avoid;
+            break-inside: avoid;
+        }
+        
+        .tip-title {
+            font-weight: bold;
+            color: #d35400;
+            margin-bottom: 5px;
+            font-size: 1em;
+        }
+        
+        /* For screens */
+        @media screen {
+            body {
+                background-color: #f5f5f5;
+                padding: 20px;
+            }
+            
+            .cheat-sheet {
+                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                padding: 20px;
+                border-radius: 10px;
+            }
+            
+            .command-item:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+            }
+        }
+        
+        /* For printing */
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+                font-size: 12px;
+            }
+            
+            .header {
+                margin-bottom: 15px;
+                padding-bottom: 10px;
+            }
+            
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .header h2 {
+                font-size: 1em;
+            }
+            
+            .section {
+                padding: 12px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+            }
+            
+            .section-title {
+                font-size: 1.4em;
+            }
+            
+            .command {
+                font-size: 1em;
+            }
+            
+            .command-list {
+                column-gap: 15px;
+            }
+            
+            .command-item {
+                padding: 8px;
+                margin-bottom: 10px;
+            }
+            
+            /* Add page margins for printing */
+            @page {
+                margin: 0.5in;
+            }
+        }
+        
+        /* Adjust for smaller screens */
+        @media (max-width: 768px) {
+            .command-list {
+                columns: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Terminal, Vim & Git Cheat Sheet</h1>
+        <h2>This page is a work in progress. Please suggest changes!</h2>
+    </div>
+    
+    <div class="cheat-sheet">
+        <!-- TERMINAL SECTION -->
+        <div class="section terminal avoid-break">
+            <h2 class="section-title">Terminal</h2>
+            <h3 class="config-file">(Config file: ~/.bashrc or ~/.zshrc)</h3>
+            
+            <ul class="command-list">
+                <li class="command-item">
+                    <div class="command">cd &lt;path&gt;</div>
+                    <div class="description">Change directory to specified path</div>
+                </li>
+                <li class="command-item">
+                    <div class="command">cd ..</div>
+                    <div class="description">Move up one directory level</div>
+                </li>
+                <li class="command-item">
+                    <div class="command">cd -</div>
+                    <div class="description">Move to the last-visited directory</div>
+                </li>
+                <li class="command-item">
+                    <div class="command">cd ~</div>
+                    <div class="description">Go to home directory</div>
+                </li>
+                <li class="command-item">
+                    <div class="command">ls</div>
+                    <div class="description">List directory contents</div>
+                </li>
+                <li class="command-item">
+                    <div class="command">ls -al</div>
+                    <div class="description">List all files (including hidden) with details</div>
+                </li>
+                <li class="command-item">
+                    <div class="command">pwd</div>
+                    <div class="description">Print working directory (show current path)</div>
+                </li>
+            </ul>
+
+            <div class="sub-section">
+                <h3 class="sub-title">Running Commands In The Terminal</h3>
+                <ul class="command-list">
+                    <li class="command-item">
+                        <div class="command"><span class="key">Tab</span></div>
+                        <div class="description">Auto-complete</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command"><span class="key">Ctrl+C</span></div>
+                        <div class="description">Stop running command</div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="sub-section">
+                <h3 class="sub-title">File Operations</h3>
+                <ul class="command-list">
+                    <li class="command-item">
+                        <div class="command">mv &lt;source&gt; &lt;dest&gt;</div>
+                        <div class="description">Move or rename files/directories</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">cp &lt;source&gt; &lt;dest&gt;</div>
+                        <div class="description">Copy files/directories</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">rm &lt;file&gt;</div>
+                        <div class="description">Remove a file</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">rm -rf &lt;folder&gt;</div>
+                        <div class="description">Force remove directory and all 
+                            contents</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">mkdir &lt;name&gt;</div>
+                        <div class="description">Create a new directory</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">cat &lt;file&gt;</div>
+                        <div class="description">Display file contents</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">less &lt;file&gt;</div>
+                        <div class="description">Display file contents - includes
+                            paging for long files.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+
+        </div>
+        
+        <!-- Add a page break before Vim section -->
+        <div class="page-break"></div>
+        
+        <!-- VIM SECTION -->
+        <div class="section vim avoid-break">
+            <h2 class="section-title">Vim</h2>
+            <h3 class="config-file">(Config file: ~/.vimrc)</h3>
+            
+            <div class="sub-section">
+                <h3 class="sub-title">File Operations</h3>
+                <ul class="command-list">
+                    <li class="command-item">
+                        <div class="command">vim &lt;file&gt;</div>
+                        <div class="description">Open file in vim (from terminal)</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">:wq</div>
+                        <div class="description">Save and quit</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">:w</div>
+                        <div class="description">Save file without quitting</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">:q!</div>
+                        <div class="description">Quit without saving</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">:e &lt;file&gt;</div>
+                        <div class="description">Edit a new file</div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="sub-section">
+                <h3 class="sub-title">Navigation (Normal Mode)</h3>
+                <ul class="command-list">
+                    <li class="command-item">
+                        <div class="command">
+                            <span class="key">h</span> <span class="key">j</span> <span class="key">k</span> <span class="key">l</span>
+                        </div>
+                        <div class="description">Left, Down, Up, Right (arrow keys also work)</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">0 (zero)</div>
+                        <div class="description">Move to beginning of line</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">$</div>
+                        <div class="description">Move to end of line</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">w</div>
+                        <div class="description">Move to start of next word</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">e</div>
+                        <div class="description">Move to end of current word</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">*</div>
+                        <div class="description">Move to next repeat of current word under cursor</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">%</div>
+                        <div class="description">Move to matching bracket</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">gg</div>
+                        <div class="description">Go to first line of file</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">G</div>
+                        <div class="description">Go to last line of file</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">Ctrl+f / Ctrl+b</div>
+                        <div class="description">Page forward / backward</div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="sub-section">
+                <h3 class="sub-title">Modes</h3>
+                <div class="mode-grid">
+                    <div class="mode-item">
+                        <span class="key">i</span> Insert mode
+                        <br>
+                        <span class="key">a</span> Insert mode after cursor
+                        <br>
+                        <span class="key">A</span> Move cursor to end of current line, and then switch to insert mode
+                        <br>
+                        <span class="key">o</span> Add a new blank line below current, move the cursor there, and switch to insert mode
+                    </div>
+                    <div class="mode-item">
+                        <span class="key">v</span> Visual mode (character)
+                    </div>
+                    <div class="mode-item">
+                        <span class="key">V</span> Visual-line mode
+                    </div>
+                    <div class="mode-item">
+                        <span class="key">Esc</span> Normal mode
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sub-section">
+                <h3 class="sub-title">Editing & Yanking</h3>
+                <ul class="command-list">
+                    <li class="command-item">
+                        <div class="command">yy</div>
+                        <div class="description">Yank (copy) current line</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">:reg</div>
+                        <div class="description">Show all registers</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">p</div>
+                        <div class="description">Paste after cursor</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">"0p</div>
+                        <div class="description">Paste from yank register</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">"+p</div>
+                        <div class="description">Paste from system clipboard</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">dd</div>
+                        <div class="description">Delete (cut) current line</div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="sub-section">
+                <h3 class="sub-title">Window Splits</h3>
+                <ul class="command-list">
+                    <li class="command-item">
+                        <div class="command">:vsp</div>
+                        <div class="description">Vertical split</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">:sp</div>
+                        <div class="description">Horizontal split</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">Ctrl+w &lt;h,j,k,l&gt;</div>
+                        <div class="description">Move between splits</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">Ctrl+w &lt; or &gt;</div>
+                        <div class="description">Resize split width</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">Ctrl+w =</div>
+                        <div class="description">Equalize split sizes</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sub-section">
+                <h3 class="sub-title">Buffers</h3>
+                <ul class="command-list">
+                    <li class="command-item">
+                        <div class="command">:ls</div>
+                        <div class="description">List all buffers</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">:b&lt;number&gt;</div>
+                        <div class="description">Switch to buffer number</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Add a page break before Git section -->
+        <div class="page-break"></div>
+        
+        <!-- GIT SECTION -->
+        <div class="section git avoid-break">
+            <h2 class="section-title">Git</h2>
+            <h3 class="config-file">(Config file: ~/.gitconfig)</h3>
+            
+            <div class="sub-section">
+                <h3 class="sub-title">Basic Workflow</h3>
+                <ul class="command-list">
+                    <li class="command-item">
+                        <div class="command">git status</div>
+                        <div class="description">Check status of working directory</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">git add &lt;file&gt;</div>
+                        <div class="description">Stage file for commit</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">git add .</div>
+                        <div class="description">Stage all changes</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">git commit -m "message"</div>
+                        <div class="description">Commit staged changes with message</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">git push</div>
+                        <div class="description">Push commits to remote repository</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">git pull</div>
+                        <div class="description">Fetch and merge from remote</div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="sub-section">
+                <h3 class="sub-title">Branches</h3>
+                <ul class="command-list">
+                    <li class="command-item">
+                        <div class="command">git branch</div>
+                        <div class="description">List all branches (current highlighted)</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">git branch &lt;name&gt;</div>
+                        <div class="description">Create a new branch</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">git checkout &lt;branch&gt;</div>
+                        <div class="description">Switch to branch</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">git checkout -b &lt;branch&gt;</div>
+                        <div class="description">Create and switch to new branch</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">git merge &lt;branch&gt;</div>
+                        <div class="description">Merge specified branch into current</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">git push -u origin &lt;branch&gt;</div>
+                        <div class="description">Push branch to remote and set upstream</div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="sub-section">
+                <h3 class="sub-title">Additional Useful Commands</h3>
+                <ul class="command-list">
+                    <li class="command-item">
+                        <div class="command">git clone &lt;url&gt;</div>
+                        <div class="description">Clone a repository</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">git log --oneline</div>
+                        <div class="description">Compact commit history</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">git diff</div>
+                        <div class="description">Show unstaged changes</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">git stash</div>
+                        <div class="description">Temporarily save changes</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">git stash pop</div>
+                        <div class="description">Re-apply stashed changes</div>
+                    </li>
+                    <li class="command-item">
+                        <div class="command">git reset &lt;file&gt;</div>
+                        <div class="description">Unstage file</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
