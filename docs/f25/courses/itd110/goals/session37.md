@@ -26,6 +26,8 @@ To practice, we'll reproduce this screenshot using CSS grid. We'll discuss how t
 
 <img src="./resources/grid_challenge.png" style="height: 30vh">
 
+Call this file `practice/holy_grail.html`.
+
 ## Homework
 
 ### Start thinking about your project.
