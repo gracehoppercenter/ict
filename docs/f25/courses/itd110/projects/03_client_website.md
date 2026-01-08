@@ -73,4 +73,31 @@ The downside to writing a custom HTML page is that the client might struggle if 
    - Email me before the start of class on Tuesday, January 13 to let me know who you've selected as your client. I'll walk around during class and have a short check-in with everyone to make sure that you have a client.
    - Aim to complete your initial design and share with your client by the end of the day on Friday, January 16. I'll plan to check-in on progress after the WDE exam on January 20.
 
-## Rubric - Coming Soon
+## Project Ideas
+
+- Juniors are Arlington Tech are required to develop a portfolio in preparation
+for their capstone project. There are three who have reached out to me asking
+for a student to help develop their portfolio. You might consider reaching out 
+to any Arlington Tech junior and offering to help, or let me know if you'd like
+me to match you to one of the three.
+- Dr. Thomas is the PBL coordinator here at Arlington Tech. She is hoping to 
+find a student who can help develop a portfolio website to showcase PBL projects
+- The Arlington County Parks and Rec department is building a website with facts 
+about the unique ecology in Arlington's Barcroft park.
+- I would like a public facing website that I can use when I'm talking to people
+about our CS classes. It would include details about our classes, examples of
+student websites.
+- I have a lot of trouble finding good resources to explain web design UI elements.
+I'd like a website with simple, clean examples that I can assign as reading for
+my class.
+
+If you have any other ideas that I should add to this list, please do let me know!
+
+## Rubric
+
+| Assessment Criteria | Meets Expectations - 4 points | Partially Meets Expectations - 3 points | Does Not Meet Expectations - 2 points | Not Present - 0 points |
+|---------------------|-------------------------------|-----------------------------------------|---------------------------------------|------------------------|
+| **Final website - Layout** | Clean, organized layout with clear visual hierarchy. All pages are consistent. Navigation is intuitive and functional. | Layout is mostly organized with some inconsistencies across pages. Navigation works but could be clearer. | Layout is disorganized or confusing. Navigation is difficult to use or missing on some pages. | No functional website layout. |
+| **Final website - Design Consideration** | Thoughtful design choices aligned with client feedback. Color scheme, typography, and spacing enhance usability. WCAG AA standards met. | Design is adequate but lacks sophistication. Some consideration of accessibility, mostly meets WCAG AA. | Design is basic with minimal consideration for usability or accessibility. Does not fully meet WCAG AA. | Design not present or does not reflect client needs. |
+| **Valid, Semantic HTML/CSS** | All HTML is valid and semantic. CSS is well-organized and follows best practices. Code is clean and commented. | Mostly valid HTML/CSS with minor errors. Code is generally organized but could be cleaner. | Several HTML/CSS errors. Code lacks organization or proper semantics. | Invalid code or missing files. |
+| **Client interaction** | Three documented check-ins with specific feedback, dates, and agreed-upon changes clearly recorded in `process.md`. | Two documented check-ins with feedback recorded, but lacking detail or clarity. | One check-in documented or feedback poorly recorded. | No documented client interaction or check-ins. |
