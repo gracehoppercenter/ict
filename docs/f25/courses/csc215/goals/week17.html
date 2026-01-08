@@ -38,23 +38,42 @@ integer in C on the Intel 8080 processor that we began the week before winter
 break.
 </p>
 
-<!--
 <section>
 <h2>Friday and Monday, January 9th and 12th</h2>
-
-<h3>Intro</h3>
-<div>
-<p>
-</p>
-</div>
 
 <h3>Classwork / Homework / Evaluation</h3>
 <div>
 <p>
+*Note*: If you're in the A day section, you'll be doing this before the
+<code>add_bigints()</code> function is due.
+</p><p>
+Today we will handle negative values, both with a
+<code>sub_bigints()</code> function <i>and</i> by handling a unary minus
+(<code>-</code>) on a bigint.
+</p><p>
+You know the dance by now:
+</p><ol>
+<li>
+Add a test for your function expressing how you intend it to work
+(which should fail). 
+</li><li>
+Write code to make the test pass.
+</li><li>
+Interate until you have a robust, well tested function.
+</li>
+</ol><p>
+After Toby pointed out I was
+<a href="https://en.wikipedia.org/wiki/Memory_leak">leaking memory</a>
+when running my tests, I changed the code from last class to fix that. Toby
+also made a convincing argument for changing the order of the parameters in
+<code>set_bigint()</code> so that the variable being set is the first
+parameter. This is consistent with how Kernighan and Ritchie do things
+(see the <code>strcpy()</code> function defined on page 100 of <i>The C
+Programming Language</i> for example), so it is a good idea indeed to do what
+they do.
 </p>
 </div>
 </section>
--->
 
 <section>
 <h2>Wednesday and Thursday, January 7th and 8th</h2>
@@ -87,10 +106,13 @@ Here are your tasks due Friday:
 Fix the parenthesis and make the <code>set_bigint()</code>,
 <code>get_bigint()</code> test pass.
 </li><li>
-Add a test for a function <code>add_bigints()</code> which takes two
-bigints as arguments and returns their sum.
+Add tests for a function <code>add_bigints()</code> which take two
+bigints as arguments and return their sum. Try to be as exhautive as you
+can. Do you have tests for single digit bigints? Double digit bigints?
+Ten digit bigints? bigints with different numbers of digits, both with the
+first and second arguments being the shorter of the two?
 </li><li>
-Write the function to make the test pass.
+Write the function to make the tests pass.
 </li>
 </ol><p>
 This is due by Friday at 11:59 pm so I have the weekend to evaluate your
@@ -130,7 +152,7 @@ and <code>BIGINT.C</code>:
 #include &lt;stdio.h&gt;
 #include "BIGINT.H"
 
-void set_bigint(numstr, num)
+void set_bigint(num, numstr)
 char *numstr;
 struct bigint *num;
 {
@@ -169,11 +191,14 @@ Here is a program, <code>BIGINTTD.C</code>, to test it:
 
 main() {
     START_TESTING("BIGINTTD.C");
+    char *bis;
 
     TEST_CASE("Read and write bigint 1234567") {
         struct bigint bi;
-        set_bigint("1234567", &amp;bi);
-        ASSERT_STR(get_bigint(bi, "1234567"));
+        set_bigint(&amp;bi, "1234567");
+        bis = get_bigint(&amp;bi)
+        ASSERT_STR(bis, "1234567");
+        free(bis);
     }
 
     END_TESTING();
