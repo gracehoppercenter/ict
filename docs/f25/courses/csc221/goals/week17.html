@@ -6,10 +6,10 @@
 <style>
 @import url(../../../css/goals.css);
 img {
-    width: 80%;
+width: 80%;
 }
 pre {
-    margin-left: 2vw;
+margin-left: 2vw;
 }
 </style>
 <script src="../../../js/init.js"></script>
@@ -64,7 +64,7 @@ We are using a
 <a href="https://en.wikipedia.org/wiki/Flipped_classroom">flipped classroom</a>
 approach with the very aim of addressing the confusion and
 <a href="https://en.wikipedia.org/wiki/Cognitive_dissonance">dissonance</a>
-that comes from your independent investitagtion <i>outside</i> the classroom.
+that comes from your independent investigation <i>outside</i> the classroom.
 We want to provide you with the
 <a href="https://en.wikipedia.org/wiki/Zone_of_proximal_development">
 scaffolding</a> you need to be successful, but that only works if you put in
@@ -72,12 +72,87 @@ the work.
 </p>
 </div>
 
-<h3>Classwork / Homework</h3>
+<h3>Certification Update</h3>
 <div>
 <p>
-TBD.
+There are several of you who are hoping to complete certification exams
+soon - some of you need to pass the WDE certification so that you can qualify 
+for ITP225 next semester, and others are hoping to retake the PCEP. If this
+is you, Make sure you're making a plan with Chris and/or Jeff!
 </p>
 </div>
+
+<h3>Classwork</h3>
+<div>
+<p>
+Today we're going to put a bow on our study of Django models. We're going to 
+step away from our chat project and away from curses and just focus on models.
+</p>
+<p>
+We'll start with a quick review of the one-to-many relationships 
+that we learned from Dr. Chuck's
+videos, and then we'll spend our class time practicing. Our goal will be to
+write data model diagrams, turn them into python classes, and then use 
+the DJango ORM to create and read objects.
+</p>
+<p>By the end of class, each group will share the diagram that they came up with.
+For credit, commit the following to your repo:
+</p>
+<ul>
+<li>Your ER Diagram (it can be a photo)</li>
+<li>Your models in <code>db/models.py</code></li>
+<li>Test your models via the REPL at <code>python3 manage.py shell</code> and 
+save your output to a text file</li>
+</ul>
+<p>I'll walk through the solution to last class's chat assignment following this
+format, and then you'll do the same with your partner. Feel free to reference
+my example here:
+</p>
+<ul>
+<li>
+    <a href="https://codeberg.org/GraceHopperCenter/DjangoCLIChat/src/branch/main/chat_er_diagram.md">
+    ER Diagram</a>
+</li>
+<li><a href="https://codeberg.org/GraceHopperCenter/DjangoCLIChat/src/branch/main/db/models.py">
+    Models</a>
+</li>
+<li>
+    <a href="https://codeberg.org/GraceHopperCenter/DjangoCLIChat/src/branch/main/django_shell_orm_test.txt">
+        Shell example</a>
+</li>
+</ul>
+</div>
+
+<h3>Homework</h3>
+<div>
+<p>
+Next class we'll leave DJango models behind and move on to the next important
+Django module - templates. To prepare for our activities in class next week,
+watch and take notes on these videos.
+</p><p>
+I'll give a bit of introduction in class to help you figure out which parts 
+to pay attention to.
+</p>
+<p>From this page: 
+<a href="https://www.dj4e.com/tsugi/lms/lessons/django_views#">
+    Django Templates and Videos
+</a>, watch these three videos:
+</p>
+<ul>
+<li>Using Templates in Django (10:05)</li>
+<li>Using the Django Template Language (DTL) (11:00)</li>
+<li>Django Template Inheritance (6:06) </li>
+</ul>
+
+<p style="color: red;">
+Add your data model work from class and your notes by 11:59pm Saturday so that
+we can evaluate before class on Monday.
+</p>
+
+</div>
+
+
+
 </section>
 
 
@@ -104,12 +179,12 @@ through the last day of class on December 20th. We know that not everyone got
 the project completely working, so this grade reflects consistent effort, not
 perfect code. Here is how the grade was assigned:</p>
 <ul>
-  <li>A: for consistent effort and interacting with all three layers of the app 
-  (Curses, Django ORM, and Python Sockets)</li>
-  <li>B: If you put in consistent effort but didn't get to one of the layers
-  </li>
-  <li>C: If you put in consistent effort but only worked on the chat part</li>
-  <li>E: If there is little evidence that you engaged with this project</li>
+<li>A: for consistent effort and interacting with all three layers of the app 
+(Curses, Django ORM, and Python Sockets)</li>
+<li>B: If you put in consistent effort but didn't get to one of the layers
+</li>
+<li>C: If you put in consistent effort but only worked on the chat part</li>
+<li>E: If there is little evidence that you engaged with this project</li>
 </ul> 
 <p>
 There are a few of you who got E's because I could not find any commits related
@@ -142,25 +217,25 @@ needs a name.
 </li>
 <li>
 Review <a href="https://www.dj4e.com/tsugi/lms/lessons/dj4e_one_to_many#">
-    Dr. Chuck's One-To-Many lesson</a>, which will teach you how to connect your 
-    <code>Message</code>
+Dr. Chuck's One-To-Many lesson</a>, which will teach you how to connect your 
+<code>Message</code>
 model with your <code>Contact</code> model. As always, you should be taking notes
 in a Markdown file that summarize the key points from this lesson and should be
 prepared in case we have a reading quiz next class.
 </li>
 <li>
-    Modify <code>db/models.py</code> to add a One-To-Many relationship between
-    the <code>Message</code> and <code>Contact</code> models.
+Modify <code>db/models.py</code> to add a One-To-Many relationship between
+the <code>Message</code> and <code>Contact</code> models.
 </li>
 <li>
-    Choose how you'll test the new relationship. You can either:
-    <ul>
-        <li> use the Django shell
-    as described in Dr. Chuck's video. If you do this, write a Markdown file that 
-    includes the shell commands you ran to test, and commit it to your repo.
-    <li> If you're up for the challenge, you can modify 
-    <code>socket_chat_curses.py</code> to ask for your chat partner's name at
-    the start of the chat.</li>
+Choose how you'll test the new relationship. You can either:
+<ul>
+    <li> use the Django shell
+as described in Dr. Chuck's video. If you do this, write a Markdown file that 
+includes the shell commands you ran to test, and commit it to your repo.
+<li> If you're up for the challenge, you can modify 
+<code>socket_chat_curses.py</code> to ask for your chat partner's name at
+the start of the chat.</li>
 </li> 
 
 
