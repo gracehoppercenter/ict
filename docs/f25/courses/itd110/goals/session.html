@@ -38,6 +38,10 @@ window.onload = init;
 <hr>
 <h1 id="title">placeholder</h1>
 <p><a href="../calendar/">Back to Calendar</a></p>
+
+
+<div id="prevnext"></div>
+
 <h2>Today's Topic</h2>
 <p id="topic"></p>
 <div id="md_to_html"></div>
@@ -47,6 +51,19 @@ window.onload = init;
     const num = urlParams.get('num');
     console.log(num);
     md_to_html('session'+num+'.md');
+
+    prevLink = document.createElement('a');
+    prevLink.href=location.origin + location.pathname+'?num=' + String(parseInt(num)-1).padStart(2, '0');
+    prevLink.textContent = '<-- Previous  ';
+    document.getElementById("prevnext").appendChild(prevLink);
+
+
+
+    nextLink = document.createElement('a');
+    nextLink.href=location.origin + location.pathname+'?num=' + String(parseInt(num)+1).padStart(2, '0');
+    nextLink.textContent = 'Next -->';
+    document.getElementById("prevnext").appendChild(nextLink);
+
 </script>
 
 <footer class="desktop">
