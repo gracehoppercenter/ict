@@ -33,89 +33,74 @@ window.onload = init;
 <hr>
 
 <main>
-<time datetime="2026-01-20">Week of Monday, January 12, 2026</time>
+<time datetime="2026-01-20">Week of Tuesday, January 20, 2026</time>
 
 <h2>Overview</h2>
 <p>
-
+This is it, the last week of <i>CSC 221: Introduction to Problem Solving and
+Programming</i>! We explored <i>a lot</i> this semester, and you are leaving
+this course with a better understanding of what computer programs are and what
+they can do, and with a solid advanced beginner's level knowledge of the
+Python programming language. We'll tack on next Tuesday to this last week. When
+you come in at the start of February, you will be in <i>ITP 225: Web Scripting
+Language</i>. 
+</p><p>
+That said, from a practical point of view you won't feel any difference, since
+we've fused these two courses together in our study plan, and have already
+made the transition from this course, with its introduction to Python to the
+next one, in which we will use the large Python web application framework
+Django to learn to build web applications.
 </p>
 
 <section>
-<h2>Monday, January 12th</h2>
+<h2>Tuesday, January 28th</h2>
 
 <h3>Classwork</h3>
 <div>
 <p>
-For this class, we'll play with Django's Template Engine, and then for homework
-you'll watch Dr. Chuck's videos about Django Views, which are the glue that holds
-all of Django together.
+Welcome to our final class of <i>CSC 221: Introduction to Problem Solving and
+Programming</i>!
+</p><p>
+We have accomplished <i>a lot</i> this semester - deepening and developing our
+programming skills using Python, getting Python certification, and beginning
+to apply our program skills toward
+<a href="https://en.wikipedia.org/wiki/Web_application">web application</a>
+development.
+</p><p>
+As we've mentioned several times already, when you arrive in class next
+Monday you will be in a different course, <i>ITP 225: Web Scripting
+Languages</i>, but from a learning perspective, we will simply pick up where
+we left off here.
 </p>
 
 <p>
-We'll start today with a quiz on the template videos.
+    Today we'll chat about security - we know enough now to be dangerous, 
+    so there is some responsibility involved in building the kinds of dynamic web applications
+    what we'll build this semester.
 </p><p>
-After that, we'll have a little chat about template engines, and how useful
-for all kinds of things. Chris **loves** template engines, so he'll have a lot
-to say here =).
-</p><p>
-To practice with template engines, we'll create a simple 
-<a href="https://en.wikipedia.org/wiki/Static_site_generator">
-    Static site generator(SSG)
-</a>
-, which uses a template engine to minimize repetition. (EXACT ASSIGNMENT TBD)
-</p>
-<p>
-    Here's some starter code we'll build from:
-    <pre>
-import django
-from django.template import Template, Context
+    We'll spend a few minutes reviewing <a href="https://www.dj4e.com/lessons/django_views#">
+        Dr. Chuck's danger example</a>
+        and then we'll play with some of our own examples.
 
-django.conf.settings.configure(
-    TEMPLATES=[{
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-    }]
-)
-django.setup()
+        Specifically, we'll layer in our knowledge of SQL to investigate 
+        <a href="https://en.wikipedia.org/wiki/SQL_injection">SQL Injection Attacks</a>
+        and our knowledge of JavaScript to investigate <a href="https://en.wikipedia.org/wiki/Cross-site_scripting">
+            Cross-site scripting attacks</a>
+        </p>
 
-template = Template( """
-Hi {{ name }} - Do you want to come to my birthday party?
-""")
+        <p>Once we understand the theory, we'll try it out by hacking a bank (... a pretend one!)
+            <a href="https://demo.testfire.net/index.jsp">Here's our victim</a>
+    </p>
 
-for g in ['Alice', 'Bob', 'Cathy', 'Dave']:
-    context = Context({'name':g})
-    personalized_email = template.render(context)
-
-    print("=" * 50)
-    print(personalized_email)
-</pre>
-</p>
-</div>
+    <p>Finally, we'll look at the silly story of <a href="https://xkcd.com/327/">
+        Little Bobby Tables</a>
+    </p>
 
 <h3>Homework</h3>
-<p>Now that we understand Models and Templates, it's time to learn about views.
-This will be an exciting time, because we'll finally be able to put everything
-together and start building complete Django apps.
-</p><p>
-For homework, watch and take notes on these videos:
-</p>
-<ul>
-    <li>In the lesson <a href="https://www.dj4e.com/tsugi/lms/lessons/dj4e_mvc">
-        "Understanding Model View Controller"</a>, watch:
-        <ul>
-            <li>"Model View Controller in Django (7:07)"</li>
-        </ul>
-    </li>
-    <li>In the lesson <a href="https://www.dj4e.com/tsugi/lms/lessons/django_views">
-        "Django Views and Templates"</a>, watch:
-        <ul>
-            <li>URL Routing in Django (6:59)</li>
-            <li>Django Views (6:19)</li>
-        </ul>
-    </li>
-</ul>
+<p>No homework! Let's all take the long weekend to rest, reset, and prepare for the new semester!</p>
 </div>
 </section>
-<!--
+
 <section>
 <h2>Friday, January 24th</h2>
 
@@ -201,7 +186,6 @@ and <i>Django Views</i> (6:19 min).</li>
 </ol>
 </div>
 </section>
--->
 </main>
 
 <footer class="desktop">
