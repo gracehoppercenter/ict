@@ -67,29 +67,9 @@ To practice with template engines, we'll create a simple
 , which uses a template engine to minimize repetition. (EXACT ASSIGNMENT TBD)
 </p>
 <p>
-    Here's some starter code we'll build from:
-    <pre>
-import django
-from django.template import Template, Context
-
-django.conf.settings.configure(
-    TEMPLATES=[{
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-    }]
-)
-django.setup()
-
-template = Template( """
-Hi {{ name }} - Do you want to come to my birthday party?
-""")
-
-for g in ['Alice', 'Bob', 'Cathy', 'Dave']:
-    context = Context({'name':g})
-    personalized_email = template.render(context)
-
-    print("=" * 50)
-    print(personalized_email)
-</pre>
+    <a href="https://codeberg.org/MrJonesAPS/csc221/src/branch/main/templates">
+        We'll start by grabbing and running the starter code from here</a>
+    
 </p>
 </div>
 
