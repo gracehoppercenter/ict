@@ -53,7 +53,45 @@ that you seniors can finish the course in time for your graduation.
 -->
 
 <section>
-<h2>Tuesday and Wednesday, January 13th and 14th</h2>
+<h2>Wednesday, January 14th</h2>
+
+<h3>Classwork / Homework / Evaluation</h3>
+<div>
+<p>
+Since my plan yesterday was too ambitious, we did not have time to assign
+functions for homework. Since we really need to get moving on this so y'all
+can get out of here in May, I'll share what they did yesterday and have you
+implement the operations.
+</p><p>
+Here is the data structure and use and operations (functions) we will create
+as defined in our <code>LINKLIST.H</code> file:
+</p><pre>
+struct node {
+    int data;
+    struct node* next;
+};
+
+struct node* create_node(int data);
+char* render_list(struct node* list, char* list_str);
+int list_size(struct node* list);
+int is_empty(struct node* list);
+void insert_into_list(struct node* list, int data);
+int remove_from_list(struct node* list, int data);
+void delete_list(struct node* list);
+</pre><p>
+What we need to do now is to iteratively:
+</p><ol>
+<li>
+Write a test which captures what we intend for each of these functions to do.
+</li><li>
+Write code in our <code>LINKLIST.C</code> file that makes our test pass.
+</li>
+</ol>
+</div>
+</section>
+
+<section>
+<h2>Tuesday January 13th</h2>
 
 <h3>Classwork / Homework / Evaluation</h3>
 <div>
@@ -80,9 +118,8 @@ list of them.
 </li>
 </ol><p>
 Spend the first half of class on these questions, and then let's agree on a
-shared data structure together in the second half of class, and divide up the
-functions, assign them to pairs for homework, and then have each pair present
-their function implementation at the beginning of our next class.
+shared data structure together and a list of operations (function) in the
+second half of class.
 </p>
 </div>
 </section>
