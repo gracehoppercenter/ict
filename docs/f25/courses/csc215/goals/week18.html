@@ -40,17 +40,19 @@ discussed in class my reasons for intentionally overlaying the two courses so
 that you seniors can finish the course in time for your graduation.
 </p>
 
-<!--
 <section>
 <h2>Thursday and Friday, January 15th and 16th</h2>
 
 <h3>Classwork / Homework / Evaluation</h3>
 <div>
 <p>
+Today in class we will break up into pairs and divide up the link list
+functions that need to be implemented.  Each pair will be assigned one
+function to test and write. At the beginning of our next class the
+working functions will be shared with the class.
 </p>
 </div>
 </section>
--->
 
 <section>
 <h2>Wednesday, January 14th</h2>
@@ -83,15 +85,15 @@ void dellst(struct node* list);
 </pre><p>
 Here is <code>LINKLIST.C</code>:
 </p><pre>
-#include &lt;stdio.h&rt;
+#include &lt;stdio.h&gt;
 #include "LINKLIST.H"
 #define NULL 0
 
 struct node *mknode(n) int n; {
     struct node* x;
     x = alloc(4);
-    x-&lt;num = n;
-    x-&lt;next = NULL;
+    x-&gt;num = n;
+    x-&gt;next = NULL;
     return x;
 }
 </pre><p>
@@ -107,23 +109,36 @@ main() {
   TEST_CASE("Test can create node") {
       struct node* mynode;
       mynode = mknode(42);
-      ASSERT(mynode-&lt;num == 42);
-      ASSERT(mynode-&lt;next == NULL);
+      ASSERT(mynode-&gt;num == 42);
+      ASSERT(mynode-&gt;next == NULL);
   }
 
   END_TESTING();
 }
 </pre><p>
-This compiles and runs.
-</p><ol>
+This compiles and runs, and produces the following output:
+</p><p>
+<img src="resources/linklist_test1.png" alt="Linklist Test1" style="width: 50%">
+</p><p>
+I'm not happy with the part of the output that says:
+</p><pre>
+1 test.
+0 passed, 0 failed.
+</pre><p>
+Hopefully we can get Liam and any ambitious students to help decide what we
+want <code>BDSCTEST.H</code> to do and fix it accordingly.
+</p><p>
 What we need to do now is to iteratively:
 </p><ol>
 <li>
-Write a test which captures what we intend for each of these functions to do.
+Write tests which capture what we intend for each of our linked list
+functions to do.
 </li><li>
-Write code in our <code>LINKLIST.C</code> file that makes our test pass.
+Write code in <code>LINKLIST.C</code> file that makes these tests pass.
 </li>
-</ol>
+</ol><p>
+At the end we should have a working, usable linked list library.
+</p>
 </div>
 </section>
 
