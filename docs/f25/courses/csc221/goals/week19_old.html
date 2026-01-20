@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>GHC CSC 221 Week 18</title>
+<title>GHC CSC 221 Week 19</title>
 <style>
 @import url(../../../css/goals.css);
 img {
@@ -24,7 +24,11 @@ window.onload = init;
 </div>
 <div class="desktop">
 <h2>Grace Hopper Center</h2>
+<<<<<<< HEAD
+<h1>CSC 221 Weekly Assignments: Week 19</h1>
+=======
 <h1>CSC 221 Weekly Assignments: Week 18</h1>
+>>>>>>> 925fe291ced3690c0416416de2bdcb279e32fd55
 </div>
 <div class="mobile">
 <h1>CSC 221</h1>
@@ -33,25 +37,54 @@ window.onload = init;
 <hr>
 
 <main>
-<time datetime="2026-01-20">Week of Monday, January 12, 2026</time>
+<time datetime="2026-01-20">Week of Tuesday, January 20, 2026</time>
 
 <h2>Overview</h2>
 <p>
-Jeff was happy to work with Kendyl on PCEP prep this past Saturday. If you'd
-like to take another crack at it, next Saturday, January 17 from 9 am to 12
-noon will be your last opportunity to do so.
+<<<<<<< HEAD
+</p><p>
 </p>
 
+<!--
+<section>
+<h2>Friday, January 23rd</h2>
+=======
+This is it, the last week of <i>CSC 221: Introduction to Problem Solving and
+Programming</i>! We explored <i>a lot</i> this semester, and you are leaving
+this course with a better understanding of what computer programs are and what
+they can do, and with a solid advanced beginner's level knowledge of the
+Python programming language. We'll tack on next Tuesday to this last week. When
+you come in at the start of February, you will be in <i>ITP 225: Web Scripting
+Language</i>. 
+</p><p>
+That said, from a practical point of view you won't feel any difference, since
+we've fused these two courses together in our study plan, and have already
+made the transition from this course, with its introduction to Python to the
+next one, in which we will use the large Python web application framework
+Django to learn to build web applications.
+</p>
 
 <section>
-<h2>Friday, January 16th</h2>
+<h2>Tuesday, January 28th</h2>
 
-<p>We'll start with a quiz to make sure you're keeping up with Django's
-URL Routing and MVT structure</p>
-
-<h3>Discussion - Security</h3>
-
+<h3>Classwork</h3>
 <div>
+<p>
+Welcome to our final class of <i>CSC 221: Introduction to Problem Solving and
+Programming</i>!
+</p><p>
+We have accomplished <i>a lot</i> this semester - deepening and developing our
+programming skills using Python, getting Python certification, and beginning
+to apply our program skills toward
+<a href="https://en.wikipedia.org/wiki/Web_application">web application</a>
+development.
+</p><p>
+As we've mentioned several times already, when you arrive in class next
+Monday you will be in a different course, <i>ITP 225: Web Scripting
+Languages</i>, but from a learning perspective, we will simply pick up where
+we left off here.
+</p>
+
 <p>
     Today we'll chat about security - we know enough now to be dangerous, 
     so there is some responsibility involved in building the kinds of dynamic web applications
@@ -75,138 +108,14 @@ URL Routing and MVT structure</p>
         Little Bobby Tables</a>
     </p>
 
-</div>
-
-<h3>Classwork - Templates</h3>
-<p>
-Now that we know to use the escape() function, we'll start building some 
-of our own django templates. For this activity, we'll return to our blank
-DJango apps that you setup with Jeff in week 14 (see the instructions here:
-<a href="https://gitlab.com/gracehoppercenter/csc221/-/blob/main/DJ4E/GettingStarted.md">
-    Setting Up Your Local Workstation for Django Development</a>)
-</p>
-<p>
-    We'll walk through the process of setting up our first view together, and then
-    you'll repeat the process on your own for homework.
-</p>
-</div>
-
 <h3>Homework</h3>
-<p>
-You should make a total of **three** new templates 
-(not counting our icecream example from Monday). Each template should:
-</p>
-<ul>
-<li>Be linked from your index.html page</li>
-<li>Take an input parameter, using the URL template example from Dr. Chuck's 
-    video, and display it in the template</li>
-</ul>
-    <p>
-This assignment is due before the start of class on Wednesday. 
-We'll grade each-other's pages at the start of class on Wednesday.
-    </p>
+<p>No homework! Let's all take the long weekend to rest, reset, and prepare for the new semester!</p>
 </div>
 </section>
 
-<section>
-<h2>Wednesday, January 14th</h2>
-
-<h3>Classwork</h3>
-<div>
-<p>
-Today is a short day, so we'll dive in quickly!
-
-Our goal today is to make sure we understand how all three parts
-of the Django app come together.
-</p>
-
-<p>
-    First, we'll all clone <a href="https://github.com/csev/dj4e-samples">
-        Dr. Chuck's DJ4E sample repo</a>, and we'll get it running.
-    </p>
-
-<p>From there, we'll slowly walk through a few of the samples:</p>
-<ul>
-    <li>views/game, tmpl/game, and views/rest</li>
-    <li>views/danger/</li>
-</ul>
-
-<p>There is a lot to know about the "danger" example. We'll play with it
-    a lot more next time.
-</p>
-
-
-</div>
-
-<h3>Homework</h3>
-<p>
-No homework! The assignment that I originally planned for homework
-today will be moved to next week. Check out next Wednesday's
-less on plan for that assignment.
-</p>
-</div>
-</section>
-
-<section>
-<h2>Monday, January 12th</h2>
-
-<h3>Classwork</h3>
-<div>
-<p>
-For this class, we'll play with Django's Template Engine, and then for homework
-you'll watch Dr. Chuck's videos about Django Views, which are the glue that holds
-all of Django together.
-</p>
-
-<p>
-We'll start today with a quiz on the template videos.
-</p><p>
-After that, we'll have a little chat about template engines, and how useful
-for all kinds of things. Chris **loves** template engines, so he'll have a lot
-to say here =).
-</p><p>
-To practice with template engines, we'll create a simple 
-<a href="https://en.wikipedia.org/wiki/Static_site_generator">
-    Static site generator(SSG)
-</a>
-, which uses a template engine to minimize repetition. We wrote some starter code
-for a book review website here:  
-</p>
-<p>
-    <a href="https://codeberg.org/MrJonesAPS/csc221/src/branch/main/templates">
-        starter code</a>. And for homework, you should work on adding a few
-        more books to your website.
-    
-</p>
-</div>
-
-<h3>Homework</h3>
-<p>Now that we understand Models and Templates, it's time to learn about views.
-This will be an exciting time, because we'll finally be able to put everything
-together and start building complete Django apps.
-</p><p>
-For homework, watch and take notes on these videos:
-</p>
-<ul>
-    <li>In the lesson <a href="https://www.dj4e.com/tsugi/lms/lessons/dj4e_mvc">
-        "Understanding Model View Controller"</a>, watch:
-        <ul>
-            <li>"Model View Controller in Django (7:07)"</li>
-        </ul>
-    </li>
-    <li>In the lesson <a href="https://www.dj4e.com/tsugi/lms/lessons/django_views">
-        "Django Views and Templates"</a>, watch:
-        <ul>
-            <li>URL Routing in Django (6:59)</li>
-            <li>Django Views (6:19)</li>
-        </ul>
-    </li>
-</ul>
-</div>
-</section>
-<!--
 <section>
 <h2>Friday, January 24th</h2>
+>>>>>>> 925fe291ced3690c0416416de2bdcb279e32fd55
 
 <h3>Classwork</h3>
 <div>
@@ -233,9 +142,16 @@ next class.</li>
 </ol>
 </div>
 </section>
+<<<<<<< HEAD
+-->
+
+<section>
+<h2>Wednesday, January 21st</h2>
+=======
 
 <section>
 <h2>Wednesday, January 22nd</h2>
+>>>>>>> 925fe291ced3690c0416416de2bdcb279e32fd55
 
 <h3>Classwork</h3>
 <div>
@@ -245,22 +161,42 @@ We will begin class today with the promised quiz on your homework lectures.
 After which we will take a quick look back at where we have been recently:
 </p>
 <ol>
+<<<<<<< HEAD
+<li>
+We did a brief study of
+<a href="https://en.wikipedia.org/wiki/SQL">SQL</a> and learned how to use
+<a href="https://en.wikipedia.org/wiki/SQLite">SQLite</a> to create and query
+database tables.
+</li><li>
+We learned about
+=======
 <li>We did a brief study of
 <a href="https://en.wikipedia.org/wiki/SQL">SQL</a> and learned how to use
 <a href="https://en.wikipedia.org/wiki/SQLite">SQLite</a> to create and query
 database tables.</li>
 
 <li>We learned about
+>>>>>>> 925fe291ced3690c0416416de2bdcb279e32fd55
 <a href="https://docs.djangoproject.com/en/5.1/topics/db/models/">Django
 Models</a> and how the
 <a href="https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping">ORM
 </a> enables us to write Python code which controls our application's data
+<<<<<<< HEAD
+base.
+</li><li>
+During your last homework assignment, you were introduced to the
+<a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">
+MVC</a> software design pattern and how Django implements this pattern in its
+own unique (and somewhat confusing) way.
+</li>
+=======
 base.</li>
 
 <li>During your last homework assignment, you were introduced to the
 <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">
 MVC</a> software design pattern and how Django implements this pattern in its
 own unique (and somewhat confusing) way.</li>
+>>>>>>> 925fe291ced3690c0416416de2bdcb279e32fd55
 </ol>
 <p>
 connecting it with another look at Dr. Chuck's <q>big picture</q> diagram:
@@ -283,14 +219,20 @@ fork</a> today).
 
 <h3>Homework</h3>
 <div>
+<<<<<<< HEAD
+<p>
+Watch Dr. Chuck's videos, <i>URL Routing in Django</i> (6:59 min) and <i>Django
+Views</i> (6:19 min).
+</p>
+=======
 <ol>
 <li>Watch Dr. Chuck's videos, <i>URL Routing in Django</i> (6:59 min)
 and <i>Django Views</i> (6:19 min).</li>
 
 </ol>
+>>>>>>> 925fe291ced3690c0416416de2bdcb279e32fd55
 </div>
 </section>
--->
 </main>
 
 <footer class="desktop">
