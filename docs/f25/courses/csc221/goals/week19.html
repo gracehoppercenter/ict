@@ -41,69 +41,67 @@ window.onload = init;
 </p>
 
 
-<!--<section>
-<h2>Friday, January 16th</h2>
+<section>
+<h2>Friday, January 23rd</h2>
 
-<p>We'll start with a quiz to make sure you're keeping up with Django's
-URL Routing and MVT structure</p>
-
-<h3>Discussion - Security</h3>
-
+<h3>Classwork - Template Inheritance</h3>
 <div>
 <p>
-    Today we'll chat about security - we know enough now to be dangerous, 
-    so there is some responsibility involved in building the kinds of dynamic web applications
-    what we'll build this semester.
-</p><p>
-    We'll spend a few minutes reviewing <a href="https://www.dj4e.com/lessons/django_views#">
-        Dr. Chuck's danger example</a>
-        and then we'll play with some of our own examples.
-
-        Specifically, we'll layer in our knowledge of SQL to investigate 
-        <a href="https://en.wikipedia.org/wiki/SQL_injection">SQL Injection Attacks</a>
-        and our knowledge of JavaScript to investigate <a href="https://en.wikipedia.org/wiki/Cross-site_scripting">
-            Cross-site scripting attacks</a>
-        </p>
-
-        <p>Once we understand the theory, we'll try it out by hacking a bank (... a pretend one!)
-            <a href="https://demo.testfire.net/index.jsp">Here's our victim</a>
-    </p>
-
-    <p>Finally, we'll look at the silly story of <a href="https://xkcd.com/327/">
-        Little Bobby Tables</a>
-    </p>
-
-</div>
-
-<h3>Classwork - Templates</h3>
-<p>
-Now that we know to use the escape() function, we'll start building some 
-of our own django templates. For this activity, we'll return to our blank
-DJango apps that you setup with Jeff in week 14 (see the instructions here:
-<a href="https://gitlab.com/gracehoppercenter/csc221/-/blob/main/DJ4E/GettingStarted.md">
-    Setting Up Your Local Workstation for Django Development</a>)
-</p>
-<p>
-    We'll walk through the process of setting up our first view together, and then
-    you'll repeat the process on your own for homework.
-</p>
-</div>
-
-<h3>Homework</h3>
-<p>
-You should make a total of **three** new templates 
-(not counting our icecream example from Monday). Each template should:
+I've updated your grades for our recent assignments:
 </p>
 <ul>
-<li>Be linked from your index.html page</li>
-<li>Take an input parameter, using the URL template example from Dr. Chuck's 
-    video, and display it in the template</li>
+    <li>The reading quiz about templates</li>
+    <li>The template-based static site generator for book reviews</li>
+    <li>Creating simple Django templates/routes</li>
+    <li>For those who emailed me about changes to your chat assignment, I think 
+        I've responded to everyone</li>
 </ul>
-    <p>
-This assignment is due before the start of class on Wednesday. 
-We'll grade each-other's pages at the start of class on Wednesday.
-    </p>
+<p>
+    As always, I make mistakes. If you have any questions or concerns about 
+    grades, email me =)
+</p>
 </div>
+
+<h3>Template Inheritance</h3>
+<div>
+<p>
+Now that we have a few templates, let's make them pretty. We'll use template
+inheritance for this - we'll write one pretty page and then each of our
+templates will just inherit the prettiness
+    </p>
+
+<p>
+    As before, the code is a little involved and requires a good understanding
+    of Django's organization. We'll go through this code live and slowly, 
+    but I've also posted all of the changes ahead of time here:
+    <a href="https://codeberg.org/MrJonesAPS/csc221/commit/64e3946568b4297b2998d943aa76c0ac4268cf6c">
+        setup template inheritance and a nice homepage
+    </a>. Don't just copy/paste these changes - I want you to really understand
+    them!
+</p>
+</div>
+
+
+<h3>Homework</h3>
+<div>
+    <p>Most importantly -  do your best snow dance before bed tonight ☃</p>
+<p>Other than that, pretty up your Django website:
+    <ul>
+        <li>Add some content (maybe a header) to your
+    base HTML file</li>
+    <li>Personalize the base CSS</li> 
+    <li>Apply it to all of the templates that you made last time</li>
+    <li>Make sure all of your templates are linked from your new homepage</li>
+        </ul>
+    </p>
+    <p>
+    Starting next week, we'll be branching
+    into more complex views/templates - we'll be spinning up new templates 
+    quickly, so you need to be comfortable with this process!</p>
+
+
+</div>
+
 </section>
 
 <section>
