@@ -69,7 +69,7 @@ The downside to writing a custom HTML page is that the client might struggle if 
 
 ## Due Date
 
-- This project is due before the start of class on January 28th, our last class session for ITD110. I have a few informal check-ins between now and then:
+- This project is due <del>before the start of class on January 28th, our last class session for ITD110.</del>, by 3pm on Tuesday, February 3rd.  I have a few informal check-ins between now and then:
    - Email me before the start of class on Tuesday, January 13 to let me know who you've selected as your client. I'll walk around during class and have a short check-in with everyone to make sure that you have a client.
    - Aim to complete your initial design and share with your client by the end of the day on Friday, January 16. I'll plan to check-in on progress after the WDE exam on January 20.
 
