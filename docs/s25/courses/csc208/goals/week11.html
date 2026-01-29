@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA CSC 208 Week 11</title>
+<style>
+@import url(../../css/goals.css);
+</style>
+<script src="../../js/init.js"></script>
+<script>
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<div id="logo">
+<a href="index.html"><img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+</div>
+<div class="desktop">
+<h2>Governor's Career & Technical Academy Arlington</h2>
+<h1>CSC 208 Weekly Goals and Tasks: Week 11</h1>
+</div>
+<div class="mobile">
+<h1>CSC 208</h1>
+</div>
+</header>
+<hr>
+
+<main>
+<time datetime="2025-04-22">Week of Tuesday, April 22, 2025</time>
+
+<h2>Overview</h2>
+<p>
+This week we will continue our study of
+<a href="https://en.wikipedia.org/wiki/Combinatorics">combinatorics</a>.
+</p>
+
+<section>
+<h2>Thursday, April 24th</h2>
+
+<h3>Classwork / Homework</h3>
+<div>
+<p>
+We'll get back our quizzes from last class.  Here are solutions:
+</p>
+<ol>
+<li><b>55</b>. This can be derived either by subtracting the number of 8-bit
+strings of weight 4 that <i>do not</i> have any 1s in the first two bits (15)
+from the total number of of 8-bit strings of weight 4 (70), so by summing the
+number of 8-bit strings of weight 4 with exactly 1 bit in the first two bits
+(40) with the number containing two 1s in the first two bits (15).</li>
+
+<li><b>26³ × 10³ = 17,576,000</b> license plates. We use the product principle
+because we're making an ordered selection where:
+<pre>
+First position: 26 choices (any letter)
+Second position: 26 choices (any letter)
+Third position: 26 choices (any letter)
+Fourth position: 10 choices (any digit)
+Fifth position: 10 choices (any digit)
+Sixth position: 10 choices (any digit)
+</pre>
+So we multiply: 26 × 26 × 26 × 10 × 10 × 10 = 17,576,000</li>
+
+<li>Rolling a die and flipping a coin: 6 × 2 = <b>12 outcomes</b> (product
+principle) Rolling a die only if the coin shows heads: 1 (tails) + 6 (heads
+followed by die roll) = <b>7 outcomes</b> (sum principle) The difference is
+that in the first scenario, both events always occur, while in the second, the
+die roll is conditional.</li>
+</ul>
+<p>
+Pairs will present solutions to each of the exercises selected last class.
+For homework, be sure you understand and can work <i>all</i> the exercises
+so you are ready for the quiz next Monday.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Tuesday, April 22nd</h2>
+
+<h3>Classwork / Homework</h3>
+<div>
+<p>
+After discussing the homework, we'll have a quiz on
+<a href="https://discrete.openmathbooks.org/dmoi4/sec_counting-combine-outcomes.html">
+Section 3.2: Combining Outcomes</a>.
+</p><p>
+After the quiz, we will look at what happens when <i>non-disjoint</i> sets are
+combined and begin working through the <i>Practice Problems</i> and
+<i>Additional Exercises</i> in
+<a href="https://discrete.openmathbooks.org/dmoi4/sec_counting-non-disjoint.html">
+Section 3.3: Non-Disjoint Outcomes</a>.
+</p><p>
+To encourage more collaboration, let's try pairing up and having each pair
+prepare the following exercises to present to the class on Thursday. There
+11 exercises in total, so we'll formulate a plan to map students to
+exercises in class.
+</p>
+<h4>Period 1B</h4>
+<ul>
+<li>Nikita and Jake: Problem 8</li>
+<li>Conrad and Dylan: Problem 2</li>
+<li>Alex and Udval: Problem 4</li>
+<li>Evan and Brendan: Problem 1</li>
+<li>Donavan and Gabriel: Problem 7</li>
+<li>Zach and Luis: Problem 3</li>
+<li>Toby and Rockwell: Problem 5</li>
+<li>Sean and Alessandra: Problem 6</li>
+<li>Grant and (Ellenor and/or Fatima): Problem 9</li>
+</ul>
+
+<h4>Period 4B</h4>
+<ul>
+<li>Blu and Alex: Problems 1 and 2</li>
+<li>Yuri and Anupama: Problems 4 and 5</li>
+<li>Colin and Rehoboth:  Additional Exercise 2</li>
+<li>Hisham and Abi: Problems 6 and 7</li>
+<li>Brayden and Gabe: Problems 8 and 9</li>
+<li>Jack: Problem 3</li>
+</ul>
+</div>
+</section>
+</main>
+
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

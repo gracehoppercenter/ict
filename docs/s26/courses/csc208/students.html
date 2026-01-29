@@ -4,12 +4,127 @@
 <meta charset="utf-8">
 <title>CSC 208: Introduction to Discrete Structures</title>
 <style>
-@import url(../css/students.css);
-h3 {
-    font-size: 2vw;
+@import url(css/colors.css);
+.mobile {
+    display: none;
+}
+body {
+  font-family: sans-serif;
+}
+a, a:visited {
+  text-decoration: none;
+  font-weight: bold;
+}
+header {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+header>div {
+  margin: 0;
+  padding: 1vw;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+header>div.desktop {
+  margin-left: 2.6vw;
+}
+header img {
+  width: 15vw;
+}
+header h1, header h2 {
+  padding: 0;
+  margin: 0;
+}
+header h1 {
+  font-size: 2.2vw;
+}
+header h2 {
+  font-size: 2.4vw;
+  margin-top: 1.4vw;
+}
+main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  margin: 1vw 3vw 1vw 3vw;
+}
+main>h2 {
+  grid-area: 1 / 1 / 2 / 3; 
+  text-align: center;
+}
+main p {
+  font-size: 1.4vw;
+  text-align: justify;
+}
+main h2 {
+  font-size: 2.4vw;
+}
+main ul, main ol {
+  font-size: 1.6vw;
+  margin-left: 1.5vw;
+}
+main li {
+  margin-bottom: 0.5vw;
+}
+footer {
+  text-align: center;
+  margin-top: 4vw;
+}
+footer hr {
+  margin-bottom: 1vw;
+}
+footer a {
+  display: inline;
+  width: 50px;
+  padding: 1px;
+  font-size: 9px;
+  font-family: Verdana, Geneva, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid black;
+  vertical-align: middle;
+  white-space: nowrap;
+  cursor: pointer;
+}
+footer a strong {
+  font-weight: bold;
+  padding-left: 2px;
+  margin-right: 5px;
+}
+
+/* Mobile style */
+@media screen and (max-width: 1080px) and (orientation: portrait) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  header img {
+    width: 25vw;
+    padding: 2vw;
+  }
+  header h1 {
+    margin-left: 10vw;
+    margin-top: 4vw;
+    font-size: 9vw;
+  }
+  main {
+    grid-template-columns: 100%;
+    padding: 3vw;
+  }
+  main h2 {
+    font-size: 4vw;
+  }
+  main li {
+    font-size: 3vw;
+    margin-bottom: 1.4vw;
+  }
 }
 </style>
-<script src="../js/init.js"></script>
+<script src="../../js/init.js"></script>
 <script>
 window.onload = init;
 </script>
@@ -17,7 +132,7 @@ window.onload = init;
 <body>
 <header>
 <div id="logo">
-<a href="../../index.html"><img src="images/gctaa_nvcc.png"
+<a href="index.html"><img src="../../../images/gctaa_nvcc.png"
 alt="GCTAA Logo"></a>
 </div>
 <div class="desktop">
@@ -30,55 +145,29 @@ alt="GCTAA Logo"></a>
 </header>
 <hr>
 <main>
-<div id="heading">
 <h2>Student Git Repos</h2>
-</div>
-
 <div>
-<h3>Period 1B</h3>
 <ul>
-  <li><a href="https://git.gctaa.net/gbarragan/csc208">Gabriel</a></li>
-  <li><a href="https://github.com/Evan-Brown123/CSC208">Evan</a></li>
-  <li><a href="https://git.gctaa.net/dchen/CSC208">Dylan</a></li>
-  <li><a href="https://codeberg.org/dull_ok/CSC_208">Sean</a></li>
-  <li><a href="https://github.com/luisolavarria/csc208">Luis</a></li>
-  <li><a href="https://codeberg.org/zgilbreth/CSC208">Zach</a></li>
-  <li><a href="https://git.gctaa.net/NGUNVILLE/CSC208">Noah</a></li>
-  <li><a href="https://github.com/alexhamill/CSC208">Alex H.</a></li>
-  <li><a href="https://github.com/Arctursus12/csc208">Nikita</a></li>
-  <li><a href="https://codeberg.org/Rockwelllucier/CSC208">Rockwell</a></li>
-  <li><a href="https://github.com/emahshie/csc208">Eleanor</a></li>
-  <li><a href="https://github.com/aless-mendoza/csc208">Alessandra</a></li>
-  <li><a href="https://github.com/tobyMickelson/csc208">Toby</a></li>
-  <li><a href="https://codeberg.org/Udval/CSC208">Udval</a></li>
-  <li><a href="https://github.com/BrendanO123/csc208">Brendan</a></li>
-  <li><a href="https://github.com/Dono-Rossi/CSC208">Donovan</a></li>
-  <li><a href="https://github.com/ConradSkelly/CSC-208">Conrad</a></li>
-  <li><a href="https://codeberg.org/Grant/csc208">Grant</a></li>
-  <li><a href="https://codeberg.org/JakeStewart/CSC-208">Jake</a></li>
-  <li><a href="https://github.com/fziadah24/csc208">Fatima</a></li>
- </ul>
-</div>
-
-<div>
-<h3>Period 4B</h3>
-<ul>
-  <li><a href="https://github.com/anupamabarua/csc208">Anupama</a></li>
-  <li><a href="https://github.com/jackaaburk/csc208">Jack</a></li>
-  <li><a href="https://github.com/Archonic944/csc208">Gabe</a></li>
-  <li><a href="https://github.com/aelliott26/csc208">Alex Elliott</a></li>
-  <li><a href="https://codeberg.org/YFowler435/csc208">Yuri</a></li>
-  <li><a href="https://codeberg.org/ColinG/csc208.git">Colin</a></li>
-  <li><a href="https://codeberg.org/Abi/CSC208">Abi</a></li>
-  <li><a href="https://github.com/rehobothkebede/csc208">Rehoboth</a></li>
-  <li><a href="https://github.com/hishamkherbouch/csc208">Hisham</a></li>
-  <li><a href="https://github.com/1bMedina/csc208">Blu</a></li>
-  <li><a href="https://github.com/BlueZeeKing/csc208">Brayden</a></li>
-  <li><a href="https://codeberg.org/gracehoppercenter/csc208/">José Ejemplo</a>
+  <li><a href="https://codeberg.org/Beggsmeb/csc208">Mason</a></li>
+  <li><a href="https://codeberg.org/waleedchahid/csc208">Waleed</a></li>
+  <li><a href="https://codeberg.org/aryachudiwale/csc208">Arya</a></li>
+  <li><a href="https://codeberg.org/smglaze/csc208">Sean</a></li>
+  <li><a href="https://codeberg.org/nacho-kitty/csc208projects">Delanie</a></li>
+  <li><a href="https://codeberg.org/Stephen/csc208">Stephan</a></li>
+  <li><a href="https://codeberg.org/dimitrick/csc208">Dimitri</a></li>
+  <li>
+  <a href="https://codeberg.org/robbiebmclaughlin-hub/csc208">Robbie</a>
   </li>
+  <li><a href="https://github.com/AntoanNikolov/CSC208">Antoan</a></li>
+  <li><a href="https://codeberg.org/nathanstav/csc208">Nathan</a></li>
+  <li><a href="https://codeberg.org/gterrazas4/csc208">Giselle</a></li>
+  <li><a href="https://codeberg.org/Balugawhal/csc208">Evan</a></li>
+  <li><a href="https://codeberg.org/jejemplo/csc208">José Ejemplo</a></li>
+  <li><a href="https://codeberg.org/MrJonesAPS/csc222">Chris</a></li>
   <!-- li><a href=""></a></li -->
 </ul>
 </div>
+<div></div>
 </main>
 
 <footer class="desktop">
