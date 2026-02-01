@@ -2,7 +2,12 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>GCTAA ITP 225 Session Details</title>
+<title>GCTAA ITD 210 Session Details</title>
+
+<link rel="stylesheet" href="../base/css/goals.css">
+<link rel="stylesheet" href="../base/css/main.css">
+
+
 <style>
 @import url(../../css/goals.css);
 </style>
@@ -20,7 +25,7 @@ window.onload = init;
 <body>
 <header>
 <div id="logo">
-<a href="../index.html"><img src="../../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<a href="../index.html"><img src="../base/images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
 </div>
 <div class="desktop">
 <h2>Governor's Career & Technical Academy Arlington</h2>
@@ -31,22 +36,34 @@ window.onload = init;
 </div>
 </header>
 <hr>
-<main>
-<time id="title">placeholder</time>
+<h1 id="title">placeholder</h1>
+<p><a href="../calendar/">Back to Calendar</a></p>
 
-<time><a href="../calendar/">Back to Calendar</a></time>
+
+<div id="prevnext"></div>
 
 <h2>Today's Topic</h2>
 <p id="topic"></p>
-
 <div id="md_to_html"></div>
-</main>
 <script>
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const num = urlParams.get('num');
     console.log(num);
     md_to_html('session'+num+'.md');
+
+    prevLink = document.createElement('a');
+    prevLink.href=location.origin + location.pathname+'?num=' + String(parseInt(num)-1).padStart(2, '0');
+    prevLink.textContent = '<-- Previous  ';
+    document.getElementById("prevnext").appendChild(prevLink);
+
+
+
+    nextLink = document.createElement('a');
+    nextLink.href=location.origin + location.pathname+'?num=' + String(parseInt(num)+1).padStart(2, '0');
+    nextLink.textContent = 'Next -->';
+    document.getElementById("prevnext").appendChild(nextLink);
+
 </script>
 
 <footer class="desktop">

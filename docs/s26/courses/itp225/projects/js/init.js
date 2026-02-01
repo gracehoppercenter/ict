@@ -1,28 +1,4 @@
 
-function addHeader(jsonUrl) {
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString);
-  const num = urlParams.get('num');
-  fetch(jsonUrl)
-      .then(response => response.json())
-      .then(data => {
-          data.forEach(session => {
-            if (session.session.replace(/ /g,"_").toLowerCase() == num){
-
-              
-              const headerToAdd = `Session ${session.session} | Unit ${session.unit}`
-              const topicToAdd = `${session.topic}`;
-
-              const titleh1 = document.getElementById('title');
-              titleh1.innerHTML=headerToAdd;
-
-              const topicp = document.getElementById('topic');
-              topicp.innerText = topicToAdd;
-            }
-          })
-      })
-    }
-
 function init() {
   var loc = window.location.href;
   var HTMLvalidLinkStr = 'https://validator.w3.org/check?uri=' + loc;
@@ -33,8 +9,8 @@ function init() {
 
 
   // Call the HTML validator API and add the result to the footer
-  /*2025-09-16: Turn this off. We're getting rate-limited by the validator
-  fetch("https://validator.w3.org/nu/?out=json&doc=" + encodeURIComponent(loc), {
+  /*
+  fetch("https://html5.validator.nu/?out=json&doc=" + encodeURIComponent(loc), {
       method: "GET"
   })
   .then(response => response.json())
@@ -58,8 +34,6 @@ function init() {
   //var md_html = conv.makeHtml(md_txt);
   //console.log(md_html);
   //document.getElementById('md_to_html').innerHTML = md_html;
-  
-  addHeader("./session_topics.json");
 
 }
 
@@ -81,7 +55,6 @@ function md_to_html(file){
   document.getElementById('md_to_html').innerHTML = md_html;
   })
   .catch(error => {
-    console.log(error);
     document.getElementById('md_to_html').innerHTML = 'Hi - you\'re faster than I am! I have not published this lesson plan yet. Please check back later!';
   });
 }
