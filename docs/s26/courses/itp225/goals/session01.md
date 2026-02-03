@@ -11,6 +11,8 @@ By the end of this lesson, you should:
 Congrats on finishing CSC221. Officially, today is the start of a totally
 new course, ITP225. We have a new syllabus, new course website, etc. You're certainly encouraged to review the new syllabus, but all of our policies are identical. 
 
+The one change you'll notice is that this course page now uses Chris's calendar style. I'll take a second to make sure everyone knows how to find each day's lesson plan.
+
 ### Certification Exams
 
 The gradebook from last semester is closing. If you were hoping to take a certification exam, today is your last chance!
@@ -18,6 +20,8 @@ The gradebook from last semester is closing. If you were hoping to take a certif
 ### Web 1.0 -> Web 2.0
 
 Everything we've done so far in ITD110, ITD210, and CSC221 could be considered Web 1.0. Today, we'll take our first leap into Web 2.0 functionality by building a pageview counter in Django. This won't feel like much for now, but it's a big step. We'll take a few minutes to appreciate the difference. Read more about web 2.0 here: <https://en.wikipedia.org/wiki/Web_2.0>
+
+In case it helps, here's a commit that includes all the code we'll go over in today's class: <https://codeberg.org/MrJonesAPS/csc221/commit/07ec5a9fbad7ae080cf6f1574c232eee804c08ca>.
 
 ## Homework
 
