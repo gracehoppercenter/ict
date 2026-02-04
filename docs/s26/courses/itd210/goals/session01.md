@@ -6,14 +6,34 @@ By the end of this lesson, you should:
 
 ## What We'll Do In Class
 
-### Recap: Snow Days, Project Deadlines
+### Certification Tests
 
-Welcome back - I hope you stayed warm and enjoyed the week off! Per the new APS policy, I'll accept submissions for the website project until the end of the day tomorrow (the 2nd).
+Today is the last day to (re)take the WDE test. We'll get all of our testers squared away first.
+
+### Recap: Snow Days, Project
+
+Per the new APS policy, I accepted project work until the end of the school day yesterday, and then stayed up past midnight last night grading your projects. Grades are in StudentVue and (other than folks taking the WDE test right now) are final. If you have questions or concerns, talk to me TODAY.
+
+There were a few projects that really stood out::
+
+- [Kyle's Middle School Theater Teacher](https://greetingsplayer1.github.io/client/)
+- [Sebastian's page for a wedding officiant](https://sebastopolis841.github.io/projects/client/test.html)
+- [Adrian's friend's artist portfolio](https://darealcoolgaming.github.io/Projects/client/homepage.html)
+- [Aidan's page for an actual bookstore](https://nadianayr.github.io/projects/Client/index.html)
+- [Jacques's elaborate page about beavers](https://thereal1-jaquiz.github.io/projects/client/index.html)
+- [Molly's Popcorn Menu](https://molly-frog.github.io/projects/client/menu.html)
+- [Ethan's Zander's Lawn Care](https://beippkeri.github.io/projects/client/index.html)
+- [Yared's Cousin's streaming profile](https://ymwhs.github.io/projects/client/index.html)
+- [A portfolio Luka made that looks even better than my own](https://unpolloloco.github.io/projects/client/index.html)
+
+There are plenty more that I was impressed with but didn't make this list. Congrats to everyone who worked hard on this project!
+
+But I was also surprised by how many zero's I gave for this project. For those who need to hear it, we'll have a short chat about college expectations.
 
 ### New Course
 
 Congrats on finishing ITD110. Officially, today is the start of a totally
-new course, ITD210. We have a new syllabus, new course website, etc. You're certainly encouraged to review the new syllabus, but all of my policies are identitical. The DE Expectations Contract that you signed 
+new course, ITD210. We have a new syllabus, new course website, etc. You're certainly encouraged to review the new syllabus, but all of my policies are identical. The DE Expectations Contract that you signed 
 at the beginning of the year covered both courses, so I won't ask you to
 do a new one, and you can keep your existing Github repo.
 
