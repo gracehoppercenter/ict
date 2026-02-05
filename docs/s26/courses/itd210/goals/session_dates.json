@@ -1,5 +1,7 @@
 [
-    {"date": "February02", "session": "01"},
+    {"date": "February02", "session": "Snow Day"},
+    {"date": "February04", "session": "Testing"},
+    {"date": "February06", "session": "01"},
     {"date": "February16", "session": "School Holiday"},
     {"date": "March20", "session": "School Holiday"},
     {"date": "March30", "session": "School Holiday"},

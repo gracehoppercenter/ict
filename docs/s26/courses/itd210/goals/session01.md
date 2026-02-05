@@ -8,11 +8,25 @@ By the end of this lesson, you should:
 
 ### Certification Tests
 
-Today is the last day to (re)take the WDE test. We'll get all of our testers squared away first.
 
-### Recap: Snow Days, Project
+### Debrief: ITD110 Final Grades
 
-Per the new APS policy, I accepted project work until the end of the school day yesterday, and then stayed up past midnight last night grading your projects. Grades are in StudentVue and (other than folks taking the WDE test right now) are final. If you have questions or concerns, talk to me TODAY.
+Per the APS snow day policy, I accepted project work until the end of the school day on Tuesday, and then stayed up past midnight grading your projects. Final grades are already submitted to NOVA and APS.
+
+Here is a summary of the final grades from ITD110:
+
+- A's: 14
+- B's: 18
+- C's: 10
+- D's: 5
+- F's: 1
+
+And 33 of you earned your WDE certification. Congrats!
+
+Onward to Semester 2 =)
+
+
+### Recap: Client Project
 
 There were a few projects that really stood out::
 
