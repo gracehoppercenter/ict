@@ -1,6 +1,7 @@
 [
   {"session": "01", "unit": 1, "topic": "Welcome Back ☃️"},
-  {"session": "02", "unit": 1, "topic": "️Django Forms"},
+  {"session": "02", "unit": 1, "topic": "Django Forms"},
+  {"session": "03", "unit": 1, "topic": "Django Sessions"},
   {"session": "NWEA Testing", "unit": "other_school", "topic": ""},
   {"session": "HTML Pretest", "unit": "other_school", "topic": ""},
   {"session": "School Holiday", "unit": "other_noschool", "topic": ""},
