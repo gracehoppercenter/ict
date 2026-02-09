@@ -10,12 +10,16 @@ By the end of this lesson, you should:
 As promised, we'll start class with a reading quiz where you'll
 demonstrate that you understood Dr. Chuck's lesson about forms.
 
+(nevermind. y'all put up a good fight and convinced me to postpone
+this quiz to next time)
+
 ### End of Semester check-in
 
 Semester 1 is over. We submitted your final grades to NOVA and APS. 
 Onward to Semester 2!
 
-We've also posted your first grade for Q3 - the DJango template  assignment. This was just a completion assignment - you got credit if you did it =)
+We've also posted your first grade for Q3 - the DJango template  assignment. 
+This was just a completion assignment - you got credit if you did it =)
 
 ### Classwork: Web Calculator
 
@@ -38,6 +42,9 @@ I broke today's code changes down into two steps:
 1. [Setting up the form and the redirect](https://codeberg.org/MrJonesAPS/csc221/commit/ed2467ed0898b1368fcd5270e06d468cd0f7890d)
 2. [Handling the session](https://codeberg.org/MrJonesAPS/csc221/commit/54dd5d48cfe00754591641ef20f1b1ed51aeb307)
 
+(we only got through that first step in class today. We'll do the second
+step next time)
+
 ## Homework
 
 ### Make two more calculators!
@@ -49,6 +56,10 @@ calculators out there!). Next class, you'll present your calculator. Your
 presentation should include a brief explanation of why you think it's useful,
 and then you'll enter some realistic values. I'll demonstrate that presentation 
 today with a bread hydration calculator I built!
+
+At the end of class, our calculators were just printing their answers to the
+terminal. I'll expect your calculators to do the same. We'll update them 
+after we finish our session code next class.
 
 Choose a calculator thats's useful to you. Here are some
 examples from my life that I'd love to have a nice calculator for:
