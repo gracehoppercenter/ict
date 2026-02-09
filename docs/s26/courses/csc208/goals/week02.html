@@ -107,17 +107,22 @@ Here are the two steps needed to get
 <li>Run: <code>python3 -m pip install truth-table-generator</code></li>
 
 <li>In your <code>.zshrc</code> file add the path to the installed library.
-Last year this line worked:
+To find it, first run:
 <pre>
-export PATH=$PATH:$HOME/Library/Python/3.11/bin
+% find / -iname ttg_cli.py 2&gt;/dev/null
 </pre>
-Today I tried this on the Macbook Pro I have running Sequuoia 15.7.3, and my
-library path is:
+and look at the matches you get.  Today I tried this on the Macbook Pro I have
+running Sequoia 15.7.3, and my library path is:
 <pre>
 /Library/Frameworks/Python.framework/Version/3.13/bin
 </pre>
 We'll use this as a <q>teachable moment</q> to learn more about environment
-variables and managing computer systems.
+variables and managing computer systems. Add the path to your environment
+by editing your <code>.zshrc</code> file and adding:
+<pre>
+export PATH=$PATH:[the path to your ttg_cli.py]
+</pre>
+I'll help you with this in class.
 </li>
 </ol><p>
 That done, we will work through the following examples together.
