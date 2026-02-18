@@ -4,6 +4,7 @@
   {"session": "03", "unit": 1, "topic": "Django Sessions"},
   {"session": "04", "unit": 1, "topic": "Start Todo CRUD"},
   {"session": "05", "unit": 1, "topic": "Todo CRUD"},
+  {"session": "06", "unit": 1, "topic": "Generic Views"},
   {"session": "NWEA Testing", "unit": "other_school", "topic": ""},
   {"session": "HTML Pretest", "unit": "other_school", "topic": ""},
   {"session": "School Holiday", "unit": "other_noschool", "topic": ""},
