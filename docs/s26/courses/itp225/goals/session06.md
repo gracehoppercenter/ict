@@ -2,12 +2,14 @@
 By the end of this lesson, you should:
 
 - Be able to quickly add new CRUD functionality using Django Generic Views
+- Understand how Generic Views in Django relate to Python Inheritance
 
 ## What We'll Do In Class
 
 ### Quiz
 
-As promised, we'll start with a reading quiz that covers the CRUD work we did in class the past few days and Dr Chuck's video about generic views.
+As promised, we'll start with a reading quiz that covers the CRUD work we did in 
+class the past few days and Dr Chuck's video about generic views.
 
 ### Views Inheritance
 
@@ -20,12 +22,12 @@ We'll take a quick look at Django's source code for generic views, here:
 
 To understand this, we'll need to introduce the concept of "mixins". 
 This topic gets overwhelming fast, so we'll keep it high-level,
-with a focus on <https://docs.djangoproject.com/en/6.0/topics/auth/default/#the-loginrequiredmixin-mixin>, which we'll use a lot soon.
+with a focus on <https://docs.djangoproject.com/en/6.0/topics/auth/default/#the-loginrequiredmixin-mixin>, which we'll use a lot soon!
 
 ### ToDo, repeated
 
 In class, we'll re-write our ToDo app using generic views. It will be so easy!
-(Code coming soon!)
+[Here is the diff with all of the changes we'll discuss in class today][1] 
 
 ## Homework
 
@@ -38,8 +40,8 @@ of. Follow these steps:
     - Read: ListView AND DetailView
     - Update: UpdateView
     - Delete: DeleteView
-- For each view, make sure to add the URL path and the 
+- For each view, make sure to add the URL path and the template
 
 
 <!--links from above -->
-[1]: https://codeberg.org/MrJonesAPS/csc221/commit/61acf2f050244913ec2fe6fa807004b5f1a22b7b
+[1]: https://codeberg.org/MrJonesAPS/csc221/commit/2a6864f84cef259666a1ad1edd08102e2937012d
