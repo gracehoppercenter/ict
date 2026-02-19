@@ -19,6 +19,7 @@ We'll watch a few short videos to motivate this discussion:
 - <https://www.youtube.com/shorts/tGFhNQ5eY4Y>
 - <https://www.youtube.com/watch?v=yr3ngmRuGUc>
 - <https://www.youtube.com/watch?v=8YGQmV3NxMI>
+- <https://www.youtube.com/watch?v=3_vrMWkLRQ8> <-- my favorite band =)
 
 
 ### Activity: Automatically call functions using `requestAnimationFrame()`  
