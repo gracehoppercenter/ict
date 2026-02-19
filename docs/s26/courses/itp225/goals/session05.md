@@ -43,7 +43,7 @@ past few classes
 
 
 <!--links from above -->
-[1]: https://codeberg.org/MrJonesAPS/csc221/commit/61acf2f050244913ec2fe6fa807004b5f1a22b7b
-[2]: https://codeberg.org/MrJonesAPS/csc221/commit/032e106596b1fca891a706ec68b6739c5e3d91d9
-[3]: https://codeberg.org/MrJonesAPS/csc221/commit/882f3803a36ec9b7560820b515a186501d66f33b
-[4]: https://codeberg.org/MrJonesAPS/csc221/commit/83ebc165201430fda1b71d097547b5a41c2e6a38
+[1]: https://codeberg.org/cj0ne5/csc221/commit/61acf2f050244913ec2fe6fa807004b5f1a22b7b
+[2]: https://codeberg.org/cj0ne5/csc221/commit/032e106596b1fca891a706ec68b6739c5e3d91d9
+[3]: https://codeberg.org/cj0ne5/csc221/commit/882f3803a36ec9b7560820b515a186501d66f33b
+[4]: https://codeberg.org/cj0ne5/csc221/commit/83ebc165201430fda1b71d097547b5a41c2e6a38
