@@ -3,6 +3,7 @@
   {"session": "02", "unit": 1, "topic": "HTML Canvas"},
   {"session": "03", "unit": 1, "topic": "Self Portrait Project"},
   {"session": "04", "unit": 1, "topic": "JavaScript Functions"},
+  {"session": "05", "unit": 1, "topic": "Variables, Animation"},
   {"session": "Testing", "unit": "other_noschool", "topic": ""},
   {"session": "NWEA Testing", "unit": "other_school", "topic": ""},
   {"session": "HTML Pretest", "unit": "other_school", "topic": ""},
