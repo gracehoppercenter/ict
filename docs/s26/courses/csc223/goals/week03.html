@@ -5,6 +5,13 @@
 <title>GHC CSC 223 Week 3</title>
 <style>
 @import url(../../../css/goals.css);
+dt {
+    font-weight: bold;
+    margin-top: 2vh;
+}
+pre {
+    margin-left: 3vw;
+}
 </style>
 <script src="../../../js/init.js"></script>
 <script>
@@ -36,23 +43,78 @@ alt="GCTAA Logo">
 This week we will finish <i>Chapter 8: Queues</i>.
 </p>
 
-<!--
 <section>
 <h2>Thursday and Friday, February 19th and 20th</h2>
 
-<h3>Classwork</h3>
+<h3>Classwork / Homework / Evaluation</h3>
 <div>
 <p>
+To bring closure to our study of the
+<a href="https://xlinux.nist.gov/dads/HTML/queue.html">queue ADT</a>, we will
+implement a <a href="https://en.wikipedia.org/wiki/Simulation">simulation</a>
+of a line (or as they say in England, a <i>queue</i> ;-) at a grocery story.
 </p>
-</div>
 
-<h3>Homework / Evaluation</h3>
-<div>
+<h4>Grocery Store Queue Simulation</h4>
+<dl>
+<dt>Input</td>
+<dd>
 <p>
+A text file containing the names of shoppers,
+<a href="resources/SHOPPERS.TXT">SHOPPERS.TXT</a> containing a list of
+shoppers, one per line.
+</p>
+</dd>
+<dt>Output</dt>
+<dd>
+<p>
+A simulation of the shoppers in the input file entering and leaving the
+grocery store checkout line in a
+<a href="https://en.wikipedia.org/wiki/Randomness">random</a> order.
+</p><p>
+A sample run of the program might produce output like this:
+</p><pre>
+Sean gets in line.
+Eleanor gets in line.
+Sean finishes checking out.
+Jake gets in line.
+Anupama gets in line.
+Conrad gets in line.
+Eleanor finishes checking out.
+Toby gets in line.
+Jake finishes checking out.
+Anupama finishes checking out.
+...
+</pre>
+</dd>
+</dl>
+<p>
+You can write this program in any language that I can run on my Debian Trixie
+based workstation. (I know which language I would choose, just saying! ;-)
+</p><p>
+1A pairs for this project are:
+</p><pre>
+Nikita and Sean
+Gabriel and Abi
+Rockwell and Brendon
+Eleanor and Alex
+</pre><p>
+3B pairs for this project are:
+</p><pre>
+Dylan and Gabriel
+Donovan and Alessandra
+Jake and Conrad
+Anupama and Noah
+</pre><p>
+Blu and Toby will work with Liam on the linear data structures library for
+BDS C.
+</pre><p>
+Presentations and code will be evaluated using our
+<a href="../resources/class_presentation_rubric.html">CSC 223 Pair / Group
+Presentation Rubric</a>.
 </p>
 </div>
 </section>
--->
 
 <section>
 <h2>Tuesday and Wednesday, February 17th and 18th</h2>
