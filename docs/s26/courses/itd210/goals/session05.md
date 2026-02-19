@@ -10,12 +10,15 @@ By the end of this lesson, you should:
 
 ### Reading Quiz: Functions
 
+As promised, we'll start with a quiz to make sure you're comfortable
+with functions.
+
 ### Discussion: What is animation?
 
 We'll watch a few short videos to motivate this discussion:
-- [https://www.youtube.com/shorts/tGFhNQ5eY4Y]
-- [https://www.youtube.com/watch?v=yr3ngmRuGUc]
-- [https://www.youtube.com/watch?v=8YGQmV3NxMI]
+- <https://www.youtube.com/shorts/tGFhNQ5eY4Y>
+- <https://www.youtube.com/watch?v=yr3ngmRuGUc>
+- <https://www.youtube.com/watch?v=8YGQmV3NxMI>
 
 
 ### Activity: Automatically call functions using `requestAnimationFrame()`  
