@@ -30,6 +30,11 @@ I know that there are also some folks in class who are feeling great and
 want to keep going forward. That group can work in Jeff's room today
 and can focus on adding one-to-many models into their projects.
 
+### Resources
+
+To help with this exercise, you might want to check out 
+[my Django setup notes, here](../resources/django_setup_notes.md)
+
 ### Homework
 
 Let's come up with this plan during class.
