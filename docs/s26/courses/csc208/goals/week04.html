@@ -27,13 +27,14 @@ window.onload = init;
 <hr>
 
 <main>
-<time datetime="2025-02-24">Week of Monday, February 24, 2025</time>
+<time datetime="2026-02-24">Week of Tuesday, February 24, 2026</time>
 
 <h2>Overview</h2>
 <p>
 We meet twice this week, and we will use that time to complete
 <a href="https://discrete.openmathbooks.org/dmoi4/ch_logic.html">Chapter 1
-Logic and Proofs</a>.
+Logic and Proofs</a>. <i style="color: red;">I will be out Thursday at
+a conference, so we need to plan for the full week in the beginning.</i>
 </p>
 
 <!--
@@ -43,35 +44,9 @@ Logic and Proofs</a>.
 <h3>Classwork</h3>
 <div>
 <p>
-I suspect the unfortunate preponderance of E's reflects those who did not 
-read for understanding or work all the exercises :-(
-</p><p>
-A few shout outs and other things to discuss:
-</p><ol>
-<li>negating an implication</li>
-<li>Brendan's elegant solution to problem 1</li>
-<li>Luis's elegant solution to problem 2</li>
-</ol><p>
-To understand the negation of an implication better, run each of the following:
-</p><ul>
-<li><code>
-ttg_cli.py "['P', 'Q']" -p "['P =&gt; Q', 'P =&gt; ~Q']" -i False
-</code></li><li><code>
-ttg_cli.py "['P', 'Q']" -p "['P =&gt; Q', '~P =&gt; ~Q']" -i False
-</code></li><li><code>
-ttg_cli.py "['P', 'Q']" -p "['P =&gt; Q', '~P or Q']" -i False
-</code></li><li><code>
-ttg_cli.py "['P', 'Q']" -p "['P =&gt; Q', '~P or Q', '~(~P or Q)']" -i False
-</code></li><li><code>
-ttg_cli.py "['P', 'Q']" -p "['~(P =&gt; Q)', 'P and ~Q']" -i False
-</code></li>
-</ul><p>
-Our friend José Ejemplo kindly shared
-<a href="https://github.com/gracehoppercenter/csc208/blob/main/ch1_logic/PropositionalLogicTestSolutions.pdf">his solutions</a> to the test.
-</p><p>
-Before turning you loose on your homework, I promised to share one a famous
-proof of tremendous importance. Since we have so much to do, rather than
-give you a full presentation, let me just share a two links.
+Before turning you loose on your homework, I want to share a famous proof of
+tremendous importance. Since we have so much to do, rather than give you a full
+presentation, let me just share a two links.
 <a href="https://proofwiki.org/wiki/Rational_Numbers_are_Countably_Infinite">
 Rational Numbers are Countably Infinite</a> presents four different proofs that
 the set of rational numbers and the set of natural numbers are <q>the same
@@ -84,7 +59,7 @@ integers are.
 </p>
 </div>
 
-<h3>Homework</h3>
+<h3>Classwork / Homework</h3>
 <div>
 <p>
 Complete the <i>Practice Problems</i> and <i>Additional Exercises</i> from
@@ -102,14 +77,38 @@ Complete the <i>Practice Problems</i> and <i>Additional Exercises</i> from
 <p>
 We'll start class by going over the quiz. Grade distribution was
 <b>A</b>: , <b>B</b>: , <b>C</b>: , <b>D</b>: , and <b>E</b>: .
+</p><p>
+Our friend José Ejemplo kindly shared
+<a href="resources/RulesOfLogicTestSolutions.pdf">his solutions</a> to the quiz.
+Since almost always gets a perfect score, we can use his solutions as an answer
+key.
+</p><p>
+To better develop your understanding of the negation of an implication, run
+each of the following:
+</p><ul>
+<li><code>
+ttg_cli.py "['P', 'Q']" -p "['P =&gt; Q', 'P =&gt; ~Q']" -i False
+</code></li><li><code>
+ttg_cli.py "['P', 'Q']" -p "['P =&gt; Q', '~P =&gt; ~Q']" -i False
+</code></li><li><code>
+ttg_cli.py "['P', 'Q']" -p "['P =&gt; Q', '~P or Q']" -i False
+</code></li><li><code>
+ttg_cli.py "['P', 'Q']" -p "['P =&gt; Q', '~P or Q', '~(~P or Q)']" -i False
+</code></li><li><code>
+ttg_cli.py "['P', 'Q']" -p "['~(P =&gt; Q)', 'P and ~Q']" -i False
+</code></li>
+</ul><p>
+The rest of class time will be spent presenting as many of the exercises you
+chose <a href="week03.html">last week</a> as time permits.
+</p><p>
 </p>
 </div>
 
 <h3>Homework</h3>
 <div>
 <p>
-Complete the <i>Practice Problems</i> and as much of the <i>Additional
-Exercises</i> as time allows from <i>Section 1.4</i>.
+Read <i>Section 1.5: Proofs about Discrete Structure</i>. You'll have both
+class and homework time on Thursday to complete the exercises.
 </p>
 </div>
 </section>
