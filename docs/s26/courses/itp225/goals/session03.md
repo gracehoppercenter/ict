@@ -30,7 +30,7 @@ sessions to display the answer on the web page.
 Here's the relevant Django documentation about sessions <https://docs.djangoproject.com/en/6.0/topics/http/sessions/>
 
 And here's my code:
-[Handling the session](https://codeberg.org/cj0ne5/csc221/commit/54dd5d48cfe00754591641ef20f1b1ed51aeb307)
+[Handling the session](https://codeberg.org/cjones/csc221/commit/54dd5d48cfe00754591641ef20f1b1ed51aeb307)
 
 ## Homework
 

@@ -39,8 +39,8 @@ template. [See this link for the formulae](https://www.nhsinform.scot/healthy-li
 
 I broke today's code changes down into two steps:
 
-1. [Setting up the form and the redirect](https://codeberg.org/cj0ne5/csc221/commit/ed2467ed0898b1368fcd5270e06d468cd0f7890d)
-2. [Handling the session](https://codeberg.org/cj0ne5/csc221/commit/54dd5d48cfe00754591641ef20f1b1ed51aeb307)
+1. [Setting up the form and the redirect](https://codeberg.org/cjones/csc221/commit/ed2467ed0898b1368fcd5270e06d468cd0f7890d)
+2. [Handling the session](https://codeberg.org/cjones/csc221/commit/54dd5d48cfe00754591641ef20f1b1ed51aeb307)
 
 (we only got through that first step in class today. We'll do the second
 step next time)
