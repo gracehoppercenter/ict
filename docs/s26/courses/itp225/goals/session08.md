@@ -34,4 +34,31 @@ Here are my goals:
 
 ### Homework
 
-Let's come up with this plan during class.
+Your homework is to watch the Dr. Chuck lesson about [Users and Authentication](https://www.dj4e.com/lessons/dj4e_users). The key parts I'm expecting you 
+to learn from this are:
+    - that you're responsible for writing the login form
+    - the importance of the `next parameter`
+    - That Django automatically sets `request.user` in the view and the `user` variable in the template context
+    - The [loginRequiredMixIn](https://docs.djangoproject.com/en/6.0/topics/auth/default/#the-loginrequiredmixin-mixin)
+    
+There won't be a quiz (because I won't be here to give it). So you'll demonstrate
+your knowledge by working in class to add a login to the teamwork project you've
+been working on the past few classes.
+
+By the beginning of class next Monday, you should have:
+
+- A working Django project, in a repo
+    - You can have one per team - I know who has been working together and will 
+    give credit to the rest of your team
+- The project should have one app, with one model
+- Working CRUD for that model
+- A login system. For now:
+    - if you're logged out, you shouldn't be able to see anything
+    - If you're logged in, you can see everything
+    - The ability to see your own list requires the next Dr. Chuck video. We'll
+    work on that next week!
+
+As always, don't hesitate to reach out if you need help.
+
+And finally, come to class on Monday with an open mind ready for our 
+brainstorming session!
