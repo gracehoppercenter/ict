@@ -36,10 +36,11 @@ Here are my goals:
 
 Your homework is to watch the Dr. Chuck lesson about [Users and Authentication](https://www.dj4e.com/lessons/dj4e_users). The key parts I'm expecting you 
 to learn from this are:
-    - that you're responsible for writing the login form
-    - the importance of the `next parameter`
-    - That Django automatically sets `request.user` in the view and the `user` variable in the template context
-    - The [loginRequiredMixIn](https://docs.djangoproject.com/en/6.0/topics/auth/default/#the-loginrequiredmixin-mixin)
+
+- that you're responsible for writing the login form
+- the importance of the `next parameter`
+- That Django automatically sets `request.user` in the view and the `user` variable in the template context
+- The [loginRequiredMixIn](https://docs.djangoproject.com/en/6.0/topics/auth/default/#the-loginrequiredmixin-mixin)
     
 There won't be a quiz (because I won't be here to give it). So you'll demonstrate
 your knowledge by working in class to add a login to the teamwork project you've
