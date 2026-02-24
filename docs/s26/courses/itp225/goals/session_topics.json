@@ -7,6 +7,7 @@
   {"session": "06", "unit": 1, "topic": "Generic Views"},
   {"session": "07", "unit": 1, "topic": "Django project from scratch"},
   {"session": "08", "unit": 1, "topic": "Planning, Catch Up Work"},
+  {"session": "09", "unit": 1, "topic": "Login System"},
   {"session": "NWEA Testing", "unit": "other_school", "topic": ""},
   {"session": "HTML Pretest", "unit": "other_school", "topic": ""},
   {"session": "School Holiday", "unit": "other_noschool", "topic": ""},
