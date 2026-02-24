@@ -11,10 +11,10 @@ For those who are here, we'll start with calculator presentations.
 
 ### Review: Task Model
 This was your homework. I'll go over the solution, which you can
-find in this commit: <https://codeberg.org/cj0ne5/csc221/commit/61acf2f050244913ec2fe6fa807004b5f1a22b7b>
+find in this commit: <https://codeberg.org/cjones/csc221/commit/61acf2f050244913ec2fe6fa807004b5f1a22b7b>
 
 ### Task CRUD Part 1: Read
-We'll work on displaying the current todo list in a view. As always, I've committed the code for today's exercise here: <https://codeberg.org/cj0ne5/csc221/commit/032e106596b1fca891a706ec68b6739c5e3d91d9>
+We'll work on displaying the current todo list in a view. As always, I've committed the code for today's exercise here: <https://codeberg.org/cjones/csc221/commit/032e106596b1fca891a706ec68b6739c5e3d91d9>
 
 ## Homework
 
