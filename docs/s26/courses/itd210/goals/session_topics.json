@@ -4,6 +4,8 @@
   {"session": "03", "unit": 1, "topic": "Self Portrait Project"},
   {"session": "04", "unit": 1, "topic": "JavaScript Functions"},
   {"session": "05", "unit": 1, "topic": "Variables, Animation"},
+  {"session": "06", "unit": 1, "topic": "Types, Branching"},
+  {"session": "07", "unit": 1, "topic": "Animation Practice"},
   {"session": "Testing", "unit": "other_noschool", "topic": ""},
   {"session": "NWEA Testing", "unit": "other_school", "topic": ""},
   {"session": "HTML Pretest", "unit": "other_school", "topic": ""},
