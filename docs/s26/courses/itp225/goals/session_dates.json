@@ -1,4 +1,5 @@
 [
+    {"date": "February02", "session": "Snow Day"},
     {"date": "February03", "session": "01"},
     {"date": "February05", "session": "02"},
     {"date": "February09", "session": "03"},
@@ -6,6 +7,8 @@
     {"date": "February13", "session": "05"},
     {"date": "February18", "session": "06"},
     {"date": "February20", "session": "07"},
+    {"date": "February23", "session": "Snow Day"},
+    {"date": "February24", "session": "08"},
     {"date": "February16", "session": "School Holiday"},
     {"date": "March20", "session": "School Holiday"},
     {"date": "March30", "session": "School Holiday"},
