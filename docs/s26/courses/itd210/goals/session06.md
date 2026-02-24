@@ -25,6 +25,12 @@ end of class <https://github.com/cj0ne5/cj0ne5.github.io/blob/main/practice/anim
 
 Today, we'll make that more interesting by adding some conditional logic.
 
+### Debugger
+
+Our JavaScript programs are starting to get more complicated, and it can sometimes
+be difficult to tell what's wrong when they don't work. We'll spend some time
+today intentionally making mistakes and using the Firefox console to figure
+them out.
 
 ## Homework
 
