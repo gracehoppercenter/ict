@@ -22,6 +22,12 @@ a few ideas:
 code to add more details - make the characters more interesting than colored squares!
 - A story - have multiple characters that enter the canvas at different times
 
+Call this file `practice/parade.html`. This will be your first graded classwork
+assignment of the semester. I will grade it on Tuesday morning. Here is the link
+to the grader that I will use. Make sure that you name your file correctly
+and that it shows up here: <https://specreaper.github.io/SE_Capstone_Projects/GithubFileLinksTable.html?file=%2Fpractice%2Fparade.html>. I won't accept
+"I forgot to commit" or "I gave it the wrong filename" as excuses for late work!
+
 ## Homework
 
 ### Reading Assignment  
