@@ -6,7 +6,7 @@ that we think about types.
 
 ## What We'll Do In Class
 
-### Reading Quiz: Functions
+### Reading Quiz: Variables
 
 As promised, we'll start with a quiz to make sure you're comfortable
 with the concepts about variables we learned last class.
