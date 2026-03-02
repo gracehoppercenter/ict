@@ -5,6 +5,24 @@ By the end of this lesson, you should:
 
 ## What We'll Do In Class
 
+### Grade Chat
+
+As promised, I graded the todo work that you did last week. Some of you did great,
+but I was disappointed overall. Here are some observations:
+
+- This was a group assignment. Many of you refused to work in groups. For this grade, I searched individual repos so that I could give credit for individual effort. 
+- The instructions were clear - if you couldn't get the work done, you were supposed to email me and cc your group members. One group did that (and ended
+up with an A for the project), the rest did not. For the groups (/individuals) 
+that did not reach out to me, I had to assume you were happy with your progress
+and so I graded the work in your repo.
+
+For grading, I gave C's to teams whose repos showed clear evidence of effort but
+who were missing a lot of features, D's to teams whose repose showed very little
+evidence, and E's when I could find no evidence of any work.
+
+Today's goal will be to focus on the **process** of building software in teams. Starting today, this process is a requirement. I will only grade shared group repos, and grades will focus on evidence that you're following the process, not 
+the product that you're building.
+
 ### Shared Repo Collaboration
 
 This might be the first project many of you have worked on that involved sharing a repo with a lot of people. We'll discuss some norms and rules for sharing a git repo. To practice, we'll work together to create a single file with a list of 
