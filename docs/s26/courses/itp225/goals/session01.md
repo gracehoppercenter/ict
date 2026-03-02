@@ -30,7 +30,7 @@ Review Dr. Chuck's Lesson 11: "Forms in HTTP and  HTML". <https://www.dj4e.com/l
 There is a lot in this lesson, so here's some advice:
 
 - The first two videos should be review about how HTML forms work. If you took DE Web Design last year, you got all of this. Regardless, it's probably a good idea for everyone to review these videos. I'll expect that you understand HTML forms and GET vs POST requests going forward.
-- The next few videos are about CSRF, a serious vulnerability that we must always take into account when we're building web forms. The conclusion of these videos is that Django takes care of it for us (as long as we include the {% csrf_token %} tag in our forms) - so I won't test you on the details. You can skip these videos for now, or can watch them if you're curious!
+- The next few videos are about CSRF, a serious vulnerability that we must always take into account when we're building web forms. The conclusion of these videos is that Django takes care of it for us (as long as we include the {% raw %}{% csrf_token %}{% endraw %} tag in our forms) - so I won't test you on the details. You can skip these videos for now, or can watch them if you're curious!
 - The final video is the one I really want you to pay attention to: "Implementing POST Redirect in Django (8:04)". Take that one slow and make sure you understand it (especially if you skip over some of the other videos) - we'll start with a reading quiz about this video next class!
 
 
