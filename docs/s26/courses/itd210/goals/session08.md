@@ -10,6 +10,65 @@ By the end of this lesson, you should:
 You had two reading assignments last week. We'll start with a short reading
 quiz about the content from the reading.
 
+### Animation Grades
+
+As promised, I graded your first classwork assignment of the semester exactly
+when I said I would =). Here's the grading scale I used:
+
+- 5 points for something that met my expectations and demonstrated some 
+intentionality/creativity
+- 4 points if you used variables and conditions but clearly put minimal effort
+- 3 points if you had no conditions at all, or just submitted bouncing shapes
+- 2 points if your code didn't work, or you used almost exactly our sample code
+- 0 points if you did nothing.
+
+Here are a few that I enjoyed. (I struggled with this iframe display. Don't judge me!)
+
+<div style="display: flex; flex-wrap: wrap;">
+    <div style="width: 400px; height:400px; overflow: hidden;">
+        <h1>Maya 4A</h1>
+        <iframe src="https://mrc8git.github.io/practice/parade.html" 
+        style="width: 100%; height: 100%; zoom: 0.3;;">
+        </iframe>
+    </div>
+
+    <div style="width: 400px; height:400px; overflow: hidden;">
+        <h1>Allie 4A</h1>
+        <iframe src="https://alliewalsh51.github.io/practice/parade.html" style="width: 100%; height: 100%; zoom: 0.3;"></iframe>
+    </div>
+
+    <div style="width: 400px; height:400px; overflow: hidden;">
+
+        <h1>Marta 5A</h1>
+        <iframe src="https://mcrlsn36.github.io/practice/parade.html" style="width: 100%; height: 100%; zoom: 0.3;"></iframe>
+    </div>
+
+    <div style="width: 400px; height:400px; overflow: hidden;">
+
+        <h1>Rachel 5A</h1>
+        <iframe src="https://rachell19630.github.io/practice/parade.html" style="width: 100%; height: 100%; zoom: 0.3;"></iframe>
+    </div>
+
+    <div style="width: 400px; height:400px; overflow: hidden;">
+
+        <h1>Kyle 5A</h1>
+        <iframe src="https://greetingsplayer1.github.io/practice/parade.html" style="width: 100%; height: 100%; zoom: 0.3;"></iframe>
+    </div>
+
+    <div style="width: 400px; height:400px; overflow: hidden;">
+
+        <h1>Sebastian 5A</h1>
+        <iframe src="https://sebastopolis841.github.io/practice/parade.html" style="width: 100%; height: 100%; zoom: 0.3;"></iframe>
+    </div>
+
+    <div style="width: 400px; height:400px; overflow: hidden;">
+
+        <h1>Luka 5A</h1>
+        <iframe src="https://unpolloloco.github.io/practice/parade.html" style="width: 100%; height: 100%; zoom: 0.3;"></iframe>
+    </div>
+</div>
+
+
 ### Upcoming Schedule
 
 I've scheduled our unit 1 test for next Friday (13th). It will cover canvas, variables, types, functions, and if/else statements. We'll start a unit project on Thursday
