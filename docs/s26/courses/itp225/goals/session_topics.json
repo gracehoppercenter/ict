@@ -9,6 +9,7 @@
   {"session": "08", "unit": 1, "topic": "Planning, Catch Up Work"},
   {"session": "09", "unit": 1, "topic": "Login System"},
   {"session": "10", "unit": 1, "topic": "Teamwork"},
+  {"session": "11", "unit": 1, "topic": "Code Reviews"},
   {"session": "NWEA Testing", "unit": "other_school", "topic": ""},
   {"session": "HTML Pretest", "unit": "other_school", "topic": ""},
   {"session": "School Holiday", "unit": "other_noschool", "topic": ""},
