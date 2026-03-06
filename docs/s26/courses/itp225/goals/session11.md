@@ -9,7 +9,7 @@ By the end of this lesson, you should:
 ### Chat with Ms. Johns
 
 Ms. Johns will come and chat with us about a Django Project idea. We plan to 
-have a few of these kidns of chats over the next ~week or so. I look forward to 
+have a few of these kinds of chats over the next ~week or so. I look forward to 
 hearing what you all think!
 
 ### Team Project Work
