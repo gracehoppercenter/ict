@@ -26,10 +26,15 @@ Here's a list of topics you should be comfortable with:
 - let vs const
 - prompt()
 - Shapes in js canvas
-    - canvas coordinate sytem
+    - canvas coordinate system
     - you should be able to use rect and arc (including start and stop in radians)
     - I won't ask about ellipse
 - How to define and call a function
 - Shadowing/scope
 - Use if statements (else, else if)
 - Boolean expressions (&& || !)
+
+## JuiceMind
+
+Here's the JuiceMind practice quiz we did in class:
+<https://play.juicemind.com/quizzes/3v6z7E0W2E5PdSE0CPUW>
