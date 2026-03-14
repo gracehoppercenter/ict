@@ -1,0 +1,102 @@
+[
+    {"date":"March02","day":"B"},
+    {"date":"March03","day":"A"},
+    {"date":"March04","day":"B"},
+    {"date":"March05","day":"A"},
+    {"date":"March06","day":"B"},
+
+    {"date":"March09","day":"A"},
+    {"date":"March10","day":"B"},
+    {"date":"March11","day":"A"},
+    {"date":"March12","day":"B"},
+    {"date":"March13","day":"A"},
+
+    {"date":"March16","day":"B"},
+    {"date":"March17","day":"A"},
+    {"date":"March18","day":"B"},
+    {"date":"March19","day":"A"},
+    {"date":"March20","day":"Eid al-Fitr"},
+
+    {"date":"March23","day":"B"},
+    {"date":"March24","day":"A"},
+    {"date":"March25","day":"B"},
+    {"date":"March26","day":"A"},
+    {"date":"March27","day":"B"},
+
+
+    {"date":"March30","day":"Spring Break"},
+    {"date":"March31","day":"Spring Break"},
+    {"date":"April01","day":"Spring Break"},
+    {"date":"April02","day":"Spring Break"},
+    {"date":"April03","day":"Spring Break"},
+
+    {"date":"April06","day":"A"},
+    {"date":"April07","day":"B"},
+    {"date":"April08","day":"A"},
+    {"date":"April09","day":"B"},
+    {"date":"April10","day":"A"},
+
+    {"date":"April13","day":"End of Q3"},
+    {"date":"April14","day":"B"},
+    {"date":"April15","day":"A"},
+    {"date":"April16","day":"B"},
+    {"date":"April17","day":"A"},
+
+    {"date":"April20","day":"B"},
+    {"date":"April21","day":"A"},
+    {"date":"April22","day":"B Early Release"},
+    {"date":"April23","day":"A"},
+    {"date":"April24","day":"B"},
+
+    {"date":"April27","day":"A"},
+    {"date":"April28","day":"B"},
+    {"date":"April29","day":"A"},
+    {"date":"April30","day":"B"},
+    {"date":"May01","day":"A"},
+
+
+    {"date":"May04","day":"B"},
+    {"date":"May05","day":"A"},
+    {"date":"May06","day":"B"},
+    {"date":"May07","day":"A"},
+    {"date":"May08","day":"B"},
+
+    {"date":"May11","day":"A"},
+    {"date":"May12","day":"B"},
+    {"date":"May13","day":"A"},
+    {"date":"May14","day":"B"},
+    {"date":"May15","day":"A - Last Day for HBW Seniors"},
+
+
+    {"date":"May18","day":"B"},
+    {"date":"May19","day":"A"},
+    {"date":"May20","day":"B"},
+    {"date":"May21","day":"A"},
+    {"date":"May22","day":"B"},
+
+    {"date":"May25","day":"Memorial Day"},
+    {"date":"May26","day":"Memorial Day"},
+    {"date":"May27","day":"Eid al-Adha"},
+    {"date":"May28","day":"A"},
+    {"date":"May29","day":"B"},
+
+    {"date":"June01","day":"A"},
+    {"date":"June02","day":"B - Last Day for Seniors?"},
+    {"date":"June03","day":"A"},
+    {"date":"June04","day":"B"},
+    {"date":"June05","day":"A"},
+
+
+    {"date":"June08","day":"B"},
+    {"date":"June09","day":"A"},
+    {"date":"June10","day":"B"},
+    {"date":"June11","day":"A"},
+    {"date":"June12","day":"Exams Early Release"},
+
+    
+    {"date":"June15","day":"Exams Early Release"},
+    {"date":"June16","day":"Exams Early Release"},
+    {"date":"June17","day":"Exams Early Release"},
+    {"date":"June18","day":"Last Day"},
+    {"date":"June19","day":"Juneteenth"}
+]
