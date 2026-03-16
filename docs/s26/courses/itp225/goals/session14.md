@@ -12,18 +12,8 @@ We've settled on four projects that we'd like to take on this year, so we'll nee
 
 First, we'll talk about the ACC Reservation Systems. This project is a little special because it's in-progress. We really need these two projects to be fantastic by the end of the school year. Whoever takes on this project will be held to a high standard, and will have a different focus (because CRUD already works for both apps). This team will focus on testing, refactoring for code reusability (maybe even collaborating to share apps with the book reservation system that Ben, Kara, and Josh are working on), and deployment. We'd like to staff this project with folks who are feeling very confident with Django and are interested in this kind of work. I'm hoping that folks will self-identify.
 
-After we know who is remaining, we'll assign the remaining three projects:
-
-1. Community Lending (customer: Chris)
-2. Course/Pathway Planning (customer: Dr. Van Lare)
-3. Accommodations (customer: Ms. Johns)
-
-Here's how I plan to go about this:
-
-- First, we'll form teams. Each team should be 3 or 4 people.
-- Then, each team will rank these three projects in order of how much they want them.
-- If there are conflicts, we'll settle them with a [Micro Machines](https://en.wikipedia.org/wiki/Micro_Machines_(video_game)) race.
-
+(Edit after class: We had a quick chat about the remaining projects, but decided to wait. We'll
+assign projects in class on Monday.)
 
 ### Team Project Work
 
