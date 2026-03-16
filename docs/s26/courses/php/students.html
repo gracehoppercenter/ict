@@ -2,46 +2,70 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Web Design & Development</title>
+<title>Web Development with PHP</title>
 <style>
-@import url(style.css);
+@import url(../../css/main.css);
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+td, th {
+  padding: 10px;
+  border: 1px dotted #777;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 </style>
-<link rel="stylesheet" href="base/css/main.css">
-<script src="base/js/init_with_api.js"></script>
+<script src="../../js/init.js"></script>
 <script>
 window.onload = init;
 </script>
 </head>
 <body>
 <header>
-<a href="index.html">
-<img src="base/images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
-<div>
+<div id="logo">
+<a href="index.html"><img src="images/gctaa_nvcc.png"
+alt="GCTAA Logo"></a>
+</div>
+<div class="desktop">
 <h2>Governor's Career & Technical Academy Arlington</h2>
-<h1>Web Design & Development</h1>
+<h1>Web Development with PHP</h1>
+</div>
+<div class="mobile">
+<h1>WebPHP</h1>
 </div>
 </header>
-
 <hr>
-<div id="content">
+<main>
+<div id="heading">
 <h1>Student ePortfolios (Git Repos)</h1>
 <table>
 <tr>
 <th>Student</th><th>Website</th><th>Repo</th>
 </tr><tr>
 <td>Kendyl</td>
-<td><a href="https://webschool.sjcompute.org/~kthomas/">website</a></td>
-<td><a href="https://codeberg.org/Kendyl/website">repo</a></td>
+<td><a href="https://webschool.sjcompute.org/~kthomas/">
+https://webschool.sjcompute.org/~kthomas</a>
+</td>
+<td><a href="https://codeberg.org/Kendyl/website">
+https://codeberg.org/Kendyl/website</a></td>
+
+<td>Daniel</td>
+<td><a href="https://webschool.sjcompute.org/~dcammue/">
+https://webschool.sjcompute.org/~dcammue</a>
+</td>
+<td><a href="https://codeberg.org//website">
+https://codeberg.org//website</a></td>
 </tr>
 </table>
-</div>
+</main>
 
-<footer>
-<p id="HTMLCSS"></p>
-<p>
-<a id="vLink1"><strong> HTML </strong> Valid! </a> |
-<a id="vLink2"><strong> CSS </strong> Valid! </a>
-</p>
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
 </footer>
 
 </body>
