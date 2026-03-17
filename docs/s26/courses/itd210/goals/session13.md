@@ -5,11 +5,11 @@
 
 Test grades are in StudentVue. Here's a summary of how it went:
 
-A - 13
-B - 8
-C - 11
-D - 10
-E - 7
+* A - 13
+* B - 8
+* C - 11
+* D - 10
+* E - 7
 
 So lots of you ended up with grades you were happy with, but a lot did not. JavaScript is tricky and takes a lot of dedicated study. Please know that I'm always here to help if you need support, extra study materials, or have questions!
 
@@ -34,4 +34,9 @@ There's a classic canvas animation activity that we haven't gotten to yet (but m
 
 Next, we need to learn how Canvas takes input. We'll discuss event handlers and add some controls to our physics activity.
 
+## Look Ahead
 
+I will be out on Thursday. While I'm out, you should work through at least
+the first few steps of this tutorial: <https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript/Paddle_and_keyboard_controls>
+. You should work through at least step 4. Put your work in the directory 
+`/practice/breakout/`. I'll count this as a classwork completion grade.
