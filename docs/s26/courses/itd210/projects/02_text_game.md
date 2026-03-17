@@ -1,4 +1,4 @@
-# Self Portrait Project
+# Text-Based Adventure Game Project
 
 ## Project Introduction
 
