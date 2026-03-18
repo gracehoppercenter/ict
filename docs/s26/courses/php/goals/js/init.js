@@ -1,4 +1,3 @@
-
 function addHeader(jsonUrl) {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);

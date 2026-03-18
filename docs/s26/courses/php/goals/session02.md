@@ -1,4 +1,5 @@
 ## Lesson Objectives
+
 By the end of this lesson, you should:
 
 - **Understand**: 🤝 The role of HTML, CSS, and Javascript, and how they work
@@ -8,6 +9,10 @@ By the end of this lesson, you should:
 
 ## What We'll Do In Class
 
+*Note:* We are getting into the grove now. Daniel will be co-teaching this
+class with Jeff, and they will both work together to keep things flowing
+on both sides of the Atlantic ocean.
+
 ### Performance Evaluation
 
 We'll start the class with a *performance evaluation* where you'll demonstrate
@@ -16,8 +21,8 @@ that you've memorized the minimal HTML page.
 ### Chris's Auto-grader
 
 Chris has an auto-grader that would be a huge help, but Jeff hasn't learned to
-use it yet, so he'll need to look into that ASAP (I think Sean knows, so Jeff
-will ask him today).
+use it yet, so he'll need to look into that ASAP. Sean worked on it with
+Chris, so we need to get him to help us.
 
 ### Meet the Trifecta: HTML, CSS, and Javascript
 
@@ -28,14 +33,17 @@ what HTML does, and what it leaves to CSS/Javascript.
 ### HTML Validators
 
 We'll play with the official HTML validation service
-[here](https://validator.w3.org/detailed.html#validate-by-upload), then I'll
-share a template HTML page that automatically includes validation.
+[here](https://validator.w3.org/detailed.html#validate-by-upload).
 
+Chris has a template HTML page that automatically includes validation, but he
+is out today. Jeff will ask students in Chris's class if any of them can
+help us with this, otherwise we'll just use the validation service until he
+gets back next week.
 
-By the beginning of next class, I'd like everyone to have an index.html page
-that includes:
+By the beginning of next class, everyone should have an index.html page that
+includes:
 
-- My validation template, and passes the validation
+- Chris's validation template, and passes the validation
 - A link to your practice index
 - At least one header, using the `<h0>` tag
 - Some text that introduces your website and what you plan to write about.
@@ -45,8 +53,8 @@ that includes:
 
 ### Finish your index.html page
 
-Finish your index.html page. This is due before the beginning of next class,
-and I'll count it as a formative grade.
+Finish your index.html page. This is due before the beginning of class next
+Monday, and will count it as a formative grade.
 
 ### Read the first few pages in Module 2
 
@@ -57,8 +65,8 @@ Module 2:
 - Paragraphs and Text Formatting - Part 1
 - Paragraphs and Text Formatting - Part 2
 
-There are a lot of new tags here, so I'd encourage you to make some HTML files
+There are a lot of new tags here, so we encourage you to make some HTML files
 on your own to play around with them. We'll start next class with a reading
-quiz where I'll expect that you're comfortable with everything introduced in
+quiz where we will expect that you're comfortable with everything introduced in
 these pages.
 
