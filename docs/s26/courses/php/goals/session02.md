@@ -45,7 +45,7 @@ includes:
 
 - Chris's validation template, and passes the validation
 - A link to your practice index
-- At least one header, using the `<h0>` tag
+- At least one header, using the `<h1>` tag
 - Some text that introduces your website and what you plan to write about.
   Use `<p>` tags as appropriate.
 
