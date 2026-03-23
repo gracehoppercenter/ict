@@ -1,4 +1,5 @@
 ## Lesson Objectives
+
 By the end of this lesson, you should:
 
 - **Understand**: 👩‍💻 The importance of semantic HTML
@@ -9,16 +10,17 @@ By the end of this lesson, you should:
 
 ### Quiz
 
-As promised, we'll start class with a quiz where you'll demonstrate that you've learned about the HTML text tags from the reading.
+We'll start class with a quiz where you'll demonstrate that you've learned
+about the HTML text tags from the reading.
 
 ### Organization - validation, .gitignore, .vimrc
 
-Last class, we didn't get as far in our validation setup as I hoped. Today,
-we'll get the validator working and do a bit more organization in our
-github repos.
+We'll show you how to add a JavaScript validator to your web pages, and do a
+bit more organization in our git repos.
 
-I've been getting a lot of questions about `.swp` and `.DS_STORE` files. I'll
-talk about where those come from, and we'll tell git to ignore them. 
+We'll talk about `.swp` and `.DS_STORE` (effecting students using MacBooks)
+files. We'll talk about where those come from, and we'll tell git to ignore
+them. 
 
 Here's what your repo should look like at the end of this part:
 
@@ -34,19 +36,18 @@ Here's what your repo should look like at the end of this part:
 
 #### .gitignore
 
-I discussed this at length in class. If you were out, I still want you to
-create this file. Here is what it should look like:
-<https://github.com/cj0ne5/cj0ne5.github.io/blob/main/.gitignore>. You should
-read more about this file here: [gitignore
+We'll discuss this today length in class. 
+
+Here is on that Chris created for his students that shows what it should look
+like: <https://github.com/cj0ne5/cj0ne5.github.io/blob/main/.gitignore>. You
+should read more about this file here: [gitignore
 Documentation](https://git-scm.com/docs/gitignore)
 
 
 #### vimrc
 
-In class, we also spent a while talking about our vimrc file. If you were out,
-here's what you might want to put in your vimrc file. You can read more about
-this file here: [Vimrc | Learn Vim](https://learnvim.irian.to/customize/vimrc)
-
+We'll also spend some time today in class talking about the .vimrc file.
+Here's what you might want to put in your vimrc file:
 ```
 syntax enable
 
@@ -60,12 +61,16 @@ colorscheme desert
 set number
 ```
 
+You can read more about this file here: [Vimrc | Learn
+Vim](https://learnvim.irian.to/customize/vimrc)
+
+
 ### Practice
 
 Update your index.html page to include everything we've learned so far about
 HTML.
 
-By the beginning of next class, I'd like everyone to have an index.html page
+By the beginning of next class, We want everyone to have an index.html page
 that includes:
 
 - My validation code, and passes the validation
@@ -74,6 +79,7 @@ that includes:
   `<p>` tags as appropriate.
 - Your favorite quote. Make sure to use `<q>`, `<blockquote>`, and/or `<cite>`
   tags appropriately!
+
 
 ## Homework
 
@@ -85,8 +91,8 @@ Module 2:
 - Paragraphs and Text Formatting - Part 4
 - Lists
 
-There are a lot of new tags here, so I'd encourage you to make some HTML files
+There are a lot of new tags here, so we encourage you to make some HTML files
 on your own to play around with them. We'll start next class with a reading
-quiz where I'll expect that you're comfortable with everything introduced in
+quiz where we'll expect that you're comfortable with everything introduced in
 these pages.
 
