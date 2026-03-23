@@ -8,10 +8,43 @@ By the end of this lesson, you should:
 
 ## What We'll Do In Class
 
-### Quiz
+### Updated "minimal page" 
 
-We'll start class with a quiz where you'll demonstrate that you've learned
-about the HTML text tags from the reading.
+We'll start class with an updated "minimal page" with a few more parts than
+the one you saw in the first lesson:
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf=8">
+    <script src="js/validate.js"></script>
+    <title>Hello World!</title>
+</head>
+<body>
+    <p>This is my first web page.</p>
+</body>
+</html>
+```
+
+We will chat about each of the new parts:
+
+- The ``meta`` element with *attribute* ``charset``.
+- The ``script`` element with attribute ``src``.
+
+The word "[meta](https://www.merriam-webster.com/dictionary/meta)" in this
+context means "concerning or providing information about members of its
+own catagory."
+
+It can also be roughly translated as "about", as in one of Jeff's favorite
+words, "[metacognition](https://en.wikipedia.org/wiki/Metacognition)" which
+means "thinking about thinking."
+
+The ``script`` element is used to include
+[JavaScript](https://en.wikipedia.org/wiki/JavaScript) in your web page.
+
+To begin to develop a *feel* for what JavaScript can do, we'll chat about
+how to add [validate.js](./resources/validate.js) to your pages.
+
 
 ### Organization - validation, .gitignore, .vimrc
 
@@ -49,8 +82,6 @@ Documentation](https://git-scm.com/docs/gitignore)
 We'll also spend some time today in class talking about the .vimrc file.
 Here's what you might want to put in your vimrc file:
 ```
-syntax enable
-
 syntax enable
 
 filetype indent on
