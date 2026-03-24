@@ -1,11 +1,8 @@
 function setValidationLinks() {
-  const loc = document.location.href;
-  const HTMLvalidLinkStr = 'https://validator.w3.org/check?uri=' + loc;
-  const CSSvalidLinkStr = 'https://jigsaw.w3.org/css-validator/validator?uri=' +
-                           loc + '?profile=css3';
-  document.getElementById("baseHref").setAttribute("href", loc);
-  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
-  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+  var script = document.createElement("script");
+  script.src = "https://cdn.jsdelivr.net/gh/gracehoppercenter/validate@1.0.5/validate.js";
+  script.async = false;
+  document.head.appendChild(script);
 }
 
 function toggleContent() {

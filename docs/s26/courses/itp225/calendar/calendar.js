@@ -99,28 +99,14 @@ async function setUp(semester="") {
   await loadDayDescriptions(semester);
   await loadSessionTopics("../goals/session_topics.json", "../goals/session_dates.json");
 
-  var loc = window.location.href;
-  var HTMLvalidLinkStr = 'https://validator.w3.org/check?uri=' + loc;
-  var CSSvalidLinkStr = 'https://jigsaw.w3.org/css-validator/validator?uri=' +
-      loc + '?profile=css3';
-  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
-  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
 
-  // Call the HTML validator API and add the result to the footer
-  try {
-      const response = await fetch("https://validator.w3.org/nu/?out=json&doc=" + encodeURIComponent(loc));
-      const data = await response.json();
-      if (data.messages.length === 0) {
-          console.log("No Errors");
-          document.getElementById("HTMLCSS").innerHTML = "<strong> HTML/CSS </strong> Valid!";
-      } else {
-          console.log("Errors");
-          console.log(data.messages);
-          document.getElementById("HTMLCSS").innerHTML = "<strong> HTML/CSS </strong> NOT Valid!";
-      }
-  } catch (error) {
-      console.warn(error);
-  }
+
+  var script = document.createElement("script");
+  script.src = "https://cdn.jsdelivr.net/gh/gracehoppercenter/validate@1.0.5/validate.js";
+  script.async = false;
+  document.head.appendChild(script);
+
+
 
   // Small delay for sequential DOM updates
   await new Promise(resolve => setTimeout(resolve, 100));
