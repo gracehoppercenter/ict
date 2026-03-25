@@ -15,6 +15,8 @@
   {"session": "14", "unit": 1, "topic": "Project Work"},
   {"session": "15", "unit": 1, "topic": "Assign Big Projects"},
   {"session": "16", "unit": 1, "topic": "Project Planning"},
+  {"session": "17", "unit": 1, "topic": "Wiki Documentation: Customers and Stakeholders"},
+  {"session": "18", "unit": 1, "topic": "Project Management in Codeberg"},
   {"session": "NWEA Testing", "unit": "other_school", "topic": ""},
   {"session": "HTML Pretest", "unit": "other_school", "topic": ""},
   {"session": "School Holiday", "unit": "other_noschool", "topic": ""},
