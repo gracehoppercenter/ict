@@ -1,43 +1,65 @@
 ## Lesson Objectives
 By the end of this lesson, you should:
 
-- **Know**: 🍱 The parts of an HTML table
-- **Understand**: 🚣‍♀️ The role of rowspan and columnspan attributes
-- **Be Able To**: 🧑‍💻 Construct your own HTML table
+- **Understand**: 👩‍💻 The importance of semantic HTML
+- **Understand**: 🌲 That the Document Object Model represents the structure
+  of an HTML page
 
 ## What We'll Do In Class
 
-### Quiz
+### Validator
 
-As promised, we'll start class with a quiz where you'll demonstrate that you've 
-learned about tables from the reading.    
+Ben worked on an updated version of the validator. We'll ask Thomas if he
+thinks Gabriel or Mulbah are ready to make further enhancements. More on that
+next class.
 
-### Tables
-Today, we'll work on tables in HTML. There is a table on the reading quiz, so
-we'll write the code to create that one.
+### Semantic HTML
 
-### vim resources
-This will be the most intricate document we've written in vim so far, and you'll likely want to do some copy/pasting. [Here's a nice guide that should help you out](https://www.warp.dev/terminus/vim-copy-paste), and I always recommend periodically reviewing vimtutor to pick up new tips and tricks.
+We'll discussion about the difference between HTML content and CSS
+formatting. We'll discuss [Semantic
+HTML](https://en.wikipedia.org/wiki/Semantic_HTML) and Web Agents - computer
+programs that automatically read and compile information from the internet.
 
-### Table Practice
-Make a new HTML page called `practice/schedule.html` that shows your class schedule. 
-Here is an example of what it should look like:
+### Document Object Model
 
-![A screenshot of an HTML table that includes my class schedule](../base/images/table_practice.png)
+We'll discuss the [Document Object Model](https://en.wikipedia.org/wiki/Document_Object_Model) - an important concept that we use to understand and organize HTML pages. We'll play with [This DOM Visualizer](https://0xedward.github.io/dom-visualizer/).
 
-Hint: your goal is to produce "Table 2", but I recommend starting with "Table 1" and then modifying it.
+## Today's Classwork
 
-Be sure to include your validator and use the correct filename. I'll count this as
-a classwork assignment due at the beginning of next class.
+It's time to practice with some of our new HTML skills.
 
-As always, there is no expectation that you publish any information that you aren't comfortable sharing with the world. If you aren't comfortable sharing this information, you can copy mine!
+To do this, make a new HTML page in your repo called `practice/terminal.html`. 
+In this page, write a nice html page that I might use to teach one of my lessons 
+next year on either the Terminal, or Vim. Produce a new HTML file that 
+summarizes what we learned. You can start by looking at the session calendar,
+but I'll expect that you include more code snippets and examples that you gained
+from vimtutor and/or terminus.
 
-## Homework
+For example, you might make an HTML page about vim - I would expect that page to
+include instructions about how to open/close vim, how to save files, and some of
+the most useful vim commands.
+
+I'll expect that your page has:
+- A list, and an unordered list, used appropriately
+    - e.g. use an ordered list to give specific instruction steps, and an unordered list to provide a list of features
+- A few `<pre>` / `<code>` elements, used appropriately
+    - pay attention to the way that they used `&lt;` in the `<pre>` element in the page titled "Paragraphs and Text Formatting – Part 4"
+- A few `<kbd>` / `<samp>` tags, used appropriately
+
+This will be **Due** at the beginning of next class. It will count as a classwork grade,
+and must be valid for full credit.
+
+Remember that we haven't really learned CSS yet. I expect that this page will
+just be black text on a white background - we're focusing on semantic correctness
+first!
 
 ### Read the next few pages in Module 2
-In our [edube.org](https://edube.org/) text, tables are the last topic in Module 2. 
-For the next reading, you'll start module 3:
 
-- Images
+In our [edube.org](https://edube.org/) text, read the next pages in Module 2:
 
-There are a lot of little details and attributes to know for images, so be sure to go through these slowly and carefully. As always, you should be practicing these on your own. Be prepared for a reading quiz next class - everything on these two pages is fair game!
+- Tables
+
+This is only one page, but don't underestimate it. There are a lot of new tags
+here, so I'd encourage you to make some HTML files on your own to play around
+with them. Next class, we'll have a reading quiz and then we'll practice
+together.
