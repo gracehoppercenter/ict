@@ -9,7 +9,7 @@ the Canvas API to build a real game.
 
 Your game should:
   - Have a clear goal or story. A way to keep track of the game state or score, and display that information to the player.
-  - Look nice. You're great to making shapes in the Canvas API - so use those skills!
+  - Look nice. You have a lot of experience making art with the Canvas API - so use those skills!
   - Be interactive - decide whether you'll use the keyboard, mouse, or other interface and use appropriate event handlers.
   - Be presented on a nice-looking HTML page. Include text that introduces your game and explains how to play.
 
