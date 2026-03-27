@@ -50,32 +50,32 @@ the requirements of this project. I'm always excited to chat about ideas!
 We'll take a few class periods to work on this project, and will have deliverables
 in three steps:
 
-#### Deliverable 1: Game Concept  (Due ???)
+#### Deliverable 1: Game Concept  (Due EOD Friday, April 17)
 
 With your team, think about what kind of game you'll want to make. Together, Create 
 a journal entry in Markdown format. There are no length requirements
 , but you must answer the following questions:
 
 - What genre will your game be?
-- Do you have any ideas for what kinds of music or sound effects you'll want for your game? 
+- What do you want your music to sound like? Write four words or phrases that capture the vibe you're going for.
 - What are the game objectives? Will there be a score? How do you win or lose?
 - How will the player interact with the game?
 - What features will you include in your MVP?
 - Make some concept art - in an HTML/JS canvas, generate a (still) image that will 
-represents one frame of your game. (you might choose to sketch this out on paper
+represent one frame of your game. (you might choose to sketch this out on paper
 first, but only the HTML version needs to be submitted)
 
 I'll review these game concepts and give feedback. Some proposals will be easier
 than others, so my feedback will focus on making sure that your project is reasonably
 challenging.
 
-#### Deliverable 2: MVP  (Due EOD Thursday, May 15)
+#### Deliverable 2: MVP  (Due EOD Monday, April 27)
 
 You'll create your "Minimum Viable Product", the simplest possible version of 
 your game that you can imagine. For your MVP, you'll focus on just a few features
 like the user input.
 
-#### Deliverable 3: Final Game (Due EOD Friday, May 23)
+#### Deliverable 3: Final Game (Due By the beginning of class on Thursday, May 7)
 
 After your MVP is complete, you'll add features that make your game prettier,
 more functional, and more engaging.
