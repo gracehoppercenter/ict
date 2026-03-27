@@ -3,7 +3,9 @@
 ## (THIS IS JUST A DRAFT - IT MIGHT CHANGE BEFORE THE PROJECT STARTS)
 
 ### Requirements
-Using JavaScript and the Canvas API, you'll create a game!
+
+Our last project was a text-based game. This time, you'll use JavaScript and
+the Canvas API to build a real game.
 
 Your game should:
   - Have a clear goal or story. A way to keep track of the game state or score, and display that information to the player.
@@ -50,11 +52,13 @@ in three steps:
 
 #### Deliverable 1: Game Concept  (Due ???)
 
-Create a journal entry in Markdown format. There are no length requirements
+With your team, think about what kind of game you'll want to make. Together, Create 
+a journal entry in Markdown format. There are no length requirements
 , but you must answer the following questions:
 
 - What genre will your game be?
-- What are the objectives? Will there be a score? How do you win or lose?
+- Do you have any ideas for what kinds of music or sound effects you'll want for your game? 
+- What are the game objectives? Will there be a score? How do you win or lose?
 - How will the player interact with the game?
 - What features will you include in your MVP?
 - Make some concept art - in an HTML/JS canvas, generate a (still) image that will 
