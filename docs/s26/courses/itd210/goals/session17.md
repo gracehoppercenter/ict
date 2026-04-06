@@ -24,6 +24,10 @@ This is a slightly modified version of the code from the MDN Breakout tutorial
 that you worked on a few weeks back. I'll quickly chat about the differences
 in class.
 
+Here is the final version of the code that we had at the end of class. I've
+added some extra comments to help explain some of the concepts we learned
+about. <https://github.com/cj0ne5/cj0ne5.github.io/blob/main/practice/breakout.js>
+
 ### Objects
 
 Let's add more balls to the game! To do that, we'll have to do some thinking
