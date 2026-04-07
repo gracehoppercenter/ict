@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA CSC 222 Week 15</title>
+<style>
+@import url(../../css/goals.css);
+</style>
+<script src="../../js/init.js"></script>
+<script>
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<div id="logo">
+<a href="index.html"><img src="../../images/gctaa_nvcc.png" alt="GCTAA Logo">
+</a>
+</div>
+<div class="desktop">
+<h2>Governor's Career & Technical Academy Arlington</h2>
+<h1>CSC 222 Weekly Assignments: Week 15</h1>
+</div>
+<div class="mobile">
+<h1>CSC 222</h1>
+</div>
+</header>
+<hr>
+
+<main>
+<time datetime="2024-12-02">Week of Monday, December 2, 2024</time>
+
+<h2>Overview</h2>
+<div>
+<p>
+This week we will take time to reinforce and deepen our understanding of
+how to create objects in C++.
+</p><p style="color: red;">
+<b>UPDATE:</b> The next CPE practice session will be Saturday, December 14,
+between 11 am and 5 pm. <i>The planned Saturday, December 7 session has been
+cancelled!</i>
+</p>
+</div>
+
+<section>
+<h2>Project: Have a Little Class!</h2>
+<div>
+<h3>Motivation</h3>
+<p>
+The learning objectives of this project are:
+</p>
+<ol>
+<li>to gain practice separating C++ objects into their three parts: header
+file, source file, and testing program.</li>
+
+<li>to practice with the use of
+<a href="https://github.com/doctest/doctest">doctest</a> for the last of
+these parts.</li>
+</ol>
+
+<h3>Process</h3>
+<ol>
+<li>Meet your new partner.
+    
+This is a paired project, and the psuedorandomly selected pairs for it are for
+<b>1B</b>: Noah and Eleanor, Conrad and Alex, Gabriel and Dylan, Jake and 
+Donovan, Alessandra and Toby, Grant and Udval, Evan and Zach, Fatima and Sean,
+Nikita and Rockwell, with poor Luis having to work alone. For <b>4B</b> we
+have: Rohoboth and Alex, Blu and Gabe, Abi and Jack, Yuri and Anupama, and
+Colin and Hisham.</li>
+
+<li>Come up with an idea for an object you could implement in C++. Think of
+the two objects we've met thus far: <code>Point</code> and <code>Time</code>.
+Keep your object simple for this project.</li>
+
+<li>Assuming your object is <code>MyObject</code>, create three files:
+<code>MyObject.h</code>, <code>MyObject.cpp</code>, and
+<code>test_myobject.cpp</code>.  The first of these will hold your object
+definition and member function prototypes, and the second the member function
+definitions.</li>
+
+<li>
+<p>In the third file, start out with this:</p>
+<pre>
+#define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
+#include &lt;doctest.h&gt;
+#include "MyObject.h"
+using namespace std;
+
+TEST_CASE("Test can create and render MyObject") {
+    MyObject myobj();
+    CHECK(myobj.to_string() == "This is MyObject");
+}
+</pre>
+<p>Fill in the header and source files so that this first test passes.</p>
+</li>
+</ol>
+<p>
+To help stimulate your thinking,
+<a href="https://codeberg.org/ACC/csc222/src/branch/master/DocTestedObjects">
+here</a> are the OO projects from last year.
+</p><p>
+I leave it open ended where you take it from here. Keeping the learning goals
+in mind, add more tests and then more features to your object.
+</p><p style="color: red;">
+This project is due by 11:59 pm on Saturday, December 7th so that I can have
+the day on Sunday to evaluate your work.
+</p>
+</div>
+</section>
+</main>
+
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>
