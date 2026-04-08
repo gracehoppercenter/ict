@@ -14,7 +14,12 @@ I had a blast grading your text games. I know that project wasn't easy, so
 thank you to everyone who brought your energy and creativity to it! There are a 
 few folks who really went above and beyond. I recommend checking out their games!
 
-- [James Perry's "Catch The Sun"](https://perryjc.github.io/projects/game/)
+- [James's "Catch The Sun"](https://perryjc.github.io/projects/game/)
+- [Patrick's "Trapped on Roosevelt Island"](https://patrickfoerster987654321-creator.github.io/projects/game/)
+- [Sebasitan's "Dragon Fighters"](https://sebastopolis841.github.io/projects/game/)
+- [Adrian's "Zelda Indigo"](https://darealcoolgaming.github.io/projects/game/)
+- [Luka's "THE ORB!!!"](https://unpolloloco.github.io/projects/game/)
+
 
 ### Collisions
 
