@@ -19,6 +19,7 @@
   {"session": "18", "unit": 1, "topic": "Wiki Documentation: Customers and Stakeholders"},
   {"session": "19", "unit": 1, "topic": "Project Management in Codeberg"},
   {"session": "NWEA Testing", "unit": "other_school", "topic": ""},
+  {"session": "SOL", "unit": "other_school", "topic": ""},
   {"session": "HTML Pretest", "unit": "other_school", "topic": ""},
   {"session": "School Holiday", "unit": "other_noschool", "topic": ""},
   {"session": "Snow Day", "unit": "other_noschool", "topic": ""},

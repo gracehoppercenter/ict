@@ -1,4 +1,29 @@
 [
+    {"date":"February02","day":"A"},
+    {"date":"February03","day":"B"},
+    {"date":"February04","day":"A"},
+    {"date":"February05","day":"B"},
+    {"date":"February06","day":"A"},
+
+    {"date":"February09","day":"B"},
+    {"date":"February10","day":"A"},
+    {"date":"February11","day":"B Early Release"},
+    {"date":"February12","day":"A"},
+    {"date":"February13","day":"B"},
+
+    {"date":"February16","day":"Presidents' Day"},
+    {"date":"February17","day":"A"},
+    {"date":"February18","day":"B"},
+    {"date":"February19","day":"A"},
+    {"date":"February20","day":"B"},
+
+
+    {"date":"February23","day":"A"},
+    {"date":"February24","day":"B"},
+    {"date":"February25","day":"A"},
+    {"date":"February26","day":"B"},
+    {"date":"February27","day":"A"},
+
     {"date":"March02","day":"B"},
     {"date":"March03","day":"A"},
     {"date":"March04","day":"B"},
@@ -43,7 +68,7 @@
     {"date":"April17","day":"A"},
 
     {"date":"April20","day":"B"},
-    {"date":"April21","day":"A"},
+    {"date":"April21","day":"Voting"},
     {"date":"April22","day":"B Early Release"},
     {"date":"April23","day":"A"},
     {"date":"April24","day":"B"},
@@ -65,23 +90,23 @@
     {"date":"May12","day":"B"},
     {"date":"May13","day":"A"},
     {"date":"May14","day":"B"},
-    {"date":"May15","day":"A - Last Day for HBW Seniors"},
+    {"date":"May15","day":"A - Last Day for HBW/YHS Seniors"},
 
 
     {"date":"May18","day":"B"},
     {"date":"May19","day":"A"},
     {"date":"May20","day":"B"},
     {"date":"May21","day":"A"},
-    {"date":"May22","day":"B"},
+    {"date":"May22","day":"B - Last Day for WLHS Seniors"},
 
     {"date":"May25","day":"Memorial Day"},
     {"date":"May26","day":"Memorial Day"},
     {"date":"May27","day":"Eid al-Adha"},
     {"date":"May28","day":"A"},
-    {"date":"May29","day":"B"},
+    {"date":"May29","day":"B - Last Day for AT/Wake Seniors"},
 
     {"date":"June01","day":"A"},
-    {"date":"June02","day":"B - Last Day for Seniors?"},
+    {"date":"June02","day":"B"},
     {"date":"June03","day":"A"},
     {"date":"June04","day":"B"},
     {"date":"June05","day":"A"},
