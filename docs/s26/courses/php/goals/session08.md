@@ -1,5 +1,5 @@
 ## Lesson Objectives
-#
+
 By the end of this lesson, you should:
 
 - Have a basic understanding of what PHP is, and why we want to use it. 
