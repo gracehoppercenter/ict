@@ -57,17 +57,15 @@ in three steps:
 #### Deliverable 1: Game Concept  (Due EOD Friday, April 17)
 
 With your team, think about what kind of game you'll want to make. Together, Create 
-a journal entry in Markdown format. There are no length requirements
+a `README.md` file. There are no length requirements
 , but you must answer the following questions:
 
 - What genre will your game be?
 - What do you want your music to sound like? Write four words or phrases that capture the vibe you're going for.
 - What are the game objectives? Will there be a score? How do you win or lose?
 - How will the player interact with the game?
-- What features will you include in your MVP?
-- Make some concept art - in an HTML/JS canvas, generate a (still) image that will 
-represent one frame of your game. (you might choose to sketch this out on paper
-first, but only the HTML version needs to be submitted)
+- Make some concept art - in a file called `concept_art.html`, use JS and an HTML canvas
+to create a still image of what your game might look like.
 
 I'll review these game concepts and give feedback. Some proposals will be easier
 than others, so my feedback will focus on making sure that your project is reasonably
