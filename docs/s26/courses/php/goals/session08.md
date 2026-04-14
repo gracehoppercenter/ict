@@ -24,5 +24,13 @@ you'll likely want to do some copy/pasting. [Here's a nice guide that should
 help you out](https://www.warp.dev/terminus/vim-copy-paste). We highly 
 recommend periodically reviewing vimtutor to pick up new tips and tricks.
 
+## Plan for Q4 
+
+We will finish today by discussing a plan to move everyone toward passing the
+[Certified Entry-Level Web Developer
+Certification](https://jsinstitute.org/wde-certification).
+
+
 ## Homework
 
+Use the plan we discussed in class to work toward the WDE certification.
