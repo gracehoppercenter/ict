@@ -2,6 +2,10 @@
 
 ## (THIS IS JUST A DRAFT - IT MIGHT CHANGE BEFORE THE PROJECT STARTS)
 
+## Groups
+
+[Click Here to see group assignments](game_team_assignments.html)
+
 ### Requirements
 
 Our last project was a text-based game. This time, you'll use JavaScript and
