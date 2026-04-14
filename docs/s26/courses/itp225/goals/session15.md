@@ -17,7 +17,10 @@ a script to scrape issues, commits, PRs, and comments. We spent 5 class periods 
 
 As always, I'm a mortal and make mistakes. If you disagree with or have questions about the grade I gave, email me and I'll take another look!
 
-Also quick shoutout to Daniel, who provided a great demonstration of <https://en.wikipedia.org/wiki/Goodhart's_law> with the screenshot I added at the bottom of this page.
+Also quick shoutout to Daniel, who provided a great demonstration of 
+[Campbell's Law](https://en.wikipedia.org/wiki/Campbell's_law) with the screenshot I added at the bottom of this page. If, like me, you find this entertaining, I 
+highly recommend a readthrough of the Wikipedia page about 
+[Perverse Incentives](https://en.wikipedia.org/wiki/Perverse_incentive) =)
 
 
 
