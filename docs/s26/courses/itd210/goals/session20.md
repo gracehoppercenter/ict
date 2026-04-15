@@ -29,8 +29,10 @@ add/commit/push the file.
 ### Form Teams
 
 Thanks to everyone who emailed me about your team selection. I'm keeping a list of
-teams on this page: [https://ict.gctaa.net/s26/courses/itd210/projects/game_team_assignments.html].
+[teams on this page](https://ict.gctaa.net/s26/courses/itd210/projects/game_team_assignments.html).
 Today, I'll play matchmaker and assign everyone to a team.
+
+[Here is a link to the project writeup](https://ict.gctaa.net/s26/courses/itd210/projects/project.html?id=03_game)
 
 With your team:
 - Discuss how you'll collaborate. Exchange phone numbers, email addresses, discord handles,
