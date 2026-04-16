@@ -33,8 +33,8 @@ alt="GCTAA Logo">
 
 <h2>Overview</h2>
 <p>
-Welcome to 4th quarter, your final quarter in high school!  This week will
-study sorting algoriths.
+Welcome to 4th quarter, your final quarter in high school! This week will study
+sorting algoriths.
 </p>
 
 <!--
@@ -86,6 +86,32 @@ the <i>Exercises</i> on pages 462 and 463 for inspiration in preparing the
 test.
 </p>
 </div>
+
+<h3>Thursday Addendum</h3>
+<p>
+I want to standardize our input and output format.  How about 100 numbers on
+10 lines. The input file can contain:
+</p><pre>
+95 87 252 5 226 80 204 115 89 251 2
+225 228 224 35 119 81 235 129 93 90
+206 28 10 92 48 15 220 88 170 214
+116 253 57 163 148 249 161 193 183 219
+171 196 147 179 105 3 64 62 41 230
+208 42 26 118 243 122 240 53 1 25
+194 43 142 162 195 102 65 56 187 59
+188 217 168 76 34 185 254 250 128 47
+106 131 138 234 231 140 23 127 245 19
+121 223 60 38 149 255 141 78 40 
+</pre><p>
+so that we are all working with the same input. (<i>Note:</i> I created 
+<a href="resources/make_random_num_file.py">make_random_num_file.py</a>
+and
+with <a href="resources/make_random_num_file.c">make_random_num_file.c</a>,
+which we could use as utilities to create our input files.  This lead me to
+wonder if this could be ported to our BDS C environment, and it can, but with
+some limitations. Here is <a href="resources/MKNUMF.C">MKNUMF.C</a>. You can
+pass it a seed on the command line to vary the numbers in the file it creates.
+</p>
 </section>
 
 <section>
