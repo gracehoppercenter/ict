@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ITP225 Final Assessment Interview</title>
+    </head>
+    <body>
+        <h1>ITP225 Final Assessment Interview</h1>
+        <p>
+Come to your interview with one pull request that you'd like to discuss. Be prepared to 
+answer questions about the code in that PR, and any adjacent M/V/T code that it 
+interacts with.
+        </p>
+        <p>
+During the interview, we'll quickly review your overall contributions to our
+project, and then I'll roll a six-sided die to determine which topics we'll discuss.
+Here are the topics, along with a preview of the kinds of questions I'll ask 
+for each topic.
+        </p>
+        <p>
+        <ol>
+            <li>
+                Models (Django ORM): 
+                In the pull request you brought, did you create or modify any 
+                Django models? If so, walk me through the model changes and 
+                explain how they relate to the database structure and 
+                business logic.
+                If not: Pick a model that's relevant to your PR. 
+                How is it defined, and how does your PR interact with 
+                it - directly or indirectly?
+            </li>
+
+
+            <li>Views/Requests: Tell me about a view you implemented or modified 
+                in this pull request. How does it process incoming HTTP requests 
+                and what kind of responses does it return? If not: Find a view 
+                that triggers or depends on the logic in your PR. How does that 
+                view work, and where does your code fit into the 
+                request-response cycle?
+            </li>
+
+            <li>URLs, Django Organization: Did your contribution involve any 
+                changes to the urls.py or the overall project structure? Can you 
+                explain how Django resolves URLs and how your route fits into 
+                the project? If not: Identify the route that ultimately leads 
+                to the code in your PR. Show how Django maps the URL to a view, 
+                and explain where your code runs in that flow.
+            </li>
+
+            <li>Django Templates: If your PR involved rendering templates, 
+                how did you structure the context passed to the template? 
+                What strategies did you use to keep the templates clean and 
+                maintainable? If not: Find a template that is affected by or 
+                displays data related to your PR. How is the context built, 
+                and how might your code contribute to it?
+            </li>
+
+            <li>(still working on the language for this one)Agile Development: Where did the idea for this PR come from? Can
+                you trace it to a client conversation documented in your team's 
+                wiki? How did you plan the work that you wanted to do, how did 
+                you present the PR to your team for review, and how did you
+                show the result to your customer?</li>
+
+            <li>Object-Oriented Programming: Did your pull request involve 
+                working with any classes, such as Django class-based views or 
+                custom helper classes? Walk me through one and explain how 
+                object-oriented concepts like inheritance or encapsulation are 
+                used. If not: Find a class elsewhere in the codebase that 
+                interacts with your PR—this could be a class-based view, model, 
+                or utility class. How does that class work, and how does your 
+                code relate to it or rely on its structure?
+            </li>
+
+    </body>
+</html>
