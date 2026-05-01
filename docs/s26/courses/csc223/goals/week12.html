@@ -5,6 +5,13 @@
 <title>GHC CSC 223 Week 12</title>
 <style>
 @import url(../../../css/goals.css);
+th, td {
+    padding: 10px;
+    border: 1px dotted #000;
+}
+th {
+    background-color: #DBD0EB;
+}
 </style>
 <script src="../../../js/init.js"></script>
 <script>
@@ -35,27 +42,66 @@ alt="GCTAA Logo">
 <p>
 </p>
 
-<!--
 <section>
 <h2>Friday and Monday, May 1st and 4th</h2>
 
-<h3>Classwork</h3>
+<h3>Plans</h3>
 <div>
 <p>
-Today we will have the promised test on <i>Chapter 14: Searching and
-Sorting</i>. You will not be allowed to use notes, but you will be given
-a printed version of <code>SORT.H</code> with line numbers to use during the
-test.
+At long last, the promised source file listings,
+<a href="resources/SORT.pdf">SORT.H</a> and
+<a href="resources/SORTTEST.pdf">SORTTEST.C</a> are ready.
+</p><p>
+You will not be allowed to use notes on the test on <i>Chapter 14: Searching
+and Sorting</i>, but you will be given a printed version of these two
+documents to use during the test.
+</p><p>
+Please study the sort algorithms <i>as presented</i> in <code>SORT.H</code>,
+the unit tests in <code>SORTTEST.C</code>, <i>and</i> the presentation
+of these sorting algorithms in <i>Chapter 14: Searching and Sorting</i> in
+our text.
+</p><p>
+The following students will present and explain the following sorts:
+</p><table>
+<tr><th colspan="4">Sorting Algorithms</th><tr>
+<tr>
+<th>Sort</th><th>Presenters</th>
+<th>Sort</th><th>Presenters</th>
+</tr><tr>
+<th>Bubble Sort</th><td>Abi (1A) / Noah (3B)</td>
+<th>Merge Sort</th><td>Alex (1A) / Conrad (3B)</td>
+</tr><tr>
+<th>Insertion Sort</th><td>Rockwell (1A) / Gabe (3B)</td>
+<th>Quick Sort</th><td>Gabriel (1A) / Toby (3B)</td>
+</tr><tr>
+<th>Selection Sort</th><td>Eleanor (1A) / Anupama (3B)</td>
+<th>Radix Sort</th><td>Nikita (1A) / Donovan (3B)</td>
+</tr><tr>
+<th>Heap Sort</th><td>Sean (1A) / Blu (3B)</td>
+<th>Tree Sort</th><td>Jeff (1A) / Dylan and Alessandra (3B)</td>
+</tr>
+</table><p>
+Presentations will be given in class on Tuesday and Wednesday of next week,
+with the test following on Thursday and Friday.
 </p>
 </div>
 
-<h3>Homework / Evaluation</h3>
+<h3>Alternative Evaluation for Brendan</h3>
 <div>
 <p>
-</p>
+I've been working out an alternative evaluation for Brendan, but just to make
+it transparent I'll state it here (and I've added two new requirements):
+</p><ol>
+<li>
+Expand our <code>BDSCTEST.H</code> testing tool to support adding strings
+to the <code>ASSERT</code> functions for identifying which assertions failed.
+</li><li>
+Write a new ASSERT_ARRAY_EQUAL(expected, actual, n) macro that can be used
+to check if two arrays are equal.
+</li>
+</ol>
 </div>
 </section>
--->
 
 <section>
 <h2>Wednesday and Thursday, April 29th and 30th</h2>
