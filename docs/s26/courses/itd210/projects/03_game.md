@@ -77,7 +77,7 @@ You'll create your "Minimum Viable Product", the simplest possible version of
 your game that you can imagine. For your MVP, you'll focus on just a few features
 like the user input.
 
-#### Deliverable 3: Final Game (Due By the beginning of class on Thursday, May 7)
+#### Deliverable 3: Final Game (Due By EOD Friday, May 8)
 
 After your MVP is complete, you'll add features that make your game prettier,
 more functional, and more engaging.
