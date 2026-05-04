@@ -16,9 +16,6 @@
 [submodule "docs/s26/courses/itd210/projects/game/mahnamejoks"]
 	path = docs/s26/courses/itd210/projects/game/mahnamejoks
 	url = https://codeberg.org/GHC_Students/mahnamejoks
-[submodule "docs/s26/courses/itd210/projects/game/game-project-ish"]
-	path = docs/s26/courses/itd210/projects/game/game-project-ish
-	url = https://codeberg.org/GHC_Students/game-project-ish
 [submodule "docs/s26/courses/itd210/projects/game/Snack-Rat"]
 	path = docs/s26/courses/itd210/projects/game/Snack-Rat
 	url = https://codeberg.org/GHC_Students/Snack-Rat
