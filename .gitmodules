@@ -45,4 +45,4 @@
 	url = https://codeberg.org/GHC_Students/Game_Project
 [submodule "docs/s26/courses/itd210/projects/game/game-project-ish"]
 	path = docs/s26/courses/itd210/projects/game/game-project-ish
-	url = ssh://git@codeberg.org/GHC_Students/game-project-ish.git
+	url = https://codeberg.org/GHC_Students/game-project-ish.git
