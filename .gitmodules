@@ -43,3 +43,6 @@
 [submodule "docs/s26/courses/itd210/projects/game/Game_Project"]
 	path = docs/s26/courses/itd210/projects/game/Game_Project
 	url = https://codeberg.org/GHC_Students/Game_Project
+[submodule "docs/s26/courses/itd210/projects/game/game-project-ish"]
+	path = docs/s26/courses/itd210/projects/game/game-project-ish
+	url = https://codeberg.org/GHC_Students/game-project-ish.git
