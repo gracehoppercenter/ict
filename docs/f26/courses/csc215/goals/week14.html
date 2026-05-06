@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GHC CSC 215 Week 14</title>
+<style>
+@import url(../../../css/goals.css);
+pre {
+    margin-left: 3vw;
+    color: DarkSlateGrey;
+}
+code {
+    color: DarkSlateGrey;
+}
+</style>
+<script src="../../../js/init.js"></script>
+<script>
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<div id="logo">
+<a href="index.html"><img src="../../../../images/gctaa_nvcc.png"
+alt="GCTAA Logo">
+</a>
+</div>
+<div class="desktop">
+<h2>Grace Hopper Center</h2>
+<h1>CSC 215 Weekly Assignments: Week 14</h1>
+</div>
+<div class="mobile">
+<h1>CSC 215</h1>
+</div>
+</header>
+<hr>
+
+<main>
+<time datetime="2025-12-01">Week of Monday, December 1, 2025</time>
+
+<h2>Overview</h2>
+<p>
+I hope everyone had a restful Thanksgiving holiday and you've come back ready
+to start programming in
+<a href="https://en.wikipedia.org/wiki/C_(programming_language)">C</a>!  After
+programming in binary, and then assembly langauge, I think you will
+<i>greatly</i> appreciate the usability and power that a higher level
+<a href="https://en.wikipedia.org/wiki/Structured_programming">structured
+programming</a> language like C gives us.
+</p><p>
+This will be an opportunity for those of you who struggled with the previous
+projects to start fresh!
+</p>
+
+<section>
+<h2>Friday and Monday, December 5th and 8th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+It's that time again, NVCC Course Evaluations! Please visit
+<a href="https://nova.direct.iota360.cc">https://nova.direct.iota360.cc</a>,
+enter your VCCS email and your NVCC student number and complete your
+evaluations. NVCC will provide me with regular updates as to your participation
+rates, so I will nag relentlessly until you get this done :-)
+</p><p>
+We'll begin class today by checking the running versions of <code>CLISUM</code>
+that you wrote for homework.
+</p><p>
+Next we'll look at file I/O. Using <i>The Buffered File I/O Functions</i>
+section on page 133 of the <i>BDS C User's Guide</i>, I was able to write
+<a href="https://gitlab.com/gracehoppercenter/csc215/-/raw/main/C/CPM_BDSC/Programs/COPY.C">
+COPY.C</a>. 
+</p><p>
+Wow, this was <i>so</i> much easier than it was in 8080 assembly language,
+right? Abstraction rocks!
+</p><p>
+One caution: last year I changed the <code>c</code> variable in this program
+from <code>int</code> to <code>char</code> and it broke it. It turns out that 
+<a href="https://ruslanspivak.com/eofnotchar/">EOF is not a character</a>!
+That link is to a wonderful blog post, by the way, well worth a quick reading.
+</p>
+</div>
+
+<h3>Homework / Evaluation</h3>
+<div>
+<p>
+Rewrite the disk access program you wrote as your final project with assembly
+language in C. Come to next class ready to show it running on your computer.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Wednesday and Thursday, December 3rd and 4th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+Since many of you were not ready with your disk I/O programs, and I ended up
+with only a single application of what I was hoping for (batch processing of
+lines of input with a text file containing corresponding lines of output),
+we needed to postpone our plans to start C by a day. We'll find a time to share
+presentations of the working assembly programs later, but for now just email
+them to me and let me confirm they work before we share them in class.
+</p><p>
+Today we will <i>compile</i> (we're not assembling any more baby! ;-) our first
+C program on CP/M using BDS C, the infamous <code>helloworld.c</code>.
+</p><p>
+Here's what to do:
+</p><ol>
+<li>Create a file named <code>CSTUFF.SUB</code> on your <code>C</code> drive
+with the following contents:
+</p><pre>
+PIP $1:=C:CC.COM
+PIP $1:=C:CC2.COM
+PIP $1:=C:CLINK.COM
+PIP $1:=C:C.CCC
+PIP $1:=C:DEFF.CRL
+PIP $1:=C:DEFF2.CRL
+PIP $1:=C:STDIO.H
+</pre><p>
+Now, if you want to use drive <code>D</code> for compiling C programs, you
+can switch to the <code>A</code> and run:
+</p><pre>
+submit c:cstuff D
+</pre><p>
+and it will copy the 7 files you need from drive <code>C</code> to drive
+<code>D</code>.
+</p>
+</li>
+
+<li>Using your favorite text editor (<code>ED</code> of course! ;-) create
+a file named <code>HELLO.C</code> in the <code>D</code> drive with the
+following contents:
+<pre>
+#include &lt;stdio.h&gt;
+
+main()
+{
+    printf("hello, world!\n");
+}
+</pre>
+</li>
+
+<li>Compile and link your program with:
+<pre>
+D&gt;CC HELLO
+</pre>
+</li>
+
+<li><p>Finally, run your program with:</p>
+<pre>
+D&gt;CLINK HELLO
+</pre>
+<p>Then Run:</p>
+<pre>
+D&gt;HELLO
+</pre>
+<p>and you should see:</p>
+<pre>
+hello, world!
+</pre>
+</li>
+</ol>
+
+<h3>ARGS.C</h3>
+<p>
+The next program we'll look at reads arguments from the command line:
+</p><pre>
+#include &lt;stdio.h&gt;
+
+main (argc, argv)
+int argc;
+char **argv;
+{
+    int i;
+
+    printf("Command line argument test\n");
+
+    for (i = 1; i &lt; argc; i++) {
+        printf("%s\n", argv[i]);
+    }
+}
+</pre><p>
+Compile it and run it with:
+</p><pre>
+D&gt;args 1 2 buckle my shoe 3 4 shut the door
+</pre><p>
+and see what you get.
+</p>
+</div>
+
+<h3>Homework / Evaluation</h3>
+<div>
+<p>
+You'll work individually for this first C programming assignment, since you
+all need to have the process down so we can continue.
+</p><pre>
+</pre><p>
+Your task is to write a program named <code>CLISUM</code> that takes a sequence
+of integer values at the CP/M command line and prints out their sum. An A
+submission should gracefully handle invalid input. Sample runs might include:
+</p><pre>
+D&gt;clisum 5 15 22 8
+Sum is 50
+D&gt;clisum 1 1 1 1 1 1 1 
+Sum is 7
+D&gt;clisum 5 15 icecream 8
+OOPS! ICECREAM is not a number
+</pre><p>
+In addition to <code>ARGS.C</code>, you should use the <code>ndigit</code>
+discussion beginning on page 20, and the <code>atoi</code> discussion
+beginning on page 39 of <i>The C Programming Language</i> as resources for this
+assignment.
+</p><p>
+<span style="color: red;">This assignment is due before our next class!</span>
+I'll come around at the beginning of class and check you off for showing it to
+me running on your laptop.
+</p>
+</div>
+</section>
+</main>
+
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

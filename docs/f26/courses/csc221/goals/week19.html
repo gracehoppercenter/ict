@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GHC CSC 221 Week 19</title>
+<style>
+@import url(../../../css/goals.css);
+img {
+    width: 80%;
+}
+pre {
+    margin-left: 2vw;
+}
+</style>
+<script src="../../../js/init.js"></script>
+<script>
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<div id="logo">
+<a href="index.html"><img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+</div>
+<div class="desktop">
+<h2>Grace Hopper Center</h2>
+<h1>CSC 221 Weekly Assignments: Week 19</h1>
+</div>
+<div class="mobile">
+<h1>CSC 221</h1>
+</div>
+</header>
+<hr>
+
+<main>
+<time datetime="2026-01-20">Week of Tuesday, January 20, 2026</time>
+
+<h2>Overview</h2>
+<p>
+
+</p>
+
+
+<section>
+<h2>Friday, January 23rd</h2>
+
+<h3>Classwork - Template Inheritance</h3>
+<div>
+<p>
+I've updated your grades for our recent assignments:
+</p>
+<ul>
+    <li>The reading quiz about templates</li>
+    <li>The template-based static site generator for book reviews</li>
+    <li>Creating simple Django templates/routes</li>
+    <li>For those who emailed me about changes to your chat assignment, I think 
+        I've responded to everyone</li>
+</ul>
+<p>
+    As always, I make mistakes. If you have any questions or concerns about 
+    grades, email me =)
+</p>
+</div>
+
+<h3>Template Inheritance</h3>
+<div>
+<p>
+Now that we have a few templates, let's make them pretty. We'll use template
+inheritance for this - we'll write one pretty page and then each of our
+templates will just inherit the prettiness
+    </p>
+
+<p>
+    As before, the code is a little involved and requires a good understanding
+    of Django's organization. We'll go through this code live and slowly, 
+    but I've also posted all of the changes ahead of time here:
+    <a href="https://codeberg.org/cjones/csc221/commit/64e3946568b4297b2998d943aa76c0ac4268cf6c">
+        setup template inheritance and a nice homepage
+    </a>. Don't just copy/paste these changes - I want you to really understand
+    them!
+</p>
+</div>
+
+
+<h3>Homework</h3>
+<div>
+    <p>Most importantly -  do your best snow dance before bed tonight ☃</p>
+<p>Other than that, pretty up your Django website:
+    <ul>
+        <li>Add some content (maybe a header) to your
+    base HTML file</li>
+    <li>Personalize the base CSS</li> 
+    <li>Apply it to all of the templates that you made last time</li>
+    <li>Make sure all of your templates are linked from your new homepage</li>
+        </ul>
+    </p>
+    <p>
+    Starting next week, we'll be branching
+    into more complex views/templates - we'll be spinning up new templates 
+    quickly, so you need to be comfortable with this process!</p>
+
+
+</div>
+
+</section>
+
+<section>
+<h2>Wednesday, January 21st</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+We'll pick up where we left off last week - we're trying
+to create an entire view (with accompanying template) from scratch. We'll
+walk through this together and then you'll repeat the process on your own for homework.
+</p>
+
+<p>
+    For those who had trouble following along in class today, or just need
+    a review, here's some commits you can review:
+</p>
+<ol>
+    <li>Last class, we followed these steps:
+        <ol>
+            <li>setup and activated a virtual environment</li>
+            <li>installed django</li>
+            <li>ran <code>python3 -m django startproject hello_django</code></li>
+            <li>cd'd into the 
+        newly-created <code>hello_django</code> directory</li>
+            <li>ran
+        <code>python3 -m django startapp core</code></li> 
+            </ol>
+        Those commands auto-generate a whole bunch
+        of files, which you can see in 
+        <a href="https://codeberg.org/cjones/csc221/commit/7a1a390d0150b15bc42b892ec252301a18e79ddd">this commit</a>.
+        (you shouldn't have to write any of these files yourself, just run
+        the django commands). At this point you should be able to
+    navigate to <code>http://localhost:8000/</code> and see the rocket ship.</li>
+    <li>Today in class, we worked forward from there. We had to modify a few 
+        files and create a few more. 
+        <a href="https://codeberg.org/cjones/csc221/commit/87ca8d335bc467798c039ea2db6c2cf8a0e5bbc0">Here is my commit that includes all of
+        those changes</a>
+    </li>
+    <li>
+        After those changes, you should be able to <code>python3 manage.py runserver</code>
+        and then navigate to <code>http://localhost:8000/core/</code> to see the word 'test',
+        and then to <code>http://localhost:8000/core/icecream/chocolate</code> to see the 
+        icecream template with the variable "chocolate" filled in
+    </li>
+</ol>
+<p>
+I know this was a lot. Please try your best for homework. If you get stuck, 
+commit your work and email me so I can take a look!
+</p>
+<p>
+    I also want you to be comfortable with the directory tree we discussed in class.
+    Django can certainly be confusing at first - with all the multiple files that
+    have the same names. Here's the tree we drew on the board today. 
+    There is a lot omitted from this diagram, these are the only files that
+    I want you to know for now.
+
+</p>
+<pre>
+hello_django
+├── core
+│   ├── templates
+│   │   └── core
+│   │       ├── icecream.html
+│   │       └── index.html
+│   └── urls.py
+├── db.sqlite3
+├── hello_django
+│   ├── settings.py
+│   └── urls.py
+└── manage.py
+</pre>
+
+
+</div>
+
+<h3>Homework</h3>
+<div><p>
+You should make a total of **three** new templates 
+(not counting our icecream example from Monday). Each template should:
+</p>
+<ul>
+<li>Be linked from your index.html page</li>
+<li>Take an input parameter, using the URL template example from Dr. Chuck's 
+    video, and display it in the template</li>
+</ul>
+    <p>
+This assignment is due before the start of class on Wednesday. 
+We'll grade each-other's pages at the start of class on Wednesday.
+</p>
+</div>
+</section>
+
+</main>
+
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

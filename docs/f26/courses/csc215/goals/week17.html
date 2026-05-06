@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GHC CSC 215 Week 17</title>
+<style>
+@import url(../../../css/goals.css);
+</style>
+<script src="../../../js/init.js"></script>
+<script>
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<div id="logo">
+<a href="index.html"><img src="../../../../images/gctaa_nvcc.png"
+alt="GCTAA Logo">
+</a>
+</div>
+<div class="desktop">
+<h2>Grace Hopper Center</h2>
+<h1>CSC 215 Weekly Assignments: Week 17</h1>
+</div>
+<div class="mobile">
+<h1>CSC 215</h1>
+</div>
+</header>
+<hr>
+
+<main>
+<time datetime="2026-01-05">Week of Monday, January 5, 2026</time>
+
+<h2>Overview</h2>
+<p>
+Happy New Year! This week we will continue to develop the arbitrary precision
+integer in C on the Intel 8080 processor that we began the week before winter
+break.
+</p>
+
+<section>
+<h2>Friday and Monday, January 9th and 12th</h2>
+
+<h3>Classwork / Homework / Evaluation</h3>
+<div>
+<p>
+<b>Note</b>: If you're in the A day section, you'll be doing this before the
+<code>add_bigints()</code> function is due.
+</p><p>
+Today we will handle negative values, both with a
+<code>sub_bigints()</code> function <i>and</i> by handling a unary minus
+(<code>-</code>) on a bigint.
+</p><p>
+You know the dance by now:
+</p><ol>
+<li>
+Add a test for your function expressing how you intend it to work
+(which should fail). 
+</li><li>
+Write code to make the test pass.
+</li><li>
+Interate until you have a robust, well tested function.
+</li>
+</ol><p>
+After Toby pointed out I was
+<a href="https://en.wikipedia.org/wiki/Memory_leak">leaking memory</a>
+when running my tests, I changed the code from last class to fix that. Toby
+also made a convincing argument for changing the order of the parameters in
+<code>set_bigint()</code> so that the variable being set is the first
+parameter. This is consistent with how Kernighan and Ritchie do things
+(see the <code>strcpy()</code> function defined on page 100 of <i>The C
+Programming Language</i> for example), so it is a good idea indeed to do what
+they do.
+</p><p>
+Gabe C. continues to greatly enrich our learning experience with his
+initiative. He did some informed AI querying, and came up with information
+about our BDS C compiler that will be most helpful to us. I put what he sent
+me in my git repo notes
+<a href="https://gitlab.com/gracehoppercenter/csc215/-/blob/main/C/CPM_BDSC/BDSCcompilerNotes.md">
+here</a>.
+</p><p>
+For homework, read from pages 35 through 44 in <i>The Large Integer Case Study
+in C++</i>. Take notes on this reading and make sure you understand the
+implementation questions it discusses for subtraction, multiplication, and
+exponentiation. <i style="color: red;">Be prepared to answer conceptual
+questions about these implementations in a quiz at the beginning of our next
+class.</i> While I don't think you'll need it if you really understand the
+reading, Abi requested, and I agreed to allow you one 8 1/2 by 11 sheet of
+paper front and back of notes to use while taking the quiz.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Wednesday and Thursday, January 7th and 8th</h2>
+
+<h3>Intro</h3>
+<div>
+<p>
+I got a delightful email from Gabe C. in which he shared
+<a href="https://github.com/HarryR/z80ai">Z80-μLM: A Retrocomputing Micro
+Language Model</a>. I haven't had a chance to take a look at this yet, but
+we certainly should.
+</p><p>
+Liam Brown, Arlington Tech / NVCC graduate in the class of 2024, will be with
+us this Spring working on his sophmore project, exploring how much of our
+<a href="https://courses.vccs.edu/courses/CSC223-DataStructuresandAnalysisofAlgorithms/detail">Data Structures and Anaylsis of Algorithms curriculum</a> can
+effectively be taught using CP/M and BDSC.
+</p><p>
+Thanks to Jake, we now know what the problem is with the failing test. <i>I had
+the parenthesis in the wrong place!</i> That discovery lead us down a rabbit
+hole about how the BDSC compiler works, which we'll discuss more later.
+</p>
+</div>
+
+<h3>Classwork / Homework / Evaluation</h3>
+<div>
+<p>
+Here are your tasks due Friday:
+</p><ol>
+<li>
+Fix the parenthesis and make the <code>set_bigint()</code>,
+<code>get_bigint()</code> test pass.
+</li><li>
+Add tests for a function <code>add_bigints()</code> which take two
+bigints as arguments and return their sum. Try to be as exhautive as you
+can. Do you have tests for single digit bigints? Double digit bigints?
+Ten digit bigints? bigints with different numbers of digits, both with the
+first and second arguments being the shorter of the two?
+</li><li>
+Write the function to make the tests pass.
+</li>
+</ol><p>
+This is due by Friday at 11:59 pm so I have the weekend to evaluate your
+work. As usual, your commmit history should show work both during and between
+classes.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Monday and Tuesday, January 5th and 6th</h2>
+
+<h3>Intro</h3>
+<div>
+<p>
+We'll start the new year by introducing a testing tool that two students,
+Akshay Kuchibhatla and Caleb O'Neil, developed last year. You can find their
+code and documentation
+<a href="https://gitlab.com/gracehoppercenter/csc215/-/tree/main/C/CPM_BDSC/BDSCtest">
+here</a>.
+</p><p>
+Here is a <code>struct</code> we can use to start our <code>bigint</code> data
+type, split it two files:
+<code>BIGINT.H</code>:
+</p><pre>
+struct bigint {
+    char negative;
+    char numdigits;
+    char* digits;
+};
+
+void set_bigint();
+char* get_bigint();
+</pre><p>
+and <code>BIGINT.C</code>:
+</p><pre>
+#include &lt;stdio.h&gt;
+#include "BIGINT.H"
+
+void set_bigint(num, numstr)
+char *numstr;
+struct bigint *num;
+{
+    char last_pos, i;
+    num-&gt;negative = (numstr[0] == '-');
+    num-&gt;numdigits = strlen(numstr) - num-&gt;negative;
+    num-&gt;digits = alloc(num-&gt;numdigits);
+    last_pos = num-&gt;numdigits + (num-&gt;negative ? 0 : -1);
+
+    for (i = 0; i < num->numdigits; i++) {
+        num-&gt;digits[i] = numstr[last_pos-i];
+        /* printf("numstr[%d] is %c\n", last_pos-i, numstr[last_pos-i]); */
+    }
+}
+
+char* get_bigint(num)
+struct bigint *num;
+{
+   char *numstr;
+   char start_pos, i;
+   numstr = alloc(num-&gt;numdigits + (num-&gt;negative ? 2 : 1));
+   start_pos = num-&gt;negative;
+   if (start_pos == 1) numstr[0] = '-';
+   for (i = 0; i < num->numdigits; i++) {
+       numstr[i+start_pos] = num-&gt;digits[num-&gt;numdigits-(i+1)];
+       /* printf("numstr[%d] is %c\n", i, numstr[i+start_pos]); */
+   }
+   numstr[num-&gt;numdigits+start_pos] = '\0';
+   return numstr;
+}
+</pre><p>
+Here is a program, <code>BIGINTTD.C</code>, to test it:
+</p><pre>
+#include "BIGINT.H"
+#include "BDSCTEST.H"
+
+main() {
+    START_TESTING("BIGINTTD.C");
+    char *bis;
+
+    TEST_CASE("Read and write bigint 1234567") {
+        struct bigint bi;
+        set_bigint(&amp;bi, "1234567");
+        bis = get_bigint(&amp;bi)
+        ASSERT_STR(bis, "1234567");
+        free(bis);
+    }
+
+    END_TESTING();
+}
+</pre><p>
+Over the winter break I compiled and linked these with the following sequence
+of commands:
+</p><pre>
+I&gt;cc bigint
+I&gt;cc biginttd
+I&gt;clink biginttd bigint
+</pre><p>
+which generated <code>BIGINTTD.COM</code>. Running it, I got:
+</p><p>
+<img src="resources/biginttd_failing_test.png" alt="BigInt failing test">
+</p><p>
+I did not figure out why these tests are failing. That will be our first task
+for 2026.
+</p>
+</div>
+
+<h3>Classwork / Homework / Evaluation</h3>
+<div>
+<p>
+Everyone should reproduce the failing tests from the screenshot on their
+own computers.
+</p><p>
+Our goal will be to get these first tests working to be able to read and write
+our <code>BigInt</code> values. That's a big lift, I understand, so we will
+adjust plans and expectations according to our progress.
+</p>
+</div>
+</section>
+</main>
+
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

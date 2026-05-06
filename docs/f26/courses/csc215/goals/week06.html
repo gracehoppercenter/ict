@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GHC CSC 215 Week 6</title>
+<style>
+@import url(../../../css/goals.css);
+p.illustration {
+  margin-left: 4vw;
+}
+p.illustration>img {
+  width: 60%; 
+}
+</style>
+<script src="../../../js/init.js"></script>
+<script>
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<div id="logo">
+<a href="index.html"><img src="../../../../images/gctaa_nvcc.png"
+alt="GCTAA Logo">
+</a>
+</div>
+<div class="desktop">
+<h2>Grace Hopper Center</h2>
+<h1>CSC 215 Weekly Assignments: Week 6</h1>
+</div>
+<div class="mobile">
+<h1>CSC 215</h1>
+</div>
+</header>
+<hr>
+
+<main>
+<time datetime="2025-09-29">Week of Monday, September 29, 2025</time>
+
+<h2>Overview</h2>
+<p>
+This week we will continue with our study of
+<a href="https://bitsavers.org/pdf/osborne/books/CPM_Assembly_Language_Programming_1983.pdf">
+CP/M Assembly Language Programming: A Guide to the Integrated Learning of the
+CP/M Operating System & Assembly Language Programming</a>, diving into the
+details of the CP/M operating system.
+</p>
+
+<section>
+<h2>Friday and Monday, October 3rd and 6th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+After looking through chapter 5 in more detail, and after talking with Gabe
+about what we will see in chapter 6 as the <q>giant hook at location 5</q>,
+I decided it is better to postpone the next quiz until after we get through
+chapter 6.
+</p><p>
+I'll share my notes on <i>Chapter 5: Organization of CP/M</i> and see if you
+think there are important points I missed. I'll also demo the execution of
+some of the commands introduced in the chapter.
+</p>
+</div>
+
+<h3>Homework</h3>
+<div>
+<p>
+Read <i>Chapter 6: Interfacing with CP/M</i> and prepare an 8 1/2 by 11 sheet
+of paper front and back with notes on this chapter and the previous one for
+use on a quiz on these chapters at the beginning of next class.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Tuesday and Wednesday, September 30th and October 1st</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+We'll begin class with the promised quiz on the reading of chapters 3 and 4 in
+our text.
+</p><p>
+After the quiz we will discuss <i>Chapter 3: The CP/M-Based Computer</i>
+and <i>Chapter 4: What the Operating System Provides</i>.
+</p><p>
+This book thankfully only assumes a <q>minimum size microcomputer running some
+standard version of of the CP/M operating system.</q>  We are running CP/M
+version 2.2, the most recent of these <q>standard versions.</q>
+</p><p>
+The author tells us that we will use the term <b>CRT</b> (which stands for
+<a href="https://en.wikipedia.org/wiki/Cathode-ray_tube">cathod-ray tube</a>)
+as the term we will use of the physical device we use to communicate with
+our computer.
+</p><p>
+In our specific case, our <b>CRT</b> will consist of our computer keyboard,
+together with a
+<a href="https://en.wikipedia.org/wiki/Terminal_emulator">terminal
+application</a> in which we run
+<a href="https://en.wikipedia.org/wiki/SIMH">SIMH</a> configured to
+<a href="https://en.wikipedia.org/wiki/Emulator">emulate</a> the
+<a href="https://en.wikipedia.org/wiki/Altair_8800">Altair 8800</a> running
+<a href="https://en.wikipedia.org/wiki/CP/M">CP/M</a>.
+</p><p>
+We will need to make reference to Figure 3-1 as we proceed with our study:
+</p><p class="illustration">
+<img src="resources/figure_3-1.png" alt="Figure 3-1">
+</p><p>
+Make note of the comment in the figure intro text that says <q>[w]hile the
+schematic representations of the device selectors indicate real switches,
+<i>the switching is actually accomplished by selectively accessing different
+device driver subroutines with the operating system in response to bit patterns
+stored in the IOBYT.</i></q>
+</p><p>
+Also take a moment to reflect on our entire setup here in light of the
+statement I made in class last time that <i style="color: red;">hardware and
+software are logically equivalent</i>.
+</p><p>
+Make sure you know how to use <code>PIP</code>, the <i>Peripheral Interchange
+Program</i> to copy files between disks. We also need to know how to use two
+utility programs that will not be mentioned in our text, <code>W.COM</code>
+and <code>R.COM</code>. These are used to write and read files to the host
+operating system respectively.
+</p>
+</div>
+
+<h3>Homework</h3>
+<div>
+<p>
+Read <i>Chapter 5: Organization of CP/M</i>. Again, read this chapter with an
+eye towards understanding, and take good notes! We won't be able to effectively
+use our systems if we don't understand how they work.
+</p>
+</div>
+</section>
+</main>
+
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

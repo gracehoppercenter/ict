@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GHC CSC 221 Week 17</title>
+<style>
+@import url(../../../css/goals.css);
+img {
+width: 80%;
+}
+pre {
+margin-left: 2vw;
+}
+</style>
+<script src="../../../js/init.js"></script>
+<script>
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<div id="logo">
+<a href="index.html"><img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+</div>
+<div class="desktop">
+<h2>Grace Hopper Center</h2>
+<h1>CSC 221 Weekly Assignments: Week 17</h1>
+</div>
+<div class="mobile">
+<h1>CSC 221</h1>
+</div>
+</header>
+<hr>
+
+<main>
+<time datetime="2026-01-12">Week of Monday, January 5, 2026</time>
+
+<h2>Overview</h2>
+<p>
+Happy New Year! Hope you spent the last ~20 days thinking nonstop about all of 
+the fun things you'll build with Django =). We're excited to work together
+to make those dreams a reality.
+</p><p style="color: red;">
+PCEP study sessions will be available this Saturday, January 10 and next from 9
+am to 12 noon. This will be your last opportunity to prepare for and retake the
+certification exams during our course. Please let us know if you plan to
+attend.
+</p>
+
+<section>
+<h2>Thursday, January 8th</h2>
+
+<h3>Grade Update</h3>
+<div>
+<p>
+As promised, your git repos were evaluated in the wee hours of Thursday
+morning. This time email Jeff if you've got a beef with your grade. He enjoyed
+learning from your posts and getting a sense of where y'all are at, especially
+from commit comments like Madi's <q>im very confused</q>, Yara's <q>Dr Chuck
+did not help</q>, and Tai-Yu's <q> 	finished the 3rd video, a lot was
+learned</q>. I want to make sure Owen shares his <q>Fixing the error, all I had
+to do was reset the database and it works now</q> commit with Chris!
+We are using a
+<a href="https://en.wikipedia.org/wiki/Flipped_classroom">flipped classroom</a>
+approach with the very aim of addressing the confusion and
+<a href="https://en.wikipedia.org/wiki/Cognitive_dissonance">dissonance</a>
+that comes from your independent investigation <i>outside</i> the classroom.
+We want to provide you with the
+<a href="https://en.wikipedia.org/wiki/Zone_of_proximal_development">
+scaffolding</a> you need to be successful, but that only works if you put in
+the work.
+</p>
+</div>
+
+<h3>Certification Update</h3>
+<div>
+<p>
+There are several of you who are hoping to complete certification exams
+soon - some of you need to pass the WDE certification so that you can qualify 
+for ITP225 next semester, and others are hoping to retake the PCEP. If this
+is you, Make sure you're making a plan with Chris and/or Jeff!
+</p>
+</div>
+
+<h3>Classwork</h3>
+<div>
+<p>
+Today we're going to put a bow on our study of Django models. We're going to 
+step away from our chat project and away from curses and just focus on models.
+</p>
+<p>
+We'll start with a quick review of the one-to-many relationships 
+that we learned from Dr. Chuck's
+videos.
+</p>
+<p>I'll walk through the solution to last class's chat assignment. Feel free to reference
+my example here:
+</p>
+<ul>
+<li>
+    <a href="https://codeberg.org/GraceHopperCenter/DjangoCLIChat/src/branch/main/chat_er_diagram.md">
+    ER Diagram</a>
+</li>
+<li><a href="https://codeberg.org/GraceHopperCenter/DjangoCLIChat/src/branch/main/db/models.py">
+    Models</a>
+</li>
+<li>
+    <a href="https://codeberg.org/GraceHopperCenter/DjangoCLIChat/src/branch/main/django_shell_orm_test.txt">
+        Shell example</a>
+</li>
+</ul>
+</div>
+
+<h3>Model Design Activity</h3>
+<div>
+<strong>We decided to skip this activity because we ran out of time. I'm
+    keeping it here for posterity's sake, but you are not responsible for it.
+</strong>
+<p>
+Our goal will be to
+write data model diagrams, turn them into python classes, and then use 
+the DJango ORM to create and read objects.
+</p>
+<p>By the end of class, each group will share the diagram that they came up with.
+For credit, commit the following to your repo:
+</p>
+<ul>
+<li>Your ER Diagram (it can be a photo)</li>
+<li>Your models in <code>db/models.py</code></li>
+<li>Test your models via the REPL at <code>python3 manage.py shell</code> and 
+save your output to a text file</li>
+</ul>
+
+<h3>Homework</h3>
+<div>
+<p>
+Next class we'll leave DJango models behind and move on to the next important
+Django module - templates. To prepare for our activities in class next week,
+watch and take notes on these videos.
+</p><p>
+I'll give a bit of introduction in class to help you figure out which parts 
+to pay attention to.
+</p>
+<p>From this page: 
+<a href="https://www.dj4e.com/tsugi/lms/lessons/django_views#">
+    Django Templates and Videos
+</a>, watch these three videos:
+</p>
+<ul>
+<li>Using Templates in Django (10:05)</li>
+<li>Using the Django Template Language (DTL) (11:00)</li>
+<li>Django Template Inheritance (6:06) </li>
+</ul>
+
+<p style="color: red;">
+Add your notes by 11:59pm Saturday so that
+we can evaluate before class on Monday. As always, be prepared for a potential
+reading quiz.
+</p>
+</div>
+</section>
+
+
+<section>
+<h2>Tuesday, January 6th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+We closed out 2025 a little bit chaotically. Today, you'll download our solution
+for the chat app. You'll work with your partner to make sure that you can run 
+it, and then you'll extend it to add a new model.
+</p>
+</div>
+
+<h3>Grade Update</h3>
+<p>
+First, take a look at your grades. Chris added two new grades: one for your
+notes on the SQL Murder Mystery, and one for the effort that you put into the
+chat project. We spent several class periods on this activity, so Chris was
+looking for commits to your repo that make it clear you were putting in
+consistent effort from the time we introduced the project on December 5th
+through the last day of class on December 20th. We know that not everyone got
+the project completely working, so this grade reflects consistent effort, not
+perfect code. Here is how the grade was assigned:</p>
+<ul>
+<li>A: for consistent effort and interacting with all three layers of the app 
+(Curses, Django ORM, and Python Sockets)</li>
+<li>B: If you put in consistent effort but didn't get to one of the layers
+</li>
+<li>C: If you put in consistent effort but only worked on the chat part</li>
+<li>E: If there is little evidence that you engaged with this project</li>
+</ul> 
+<p>
+There are a few of you who got E's because I could not find any commits related
+to this project, but I know you were working in class. If that's you, check 
+<a href="https://ict.gctaa.net/f25/courses/csc221/students.html">your link on
+this page</a> and make sure I'm grading the correct repo. If you need to update
+that link or have any other questions about your grade, email Chris!</p>
+
+<h3>Tasks</h3>
+<p>
+Then, extend the chat app. The current code works great if you only ever chat
+with a single partner. When you start the app, it loads your whole chat
+history. But it doesn't know about multiple partners. If you start a chat with
+a new partner, it will still load your entire chat history from anyone you've
+ever chatted with.  Follow these instructions for today's activity:
+</p>
+<ol>
+<li>
+Get our solution code working. You and your partner should both 
+<a href="https://codeberg.org/GraceHopperCenter/DjangoCLIChat">
+download the code from here</a> and follow the instructions in the README file 
+to get it working. Make sure that you and your partner can both run this code
+and can chat with each-other before continuing. Once you have it working, 
+commit this code into your own repo.
+</li>
+<li>
+Add a new model to <code>db/models.py</code> called <code>Contact</code> which 
+will keep track of who you're chatting with. For now, your contact only
+needs a name.
+</li>
+<li>
+Review <a href="https://www.dj4e.com/tsugi/lms/lessons/dj4e_one_to_many#">
+Dr. Chuck's One-To-Many lesson</a>, which will teach you how to connect your 
+<code>Message</code>
+model with your <code>Contact</code> model. As always, you should be taking notes
+in a Markdown file that summarize the key points from this lesson and should be
+prepared in case we have a reading quiz next class.
+</li>
+<li>
+Modify <code>db/models.py</code> to add a One-To-Many relationship between
+the <code>Message</code> and <code>Contact</code> models.
+</li>
+<li>
+Choose how you'll test the new relationship. You can either:
+<ul>
+    <li> use the Django shell
+as described in Dr. Chuck's video. If you do this, write a Markdown file that 
+includes the shell commands you ran to test, and commit it to your repo.
+<li> If you're up for the challenge, you can modify 
+<code>socket_chat_curses.py</code> to ask for your chat partner's name at
+the start of the chat.</li>
+</li> 
+
+
+</ol>
+
+<h3>Homework</h3>
+<div>
+<p>
+Use your 90 minutes of homework time to continue today's classwork activity.
+Even if you don't complete it, make sure you're making commits that show your
+progress.
+</p><p style="color: red;">
+This assignment is due Wednesday at 11:59 pm so that it can be evaluated
+before you come to class on Thursday.
+</p>
+</div>
+</section>
+</main>
+
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>GHC CSC 221 Week 13</title>
+        <style>
+@import url(../../../css/goals.css);
+</style>
+        <script src="../../../js/init.js"></script>
+        <script>
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<div id="logo">
+<a href="index.html"><img src="../images/gctaa_nvcc.png"
+alt="GCTAA Logo"></a>
+</div>
+<div class="desktop">
+<h2>Grace Hopper Center</h2>
+<h1>CSC 221 Weekly Assignments: Week 13</h1>
+</div>
+<div class="mobile"><h1>CSC 221</h1></div>
+</header>
+<hr>
+
+<main>
+<time datetime="2025-11-17">Week of Monday, November 17, 2025</time>
+
+<h2>Overview</h2>
+<p>
+We will tack on Monday, November 25th to this <q>week</q>, and then have
+week 14 when we return from Thanksgiving break. We will use this time to
+complete our introduction to object-oriented programming in Python and to
+solidify our software development
+<a href="https://en.wikipedia.org/wiki/Workflow">workflow</a>.</p>
+
+<section>
+<h2>Monday, November 25th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+    In class today, we'll continue with our games we 
+    started last class. 
+
+    To start, each pair will present what you have so far for your class. Jeff 
+    will have a few announcements about repo grades.
+</p><p>
+    Next, we'll discuss the idea of Python modules - we'll practice importing
+    our class into the Python REPL and interacting with it there. We'll make
+    sure we understand the <code>dir()</code> function that we can use to 
+    explore the attributes and methods available on on object, and we'll
+    take this opportunity to revisit the <code>if __name__ == "__main__"</code>
+    syntax.
+
+</p><p>
+    Then, we'll have battles! We'll pair up one hero with one enemy. You'll 
+    fetch your opponent's code from their repo, import both characters into
+    a REPL, and play with them. Here are a few things your new group of four
+    should think about as you're playing:
+</p>
+<ul>
+    <li>What APIs are your classes presenting? Are they compatible?</li>
+    <li>Practice making a few instances of each class (e.g. have a group of four barbarians battle
+        three musketeers)</li>
+    <li>How can you balance your characters to make your game more enjoyable?</li>
+</ul>
+<p>
+  Here are the pairs (scroll down to see who is on each of those teams):</p>
+  <ul>
+    <li>The Dragon will attack the Paladin</li>
+    <li>The Beholder will attack the Warlock</li>
+    <li>The Blob will attack the Fighter</li>
+    <li>I guess that means the Rogue will have a friendly battle with the Ranger</li>
+  </ul>
+
+
+</div>
+
+<h3>Homework</h3>
+<div>
+<p>
+There is <i>no homework!</i> Enjoy your Thanksgiving break ;-)  Rest up,
+and come back in December ready to begin learning web application
+development with
+<a href="https://en.wikipedia.org/wiki/Django_(web_framework)">Django</a>.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Thursday, November 20th</h2>
+
+<h3>Classwork / Homework</h3>
+<div>
+<p>
+Today we'll start a new activity that will help us think about how classes
+are helpful in software engineering. We'll work together to plan a big software
+project, and then we'll divide up into pairs to build it.
+
+<a href="https://github.com/gracehoppercenter/ict/blob/main/docs/f25/courses/csc221/goals/resources/class_game_notes.md">
+ As we're working, I'll take Markdown notes and publish them on this page</a>
+</p><p>
+Each pair will take one class, which they will be responsible for implementing.
+We'll expect that your first commit is a set of doctests that define the
+behavior we've discussed, and then future commits will implement the behavior.
+You should use your 90 minutes of homework time to continue working on your
+assigned class. Next class, we'll check in about our progress.  If enough of us
+are ready, we'll put all of our classes together to build our final game.
+</p><p>
+Here are the pair assignments:</p><ul>
+<li>Heroes
+  <ul>
+    <li>Warlock: Benjamin &amp; Joshua</li>
+    <li>Fighter: Tai-Yu &amp; Maddie</li>
+    <li>Ranger: Jackson &amp; Adam</li>
+    <li>Paladin: Adam H &amp; Yara</li>
+    <li>Rogue: Keamlak &amp; Clara</li>
+  </ul>
+ </li>
+ <li>Enemies
+   <ul>
+     <li>Goblin: Jeff &amp;Kendyl</li>
+     <li>Bandit: Owen &amp; Kidus
+     <li>Dragon: Korban &amp; Isaac</li>
+     <li>Beholder: Gabriel &amp; Roey</li>
+     <li>Gelatinous Blob: Kara &amp; Daniel</li>
+   </ul>
+ </li>
+</li>
+</div>
+
+<h3>Evaluation</h3>
+<div>
+<p style="color: red;">All commits for evaluation are due by Saturday, November
+22nd at 11:59 pm.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Tuesday, November 18th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+Grades are in for the first evaluation of your git repos, with the class
+distribution being: <b>A</b>: 6, <b>B</b>: 4, <b>C</b>: 4, <b>D</b>: 2, and
+<b>E</b>: 3. We'll use this information to help solidify the process needed
+to score well under our
+<a href="../info/class_git_repo_rubric.html">Programming
+Assignment Grading Rubric</a> (which is now linked from our homepage).
+</p><p>
+Shout outs go to
+<a href="https://codeberg.org/adam_archie/csc221">Adam A.</a>,
+<a href="https://codeberg.org/Igunville/csc221">Isaac</a>,
+<a href="https://github.com/Penrosian/csc221">Ben</a>,
+<a href="https://codeberg.org/CWahl/csc221">Clara</a>,
+<a href="https://codeberg.org/cworst/csc221">Madi</a>,
+and
+<a href="https://github.com/NotABotDaniel/csc221">Daniel</a>
+for showing us how it's done. We'll take a few minutes to look at the rubric
+and reflect on how we can increase the scores next evaluation round.
+</p><p>
+After that we'll decide together from among a two options as to what we do
+next. We could:
+</p><ol>
+<li>present our solutions to the exercises orginially parcelled out in
+<a href="week11.html">week 11</a>.</li>
+<li>make new pairings for mini-projects followed by presentations next class
+now that we understand the workflow better.</li>
+</ol>
+</div>
+
+<h3>Homework</h3>
+<div>
+<p>
+TBD depending on our discussion in class today.
+</p>
+</div>
+</section>
+</main>
+
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp;
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>
