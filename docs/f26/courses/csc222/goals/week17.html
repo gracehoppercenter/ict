@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GHC CSC 222 Week 17</title>
+<style>
+@import url(../../../css/goals.css);
+</style>
+<script src="../../../js/init.js"></script>
+<script>
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<div id="logo">
+<a href="index.html"><img src="../../../../images/gctaa_nvcc.png"
+alt="GCTAA Logo">
+</a>
+</div>
+<div class="desktop">
+<h2>Grace Hopper Center</h2>
+<h1>CSC 222 Weekly Assignments: Week 17</h1>
+</div>
+<div class="mobile">
+<h1>CSC 222</h1>
+</div>
+</header>
+<hr>
+
+<main>
+<time datetime="2026-01-05">Week of Monday, January 5, 2026</time>
+
+<h2>Overview</h2>
+<p>
+This week we will complete
+<a href="https://openbookproject.net/thinkcs/cpp/ch14.html">Chapter 14: Classes
+and invariants</a> and
+<a href="https://openbookproject.net/thinkcs/cpp/ch15.html">Chapter 15:
+Extending classes</a>, bringing to a close our study of object-oriented
+programming with C++. That will then leave us three weeks for final projects
+applying all we have learned.
+</p><p style="color: red;">
+CPE study sessions will be available this Saturday, January 10 and next from 9
+am to 12 noon. This will be your last opportunity to prepare for and retake the
+certification exams during our course. Please let me know if you plan to
+attend.
+</p>
+
+<section>
+<h2>Thursday, December 19th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+We'll begin class today by following up on two conversations from last class.
+The first was a conversation I had with Delanie and Robbie. Take a look at the
+following and replace the comment line with a line that will make the program
+work as intended (I predict Delanie and Robbie have the highest chance of
+getting this right):
+</p><pre>
+#include <iostream>
+#include <string>
+using namespace std;
+
+string remove_char(string s, char c) {
+    if (s.empty()) {
+        return "";
+    }
+    if (s[0] == c) {
+        return remove_char(s.substr(1), c);
+    }
+    /* Replace this line with a line that will make this work. */
+}
+
+int main() {
+    cout &lt;&lt; remove_char("Mississippi", 'i') &lt;&lt; endl;
+    return 0;
+}
+</pre><p>
+When you replace the line, compile and run it, it should print:
+<code>Msssspp</code>.
+</p><p>
+The next thing I'll show you comes with a conversation I had with Sean.
+He choose to work on exercise 5 from
+<a href="https://openbookproject.net/thinkcs/cpp/exercises/ch14/ch14s00.html">
+Chapter 14 Exercise Set 0: Chapter Review</a>, which asks you to apply new
+skills to an old object: points.
+</p>
+</div>
+
+<h3>Homework / Evaluation</h3>
+<div>
+<p>
+</p>
+</div>
+</section>
+
+<section>
+<h2>Tuesday, December 17th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+We'll begin class with a quick review of where we left off before winter
+break.
+</p><p>
+After that we will discuss
+<a href="https://openbookproject.net/thinkcs/cpp/ch14.html">Chapter 14: Classes
+and invariants</a> and begin working the exercises together.
+</p>
+</div>
+
+<h3>Homework / Evaluation</h3>
+<div>
+<p>
+Read
+<a href="https://openbookproject.net/thinkcs/cpp/ch15.html">Chapter 15:
+Extending classes</a>, taking notes in a markdown file in your git repo. 
+</p>
+</div>
+</section>
+</main>
+
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

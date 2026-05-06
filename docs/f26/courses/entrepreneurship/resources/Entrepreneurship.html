@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrepreneurship Class Recruitment Poster</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Open+Sans:wght@400;600&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F9F5EB;
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+        }
+        
+        .poster {
+            width: 800px;
+            height: 1200px;
+            margin: 0 auto;
+            background-color: #F9F5EB;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+        
+        .header {
+            background-color: #2E5A88;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .main-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 48px;
+            margin: 0;
+            line-height: 1.1;
+            text-transform: uppercase;
+        }
+        
+        .subtitle {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 24px;
+            margin: 15px 0 0;
+            font-style: italic;
+        }
+        
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        
+        .intro {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 18px;
+            line-height: 1.5;
+            padding: 0 40px;
+        }
+        
+        .section {
+            width: 45%;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            color: #2E5A88;
+            margin-top: 0;
+            border-bottom: 3px solid #2E5A88;
+            padding-bottom: 5px;
+        }
+        
+        .solidarity .section-title {
+            color: #3E9B67;
+            border-bottom-color: #3E9B67;
+        }
+        
+        .benefits {
+            width: 100%;
+            display: flex;
+            /*flex-wrap: wrap;*/
+            justify-content: space-around;
+            /*margin-bottom: 30px;*/
+        }
+        
+        .benefit {
+            width: 30%;
+            text-align: center;
+            /*margin-bottom: 20px;*/
+        }
+        
+        .benefit-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 10px;
+            background-color: #F39C12;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 40px;
+        }
+        
+        .benefit-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            margin: 10px 0 5px;
+        }
+        
+        .benefit-desc {
+            font-size: 14px;
+        }
+        
+        .principles {
+            margin-top: 20px;
+        }
+        
+        .principle {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .principle-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #2E5A88;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .solidarity .principle-icon {
+            background-color: #3E9B67;
+        }
+        
+        .principle-text {
+            font-size: 16px;
+        }
+        
+        .principle-title {
+            font-weight: 600;
+            margin: 0;
+        }
+        
+        .central-graphic {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, #F39C12, #3E9B67, #2E5A88);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            z-index: 1;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+        
+        .comparison {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            padding: 0 20px;
+        }
+        
+        .model {
+            width: 45%;
+            text-align: center;
+        }
+        
+        .model-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .traditional-model {
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 150px solid #ddd;
+            position: relative;
+            margin: 0 auto;
+        }
+        
+        .coop-model {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #3E9B67;
+            position: relative;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .footer {
+            background-color: #F39C12;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            box-sizing: border-box;
+            max-height:10%;
+        }
+        
+        .cta {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 24px;
+            margin: 0 0 20px;
+            text-transform: uppercase;
+        }
+        
+        .details {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        
+        .detail-section {
+            width: 45%;
+        }
+        
+        .detail-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            margin: 0 0 10px;
+        }
+        
+        .qr-code {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .themes{
+            display:flex;
+        }
+        
+        /* Icons using CSS */
+        .icon-democratic::before { content: "✓"; }
+        .icon-ownership::before { content: "🔑"; }
+        .icon-profit::before { content: "📊"; }
+        .icon-decision::before { content: "👥"; }
+        .icon-community::before { content: "🏘️"; }
+        
+        .icon-people::before { content: "👨‍👩‍👧‍👦"; }
+        .icon-environment::before { content: "🌱"; }
+        .icon-cooperation::before { content: "🤝"; }
+        .icon-justice::before { content: "⚖️"; }
+        .icon-participation::before { content: "🗣️"; }
+        
+        .icon-business::before { content: "💼"; }
+        .icon-impact::before { content: "🌍"; }
+        .icon-leadership::before { content: "👥"; }
+        .icon-democracy::before { content: "🗳️"; }
+        .icon-movement::before { content: "🌐"; }
+        
+        .hands-graphic::before {
+            content: "👐";
+            font-size: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="poster">
+        <div class="header">
+            <h1 class="main-title">Redefine Success:<br>Entrepreneurship with Purpose</h1>
+            <h2 class="subtitle">Join our Entrepreneurship Class focused on Worker Cooperatives & the Solidarity Economy</h2>
+        </div>
+        
+        <div class="content">
+            <div class="intro">
+                <p>Are you tired of the "every person for themselves" business model? Ready to learn how to build enterprises that benefit everyone involved? Our Entrepreneurship class introduces you to the growing world of worker cooperatives and solidarity economics—where profit meets purpose, and business success is measured by community impact.</p>
+            </div>
+            
+            <div class="benefits">
+                <div class="benefit">
+                    <div class="benefit-icon icon-business"></div>
+                    <h3 class="benefit-title">Business Skills with a Difference</h3>
+                    <p class="benefit-desc">Learn entrepreneurship fundamentals while exploring democratic business models</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon icon-impact"></div>
+                    <h3 class="benefit-title">Real-World Impact</h3>
+                    <p class="benefit-desc">Discover how to create enterprises that address community needs and social challenges</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon icon-leadership"></div>
+                    <h3 class="benefit-title">Collaborative Leadership</h3>
+                    <p class="benefit-desc">Develop skills in consensus building, shared decision-making, and collective problem-solving</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon icon-democracy"></div>
+                    <h3 class="benefit-title">Economic Democracy</h3>
+                    <p class="benefit-desc">Understand how to build businesses where workers have a voice and share in the profits</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon icon-movement"></div>
+                    <h3 class="benefit-title">Global Movement</h3>
+                    <p class="benefit-desc">Connect with a worldwide network of solidarity economy initiatives changing how business works</p>
+                </div>
+            </div>
+            <!---
+            <div class="central-graphic">
+                <div class="hands-graphic"></div>
+            </div>
+        -->
+            <div class="themes">
+            <div class="section">
+                <h3 class="section-title">Worker Cooperatives</h3>
+                <p>Worker cooperatives are businesses owned and democratically controlled by their employees. Unlike traditional companies where decisions flow from the top down, worker co-ops operate on the principle of "one worker, one vote."</p>
+                <!--                <div class="principles">
+                    <div class="principle">
+                        <div class="principle-icon icon-democratic"></div>
+                        <div class="principle-text">
+                            <h4 class="principle-title">Democratic Control</h4>
+                            <p>Each worker gets an equal vote in major decisions</p>
+                        </div>
+                    </div>
+                    <div class="principle">
+                        <div class="principle-icon icon-ownership"></div>
+                        <div class="principle-text">
+                            <h4 class="principle-title">Worker Ownership</h4>
+                            <p>Workers own the business collectively</p>
+                        </div>
+                    </div>
+                    <div class="principle">
+                        <div class="principle-icon icon-profit"></div>
+                        <div class="principle-text">
+                            <h4 class="principle-title">Profit Sharing</h4>
+                            <p>Profits are distributed equitably among workers</p>
+                        </div>
+                    </div>
+                    <div class="principle">
+                        <div class="principle-icon icon-decision"></div>
+                        <div class="principle-text">
+                            <h4 class="principle-title">Collective Decision-Making</h4>
+                            <p>Important choices made through consensus</p>
+                        </div>
+                    </div>
+                    <div class="principle">
+                        <div class="principle-icon icon-community"></div>
+                        <div class="principle-text">
+                            <h4 class="principle-title">Community Impact</h4>
+                            <p>Businesses that build local wealth and resilience</p>
+                        </div>
+                    </div>
+                </div>
+            -->
+            </div>
+            
+            <div class="section solidarity">
+                <h3 class="section-title">Solidarity Economy</h3>
+                <p>The solidarity economy represents a global movement to create an economic system based on cooperation, sustainability, and meeting human needs—not just maximizing profit.</p>
+                <!--
+                <div class="principles">
+                    <div class="principle">
+                        <div class="principle-icon icon-people"></div>
+                        <div class="principle-text">
+                            <h4 class="principle-title">People Over Profit</h4>
+                            <p>Prioritizing human wellbeing and community benefit</p>
+                        </div>
+                    </div>
+                    <div class="principle">
+                        <div class="principle-icon icon-environment"></div>
+                        <div class="principle-text">
+                            <h4 class="principle-title">Environmental Sustainability</h4>
+                            <p>Economic activities that respect planetary boundaries</p>
+                        </div>
+                    </div>
+                    <div class="principle">
+                        <div class="principle-icon icon-cooperation"></div>
+                        <div class="principle-text">
+                            <h4 class="principle-title">Cooperation Over Competition</h4>
+                            <p>Building networks of mutual support</p>
+                        </div>
+                    </div>
+                    <div class="principle">
+                        <div class="principle-icon icon-justice"></div>
+                        <div class="principle-text">
+                            <h4 class="principle-title">Social Justice</h4>
+                            <p>Creating economic opportunities for all</p>
+                        </div>
+                    </div>
+                    <div class="principle">
+                        <div class="principle-icon icon-participation"></div>
+                        <div class="principle-text">
+                            <h4 class="principle-title">Democratic Participation</h4>
+                            <p>Everyone has a voice in decisions that affect them</p>
+                        </div>
+                    </div>
+                </div>
+            -->
+            </div>
+            <!--
+            <div class="comparison">
+                <div class="model">
+                    <h4 class="model-title">Traditional Business</h4>
+                    <div class="traditional-model"></div>
+                    <p>Hierarchical structure with profits flowing upward</p>
+                </div>
+                <div class="model">
+                    <h4 class="model-title">Worker Cooperative</h4>
+                    <div class="coop-model">Equal Voice</div>
+                    <p>Democratic structure with benefits shared by all</p>
+                </div>
+            </div>
+            -->
+            </div>
+        </div>
+        
+        <div class="footer">
+            <h2 class="cta">Be the Change. Build the Future. Join Us.</h2>
+            <h3>Talk to your counselor about signing up!</h3>
+            <!--
+            <div class="details">
+                <div class="detail-section">
+                    <h4 class="detail-title">Class Details</h4>
+                    <p>When: [Semester/Days/Times]<br>
+                    Where: [Room Number/Building]<br>
+                    Instructor: [Teacher Name]<br>
+                    Credits: [Number]<br>
+                    Prerequisites: None</p>
+                </div>
+                <div class="detail-section">
+                    <h4 class="detail-title">Learn More</h4>
+                    <div class="qr-code">[QR Code]</div>
+                    <p>Register by [Date]<br>
+                    Questions? Contact [Email/Phone]</p>
+                </div>
+            </div>
+        -->
+        </div>
+    </div>
+</body>
+</html>

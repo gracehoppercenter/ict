@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GHC CSC 221 Week 15</title>
+<style>
+@import url(../../../css/goals.css);
+</style>
+<script src="../../../js/init.js"></script>
+<script>
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<div id="logo">
+<a href="index.html"><img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+</div>
+<div class="desktop">
+<h2>Grace Hopper Center</h2>
+<h1>CSC 221 Weekly Assignments: Week 15</h1>
+</div>
+<div class="mobile">
+<h1>CSC 221</h1>
+</div>
+</header>
+<hr>
+
+<main>
+<time datetime="2025-12-08">Week of Monday, December 8, 2025</time>
+
+<h2>Overview</h2>
+<p>
+This week we will continue with our chat project, with a focus on the
+<a href="https://en.wikipedia.org/wiki/Database">database</a> "tier" of our
+<a href="https://en.wikipedia.org/wiki/Multitier_architecture">three-tier 
+    application stack, and using Django's ORM for the logic tier.
+</a>. 
+</p><p style="color: red;">
+<b>NOTE:</b> <i>Jeff will be available for students interested in reviewing for
+a retake of the PCEP this Saturday, December 13 from 9 am to 12 noon.</i>
+</p>
+
+<section>
+<h2>Thursday, December 12th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+It's that time again, NVCC Course Evaluations! Please visit
+<a href="https://nova.direct.iota360.cc">https://nova.direct.iota360.cc</a>,
+enter your VCCS email and your NVCC student number and complete your
+evaluations. NVCC will provide me with regular updates as to your participation
+rates, so I will nag relentlessly until you get this done :-)
+</p>
+
+<p>Our goal for the next few classes between now and winter break is to turn our
+    chat project into a complete three-tier application that uses Curses, 
+    sqlite, and Django's ORM. Today, we'll introduce Django's ORM.
+</p>
+<p>
+    I've written you <a href="https://github.com/cj0ne5/django_orm_for_csc221">
+        some starter code here</a>. We'll talk through this code together in 
+        class.
+    </p>
+    <p>
+        There is a lot to keep track of, so here are some reminders:
+    </p>
+    <ul>
+        <li>First, we'll download this code and place it in your repo alongside
+            your existing messaging code</li>
+        <li>You'll need to create a virtual environment, activate it, and then
+            run <code>pip install -r requirements.txt</code>. This didn't work
+            for some of us, so for you can just say <code>pip install django</code>
+            instead.        
+        </li>
+        <li>You'll define your model(s) in the file <code>db/models.py</code>. 
+            For more details about that file, see 
+            <a href="https://docs.djangoproject.com/en/5.2/ref/models/fields/#field-types">
+                the official documentation</a>
+        </li>
+        <li>To apply your model changes to the database, you'll run these 
+            two commands:
+            <ul>
+                <li><code>python3 manage.py makemigrations db</code></li>
+                <li><code>python3 manage.py migrate</code></li>
+            </ul>
+        </li>
+        <li>If you want to use the Django Admin interface, you'll need to 
+            create a superuser (<code>python3 manage.py createsuperuser</code>)
+            and add your model to <code>db/admin.py</code>.</li>
+        <li>Use the existing main.py as a template for your code. You can 
+            copy your existing chat code there</li>
+
+    </ul>
+    
+    
+<p>Next week, we'll complete the application
+    by adding a nice Curses frontend.</p>
+
+</p>
+</div>
+
+<h3>Homework</h3>
+<div>
+<p>
+    Your homework is to review the theory. We went through this fast today, and 
+    Dr. Chuck does a great job of explaining. Watch Dr Chuck's videos in 
+    <a href="https://www.dj4e.com/lessons/dj4e_modules">Lesson 8</a> and take
+    notes in your repo for credit. As always, we reserve the right to have
+    a quiz on the Django orm next class!
+</p>
+</div>
+</section>
+
+<section>
+<h2>Tuesday, December 10th</h2>
+
+<h3>Classwork</h3>
+<div>
+    <p>Today's class is going to be a whirlwind. Hang on to your seats =)</p>
+<p>
+We'll begin class with a short quiz on the material presented in your
+homework lectures.
+</p><p>
+After the quiz Chris will talk about databases. Chris gets very passionate about
+databases, so he might talk too long =). As part of this discussion, 
+We'll do a quick demo using the
+<a href="https://sqlite.org">SQLite</a> command shell to practice the
+SQL commands from your videos.
+
+(Chris will also make a plug here for 
+<a href="https://careercenter.apsva.us/database-design-management/">
+    DE Databases
+</a>, which you should all take next year).
+</p>
+<p>
+    We'll quickly introduce the <a href="https://mystery.knightlab.com/">
+        SQL Murder Mystery</a>, which is a great place to practice
+        with SQL syntax. 
+    </p>
+<p>After a quick overview of databases, we'll pivot to talking about three-tier
+    web applications, and how 
+    <a href="https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping">
+        ORMs</a> are useful for developing them.
+    </p>
+    </div>
+
+
+<h3>Homework</h3>
+<p>
+    For your 90 minutes of homework time, work on solving the SQL Murder
+    Mystery. Keep notes about your progress in a Markdown file in your
+    class repo. Remember to put your queries in code blocks, like this:
+    <pre>
+``` sql
+SELECT name 
+FROM sqlite_master
+WHERE type = 'table'
+```
+    </pre>
+</p>
+
+<div>
+<p>
+
+
+</p>
+</div>
+</section>
+</main>
+
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

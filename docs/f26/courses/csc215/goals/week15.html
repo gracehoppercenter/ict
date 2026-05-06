@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GHC CSC 215 Week 15</title>
+<style>
+@import url(../../../css/goals.css);
+pre {
+    margin-left: 3vw;
+}
+</style>
+<script src="../../../js/init.js"></script>
+<script>
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<div id="logo">
+<a href="index.html"><img src="../../../../images/gctaa_nvcc.png"
+alt="GCTAA Logo">
+</a>
+</div>
+<div class="desktop">
+<h2>Grace Hopper Center</h2>
+<h1>CSC 215 Weekly Assignments: Week 15</h1>
+</div>
+<div class="mobile">
+<h1>CSC 215</h1>
+</div>
+</header>
+<hr>
+
+<main>
+<time datetime="2024-12-08">Week of Monday, December 8, 2025</time>
+
+<h2>Overview</h2>
+<p>
+This week we will continue our study of the C programming language.
+</p>
+
+<section>
+<h2>Thursday and Friday, December 11th and 12th</h2>
+
+<h3>Classwork / Homework / Evaluation</h3>
+<div>
+<p>
+We'll begin with the promised quiz. I'll also share
+<a href="https://gitlab.com/gracehoppercenter/csc215/-/raw/main/C/CPM_BDSC/Libs/STRING.H">
+STRING.H</a> and
+<a href="https://gitlab.com/gracehoppercenter/csc215/-/raw/main/C/CPM_BDSC/Libs/TESTSTR.C">
+TESTSTR.C</a>. The rest of the class you can work on the next assignment.
+</p><p>
+Read <i>Chapter 5: Pointers and Arrays</i> beginning on page 89 through the
+end of <i>Section 5.5: Character Pointers and Functions</i> on 
+on page 102 of <i>The C Programming Language</i>.
+</p><p>
+Then complete <i>Exercises 5-2</i>, which asks you to write a version of
+<code>strcat</code> that uses pointers. Also write pointer versions of
+<code>atoi</code>, <code>itoa</code> and <code>reverse</code> from
+<i>Exercise 5-4</i>
+</p><p style="color: red;">
+To earn an A on your next evaluation, <i>commits made both during class and
+between classes</i> must contain evidence of the effective use of the 3 hours
+of time you have allotted to work on this, even if you can't complete it.
+This assignment is due Friday, December 12th at 11:59 pm for 3B and Saturday,
+December 13th at 11:59 pm for 1A so I have time to evaluate them before we meet
+next week. If you've been slacking, you need to put in more than 3 hours to
+make up for what you didn't do earlier!
+</p>
+</div>
+</section>
+
+<section>
+<h2>Tuesday and Wednesday, December 9th and 10th</h2>
+
+<h3>Start of Class</h3>
+<div>
+<p>
+We will share the programs assigned for homework, and then pair you up for the
+next set of classwork / homework problems.
+</p><p>
+I'll then share a few programs which will be useful to you in completing your
+next assignment, including:
+<a href="https://gitlab.com/gracehoppercenter/csc215/-/raw/main/C/CPM_BDSC/Programs/PNUM.C">
+PNUM.C</a>, 
+<a href="https://gitlab.com/gracehoppercenter/csc215/-/raw/main/C/CPM_BDSC/Programs/UCASE.C">
+UCASE.C</a>, and especially 
+<a href="https://gitlab.com/gracehoppercenter/csc215/-/raw/main/C/CPM_BDSC/Programs/WRDLINE.C">
+WRDLINE.C</a> and
+<a href="https://gitlab.com/gracehoppercenter/csc215/-/raw/main/C/CPM_BDSC/Programs/WC.C">
+WC.C</a>.
+</p><p>
+I'll demo the last two of these and <i>highly</i> encourage you to study them!
+</p>
+</div>
+
+<h3>Classwork / Homework / Evaluation</h3>
+<div>
+<p>
+Please come to our next class with working solutions to the following problems:
+</p>
+<ol>
+<li><p>Write a program in a file named <code>CHRNUMS.C</code> to prepend each
+line of a text file with the number of characters in that line. Given a
+file named <code>LINES.TXT</code> with content:
+</p><pre>
+This is a file
+containing lines of
+different
+lengths.
+</pre><p>
+Running <code>CHRNUMS LINES.TXT</code> would print:
+</p><pre>
+15: This is a file
+20: containing lines of
+10: different
+8:  lengths.
+</pre></li>
+
+<li>Complete <i>Exercise 1-17</i> on page 28 of <i>The C Programming
+Language</i>.  Use the <code>reverse(s)</code> function you complete
+in that exercise to write a program in a file named <code>BACKWARD.C</code>
+that takes a text file as a command line argument and prints out each line in
+the file backwards.</li>
+</ol><p style="color: red;">
+Be prepared for a possible quiz on these two exercises when you arrive in
+class next time!
+</p>
+</div>
+</section>
+</main>
+
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GHC CS Presentation Grading Rubric</title>
+    <style>
+        @import url(./style.css);
+    </style>
+    <script src="./init.js"></script>
+
+    <script>
+        window.onload = init;
+    </script>
+</head>
+
+<body>
+    <h1 class="scribe-title">Laptop Reimage Instructions</h1>
+
+
+        <div class="scribe-step">
+        <p class="scribe-step-text">If you're here, it probably means that your laptop got re-imaged.
+        The beauty of git is that all of your code is saved in the cloud -
+        you just
+        need to download it to your new computer. Here are the steps you
+        need to follow:</p>
+    </div>
+
+
+    </div>
+    <h3 class="scribe-section">Install Git on Your Computer</h3>
+    <div class="scribe-step">
+        <p class="scribe-step-text">1. Click "Terminal"</p>
+    </div>
+    <p class="scribe-screenshot-container">
+        <img class="scribe-screenshot" width="560" alt
+            src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2024-09-06/3d46c4de-c41e-4ba2-ac75-ad026adee70f/ascreenshot.jpeg?tl_px=689,599&br_px=1549,1080&force_format=jpeg&q=100&width=860&wat_scale=76&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=402,403">
+    </p>
+    <div class="scribe-step">
+        <p class="scribe-step-text">2. Click the shell text entry area</p>
+    </div>
+    <p class="scribe-screenshot-container">
+        <img class="scribe-screenshot" width="560" alt
+            src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2024-09-06/7f22846e-e162-4099-896f-5ca8b5e84dfc/ascreenshot.jpeg?tl_px=195,241&br_px=1055,722&force_format=jpeg&q=100&width=860&wat_scale=76&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=402,212">
+    </p>
+    <div class="scribe-step">
+        <p class="scribe-step-text">3. Type "git <code>Enter</code>".</p>
+        <p class="scribe-step-text">When you do this, you might get a popup
+            saying that you need to install "command line developer tools." This
+            is a set of command line tools that are part of your mac operating
+            system, but that most people don't use. So they aren't installed by
+            default. You'll need them for assignments in this class.</p>
+        <p class="scribe-step-text">You should follow the instructions to
+            install. A few tips about this step:</p>
+        <ul>
+            <li>Make sure you are not in full screen. A new box should pop up
+                asking you to agree to terms and conditions, and you won't see
+                that box if you're in full screen.</li>
+            <li>When it starts installing, it might say that it will take
+                something unreasonable like 20 hours. Don't worry, it usually
+                only takes 15 minutes or so.</li>
+            <li>You'll need about 15GB of free space on your computer. You might
+                need to delete some files (and then don't forget to empty your
+                trash). If you can't manage to free up enough space, visit your
+                school's Information Services Technician for help.</li>
+        </ul>
+    </div>
+
+    <h3 class="scribe-section">Configure Git and Setup SSH Keys</h3>
+    <div class="scribe-step">
+        <p class="scribe-step-text scribe-step-tip">Tip:
+            This part probably won't make a ton of sense for right now. We'll
+            spend more time talking about exactly what these commands do in
+            class a few sessions from now. For now, just follow the instructions
+            closely!</p>
+    </div>
+    <div class="scribe-step">
+        <p class="scribe-step-text">4. Go back to the
+            terminal</p>
+    </div>
+    <p class="scribe-screenshot-container"><img class="scribe-screenshot" width="560" alt
+            src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2024-09-06/ee0d855b-753b-46f6-baef-57814fc51423/ascreenshot.jpeg?tl_px=205,550&br_px=1065,1031&force_format=jpeg&q=100&width=860&wat_scale=76&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=402,212">
+    </p>
+
+    <div class="scribe-step">
+        <p class="scribe-step-text">5. Type these two
+            commands. These set the name and email that will show up on the
+            public website next to your commits. You can choose any reasonable
+            user name (I chose to use my real name. You could choose to use just
+            your first name, or your github username.) The email should be the
+            same as the email you used when you signed up for your github
+            account.</p>
+        <p class="scribe-step-text">git config --global user.name "Chris Jones"
+            <code>Enter</code>
+        </p>
+        <p class="scribe-step-text">git config --global user.email
+            "cmj2310@email.vccs.edu" <code>Enter</code></p>
+    </div>
+
+    <div class="scribe-step">
+        <p class="scribe-step-text">6. Type this:</p>
+        <p class="scribe-step-text">ssh-keygen -t rsa <code>Enter</code></p>
+    </div>
+    <div class="scribe-step">
+        <p class="scribe-step-text">7. It will ask
+            you a few questions - you don't even have to read them. Just press
+            <code>Enter</code> a few times until it stops asking you
+            questions.
+        </p>
+    </div>
+    <div class="scribe-step">
+        <p class="scribe-step-text">8. When you're
+            finished, it'll show you some 'randomart.' You don't need to do
+            anything with it.</p>
+    </div>
+    <p class="scribe-screenshot-container"><img class="scribe-screenshot" width="560" alt
+            src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2024-09-06/108a6ac0-2e22-4e55-a7f0-d20cbeb9ff22/ascreenshot.jpeg?tl_px=127,485&br_px=986,966&force_format=jpeg&q=100&width=860&wat_scale=76&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=402,212">
+    </p>
+    <div class="scribe-step">
+        <p class="scribe-step-text">9. That process created
+            some new files for you, in a special folder on your computer. To
+            find them, type</p>
+        <p class="scribe-step-text">ls ~/.ssh <code>Enter</code></p>
+        <p class="scribe-step-text">You should see at least two files
+            listed:</p>
+        <ul>
+            <li>id_rsa</li>
+            <li>id_rsa.pub</li>
+        </ul>
+        <p class="scribe-step-text">The file that ends in '.pub' is your
+            "public key", and the other one is your "secret key". These two
+            files work together. The public key is for sharing, and we'll
+            copy/paste it into a website soon. The secret key is, well, a
+            secret. You should never share it with anyone!</p>
+    </div>
+    <div class="scribe-step">
+        <p class="scribe-step-text">10. Let's look at
+            your public key. Type this:</p>
+        <p class="scribe-step-text">cat ~/.ssh/id_rsa.pub <code>Enter</code></p>
+        <p class="scribe-step-text">It should look something like the screenshot
+            below.</p>
+    </div>
+    <p class="scribe-screenshot-container"><img class="scribe-screenshot" width="560" alt
+            src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2024-09-06/71f05818-b31b-4cb2-8800-31a746a827bb/ascreenshot.jpeg?tl_px=229,536&br_px=1089,1017&force_format=jpeg&q=100&width=860&wat_scale=76&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=402,212">
+    </p>
+    <div class="scribe-step">
+        <p class="scribe-step-text">11. Highlight
+            the entire thing (starting with "ssh-rsa"), right click, and "Copy".
+        </p>
+    </div>
+    <p class="scribe-screenshot-container"><img class="scribe-screenshot" width="560" alt
+            src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2024-09-06/a3f04847-af46-4a05-841f-11433ed664bc/ascreenshot.jpeg?tl_px=14,599&br_px=873,1080&force_format=jpeg&q=100&width=860&wat_scale=76&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=402,274">
+    </p>
+
+
+
+    <h3 class="scribe-section">Add Your SSH Key to Your Github Account</h3>
+
+        <div class="scribe-step">
+        <p class="scribe-step-text scribe-step-tip">Tip:
+            I'm describing how to do this in Github here, In Codeberg the steps
+        are the same, but the screenshots will look a little bit different.</p>
+    </div>
+    <div class="scribe-step">
+        <p class="scribe-step-text">12. Login to Github, then start by clicking
+            on your profile picture in the top-right of the screen.</p>
+    </div>
+    <p class="scribe-screenshot-container"><img class="scribe-screenshot" width="560" alt
+            src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2024-09-06/fbd10ab4-01c5-4273-9035-322c6e241c6c/ascreenshot.jpeg?tl_px=1060,0&br_px=1920,480&force_format=jpeg&q=100&width=860&wat_scale=76&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=574,152">
+    </p>
+    <div class="scribe-step">
+        <p class="scribe-step-text">13. Click "Settings"</p>
+    </div>
+    <p class="scribe-screenshot-container"><img class="scribe-screenshot" width="560" alt
+            src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2024-09-06/3f909175-e22e-43f0-b3df-c74fbc5212c2/ascreenshot.jpeg?tl_px=1048,403&br_px=1908,884&force_format=jpeg&q=100&width=860&wat_scale=76&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=402,212">
+    </p>
+    <div class="scribe-step">
+        <p class="scribe-step-text">14. Click
+            "SSH and GPG keys"</p>
+    </div>
+    <p class="scribe-screenshot-container"><img class="scribe-screenshot" width="560" alt
+            src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2024-09-06/6c97f6df-ec38-4f45-810c-d7a19a74ba46/ascreenshot.jpeg?tl_px=49,428&br_px=908,909&force_format=jpeg&q=100&width=860&wat_scale=76&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=402,212">
+    </p>
+    <div class="scribe-step">
+        <p class="scribe-step-text">15. Click
+            "New SSH key"</p>
+    </div>
+    <p class="scribe-screenshot-container"><img class="scribe-screenshot" width="560" alt
+            src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2024-09-06/355c2f21-075b-4f6a-8cd4-dddd613e0e0e/ascreenshot.jpeg?tl_px=1060,90&br_px=1920,571&force_format=jpeg&q=100&width=860&wat_scale=76&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=473,212">
+    </p>
+    <div class="scribe-step">
+        <p class="scribe-step-text">16. Paste the 'ssh-rsa'
+            key that you copied earlier into the box labeled 'key'. In the box
+            labeled "Title", type something like "My School Macbook"</p>
+    </div>
+    <p class="scribe-screenshot-container"><img class="scribe-screenshot" width="560" alt
+            src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2024-09-06/28124635-f774-4299-a9e1-3807d36e429a/ascreenshot.jpeg?tl_px=462,187&br_px=1322,668&force_format=jpeg&q=100&width=860&wat_scale=76&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=402,212">
+    </p>
+    <div class="scribe-step">
+        <p class="scribe-step-text">17. Click
+            "Add SSH key"</p>
+    </div>
+    <p class="scribe-screenshot-container"><img class="scribe-screenshot" width="560" alt
+            src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2024-09-06/19ea5236-0bcf-40e2-b94d-a0185aacd79a/ascreenshot.jpeg?tl_px=344,531&br_px=1204,1012&force_format=jpeg&q=100&width=860&wat_scale=76&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=402,212">
+    </p>
+    <div class="scribe-step">
+        <p class="scribe-step-text">18. You'll see a banner
+            that says that you successfully added the key. If so, you're done!
+            While you're here, you might want to delete any old SSH keys that you no longer have access to.</p>
+    </div>
+    <p class="scribe-screenshot-container"><img class="scribe-screenshot" width="560" alt
+            src="https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2024-09-06/29469cfe-60a4-4a7d-b98e-98dbad5b0e6c/ascreenshot.jpeg?tl_px=0,0&br_px=859,480&force_format=jpeg&q=100&width=860&wat_scale=76&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=322,152">
+    </p>
+    <h3 class="scribe-section">Clone Your Repos</h3>
+    <div class="scribe-step">
+
+        <div class="scribe-step">
+        <p class="scribe-step-text">19. Navigate to your repo page. 
+            For example, mine is <a href="https://github.com/cj0ne5/cj0ne5.github.io">
+                https://github.com/cj0ne5/cj0ne5.github.io</a>
+        </p>
+    </div>
+
+    <div class="scribe-step">
+        <p class="scribe-step-text">20. Click on the green button that says "&lt;&gt;Code"
+             in the top-right corner. Then select the "Local" tab and the "ssh" 
+             option. Copy the text that it provides (it should start with 'git@')
+        </p>
+    </div>
+
+    <p class="scribe-screenshot-container"><img class="scribe-screenshot" width="560" alt
+            src="screenshots/git_repo_ssh_address.png">
+    </p>
+
+    <div class="scribe-step">
+        <p class="scribe-step-text">21. Return to the terminal and 
+            navigate to wherever you want the repo to live on your computer 
+            (most students choose to go to your desktop)
+        </p>
+    </div>
+
+    <div class="scribe-step">
+        <p class="scribe-step-text">22. Type:
+            </p>
+        <p class="scribe-step-text">git clone</p>
+
+        Then paste the address you copied from github and press <code>Enter</code>
+    </div>
+
+
+        <div class="scribe-step">
+        <p class="scribe-step-text">
+    23. It might ask you a question about a 'fingerprint'. If it does, type the word yes and press <code>Enter</code></p>
+</p>
+    </div>
+
+    <h3 class="scribe-section">Other Configuration</h3>
+
+            <div class="scribe-step">
+        <p class="scribe-step-text">
+        Git is all setup now! Depending on which class you're in, there are a few
+        other configruation steps you should follow:
+        </p>
+        <ul>
+            <li>If you're in the C++ class, follow 
+                <a href="https://openbookproject.net/thinkcs/cpp/app_b.html#doctest">
+                these instructions to 
+                setup doctest.h</a></li>
+            <li>If you're in the C++ class, follow 
+                <a href="https://openbookproject.net/thinkcs/cpp/app_b.html#vim">
+                these instructions to Setup
+                your .vimrc file</a></li>
+            <li>If you're in the Python class, follow 
+                <a href="https://www.openbookproject.net/books/bpp4awd/app_a.html#vim">
+                these instructions to
+                setup your .vimrc file</a></li>
+
+    </div>
+
+
+
+        <footer>
+            <a href="http://validator.w3.org/check?uri=https://ict.gctaa.net/resources/scheduleFall2020.html">
+                <strong> HTML </strong> Valid! </a> |
+            <a
+                href="http://jigsaw.w3.org/css-validator/validator?uri=https://ict.gctaa.net/resources/scheduleFall2020.html?profile=css3">
+                <strong> CSS </strong> Valid! </a>
+        </footer>
+</body>
+
+</html>
