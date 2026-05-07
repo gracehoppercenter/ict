@@ -5,7 +5,7 @@
 
 We've received the first draft of your music. There are three versions of each song, for different vibe and gameplay contexts, and you're welcome to choose any of them. You can find them here:
 
-https://docs.google.com/presentation/d/1yhdaPEOxaH3WfPmOFUtdzRRgiSVUgIJFJC3ocfjQUi8/edit?usp=sharing
+<https://docs.google.com/presentation/d/1yhdaPEOxaH3WfPmOFUtdzRRgiSVUgIJFJC3ocfjQUi8/edit?usp=sharing>
 
 You can find the links highlighted in yellow. You are responsible for giving feedback. By the end of the day Friday, record a video (at least one member of your team, you don't need to have everyone) that includes at least one nice thing and one point of constructive feedback, and then link it in the green column.
 
