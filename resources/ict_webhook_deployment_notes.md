@@ -45,6 +45,9 @@ ict.gctaa.net {
 }
 ```
 
+To modify this file, edit: /etc/caddy/Caddyfile
+And then `sudo systemctl restart caddy`
+
 
 To troubleshoot, check these logs:
 On the server:
