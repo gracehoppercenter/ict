@@ -15,8 +15,13 @@ A few are blank - those should be filled in soon!
 
 Here is a link to the code that I added to get music to work in the space
 junk game. You're welcome to copy/paste it! 
-<https://github.com/cj0ne5/cj0ne5.github.io/commit/160878ec1c4f6b9af029689d8139c45b509ac108>
+<https://github.com/cj0ne5/cj0ne5.github.io/compare/97393b4..2477143>
 
+
+Note that most browsers don't like music that auto-plays. Your browser
+might block the music from auto-playing. If so, it will give you a message
+in the console and there will be a button that lets you enable music in the
+URL bar. You'll have to allow music and then refresh the page to hear it.
 
 ## Clean up your HTML
 
