@@ -13,7 +13,7 @@ if ($requested_semester && in_array($requested_semester, $semesters)) {
 
 // Generate navigation HTML
 $nav_html = '<div id="semester_select" style="text-align: center; background: #f0f0f0;">';
-$nav_html .= 'Want to view an old semester? Select it here: ';
+$nav_html .= 'Want to view a different semester? Select it here: ';
 foreach ($semesters as $sem) {
     if (file_exists(__DIR__ . "/{$sem}/index.html")) {
         $style = $sem === $semester_to_show ? 'style="font-weight: bold; text-decoration: underline;"' : '';
