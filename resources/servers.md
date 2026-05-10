@@ -22,6 +22,8 @@ IP Addr: 173.255.235.141
 
 * postgresql.sjcompute.org
 * webschool.sjcompute.org
+* cosmetology.gracehopper.center
+* culinary.gracehopper.center
 
 ### Applications
 
