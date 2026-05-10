@@ -11,16 +11,20 @@ if ($requested_semester && in_array($requested_semester, $semesters)) {
     $semester_to_show = $current_semester;
 }
 
-// Generate navigation HTML
-$nav_html = '<div id="semester_select" style="text-align: center; background: #f0f0f0;">';
-$nav_html .= 'Want to view a different semester? Select it here: ';
-foreach ($semesters as $sem) {
-    if (file_exists(__DIR__ . "/{$sem}/index.html")) {
-        $style = $sem === $semester_to_show ? 'style="font-weight: bold; text-decoration: underline;"' : '';
-        $nav_html .= "<a href=\"?sem={$sem}\" {$style}>" . strtoupper($sem) . "</a> | ";
+// Function to generate navigation HTML
+function generate_nav_html($semesters, $semester_to_show) {
+    $nav_html = '<div id="semester_select" style="text-align: center; background: #f0f0f0; padding: 3px; margin: 0; font-size: small;">';
+    $nav_html .= 'Want to view a different semester? Select it here: ';
+    foreach ($semesters as $sem) {
+        if (file_exists(__DIR__ . "/{$sem}/index.html")) {
+            $style = $sem === $semester_to_show ? 'style="font-weight: bold; text-decoration: underline;"' : '';
+            $nav_html .= "<a href=\"?sem={$sem}\" {$style}>" . strtoupper($sem) . "</a> | ";
+        }
     }
+    $nav_html = rtrim($nav_html, ' | '); // Remove trailing separator
+    $nav_html .= '</div>';
+    return $nav_html;
 }
-$nav_html .= '</div>';
 
 $semester_index = __DIR__ . "/{$semester_to_show}/index.html";
 
@@ -29,10 +33,8 @@ if (file_exists($semester_index)) {
     ob_start();
     include($semester_index);
     $content = ob_get_clean();
-    
-    // Insert navigation after the <body> tag
-    $content = preg_replace('/<body[^>]*>/', '$0' . $nav_html, $content);
-    
+    $nav_html = generate_nav_html($semesters, $semester_to_show);
+    $content = preg_replace('/(<\/body>)/', $nav_html . '$1', $content);
     echo $content;
 } else {
     header("HTTP/1.0 404 Not Found");
