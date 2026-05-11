@@ -103,3 +103,30 @@ If you like Certbot, please consider supporting our work by:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ```
 
+### Configure Lighttpd
+
+Create a file named ``99-ssl.conf`` in ``/etc/lighttpd/conf-available`` with:
+```
+$SERVER["socket"] == ":443" {
+    ssl.engine = "enable"
+    ssl.pemfile = "/etc/letsencrypt/live/ict.gracehopper.center/fullchain.pem"
+    ssl.privkey = "/etc/letsencrypt/live/ict.gracehopper.center/privkey.pem"
+}
+```
+Then run:
+```
+$ sudo lighty-enable-mod conf-available/99-ssl.conf
+$ sudo service lighttpd start
+```
+This did not work, since ssl was not working after it, so I set a symlink "by
+hand" with:
+```
+$ sudo ln -s /etc/lighttpd/conf-available/99-ssl.conf /etc/lighttpd/conf-enabled/99-ssl.conf
+$ sudo systemctl restart lighttpd
+$ sudo apt install net-tools
+$ sudo netstat -tulpn | grep :443
+tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      15949/lighttpd
+```
+Yay, it's working! Visiting ``https://ict.gracehopper.center`` confirmed this.
+
+Time to turn it over to Chris...
