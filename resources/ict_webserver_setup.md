@@ -57,3 +57,49 @@ Encrypt](https://en.wikipedia.org/wiki/Let's_Encrypt). I ran:
 ```
 $ sudo apt install certbot
 ```
+Stop the web server:
+```
+$ sudo systemctl stop lighttpd
+```
+Generate the SSL certificate:
+```
+$ sudo certbot certonly --standalone -d ict.gracehopper.center
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+Enter email address or hit Enter to skip.
+ (Enter 'c' to cancel): jeff.elkner@novawebdevelopment.coop
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Please read the Terms of Service at:
+https://letsencrypt.org/documents/LE-SA-v1.6-August-18-2025.pdf
+You must agree in order to register with the ACME server. Do you agree?
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(Y)es/(N)o: Y
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Would you be willing, once your first certificate is successfully issued, to
+share your email address with the Electronic Frontier Foundation, a founding
+partner of the Let's Encrypt project and the non-profit organization that
+develops Certbot? We'd like to send you email about our work encrypting the web,
+EFF news, campaigns, and ways to support digital freedom.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(Y)es/(N)o: Y
+Account registered.
+Requesting a certificate for ict.gracehopper.center
+
+Successfully received certificate.
+Certificate is saved at:
+/etc/letsencrypt/live/ict.gracehopper.center/fullchain.pem
+Key is saved at:
+/etc/letsencrypt/live/ict.gracehopper.center/privkey.pem
+This certificate expires on 2026-08-09.
+These files will be updated when the certificate renews.
+Certbot has set up a scheduled task to automatically renew this certificate in
+the background.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+If you like Certbot, please consider supporting our work by:
+ * Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
+ * Donating to EFF:                    https://eff.org/donate-le
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+```
+
