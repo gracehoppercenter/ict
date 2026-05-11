@@ -32,8 +32,8 @@ to "Build Awesome") <https://www.11ty.dev/>. The cool thing about 11ty is that
 the code you run on your computer is JavaScript - so it'll be a great way to 
 combine the skills you 
 learned in ITD210 with the skills you learned from ITD110. There is tons of good
-information about 11ty online, and I'll give you an overview of 
-this repo in class: <https://github.com/11ty/eleventy-base-blog>
+information about 11ty online, and [I'll give you an overview of 
+this repo in class](https://codeberg.org/cjones/minimal_eleventy)
 
 ### Requirements
 
@@ -49,7 +49,6 @@ project and at least one photo.
 If the project exists elsewhere on the internet, you can give a link to the 
 full project.
 - Your website must look nice on both a computer and a phone screen.
-- 
 
 
 ### Grading
