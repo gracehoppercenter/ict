@@ -45,3 +45,15 @@ $ sudo lighty-enable-mod fastcgi-php-fpm
 $ sudo service lighttpd force-reload
 ```
 After which ``http://ict.gracehopper.center/info.php`` shows it's running.
+
+
+## SSL/TLS (HTTPS)
+
+Next challenge is getting HTTPS setup. I returned to the debian wiki page
+[Lighttpd](https://wiki.debian.org/Lighttpd) for this. It told me to install
+[certbot](https://github.com/certbot) so we can automate the process of
+getting an SSL certificate from [Let's
+Encrypt](https://en.wikipedia.org/wiki/Let's_Encrypt). I ran:
+```
+$ sudo apt install certbot
+```
