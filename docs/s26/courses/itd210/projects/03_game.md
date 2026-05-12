@@ -1,7 +1,5 @@
 ## Game Project Instructions
 
-## (THIS IS JUST A DRAFT - IT MIGHT CHANGE BEFORE THE PROJECT STARTS)
-
 ## Groups
 
 [Click Here to see group assignments](game_team_assignments.html)
@@ -121,7 +119,10 @@ This rubric does not specifically include my general expectations such as
 semantic and valid HTML/CSS, linking to your project from your portfolio,
 and not plagiarizing. 
 
-I will take additional points off for these issues.
+I will take additional points off for these issues. I will also adjust score based on your individual contributions to 
+the team, and will subtract points if your team fails to 
+respectfully incorporate and give feedback to your music
+composer.
 
 | **Assessment Criteria**         | **Meets Expectations - 4 points**                                                                                  | **Partially Meets Expectations - 3 points**                                     | **Does Not Meet Expectations - 2 points**                                                          | **Not Present - 0 points**                    |
 |---------------------------------|---------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|-----------------------------------------------|
