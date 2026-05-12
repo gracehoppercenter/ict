@@ -1,18 +1,26 @@
+> This is the old version of this process, which runs on ict.gctaa.net and
+> uses Caddy. The new version, which runs on ict.gracehopper.center
+> and uses lighttpd is documented 
+> [here](./ict_webhook_deployment_notes_lighttpd.md)
+
+
 # Deployment Notes
 
 This repo is deployed to <https://ict.gracehopper.center>
 
-Deployment automatically happens when we push to this repo, using Webhooks.
+Deployment automatically happens when we push to this repo, using 
+[Webhooks](https://github.com/adnanh/webhook).
+
 When we push a commit to the `main` branch, github automatically
-makes a post request to <https://ict.gracehopper.center/hooks/ict-deploy>
-(this request is configured in github settings, and should be easily
-migrated to any other git host)
+makes a POST request to <https://ict.gracehopper.center/hooks/ict-deploy>
+(this request is configured in github settings - see <https://docs.github.com/en/webhooks/about-webhooks>)
 
 From there, Caddy routes the request to the webhook service, which executes
 a deployment script on the sever at `/usr/local/scripts/deploy/deploy.sh`
+.
 
-That script runs `git pull` on the local copy of our repo, which is at
-`/var/www/ict`. (Note - Caddy is only serving `/var/www/ict/docs`)
+That script (copied below) runs `git pull` on the local copy of our repo, which is at
+`/var/www/ict`. (Note - we're only serving `/var/www/ict/docs`)
 
 All of this is owned and executable by the user group called `ict-deployers`
 which includes chris and jeff.
