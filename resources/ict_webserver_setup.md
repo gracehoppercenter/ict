@@ -7,8 +7,8 @@ On our old webserver, I tarred the relevant lines from ``/etc/password``,
 ``/etc/group`` and ``/etc/shadow`` and our home directories to move our user
 accounts to the new machine.
 
-*Note:* Chris has an ``ict-deployers`` group that I copied over, but I'm not
-sure what it is for.
+*Note:* this includes a group called ``ict-deployers`` which has permission to
+run the deployment script described below.
 
 I ran:
 ``` 
@@ -129,4 +129,6 @@ tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      
 ```
 Yay, it's working! Visiting ``https://ict.gracehopper.center`` confirmed this.
 
-Time to turn it over to Chris...
+### Configure to automatically incorporate new commits from our github repo
+
+[See Chris's notes here](ict_webhook_deployment_notes_lighttpd.md)

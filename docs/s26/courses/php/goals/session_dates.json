@@ -21,12 +21,9 @@
     {"date": "May04", "session": "15"},
     {"date": "May06", "session": "16"},
     {"date": "May08", "session": "17"},
+    {"date": "May12", "session": "18"},
     {"date": "May25", "session": "School Holiday"},
     {"date": "May26", "session": "School Holiday"},
     {"date": "May27", "session": "School Holiday"},
     {"date": "June19", "session": "School Holiday"}
-
-
-
-
-    ]
+]
