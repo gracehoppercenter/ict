@@ -140,10 +140,6 @@ $first_quote_author = $project['quotes'][$first_quote_text];
         <div id="modalCaption"></div>
     </div>
 
-    <footer class="site-footer">
-        <p>© 2025 Our School – Project-Based Learning at work</p>
-    </footer>
-
     <script>
         const modal = document.getElementById('imageModal');
         const modalImg = document.getElementById('modalImg');
