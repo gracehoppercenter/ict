@@ -29,6 +29,10 @@ $projects = [
         Through an iterative feedback loop, the composers then refined their 
         tracks to perfectly meet the game designers' specifications.
         </p>
+        <p>Students published their final games to 
+        <a href="https://ict.gracehopper.center/s26/courses/itd210/projects/game_team_assignments.html">
+        an online gallery, here</a></p>
+        here 
         WRITEUP,
         'quotes' => [
             'I learned so much from this project!' => 'Student 1, 9th Grade',
@@ -86,6 +90,41 @@ $projects = [
             ['file' => 'pink.jpg', 'caption' => ''],
             ['file' => '3mazes.jpg', 'caption' => ''],
             ['file' => 'colorful.jpg', 'caption' => ''],
+        ]
+    ],
+    [
+        'id' => 'elementary',
+        'title' => 'Physics, it\'s elementary!',
+        'course' => 'Physics',
+        'instructor' => 'Nick Gray',
+        'grades' => '11',
+        'driving_question' => 'How can we synthesize a secondary physics concept 
+        and teach to an elementary school class?',
+        'hero_image' => 'elementary/catapults.jpg',
+        'full_writeup' => <<<WRITEUP
+        <p>
+        Students will plan and deliver an interactive science lesson for 
+        elementary students that align with standards for both their physics 
+        class and the elementary school science classes. Lessons must have an 
+        interactive activity to reinforce concepts introduced in their lesson 
+        and a way to measure student learning at the end of the lesson.
+        </p>
+        WRITEUP,
+        'quotes' => [
+            'Presenting to a class of young students really helped me figure out 
+            which parts of the material were most important' => 'Student 1, 9th Grade',
+            'I loved getting to meet young students I don\'t normally 
+            interact with' => 'Student 2, 10th Grade',
+            'I had so much fun!' => 'Student 3, 3rd Grade'
+        ],
+        'learning_highlights' => [
+            '',
+        ],
+        'gallery' => [
+            ['file' => 'presenting.jpg', 'caption' => 'High school students 
+            deliver a presentation to an elementary school class room'],
+            ['file' => 'catapults.jpg', 'caption' => 'Title slide of one 
+            student presentation'],
         ]
     ],
     
