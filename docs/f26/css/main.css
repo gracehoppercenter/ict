@@ -24,8 +24,8 @@ header>div {
 header>div.desktop {
   margin-left: 15vw;
 }
-header img {
-  width: 15vw;
+header span#logo {
+  float: left;
 }
 header h1, header h2 {
   padding: 0;
