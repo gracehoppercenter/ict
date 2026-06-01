@@ -30,6 +30,7 @@
   {"session": "29", "unit": 1, "topic": "Game Writing, Course Eval"},
   {"session": "30", "unit": 1, "topic": "Eleventy, Recursion"},
   {"session": "31", "unit": 1, "topic": "JS Errors"},
+  {"session": "32", "unit": 1, "topic": "JDE Practice"},
   {"session": "Testing", "unit": "other_noschool", "topic": ""},
   {"session": "SOL", "unit": "other_school", "topic": ""},
   {"session": "NWEA Testing", "unit": "other_school", "topic": ""},
