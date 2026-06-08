@@ -58,3 +58,19 @@ being your customer!
 all PRs and decide whether you'll merge them. If you aren't quite ready to merge,
 close the PR and add a link from the issue explaining that you started working on
 the PR but abandoned it.
+
+## Grades
+
+I've been way behind on assigning grades this quarter - sorry to leave you all hanging.
+
+I went in and setup the rest of the grades we'll be entering for this year - here's a summary:
+
+- I'm focused on your SEMESTER grade, so I've updated StudentVue to reflect the fact that the grade I'll report to APS for Q4 is just a combination of all assignments from Q3 and Q4 (ie, your semester grade except for the final exam). If you add up all the assignments from Q3 and from Q4, you'll see that Q3 ended up weighted a bit higher than Q4.
+- Your final exam counts for 20% of your semester grade. For those who have already completed the final exam, I entered your grade
+- I added four new assignments that reflect the work from this quarter:
+    - Django Project Q4 Code Contributions
+    - Django Project Q4 Process Contributions
+    - Django Project Presentation (from May 14)
+    - Django Project Final Cleanup (a small grade that you'll share with your team)
+
+This project has been our exclusive focus for the entire quarter, so the expectation is that you have a bunch of merged PRs, lots of contributions to your team's issue board, lots of contributions to your team's wiki. I think I was generous in assigning letter grades for each of these. If you disagree with your grade, write an email to me and Jeff pleading your case. In that email, link to specific merged PRs, specific github issues, and specific wiki pages that you think show significant contributions to your project.
