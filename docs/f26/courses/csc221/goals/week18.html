@@ -19,12 +19,15 @@ window.onload = init;
 </head>
 <body>
 <header>
-<div id="logo">
-<a href="index.html"><img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
-</div>
+<figure id="logo"><a href="index.html">
+<img src="../../../../images/GraceHopperLogo.png" style="width: 10vw;"
+alt="Grace Hopper Logo"></a>
+<figcaption style="font-size: .3vw; margin-left: .5vw;">
+Illustration by Martina Scapola, used under CC BY-SA 4.0.</figcaption>
+</figure>
 <div class="desktop">
-<h2>Grace Hopper Center</h2>
-<h1>CSC 221 Weekly Assignments: Week 18</h1>
+<h1 style="font-size: 3vw; margin-top: 1.8vw; margin-left: 0;">
+CSC 221 Weekly Assignments: Week 18</h1>
 </div>
 <div class="mobile">
 <h1>CSC 221</h1>
@@ -53,28 +56,23 @@ URL Routing and MVT structure</p>
 
 <div>
 <p>
-    Today we'll chat about security - we know enough now to be dangerous, 
-    so there is some responsibility involved in building the kinds of dynamic web applications
-    what we'll build this semester.
+Today we'll chat about security - we know enough now to be dangerous, so there
+is some responsibility involved in building the kinds of dynamic web
+applications what we'll build this semester.
 </p><p>
-    We'll spend a few minutes reviewing <a href="https://www.dj4e.com/lessons/django_views#">
-        Dr. Chuck's danger example</a>
-        and then we'll play with some of our own examples.
-
-        Specifically, we'll layer in our knowledge of SQL to investigate 
-        <a href="https://en.wikipedia.org/wiki/SQL_injection">SQL Injection Attacks</a>
-        and our knowledge of JavaScript to investigate <a href="https://en.wikipedia.org/wiki/Cross-site_scripting">
-            Cross-site scripting attacks</a>
-        </p>
-
-        <p>Once we understand the theory, we'll try it out by hacking a bank (... a pretend one!)
-            <a href="https://demo.testfire.net/index.jsp">Here's our victim</a>
-    </p>
-
-    <p>Finally, we'll look at the silly story of <a href="https://xkcd.com/327/">
-        Little Bobby Tables</a>
-    </p>
-
+We'll spend a few minutes reviewing <a href="https://www.dj4e.com/lessons/django_views#">
+Dr. Chuck's danger example</a> and then we'll play with some of our own
+examples. Specifically, we'll layer in our knowledge of SQL to investigate 
+<a href="https://en.wikipedia.org/wiki/SQL_injection">SQL Injection Attacks</a>
+and our knowledge of JavaScript to investigate <a href="https://en.wikipedia.org/wiki/Cross-site_scripting">Cross-site scripting attacks</a>
+</p><p>
+Once we understand the theory, we'll try it out by hacking a bank (... a
+pretend one!) <a href="https://demo.testfire.net/index.jsp">Here's our
+victim</a>
+</p><p>
+Finally, we'll look at the silly story of <a href="https://xkcd.com/327/">
+Little Bobby Tables</a>
+</p>
 </div>
 
 <h3>Classwork - Templates</h3>
@@ -83,11 +81,10 @@ Now that we know to use the escape() function, we'll start building some
 of our own django templates. For this activity, we'll return to our blank
 DJango apps that you setup with Jeff in week 14 (see the instructions here:
 <a href="https://gitlab.com/gracehoppercenter/csc221/-/blob/main/DJ4E/GettingStarted.md">
-    Setting Up Your Local Workstation for Django Development</a>)
-</p>
-<p>
-    We'll walk through the process of setting up our first view together, and then
-    you'll repeat the process on your own for homework.
+Setting Up Your Local Workstation for Django Development</a>)
+</p><p>
+We'll walk through the process of setting up our first view together, and then
+you'll repeat the process on your own for homework.
 </p>
 </div>
 
@@ -96,7 +93,7 @@ DJango apps that you setup with Jeff in week 14 (see the instructions here:
 No homework! The assignment that I originally planned for homework
 today will be moved to next week. Check out next Wednesday's
 less on plan for that assignment.
-    </p>
+</p>
 </div>
 </section>
 
@@ -108,26 +105,20 @@ less on plan for that assignment.
 <p>
 Today is a short day, so we'll dive in quickly!
 
-Our goal today is to make sure we understand how all three parts
-of the Django app come together.
+Our goal today is to make sure we understand how all three parts of the Django
+app come together.
+</p><p>
+First, we'll all clone <a href="https://github.com/csev/dj4e-samples">
+Dr. Chuck's DJ4E sample repo</a>, and we'll get it running.
+</p><p>
+From there, we'll slowly walk through a few of the samples:
+</p><ul>
+<li>views/game, tmpl/game, and views/rest</li>
+<li>views/danger/</li>
+</ul><p>
+There is a lot to know about the "danger" example. We'll play with it
+a lot more next time.
 </p>
-
-<p>
-    First, we'll all clone <a href="https://github.com/csev/dj4e-samples">
-        Dr. Chuck's DJ4E sample repo</a>, and we'll get it running.
-    </p>
-
-<p>From there, we'll slowly walk through a few of the samples:</p>
-<ul>
-    <li>views/game, tmpl/game, and views/rest</li>
-    <li>views/danger/</li>
-</ul>
-
-<p>There is a lot to know about the "danger" example. We'll play with it
-    a lot more next time.
-</p>
-
-
 </div>
 
 <h3>Homework</h3>
