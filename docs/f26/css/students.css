@@ -24,9 +24,6 @@ header>div {
 header>div.desktop {
   margin-left: 2.6vw;
 }
-header img {
-  width: 15vw;
-}
 header h1, header h2 {
   padding: 0;
   margin: 0;
