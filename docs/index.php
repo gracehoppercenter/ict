@@ -1,5 +1,5 @@
 <?php
-$current_semester = 's26';
+$current_semester = 'f26';
 
 // Check if a specific semester was requested
 $requested_semester = isset($_GET['sem']) ? $_GET['sem'] : null;
