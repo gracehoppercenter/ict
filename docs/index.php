@@ -3,7 +3,7 @@ $current_semester = 'f26';
 
 // Check if a specific semester was requested
 $requested_semester = isset($_GET['sem']) ? $_GET['sem'] : null;
-$semesters = ['f24', 's25', 'f25', 's26', 'f26']; // Add as needed
+$semesters = ['f24', 's25', 'f25', 's26', 'f26', 's27']; // Add as needed
 
 if ($requested_semester && in_array($requested_semester, $semesters)) {
     $semester_to_show = $requested_semester;

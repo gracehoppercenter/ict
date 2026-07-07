@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GHC CSC 223 Week 12</title>
+<style>
+@import url(../../../css/goals.css);
+th, td {
+    padding: 10px;
+    border: 1px dotted #000;
+}
+th {
+    background-color: #DBD0EB;
+}
+</style>
+<script src="../../../js/init.js"></script>
+<script>
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<div id="logo">
+<a href="index.html"><img src="../../../../images/gctaa_nvcc.png"
+alt="GCTAA Logo">
+</a>
+</div>
+<div class="desktop">
+<h2>Grace Hopper Center</h2>
+<h1>CSC 223 Weekly Assignments: Week 12</h1>
+</div>
+<div class="mobile">
+<h1>CSC 223</h1>
+</div>
+</header>
+<hr>
+
+<main>
+<time datetime="2026-04-27">Week of Monday, April 27, 2026</time>
+
+<h2>Overview</h2>
+<p>
+</p>
+
+<section>
+<h2>Friday and Monday, May 1st and 4th</h2>
+
+<h3>Plans</h3>
+<div>
+<p>
+At long last, the promised source file listings,
+<a href="resources/SORT.pdf">SORT.H</a> and
+<a href="resources/SORTTEST.pdf">SORTTEST.C</a> are ready.
+</p><p>
+You will not be allowed to use notes on the test on <i>Chapter 14: Searching
+and Sorting</i>, but you will be given a printed version of these two
+documents to use during the test.
+</p><p>
+Please study the sort algorithms <i>as presented</i> in <code>SORT.H</code>,
+the unit tests in <code>SORTTEST.C</code>, <i>and</i> the presentation
+of these sorting algorithms in <i>Chapter 14: Searching and Sorting</i> in
+our text.
+</p><p>
+The following students will present and explain the following sorts:
+</p><table>
+<tr><th colspan="4">Sorting Algorithms</th><tr>
+<tr>
+<th>Sort</th><th>Presenters</th>
+<th>Sort</th><th>Presenters</th>
+</tr><tr>
+<th>Bubble Sort</th><td>Abi (1A) / Noah (3B)</td>
+<th>Merge Sort</th><td>Alex (1A) / Conrad (3B)</td>
+</tr><tr>
+<th>Insertion Sort</th><td>Rockwell (1A) / Gabe (3B)</td>
+<th>Quick Sort</th><td>Gabriel (1A) / Toby (3B)</td>
+</tr><tr>
+<th>Selection Sort</th><td>Eleanor (1A) / Anupama (3B)</td>
+<th>Radix Sort</th><td>Nikita (1A) / Donovan (3B)</td>
+</tr><tr>
+<th>Heap Sort</th><td>Sean (1A) / Blu (3B)</td>
+<th>Tree Sort</th><td>Jeff (1A) / Dylan and Alessandra (3B)</td>
+</tr>
+</table><p>
+Presentations will be given in class on Tuesday and Wednesday of next week,
+with the test following on Thursday and Friday and will be evaluated using
+the following rubric:
+</p><table>
+<tr>
+  <th>Grade</th>
+  <th>Description</th>
+</tr>
+<tr>
+  <th>A</th>
+  <td>
+  You provide a clear explaination of the algorithm <i>with example data</i>
+  on which you trace the algorithm <i>step-by-step</i> and you identify all
+  of the questions in the exercises at the end of <i>Chapter 14</i> that
+  relate to your sort, and provide their solutions.
+  </td>
+</tr>
+<tr>
+  <th>B</th>
+  <td>
+  You provide an explaination of the algorithm with a trace, but you are
+  not clear enough in your presentation to earn an A. You identify some but
+  not all of the end of chapter exercises related to your algorithm.
+  </td>
+</tr>
+<tr>
+  <p>
+  <th>C</th>
+  <td>
+  You convince me that you understand how your algorithm works, but you don't
+  provide a trace example. A C will also be the best score you can earn if
+  you don't provide end of chapter exercises.
+  </td>
+</tr>
+<tr>
+  <th>D</th>
+  <td>
+  You can demonstrate some understanding of how your algorithm works.
+  </td>
+</tr>
+<tr>
+  <th>E</th>
+  <td>
+  Missing in action.
+  </td>
+</tr>
+</table>
+</div>
+
+<h3>Alternative Evaluation for Brendan</h3>
+<div>
+<p>
+I've been working out an alternative evaluation for Brendan, but just to make
+it transparent I'll state it here (and I've added two new requirements):
+</p><ol>
+<li>
+Expand our <code>BDSCTEST.H</code> testing tool to support adding strings
+to the <code>ASSERT</code> functions for identifying which assertions failed.
+</li><li>
+Write a new ASSERT_ARRAY_EQUAL(expected, actual, n) macro that can be used
+to check if two arrays are equal.
+</li><li>
+Write a new ASSERT_ARRAY_INCREASING(arr, n) and ASSERT_ARRAY_DECREASING(arr, n)
+macros.</li>
+</ol>
+</div>
+</section>
+
+<section>
+<h2>Wednesday and Thursday, April 29th and 30th</h2>
+
+<h3>Plans</h3>
+<div>
+<p>
+Most of the students in section 3B are away the rest of this week, so we'll use
+class Wednesday in section 1A to test our set up of the
+<a href="https://codeberg.org/GraceHopperCenter/CSwithCPM/src/branch/main/AltairZ80SimEnv">
+AltairZ80 CP/M environment</a>.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Monday and Tuesday, April 27th and 28th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+I spent <i>way</i> more time than I had refactoring the sorting algorithms
+that Jake aggregated into versions that closely align with the presentations
+given in our text. I finished <code>bubble_sort</code>,
+<code>insertion_sort</code>, <code>selection_sort</code>,
+<code>merge_sort</code>, <code>quick_sort</code>, and my favorite,
+<code>heap_sort</code>.
+</p><p>
+I also added a set of unit tests for the helper functions used by several of
+the sorts. During class today, folks who were responsible for the sorts I have
+completed with present <i>my versions</i> to the class, along with a detailed
+explaination for how they work.
+</p><p>
+Students responsible for <code>radix_sort</code>, <code>shell_sort</code>,
+and <code>tree_sort</code> will have class time to modify the the version they
+submitted so that:
+<p><ol>
+<li>
+it matches as closely as possible the presentation in our text.
+</li><li>
+it will work as a drop-in replacement for the versions I have commented out
+in <code>SORT.H</code>.
+</li>
+</ol><p>
+You should start by downloading <code>SORT.H</code> and
+<code>SORTTEST.C</code> (both of which are available
+<a href="https://codeberg.org/GraceHopperCenter/CSwithCPM/src/branch/main/DSusingC/SearchingAndSorting">
+here</a>), and compiling and running the tests. Then comment out the tests for
+all sorts but the one you are working on and proceed from there.
+</p>
+</div>
+
+<h3>Homework / Evaluation</h3>
+<div>
+<p>
+You will be evaluated based on a modified version of the rubric from
+<a href="week09.html">week 9</a>. I want to note that this rubric stated that
+<q>You implement your selected algorithm as presented in our text,</q> though
+almost none of you did this. I spent hours fixing that error for most of the
+sorts, and I'll give those of you assigned the sorts I did not get to fix
+another chance to fix them yourselves.
+</p><p>
+For those of you whose algorithms I did fix, my need to do that will cost
+you a letter grade.
+</p><p>
+For homework, please study these algorithms closely and reread the chapter in
+our text to prepare for the test.
+</p>
+</div>
+</section>
+</main>
+
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

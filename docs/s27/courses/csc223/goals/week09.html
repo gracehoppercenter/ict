@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GHC CSC 223 Week 9</title>
+<style>
+@import url(../../../css/goals.css);
+th, td {
+    padding: 10px;
+    border: 1px dotted #000;
+}
+th {
+    background-color: #DBD0EB;
+}
+</style>
+<script src="../../../js/init.js"></script>
+<script>
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<div id="logo">
+<a href="index.html"><img src="../../../../images/gctaa_nvcc.png"
+alt="GCTAA Logo">
+</a>
+</div>
+<div class="desktop">
+<h2>Grace Hopper Center</h2>
+<h1>CSC 223 Weekly Assignments: Week 9</h1>
+</div>
+<div class="mobile">
+<h1>CSC 223</h1>
+</div>
+</header>
+<hr>
+
+<main>
+<time datetime="2026-04-06">Week of Monday, April 6, 2026</time>
+
+<h2>Overview</h2>
+<p>
+This week we begin our study of
+<a href="https://en.wikipedia.org/wiki/Search_algorithm">search algorithms</a>,
+to be followed immediately thereafter by the closely related topic of
+<a href="https://en.wikipedia.org/wiki/Sorting_algorithm">sorting
+algorithms</a>. Searching is all about finding whether or not given values
+are in a data store, and sorting is about arranging data to make searching,
+as well as maintaining the sorted data, efficient.
+</p>
+
+<section>
+<h2>Wednesday, Thursday, Friday and Tuesday, April 8th, 9th, 10th and 14th</h2>
+
+<h3>Classwork / Homework / Evaluation</h3>
+<div>
+<p>
+We'll begin class with the promised short quiz on <i>searching algorithms</i>.
+This will be your last evaluated item for quarter 3.
+</p><p>
+After that, I'll do a demo of the BDS C development workflow tools that
+Liam has been working on, which we will use for our next project.
+</p><p>
+We will then have a brief discussion of
+<a href="https://en.wikipedia.org/wiki/Sorting_algorithm">sorting
+algorithms</a> and pair up to select from the following algorithms for
+implementation and presentation.
+</p><table>
+<tr><th colspan="4">Sorting Algorithms</th><tr>
+<tr>
+<th>Sort</th><th>Presenters</th>
+<th>Sort</th><th>Presenters</th>
+</tr><tr>
+<th>Bubble Sort</th><td>Abi (1A) / Noah (3B)</td>
+<th>Merge Sort</th><td>Alex (1A) / Conrad (3B)</td>
+</tr><tr>
+<th>Insertion Sort</th><td>Rockwell (1A) / Gabe (3B)</td>
+<th>Quick Sort</th><td>Gabriel (1A) / Toby (3B)</td>
+</tr><tr>
+<th>Selection Sort</th><td>Eleanor (1A) / Anupama (3B)</td>
+<th>Radix Sort</th><td>Nikita (1A) / Donovan (3B)</td>
+</tr><tr>
+<th>Heap Sort</th><td>Sean (1A) / Blu (3B)</td>
+<th>Shell Sort</th><td>Jake (3B)</td>
+</tr><tr>
+<th>Tree Sort</th><td>Dylan and Alessandra (3B)</td>
+<td colspan="2" style="border-bottom: 1px solid #FFF; border-right: 1px solid
+#FFF;"></td>
+</tr>
+</table><p>
+Here is a rubric we can use to evaluate this project:
+</table><p>
+Here is a rubric we can use to evaluate this project:
+</p><table>
+<tr>
+  <th>Grade</th>
+  <th>Description</th>
+</tr>
+<tr>
+  <th>A</th>
+  <td>
+  <p>
+  You implement your selected algorithm as presented in our text, but with
+  the following changes:
+  </p><ol>
+  <li>
+  It compiles and runs on BDS C instead of the Microsoft dialect used in the
+  text.
+  </li><li>
+  Its sort algorithm is implemented so that it is drop-in compatible with the
+  other sorting functions in <code>SORT.H</code> and can be tested with
+  the same testing pattern used in <code>SORTTEST.C</code>.
+  </li><li>
+  Your code is clean and easy to understand, showing clear evidence that you
+  not only got it to work, but took time to make it readable.
+  </li>
+  </ol><p>
+  </p><p>
+  You are able to answer detailed questions about <i>every line</i> of your
+  source code!
+  </p>
+  </td>
+</tr>
+<tr>
+  <th>B</th>
+  <td>
+  <p>
+  It mostly meets the requirements, but does not reach <q>A level</q> on
+  two or more of the target goals.
+  </p>
+  </td>
+</tr>
+<tr>
+  <p>
+  <th>C</th>
+  <td>
+  <p>
+  Your program works, but it fails to meet the project's educational
+  objectives, and it seems like
+  <a href="https://en.wikipedia.org/wiki/Grok_(chatbot)">Grok</a> wrote it,
+  especially when you are unable to answer specific questions about how it 
+  works.
+  </p>
+  </td>
+</tr>
+<tr>
+  <th>D</th>
+  <td>
+  You pulled yourselves away from your senior social chatting long enough to
+  try something, but you couldn't even get AI to make your program work for
+  you.
+  </td>
+</tr>
+<tr>
+  <th>E</th>
+  <td>
+  No evidence of work presented.
+  </td>
+</tr>
+</table><p>
+</p>
+</div>
+</section>
+
+<section>
+<h2>Monday and Tuesday, April 6th and 7th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+Read <i>Sections 14.1: Introduction to Searching</i> on page 424 through
+the end of <i>Section 14.5: Jump Search</i> on page 433 in <i>Chapter 14:
+Searching and Sorting</i> of our text. Take notes in a markdown file in
+your git repo on this material.
+</p>
+</div>
+
+<h3>Homework / Evaluation</h3>
+<div>
+<p>
+Prepare a one page, front and back 8 1/2 by 11 inch sheet of paper for use on
+a quiz on the reading material at the beginning of our next class. Your
+evaluation will be equally weighted between your markdown notes and your quiz
+score.
+</p>
+</div>
+</section>
+</main>
+
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

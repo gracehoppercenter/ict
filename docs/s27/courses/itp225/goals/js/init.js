@@ -1,0 +1,59 @@
+
+function addHeader(jsonUrl) {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const num = urlParams.get('num');
+  fetch(jsonUrl)
+      .then(response => response.json())
+      .then(data => {
+          data.forEach(session => {
+            if (session.session.replace(/ /g,"_").toLowerCase() == num){
+
+              
+              const headerToAdd = `Session ${session.session} | Unit ${session.unit}`
+              const topicToAdd = `${session.topic}`;
+
+              const titleh1 = document.getElementById('title');
+              titleh1.innerHTML=headerToAdd;
+
+              const topicp = document.getElementById('topic');
+              topicp.innerText = topicToAdd;
+            }
+          })
+      })
+    }
+
+function init() {
+  //var conv = new showdown.Converter();
+  //var md_txt = document.getElementById('md_content').textContent;
+  //console.log(md_txt);
+  //var md_html = conv.makeHtml(md_txt);
+  //console.log(md_html);
+  //document.getElementById('md_to_html').innerHTML = md_html;
+  
+  addHeader("./session_topics.json");
+
+}
+
+function md_to_html(file){
+  fetch(file)
+  //.then(res => response.)
+  .then(response => {
+    if (!response.ok) {
+      // If the file is not found (status 404), throw an error
+      throw new Error('File not found');
+    }
+    return response.text();
+  })
+  .then(mdContent => {
+  showdown.setOption('tables','true');
+  showdown.setOption('openLinksInNewWindow','true');
+  var conv = new showdown.Converter();
+  var md_html = conv.makeHtml(mdContent);
+  document.getElementById('md_to_html').innerHTML = md_html;
+  })
+  .catch(error => {
+    console.log(error);
+    document.getElementById('md_to_html').innerHTML = 'Hi - you\'re faster than I am! I have not published this lesson plan yet. Please check back later!';
+  });
+}

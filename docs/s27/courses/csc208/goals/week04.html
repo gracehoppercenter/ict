@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA CSC 208 Week 4</title>
+<style>
+@import url(../../../css/goals.css);
+td, th {
+    padding: 5px;
+}
+</style>
+<script src="../../../js/init.js"></script>
+<script>
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<div id="logo">
+<a href="index.html"><img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+</div>
+<div class="desktop">
+<h2>Governor's Career & Technical Academy Arlington</h2>
+<h1>CSC 208 Weekly Goals and Tasks: Week 4</h1>
+</div>
+<div class="mobile">
+<h1>CSC 208</h1>
+</div>
+</header>
+<hr>
+
+<main>
+<time datetime="2026-02-24">Week of Tuesday, February 24, 2026</time>
+
+<h2>Overview</h2>
+<p>
+We meet twice this week, and we will use that time to complete
+<a href="https://discrete.openmathbooks.org/dmoi4/ch_logic.html">Chapter 1
+Logic and Proofs</a>. <i style="color: red;">I will be out Thursday at
+a conference, so we need to plan for the full week in the beginning.</i>
+</p>
+
+<section>
+<h2>Thursday, February 26th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+Before turning you loose on your homework, I want to share a famous proof of
+tremendous importance. Since we have so much to do, rather than give you a full
+presentation, let me just share a two links.
+<a href="https://proofwiki.org/wiki/Rational_Numbers_are_Countably_Infinite">
+Rational Numbers are Countably Infinite</a> presents four different proofs that
+the set of rational numbers and the set of natural numbers are <q>the same
+size</q> in that they can be put in a <b>one-to-one correspondence</b>.
+The Wikipedia page
+<a href="https://en.wikipedia.org/wiki/Cantor%27s_diagonal_argument">Cantor's
+diagnonal argument</a> is a proof that the set of real numbers is in some sense
+<i>bigger</i> (infinitely bigger, actually), then the natural numbers and
+integers are.
+</p>
+</div>
+
+<h3>Classwork / Homework</h3>
+<div>
+<p>
+Complete the <i>Practice Problems</i> and <i>Additional Exercises</i> from
+<i>Section 1.5: Proofs about Discrete Structures</i>.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Tuesday, February 24th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+We'll start class by going over the quiz. Grade distribution was
+<b>A</b>: 3, <b>B+</b>: 3, <b>C</b>: 5, <b>D</b>: 0, <b>E</b>: 0.
+</p><p>
+Which is a really good showing y'all, nice work!
+</p><p>
+Our friend José Ejemplo kindly shared
+<a href="resources/RulesOfLogicTestSolutions.pdf">his solutions</a> to the quiz.
+Since he almost always gets a perfect score, we can use his solutions as an
+answer key.
+</p><p>
+A shout goes to Evan, who submitted something like this solution for the second
+proof:
+</p><table>
+<tr>
+<th>Statement</th><th>Justification</th>
+</tr><tr>
+<td>Assume P is true.</td>
+<td><a href="https://en.wikipedia.org/wiki/Conditional_proof">conditional proof
+assumption</a></td>
+</tr><tr>
+<td>Since P and P =&gt; Q are true, Q is true, and since P and P =&gt; R are
+true, R is true.</td>
+<td><a href="https://en.wikipedia.org/wiki/Modus_ponens">modus ponens</a></td>
+</tr><tr>
+<td>Since Q is true and R is true, Q and R is true.</td>
+<td><a href="https://en.wikipedia.org/wiki/Logical_conjunction"</a>logical
+conjunction</a></td>
+</tr><tr>
+<td>Therefore, P =&gt; (Q and R)</td>
+<td><a href="https://en.wikipedia.org/wiki/Deduction_theorem">deduction
+theorem</a></td>
+</tr>
+</table><p>
+I plan to ask Evan whether he read ahead or has prior exposure to the study
+of logic, but it's nice that he is helping set us up for the next part of
+our study.
+</p><p>
+To better develop your understanding of the negation of an implication, run
+each of the following:
+</p><ul>
+<li><code>
+ttg_cli.py "['P', 'Q']" -p "['P =&gt; Q', 'P =&gt; ~Q']" -i False
+</code></li><li><code>
+ttg_cli.py "['P', 'Q']" -p "['P =&gt; Q', '~P =&gt; ~Q']" -i False
+</code></li><li><code>
+ttg_cli.py "['P', 'Q']" -p "['P =&gt; Q', '~P or Q']" -i False
+</code></li><li><code>
+ttg_cli.py "['P', 'Q']" -p "['P =&gt; Q', '~P or Q', '~(~P or Q)']" -i False
+</code></li><li><code>
+ttg_cli.py "['P', 'Q']" -p "['~(P =&gt; Q)', 'P and ~Q']" -i False
+</code></li>
+</ul><p>
+The rest of class time will be spent presenting as many of the exercises you
+chose <a href="week03.html">last week</a> as time permits.
+</p><p>
+</p>
+</div>
+
+<h3>Homework</h3>
+<div>
+<p>
+Read <i>Section 1.5: Proofs about Discrete Structure</i>. You'll have both
+class and homework time on Thursday to complete the exercises.
+</p>
+</div>
+</section>
+</main>
+
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

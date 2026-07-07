@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GHC CSC 223 Week 10</title>
+<style>
+@import url(../../../css/goals.css);
+</style>
+<script src="../../../js/init.js"></script>
+<script>
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<div id="logo">
+<a href="index.html"><img src="../../../../images/gctaa_nvcc.png"
+alt="GCTAA Logo">
+</a>
+</div>
+<div class="desktop">
+<h2>Grace Hopper Center</h2>
+<h1>CSC 223 Weekly Assignments: Week 10</h1>
+</div>
+<div class="mobile">
+<h1>CSC 223</h1>
+</div>
+</header>
+<hr>
+
+<main>
+<time datetime="2026-04-14">Week of Tuesday, April 14, 2026</time>
+
+<h2>Overview</h2>
+<p>
+Welcome to 4th quarter, your final quarter in high school! This week will study
+sorting algoriths.
+</p>
+
+<section>
+<h2>Friday and Monday, April 17th and 20th</h2>
+
+<h3>Classwork / Homework / Evaluation</h3>
+<div>
+<p>
+Our immediate goal is to create a shared library for reading and writing
+integers to files. I've started working on it
+<a href="https://codeberg.org/GraceHopperCenter/CSwithCPM/src/branch/main/DSusingC/FileIO">
+here</a>, and hopefully with your help we can complete this on Friday and
+have it ready for use.
+</p><p>
+Download the files to your own git repos and work with our new CP/M workflow
+to try to get the LOADNUMS library to work. We'll talk in class about the
+approach I'm thinking of taking, and see if we want to follow that approach or
+find a better one.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Wednesday and Thursday, April 15th and 16th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+Today we will begin sharing the sorting algorithms that we selected
+<a href="week09.html">last week</a>. This will be your first graded assignment
+of our last quarter, which will be evaluated using the rubric provided
+with the assignment.
+</p><p>
+After the presentations are shared, I will aggregate them into a single library
+and make them available to you next class.
+</p><p>
+Let's begin today with folks who feel confident they have exemplary solutions
+ready to go. Folks who are less certain can present their sorts on Friday
+and Monday.
+</p>
+</div>
+
+<h3>Homework / Evaluation</h3>
+<div>
+<p>
+Read from <i>Section 14.6: Introduction to Sorting</i> on page 433 through
+the end of the chapter on page 463. We will have a test on this chapter
+in class on Tuesday and Wednesday of next week (4/21 and 4/22). I will be
+looking to your presentations, the <i>Points to Remember</i> on page 461, and
+the <i>Exercises</i> on pages 462 and 463 for inspiration in preparing the
+test.
+</p>
+</div>
+
+<h3>Thursday Addendum</h3>
+<p>
+I want to standardize our input and output format.  How about 100 numbers on
+10 lines. The input file can contain:
+</p><pre>
+95 87 252 5 226 80 204 115 89 251 2
+225 228 224 35 119 81 235 129 93 90
+206 28 10 92 48 15 220 88 170 214
+116 253 57 163 148 249 161 193 183 219
+171 196 147 179 105 3 64 62 41 230
+208 42 26 118 243 122 240 53 1 25
+194 43 142 162 195 102 65 56 187 59
+188 217 168 76 34 185 254 250 128 47
+106 131 138 234 231 140 23 127 245 19
+121 223 60 38 149 255 141 78 40 
+</pre><p>
+so that we are all working with the same input. (<i>Note:</i> I created 
+<a href="resources/make_random_num_file.py">make_random_num_file.py</a>
+and
+with <a href="resources/make_random_num_file.c">make_random_num_file.c</a>,
+which we could use as utilities to create our input files.  This lead me to
+wonder if this could be ported to our BDS C environment, and it can, but with
+some limitations. Here is <a href="resources/MKNUMF.C">MKNUMF.C</a>. You can
+pass it a seed on the command line to vary the numbers in the file it creates.
+</p>
+</section>
+
+<section>
+<h2>Tuesday, April 14th</h2>
+
+<h3>Classwork / Homework</h3>
+<div>
+<p>
+Period 3B will have class and homework time today to complete their
+sorting algorithms for presentation on Thursday.
+</p>
+</div>
+</section>
+</main>
+
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>
