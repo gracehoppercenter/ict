@@ -1,0 +1,87 @@
+<?php require_once __DIR__ . '/../config.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA <?= COURSE_CODE ?> Activity Details</title>
+
+<link rel="stylesheet" href="../base/css/main.css">
+<style>
+table, th, tr, td {
+    border: 1px black solid;
+    border-collapse: collapse;
+}
+    </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/init.js"></script>
+<script src="../base/js/index.js"></script>
+
+<script>
+window.onload = setValidationLinks;
+</script>
+
+</head>
+<body>
+<header>
+<figure id="logo">
+<a href="../index.php"><img src="../base/images/GraceHopperLogo.png" alt="GCTAA Logo"></a>
+<figcaption style="font-size: .3vw; margin-left: .5vw;">
+Illustration by Martina Scapola, used under CC BY-SA 4.0.</figcaption>
+</figure>
+<div class="desktop">
+<h2>Governor's Career & Technical Academy Arlington</h2>
+<h1><?= COURSE_CODE ?></h1>
+</div>
+<div class="mobile">
+<h1><?= COURSE_CODE ?></h1>
+</div>
+</header>
+<hr>
+
+<table>
+    <caption>Project Listing</caption>
+    
+    <thead>
+        <tr>
+            <th></th>
+            <th colspan="2">Due Date</th>
+        </tr>
+    <tr>
+        <th>Project Link</th>
+        <th>Due</th>
+        <th>In-Class Writing Date</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+<h2>Project Grading</h2>
+<p>Each project will be graded in two parts:</p>
+<ul>
+<li>50% of your grade will come from your code, based on the rubric provided on 
+    the project page.
+</li>
+<li>50% of your grade will come from an in-class written exercise
+    where you will explain how your code works</li>
+</ul>
+<p>The table above includes two dates: the deadline to submit the project, and the
+    date of the in-class writing exercise. For the in-class writing exercise, I
+    will print your code and ask you to annotate it.</p>
+
+<p>The code printouts will be in black-and-white, in a monospace font. All
+    code formatting (line breaks/indentation) will be preserved from your 
+    source file, but I will add line wraps for lines that are longer than 80
+    characters. I will also remove all comments from the printed code.</p>
+    
+<p>I will also provide sample code from a project that does complete all of the 
+    project requirements. If you do not submit code in time, or if your code is
+    incomplete, you can use my code for the writing portion.</p>
+
+<footer class="desktop">
+<hr>
+</footer>
+
+</body>
+</html>
