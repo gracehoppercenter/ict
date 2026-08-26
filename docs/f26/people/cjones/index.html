@@ -6,17 +6,19 @@
 <style>
 @import url(style.css);
 </style>
-<script src="../../sections/js/init.js"></script>
+<script src="../../js/index.js"></script>
 <script>
-window.onload = init;
+window.onload = setValidationLinks;
 </script>
 </head>
 <body>
 <header>
-<div id="logo">
-<a href="../../index.php"><img src="../../images/gctaa_nvcc.png"
-alt="GCTAA Logo"></a>
-</div>
+<figure id="logo"><a href="../../../index.php?sem=f26">
+<img src="../../../images/GraceHopperLogo.png" style="width: 10vw;"
+alt="Grace Hopper Logo"></a>
+<figcaption style="font-size: .3vw; margin-left: .5vw;">
+Illustration by Martina Scapola, used under CC BY-SA 4.0.</figcaption>
+</figure>
 <div class="desktop">
 <h2>Grace Hopper Center</h2>
 </div>
@@ -28,24 +30,22 @@ alt="GCTAA Logo"></a>
     <div style="display: inline">
     <article>
       <section>
-    <img src="images/profile_pic.jpg" />
+    <img src="images/profile_pic.jpg" alt="Portrait of Chris Jones. He has an awkward smile." />
     <h1>Hi - I'm Chris</h1>
-      </hr>
+      <hr>
     <p>I love my job as a computer science teacher and especially love working here 
-      at the Arlington Career Center.</p>
+      at the Grace Hopper Center.</p>
     <p>I am a "career switcher." I had an exciting career in 
       the software industry before becoming a teacher in 2022. 
       I still think of myself as new to teaching and want to be an excellent 
       teacher, so please let me know what I can do to better support my students 
       and families! </p>
-    <p>When I'm not teaching, I enjoy spending time with my toddler and riding mountain bikes.</p>
+    <p>When I'm not teaching, I enjoy spending time with my four-year-old son 
+      and riding mountain bikes.</p>
      
     <p>
-    <a href="welcome2025.html">Read my 2025 welcome letter</a></br>
+    <a href="welcome2026.html">Read my 2026 welcome letter</a><br>
     </p>
-    <!--
-    <a href="https://whscs.net/courses/Other/back_to_school_night_2023.html">Back to School Night Slides</a>
-  -->
     <p>
       <a href="mailto:christopher.jones@apsva.us">Contact Me</a>
     </p>
@@ -58,11 +58,7 @@ alt="GCTAA Logo"></a>
   </main>
 
   <footer class="desktop">
-    <hr>
-    <a id="vLink1">
-    <strong> HTML </strong> Valid! </a> &nbsp; 
-    <a id="vLink2">
-    <strong> CSS </strong> Valid! </a>
+
     </footer>
 
   </body>
