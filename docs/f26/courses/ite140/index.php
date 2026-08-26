@@ -47,7 +47,7 @@ Illustration by Martina Scapola, used under CC BY-SA 4.0.</figcaption>
 <ul>
 <!-- <li><a href="goals"> Lesson Goals </a> </li>-->
 <li><a href="info/F_26_ITE140.pdf"><?= COURSE_CODE ?> Syllabus</a></li>
-<li><a href="info/F_26_ITE140_DE_Contract.pdf">Dual Enrollment Expectations Contract</a></li>
+<li><a href="info/F_26_DE_Contract.pdf">Dual Enrollment Expectations Contract</a></li>
 
 </ul>
 
