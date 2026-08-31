@@ -8,10 +8,9 @@ By the end of this lesson, you should:
 
 Today we will discuss course objectives and class expectations.
 
-You can find the Syllabus and the DE Contract [on the course homepage here](../index.html)
+You can find the Syllabus and the DE Contract [on the course homepage here](../index.php)
 
-[And here are the slides I'll use for this discussion](../slides/2025_first_day.html)
-
+[And here are the slides I'll use for this discussion](../slides/2026_first_day.html)
 
 ### Communication Tools and Protocols
 
@@ -36,10 +35,12 @@ When you registered for this class, you should have created a NOVA ID and passwo
 
 ### Part 3: NOVA Orientation
 
-This year, in addition to the student orientation letter, we’ve launched a virtual student orientation designed to prepare DE students for success. It covers how to access college systems (student email, Canvas, myNOVA, etc.), academic expectations, and support resources available at the college. Please encourage your students to complete it by the end of the first week of your DE classes. I’ve included the steps below:
+Take a look at the [NOVA Orientation Letter](../info/nova_de_orientation_letter.pdf)
+and the [NOVA Accommodations Letter](../info/nova_accommodations_letter.pdf). They
+both have very important information that you'll want to read carefully.
 
-- Register Your Account: Sign up via this  link to access the required DE Virtual Student Orientation
+This year, in addition to the student orientation letter, we’ve launched a virtual student orientation designed to prepare DE students for success. It covers how to access college systems (student email, Canvas, myNOVA, etc.), academic expectations, and support resources available at the college. I’ve included the steps below:
+
+- Register Your Account: Sign up via [this link](www.college2success.com/nvccdual/nvccdual) to access the required DE Virtual Student Orientation
 - Select “Dual Enrollment Orientation” when logged in
 - Complete the Orientation: You can engage with the content at your own pace but must complete the orientation by the end of the first week of your DE classes. 
-
-Students will receive a certificate of completion after successfully passing the comprehensive quiz.

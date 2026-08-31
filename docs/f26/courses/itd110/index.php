@@ -63,27 +63,9 @@ Illustration by Martina Scapola, used under CC BY-SA 4.0.</figcaption>
 <div>
 <h2>Resources</h2>
 <ul>
-<li><a href="https://specreaper.github.io/SE_Capstone_Projects/GithubFileLinksTable.html">Grade Helper</a></li>
+
 <li><a href="https://nvcc.my.vccs.edu/">My VCCS</a></li>
-<li><a href="http://openbookproject.net/tutorials/getdown/unix">Getting Down
-with the Unix CLI</a></li>
-<li><a href="http://openbookproject.net/tutorials/getdown/html">Getting Down
-with HTML</a></li>
-<li><a href="http://openbookproject.net/tutorials/getdown/css">Getting Down
-with CSS</a></li>
-<li><a href="https://ciw.ucertify.com/?func=load_course&course=1D0-620&desk_copy=1">CIW Advanced HTML5 and CSS3 Specialist Course</a></li>
-<li><a href="https://www.khanacademy.org/computing/computer-programming">Khan
-Academy</a></li>
-<li><a href="https://codeberg.org/GCTAA/BottleZoo">BottleZoo</a></li>
-<li><a href="http://openbookproject.net/courses/webappdev/units/webpagedesign/examples/googlewebfonts.html">Google Web Fonts</a>
-</li>
-<li><a href="https://www.appdevelopmentcost.com/app-mvp">How to Build an App
-MVP to Launch Your Business</a></li>
-<li><a href="https://www.theodinproject.com">The Odin Project</a></li>
-<li><a href="https://html-now.github.io/">The Web Platform: Browser
-technologies</a></li>
-<li><a href="https://eznvcc.vccs.edu:2443/login?url=https://www.oreilly.com/library/view/temporary-access/">
-NVCC O'Reilly for Higher Education</a></li>
+<li><a href="https://10.38.179.168:8080">SmartBoard Mirroring</a></li>
 </ul>
 </div>
 </main>
