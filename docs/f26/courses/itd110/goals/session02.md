@@ -37,6 +37,6 @@ Read through the instructions here: [https://www.davidbaumgold.com/tutorials/com
 
 ### Part 3 - Write an email
 
-[See details here](activity.php?id=01_email)
+[See details here](../assignments/activity.php?id=01_email)
 
 
