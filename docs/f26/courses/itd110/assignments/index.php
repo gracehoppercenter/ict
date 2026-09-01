@@ -39,13 +39,9 @@ Illustration by Martina Scapola, used under CC BY-SA 4.0.</figcaption>
 <hr>
 
 <table>
-    <caption>Project Listing</caption>
+    <caption>Assignment Listing</caption>
     
     <thead>
-        <tr>
-            <th></th>
-            <th colspan="2">Due Date</th>
-        </tr>
     <tr>
         <th>Type</th>
         <th>Link</th>

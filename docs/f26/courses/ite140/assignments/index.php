@@ -39,20 +39,31 @@ Illustration by Martina Scapola, used under CC BY-SA 4.0.</figcaption>
 <hr>
 
 <table>
-    <caption>Project Listing</caption>
+    <caption>Assignment Listing</caption>
     
     <thead>
-        <tr>
-            <th></th>
-            <th colspan="2">Due Date</th>
-        </tr>
+
     <tr>
-        <th>Project Link</th>
-        <th>Due</th>
-        <th>In-Class Writing Date</th>
+    <th>Type</th>
+    <th>Assignment Link</th>
+    <th>Due</th>
+    <th>In-Class Writing Date</th>
     </tr>
     </thead>
     <tbody>
+
+    <tr>
+        <td>
+            Formative
+        </td>
+        <td><a href="activity.php?id=01_puppy">Puppy Workbook</a></td>
+        <td>
+            8AM on Tuesday, September 8
+        </td>
+        <td>
+            N/A
+        </td>
+    </tr>
 
     </tbody>
 </table>
