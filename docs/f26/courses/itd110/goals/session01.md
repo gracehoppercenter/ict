@@ -41,6 +41,6 @@ both have very important information that you'll want to read carefully.
 
 This year, in addition to the student orientation letter, we’ve launched a virtual student orientation designed to prepare DE students for success. It covers how to access college systems (student email, Canvas, myNOVA, etc.), academic expectations, and support resources available at the college. I’ve included the steps below:
 
-- Register Your Account: Sign up via [this link](www.college2success.com/nvccdual/nvccdual) to access the required DE Virtual Student Orientation
+- Register Your Account: Sign up via [this link](https://www.college2success.com/nvccdual/nvccdual) to access the required DE Virtual Student Orientation
 - Select “Dual Enrollment Orientation” when logged in
 - Complete the Orientation: You can engage with the content at your own pace but must complete the orientation by the end of the first week of your DE classes. 

@@ -37,18 +37,6 @@ Read through the instructions here: [https://www.davidbaumgold.com/tutorials/com
 
 ### Part 3 - Write an email
 
-**Using your VCCS email account**, send me an email to my VCCS email address: <code>cmj2310@email.vccs.edu</code> introducing yourself to me by answering the following questions. Feel free to copy/paste these questions and type your answers below the questions.
+[See details here](activity.php?id=01_email)
 
-1. First - provide me with some information that I can put on a flash card. I'm going to use these flash cards to help myself learn names quicker:
-    - Please include a recent picture of yourself.
-    - What is your preferred name? If you are comfortable, you may also include pronouns here.
-    - Share one or two facts that you want me to know about you.
-2. What is your past experience with with computers, programming or web development? If you have programming experience: Which programming languages, if any, do you know? How well do you feel you know them? With which programming environments do you have experience?
-3. What motivated you to sign up for this course, and what are you hoping to get out of it? Please be as specific as you can.
-4. Is there anything you would like to see in a&nbsp;<em>Classroom Charter</em>&nbsp;containing the rules and norms we all agree together to abide in our learning community?
-
-
-**Due:** Get this email to me ASAP. We're still waiting for some students to get their official NOVA email accounts, so I won't set a specific due date until I know that everyone can complete this assignment.
-
-**Evaluation**: This first assignment will count as a formative grade. An **A** will be earned for specific, detailed, and thoughtful answers to my questions with the photo attached. **B** will be earned if all questions are answered, but specific details are lacking or the photo is missing. **C** will be earned for at least answering each question, and **D** will be earned for sending me any email.
 
