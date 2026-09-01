@@ -68,7 +68,10 @@ Illustration by Martina Scapola, used under CC BY-SA 4.0.</figcaption>
         </tr>
 
         <tr>
-        <td><a href="project.php?id=01_recipes">Recipes</a></td>
+        <td>
+            Summative
+        </td>
+        <td>(Tentative)<a href="project.php?id=01_recipes">Recipes</a></td>
         <td>
             3PM on Thursday, October 9
         </td>
@@ -77,7 +80,10 @@ Illustration by Martina Scapola, used under CC BY-SA 4.0.</figcaption>
         </td>
         </tr>
         <tr>
-        <td><a href="project.php?id=02_encryption">Encrypted Messaging</a></td>
+        <td>
+            Summative
+        </td>
+        <td>(Tentative)<a href="project.php?id=02_encryption">Encrypted Messaging</a></td>
         <td>
             3PM on Monday, November 17
         </td>
@@ -86,7 +92,10 @@ Illustration by Martina Scapola, used under CC BY-SA 4.0.</figcaption>
         </td>
         </tr>
         <tr>
-        <td><a href="project.php?id=03_client_website">Client Website</a></td>
+        <td>
+            Summative
+        </td>
+        <td>(Tentative)<a href="project.php?id=03_client_website">Client Website</a></td>
         <td>
             3PM on Tuesday, February 3
         </td>
