@@ -55,7 +55,7 @@ Illustration by Martina Scapola, used under CC BY-SA 4.0.</figcaption>
 <h2>Important Dates</h2>
 <ul>
 <li><a href="calendar/">Lesson Calendar</a></li>
-<li><a href="projects/">Projects</a></li>
+<li><a href="assignments/">Assignments</a></li>
 <li><b>Certification Exam</b>: <?= CERT_EXAM_DATE ?> during class.</li>
 </ul>
 </div>

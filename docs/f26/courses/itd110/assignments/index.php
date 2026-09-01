@@ -39,21 +39,66 @@ Illustration by Martina Scapola, used under CC BY-SA 4.0.</figcaption>
 <hr>
 
 <table>
-    <caption>Project Listing</caption>
+    <caption>Assignment Listing</caption>
     
     <thead>
-        <tr>
-            <th></th>
-            <th colspan="2">Due Date</th>
-        </tr>
     <tr>
-        <th>Project Link</th>
+        <th>Type</th>
+        <th>Link</th>
         <th>Due</th>
         <th>In-Class Writing Date</th>
     </tr>
     </thead>
     <tbody>
+        <tr>
+        <td>
+            Formative
+        </td>
+        <td><a href="activity.php?id=01_email">Introduction Email</a></td>
+        <td>
+            8AM on Tuesday, September 8
+        </td>
+        <td>
+            N/A
+        </td>
+        </tr>
 
+        <tr>
+        <td>
+            Summative
+        </td>
+        <td>(Tentative)<a href="project.php?id=01_recipes">Recipes</a></td>
+        <td>
+            3PM on Thursday, October 9
+        </td>
+        <td>
+            October 10
+        </td>
+        </tr>
+        <tr>
+        <td>
+            Summative
+        </td>
+        <td>(Tentative)<a href="project.php?id=02_encryption">Encrypted Messaging</a></td>
+        <td>
+            3PM on Monday, November 17
+        </td>
+        <td>
+            November 19
+        </td>
+        </tr>
+        <tr>
+        <td>
+            Summative
+        </td>
+        <td>(Tentative)<a href="project.php?id=03_client_website">Client Website</a></td>
+        <td>
+            3PM on Tuesday, February 3
+        </td>
+        <td>
+            TBD
+        </td>
+        </tr>
     </tbody>
 </table>
 
