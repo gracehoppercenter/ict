@@ -9,15 +9,21 @@
         "docs/people": true,
         "docs/resources": true,
         "docs/s25": true,
+        ".vscode": true,
         "docs/s27": true,
-        ".vscode": true
+        "docs/s26": true,
+        "docs/f24": true,
+        "docs/s27/courses/itp225/info": true
     },
     "hide-files.files": [
         ".github",
         "docs/people",
         "docs/resources",
         "docs/s25",
+        ".vscode",
         "docs/s27",
-        ".vscode"
+        "docs/s26",
+        "docs/f24",
+        "docs/s27/courses/itp225/info"
     ]
 }
