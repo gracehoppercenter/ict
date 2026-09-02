@@ -28,10 +28,15 @@ Illustration by Martina Scapola, used under CC BY-SA 4.0.</figcaption>
 <h1>Student ePortfolios (Git Repos)</h1>
 
 <h2>5B</h2>
-<table>
-  <tr><th>Student</th><th>Website</th><th>Repo</th></tr>
-  </table>
 
+  <ul>
+    <li><a href="https://codeberg.org/gar821/ITE140">Joshua</a></li>
+    <li><a href="https://codeberg.org/CWahl/ITE140">Clara</a></li>
+    <li><a href="https://codeberg.org/perryjc/ITE140">James</a></li>
+    <li><a href="https://codeberg.org/NadiaNayr/ITE140">Aidan</a></li>
+    <li><a href="https://github.com/DaRealCoolGaming/ITE140">Nicole</a></li>
+    <li><a href="https://codeberg.org/cworst/ITE140">Madi</a></li>
+    <li><a href="https://codeberg.org/StarLilly/ITE-140">Lilly</a></li>
 </div>
 
 <footer>
