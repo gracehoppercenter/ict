@@ -53,14 +53,14 @@ CSC 215 Weekly Assignments: Week 2</h1>
 
 <h2>Overview</h2>
 <p>
-This week we will run our first programs on the
+This week we will write and run our first programs on the
 <a href="https://www.s2js.com/altair/">MITS Altair Simulator</a>, learning to
 program it with <a href="https://en.wikipedia.org/wiki/Machine_code">machine
 code</a>.
 </p>
 
 <section>
-<h2>Thursday, September 10th</h2>
+<h2>Tuesday, September 8th</h2>
 <div>
 <p>
 Today we will work together in pairs to write a new programs for our Altair
@@ -69,26 +69,29 @@ Today we will work together in pairs to write a new programs for our Altair
 The pairs are:
 </p>
 <ul>
-<li><b>Pair A:</b> </li>
-<li><b>Pair B:</b> </li>
-<li><b>Pair C:</b> </li>
-<li><b>Pair D:</b> </li>
-<li><b>Pair E:</b> </li>
+<li><b>Pair A:</b> Giselle and Stephan</li>
+<li><b>Pair B:</b> Dimitri and Waleed</li>
+<li><b>Pair C:</b> Nathan and Chris</li>
+<li><b>Pair D:</b> Mason and Delanie</li>
 </ul>
 <p>
-Pair B will add two 16-bit numbers. Pair A will introduce us to 
+Pair A will introduce us to 
 <a href="https://en.wikipedia.org/wiki/Two's_complement">two's complement</a>
-by substracting two numbers, and Pair C will show us how to multiply two 8-bit
+by substracting two numbers. Pair B will sum four positive numbers.
+Pair C will find the index of the largest positive index in a sequence of
+ten positive integers. Group D will add two numbers and then subtract two
 numbers.
+</p><p>
+Come to class on Thursday ready to present your programs.
 </p>
 
 <h3>What You Will Produce</h3>
 <p>
-Come prepared for your presentation with each of the following:
+Prepared a presentation with each of the following:
 </p><ol>
-<li>A listing of your program like the one I shared with you in class last
-period (a table with columns for <b>STEP</b>, <b>MNEMONIC</b>,
-<b>BIT PATTERN</b> and <b>HEX</b>.
+<li>A listing of your program like the one below based on the program we
+entered last class, containing a table with columns for <b>STEP</b>,
+<b>MNEMONIC</b>, <b>BIT PATTERN</b> and <b>HEX</b>.
 </li><li>
 A link to the entry in
 <a href="https://ubuntourist.codeberg.page/Altair-8800/appendix.html">
@@ -101,14 +104,8 @@ A detailed, step-by-step explaination of how your program works.
 </ol><p>
 You'll have all class period today to work on this project. Have fun!
 </p>
-</div>
-</section>
 
-<section>
-<h2>Tuesday, September 8th</h2>
-<div>
-<p>
-Before we start, big shout out to all of you on sending me your git repo links!
+<!-- p>
 All but one of you is now linked from our
 <a href="../students.html">student repo page</a>. Grades are in Synergy for
 the <i>Week 1</i> assignment. Only A's and C's were given. Let's talk briefly
@@ -122,7 +119,7 @@ program. Before we begin, download
 <a href="../resources/zero_ram.bin">zero_ram.bin</a>. I will show you how to
 use it (<i>Note:</i> I used
 <a href="https://www.sympatheticengineering.com/Library/03-Resources/Bytes,-Linux,-Creating-files-of-any-size">this</a> as a reference to create this file).
-<p>
+<p -->
 </div>
 
 <h3>Process</h3>
@@ -223,9 +220,21 @@ Here is the program as we will run it:
 </tr>
 <tr>
   <td>12</td>
-  <td>HLT</td>
-  <td>01 110 110</td>
-  <td>76</td>
+  <td>JMP</td>
+  <td>11 000 011</td>
+  <td>C3</td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>(address)</td>
+  <td>00 000 000</td>
+  <td>00</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>(address)</td>
+  <td>00 000 000</td>
+  <td>00</td>
 </tr>
 </table>
 <p>
@@ -299,12 +308,22 @@ Here are the step-by-step instructions.  First load the program:
 </tr>
 <tr>
   <td>12</td>
-  <td>01 110 110</td>
+  <td>11 000 011</td>
+  <td>DEPOSIT NEXT</td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>00 000 000</td>
+  <td>DEPOSIT NEXT</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>00 000 000</td>
   <td>DEPOSIT NEXT</td>
 </tr>
 </table>
 <p>
-Now load the data to add 4 and 6 together and run the program:
+Now load the data to add 19 and 23 together and run the program:
 </p>
 <table class="steps">
 <tr>
@@ -313,57 +332,39 @@ Now load the data to add 4 and 6 together and run the program:
   <th>CONTROL SWITCH</th>
 </tr>
 <tr>
-  <td>13</td>
+  <td>15</td>
   <td>0 000 000 000 110 000</td>
   <td>EXAMINE</td>
 </tr>
 <tr>
-  <td>14</td>
-  <td>0 000 000 000 000 100</td>
-  <td>DEPOSIT</td>
-</tr>
-<tr>
-  <td>15</td>
-  <td>0 000 000 001 000 000</td>
-  <td>EXAMINE</td>
-</tr>
-<tr>
   <td>16</td>
-  <td>0 000 000 000 000 110</td>
+  <td>0 000 000 000 010 011</td>
   <td>DEPOSIT</td>
 </tr>
 <tr>
   <td>17</td>
-  <td></td>
-  <td>RESET</td>
+  <td>0 000 000 001 000 000</td>
+  <td>EXAMINE</td>
 </tr>
 <tr>
   <td>18</td>
-  <td></td>
-  <td>RUN</td>
+  <td>0 000 000 000 010 111</td>
+  <td>DEPOSIT</td>
 </tr>
 <tr>
   <td>19</td>
   <td></td>
-  <td>STOP</td>
+  <td>RESET</td>
+</tr>
+<tr>
+  <td>20</td>
+  <td></td>
+  <td>RUN</td>
 </tr>
 </table>
 <p>
-You will know everything worked as intended if you see <code>0x0A</code> (10)
+You will know everything worked as intended if you see <code>0x2A</code> (42)
 at address <code>0x50</code>.
-</p>
-</div>
-
-<h3>Homework</h3>
-<div>
-<p>
-Run this program several times until you feel confident you know how to do it.
-Change the values of the two addends and confirm that you get different
-results. Move the locations of the addends and sum and run the program again.
-Modify the program so that is computes the sum of three addends instead of
-two. You may find this last task a lot more challenging than you suspect.
-Come to class Thursday prepared to show your programs to the class. We'll
-use a random student selector program to choose who gets to do this.
 </p>
 </div>
 </section>
