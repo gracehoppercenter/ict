@@ -59,12 +59,20 @@ program it with <a href="https://en.wikipedia.org/wiki/Machine_code">machine
 code</a>.
 </p>
 
+<!-- section>
+<h2>Thursday, September 10th</h2>
+<div>
+<p>
+</p>
+</div>
+</section -->
+
 <section>
 <h2>Tuesday, September 8th</h2>
 <div>
 <p>
-Today we will work together in pairs to write a new programs for our Altair
-8800 that we will present at the beginning of class next Monday.
+Today we will work together in pairs to write new programs for our Altair 8800
+that we will present at the beginning of class on Thursday.
 </p><p>
 The pairs are:
 </p>
@@ -78,16 +86,16 @@ The pairs are:
 Pair A will introduce us to 
 <a href="https://en.wikipedia.org/wiki/Two's_complement">two's complement</a>
 by substracting two numbers. Pair B will sum four positive numbers.
-Pair C will find the index of the largest positive index in a sequence of
-ten positive integers. Group D will add two numbers and then subtract two
-numbers.
+Pair C will find the index of the largest positive integer in a sequence of
+ten positive integers. Group D will add two numbers and then subtract a 
+number.
 </p><p>
 Come to class on Thursday ready to present your programs.
 </p>
 
 <h3>What You Will Produce</h3>
 <p>
-Prepared a presentation with each of the following:
+Prepare a presentation with each of the following:
 </p><ol>
 <li>A listing of your program like the one below based on the program we
 entered last class, containing a table with columns for <b>STEP</b>,
@@ -102,7 +110,8 @@ tasks will require at least one new instruction).
 A detailed, step-by-step explaination of how your program works.
 </li>
 </ol><p>
-You'll have all class period today to work on this project. Have fun!
+You'll have both all class period today and your homework time to work on this
+project. Have fun!
 </p>
 
 <!-- p>
@@ -125,25 +134,26 @@ use it (<i>Note:</i> I used
 <h3>Process</h3>
 <div>
 <p>
-We are going to perform a modified version of the adding two numbers
-program presented in
+We are going to perform a modified version of the adding two numbers program
+presented in
 <a href="https://ubuntourist.codeberg.page/Altair-8800/part-3.html#b-loading-a-sample-program">Part
-3: Operation of the Altair 8800 - B: Loading a Sample Program</a>. Our
-modifications will be to replace the <code>JMP</code> instruction at step 12
-with a
-<a href="https://ubuntourist.codeberg.page/Altair-8800/part-4.html#hlt">HLT</a>
-instruction, and to change the address locations of the two addends and the
-sum.
+3: Operation of the Altair 8800 - B: Loading a Sample Program</a>. This is the
+program we entered in class
+<a href="https://www.openbookproject.net/books/demystcomp/exercises/ch00/ch00s01.html">last
+week</a>.
 </p><p>
-The version in the manual uses the <code>JMP</code> to put the program into an
-infinite loop so that the sum can been read on the panel display lights while
-it is running. Our simulator includes a view of our computer's memory, so we
-can read the result directly from there. To make this more visually appealing,
-the two addends are placed at addresses <code>0x30</code> and <code>0x40</code>
-respectively, and the sum is placed below them on the display at address
-<code>0x50</code>.
+Our modification was to move the to input and output variables to a place in
+memory where they can be more easily seen in the <code>Debug</code> window of
+our simulator, which shows a view of the computer's memory. We can read the
+results of our computuation directly there. To make this more visually
+appealing, the two addends were placed at addresses <code>0x30</code> and
+<code>0x40</code> respectively, and the sum was placed below them on the
+display at address <code>0x50</code>.
 </p><p>
-Here is the program as we will run it:
+<i>You should make this same consideration when writing your programs this
+week.</i>
+</p><p>
+Here is the program ran:
 </p>
 <table id="program">
 <tr>
@@ -361,10 +371,11 @@ Now load the data to add 19 and 23 together and run the program:
   <td></td>
   <td>RUN</td>
 </tr>
-</table>
-<p>
+</table><p>
 You will know everything worked as intended if you see <code>0x2A</code> (42)
 at address <code>0x50</code>.
+</p><p>
+<i>Use this as a model for your own program presentations on Thursday.</i>
 </p>
 </div>
 </section>
