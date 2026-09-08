@@ -13,19 +13,21 @@ As always, we'll start this class with a short, simple quiz. See the previous da
 
 ## What We'll Do In Class
 
+### Internet History - continued
+
+I didn't quite finish the last few slides about the internet last time. I think
+they're interesting, so I'll spend ~5 minutes on that.
+
+### Grades
+
+I've put your first several assignments in StudentVue. I'll take a few minutes
+to discuss those.
+
+### Terminus
+
 Today, we'll take a break from learning about the internet and focus on developing skills with the [Unix Command Line](https://en.wikipedia.org/wiki/Unix_shell) and understanding the [Directory Tree](https://andysbrainbook.readthedocs.io/en/latest/unix/Unix_01_Navigation.html) using a tool called [Terminus](https://web.mit.edu/mprat/Public/web/Terminus/Web/main.html), which is a web-based game that teaches how to use the command-line - I think it's really fun! Our focus will be on understanding and practicing essential commands to create, move, and manage files and directories.
 
 ## Homework
-
-### Read about phone pouches
-
-Here is the presentation I briefly showed in class. If you have any questions about
-phone pouches, ask an administrator. <https://docs.google.com/presentation/d/10b-lS-gEeYfg0hDKNQgjnWd7jq6q2oWg/edit?usp=sharing&ouid=115573401263645491463&rtpof=true&sd=true>
-
-### Send me an Email
-If you haven't yet, please continue checking the myNVCC website. As soon as you see a gmail account appear, open it and send me an email. Follow the specific instructions from [Session 2](./session.html?num=02).
-
-If you're still working to get into your myVCCS account, follow the instructions from [Session 1](./session.html?num=01).
 
 ### Practice with the Terminal
 
