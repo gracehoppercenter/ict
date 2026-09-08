@@ -37,6 +37,10 @@ Illustration by Martina Scapola, used under CC BY-SA 4.0.</figcaption>
     <li><a href="https://codeberg.org/StarLilly/ITE-140">Lilly</a></li>
     <li><a href="https://codeberg.org/cworst/ITE140">Madi</a></li>
     <li><a href="https://github.com/DaRealCoolGaming/ITE140">Nicole</a></li>
+    <li><a href="https://github.com/thedogwordinreverse/thedogwordinreverse.github.io">Paul</a></li>
+    <li><a href="https://github.com/Anthony123-4/Anthony">Anthony</a></li>
+    <li><a href="https://github.com/GazelDerar/GazelDerar.github.io">Gazel</a></li>
+    <li><a href="https://github.com/evangelosmarketplace-design/evangelosmarketplace-design.github.io">Angelo</a></li>
 </ul>
 </div>
 
