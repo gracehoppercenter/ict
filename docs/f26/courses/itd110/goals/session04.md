@@ -34,16 +34,9 @@ Today, we’ll be setting up GitHub accounts and learning how to use Git and Git
 
 There are a lot of steps to this process, so [I've made a helpful tutorial for you to follow here](../../../resources/git_on_github/index.html)
 
-### Email Me
-Send a link to your new Github repo to my email address: `cmj2310@email.vccs.edu`. If you have a VCCS email account, please use that. If not, any **personal** email address will do. Your APS student email account will NOT let you send emails to my VCCS email account, so please do not use that one.
-
 ## Homework
-
-### Send me an Email
-If you haven't yet, please continue checking the myNVCC website. As soon as you see a gmail account appear, open it and send me an email. Follow the specific instructions from [Session 2](./session.html?num=02).
-
-If you're still working to get into your myVCCS account, follow the instructions from [Session 1](./session.html?num=01).
 
 ### Practice with git commits
 
-Git (ha, pun, git it?) through the Git tutorial. This was a lot, so we will not start next class with a quiz. We'll keep practicing with git next class.
+Git (ha, pun, git it?) through the Git tutorial. This was a lot, so we will 
+**not** start next class with a quiz. We'll keep practicing with git next class.
