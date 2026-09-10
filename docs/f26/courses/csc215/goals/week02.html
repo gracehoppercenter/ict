@@ -62,6 +62,120 @@ code</a>.
 <h2>Thursday, September 10th</h2>
 <div>
 <p>
+Let's load the number 7 into address 0030H:
+</p>
+<table class="steps">
+<tr>
+  <th>STEP</th>
+  <th>SWITCHES 0-15</th>
+  <th>CONTROL SWITCH</th>
+</tr>
+<tr>
+  <td>1</td>
+  <td>0 000 000 000 110 000</td>
+  <td>EXAMINE</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>0 000 000 000 000 111</td>
+  <td>DEPOSIT</td>
+</tr>
+</table><p>
+Now load a program to load 0030H into register B, increment it 4 times, and
+write it out to address 0031H:
+</p><table id="program">
+<tr>
+  <th>STEP</th>
+  <th>MNEMONIC</th>
+  <th>BIT PATTERN</th>
+  <th>HEX</th>
+</tr>
+<tr>
+  <td>3</td>
+  <td>0 000 000 000 000 000</td>
+  <td>EXAMINE</td>
+  <td></td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>LDA</td>
+  <td>00 111 010</td>
+  <td>3A</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>(address)</td>
+  <td>00 110 000</td>
+  <td>30</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>(address)</td>
+  <td>00 000 000</td>
+  <td>00</td>
+</tr>
+<tr>
+  <td>7</td>
+  <td>MOV (A→B)</td>
+  <td>01 000 111</td>
+  <td>47</td>
+</tr>
+<tr>
+  <td>8</td>
+  <td>INR B</td>
+  <td>00 000 100</td>
+  <td>04</td>
+</tr>
+<tr>
+  <td>9</td>
+  <td>INR B</td>
+  <td>00 000 100</td>
+  <td>04</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>INR B</td>
+  <td>00 000 100</td>
+  <td>04</td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>INR B</td>
+  <td>00 000 100</td>
+  <td>04</td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>MOV A,B</td>
+  <td>01 111 000</td>
+  <td>78</td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>STA</td>
+  <td>00 110 010</td>
+  <td>32</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>(address)</td>
+  <td>00 110 001</td>
+  <td>31</td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>(address)</td>
+  <td>00 000 000</td>
+  <td>00</td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>HLT</td>
+  <td>01 110 110</td>
+  <td>76</td>
+</tr>
+</table>
+<p>
 Today in class we will present the programs we wrote last class.  Chris and
 Nathan will go last, since they will be introducing the looping and branching
 instructions they used in their program.
