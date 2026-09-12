@@ -34,11 +34,14 @@ CSC 215 Weekly Assignments: Week 3</h1>
 
 <h2>Overview</h2>
 <p>
-This week we will be introduced to the
+As we begin week three, our goal will be to gradually make it easier and
+easier to program our Altair 8800. Two weeks of flicking switches is enough.
+This week, we will move to writing our
+<a href="https://en.wikipedia.org/wiki/Machine_code">machine language</a>
+programs in HEX, using this
 <a href="https://codeberg.org/GraceHopperCenter/Altair8800SimulatorHEXprogramConverter">MITS
-Altair Simulator Program Converter</a> and learn to use it to write
-<a href="https://en.wikipedia.org/wiki/Machine_code">machine code</a> programs
-for the Altair 8800.
+Altair Simulator Program Converter</a>. This switch will also mean we can start
+putting our programs into our git repos.
 </p>
 
 <!-- section>
@@ -47,12 +50,19 @@ for the Altair 8800.
 <h3>Classwork</h3>
 <div>
 <p>
+Today in class we will share out solutions to the programming project assigned
+last class.
 </p>
 </div>
 
 <h3>Homework</h3>
 <div>
 <p>
+Read
+<a href="https://www.openbookproject.net/books/demystcomp/ch01.html">Chapter 1:
+The Intel 8080 Instruction Set</a> and come to class next Wednesday ready to
+apply your new knowledge of the instruction set to a final machine language
+programming project.
 </p>
 </div>
 <section>
@@ -63,47 +73,30 @@ for the Altair 8800.
 <h3>Classwork</h3>
 <div>
 <p>
-We'll begin class with a brief presentation on how to configure your
-computer to improve your
-<a href="https://en.wikipedia.org/wiki/Workflow">workflow</a> for using the
-<a href="https://codeberg.org/GraceHopperCenter/Altair8800SimulatorHEXprogramConverter/raw/branch/master/altair_sim_prog_converter">
-altair_sim_prog_converter</a>.
+After the promised quiz, you will have the rest of class to work on the
+program we discussed briefly <a href="week02.html">last week</a>. Here it is
+again for your convenience:
 </p><p>
-Next we will watch the first (or perhaps first two) in a
-<a href="https://www.youtube.com/playlist?list=PLB3mwSROoJ4KLWM8KwK0cD1dhX35wILBj">series
-of videos</a> on programming the Altair 8800.
+<h4>Project: Sum <code>n</code> Bytes</h4>
+<p>
+Write a program that reads in a starting memory address, <code>m</code>, and a
+number of bytes, <code>n</code>, and computes the sum of the <code>n</code>
+bytes beginning at address <code>m</code>.
 </p><p>
-The rest of class time will be spent working with the partner you where
-assigned last class on the program described there. Have a program ready to
-present when you arrive in next class.
-</p><p>
-I'll be compiling a list of instructions that we've seen so far, and linking
-to our previous presentations:
+The pairs are:
 </p><ul>
-<li>
-<b>Subtracting Two Numbers:</b>
-<a href="https://github.com/alexhamill/CSC215/blob/main/presentations/subtractionPresentation.md">Sean,
-Nikita and Alex</a> and
-<a href="https://github.com/1bMedina/csc215/blob/main/Presentations/presentation1.md">Dylan, Blu and Toby</a>
-</li><li>
-<b>Adding Two 16 Bit Numbers:</b>
-<a href="https://github.com/emahshie/csc215/blob/main/presentation.md">
-Eleanor, Rockwell and Abi</a> and
-<a href="https://codeberg.org/ngunville/CSC215/src/branch/main/Notes/16BitAddPresentation.md">Anupama, Donovan and Noah</a>
-</li><li>
-<b>Multiply Two 8 Bit Numbers:</b>
-<a href="https://github.com/Archonic944/csc215/blob/main/presentations/binary_multiply.md">Brendan
-and Gabe</a> and
-<a href="https://github.com/aless-mendoza/csc215/blob/main/notes/multiplicationPresentation.md">Jake, Conrad and Alessandra</a>
-</li>
+<li><b>Pair B:</b> Dimitri and Delaine</li>
+<li><b>Pair C:</b> Mason and Dimitri</li>
+<li><b>Pair D:</b> Waleed and Stephan</li>
+<li><b>Pair A:</b> Giselle and Chris</li>
 </ul>
 </div>
 
 <h3>Homework / Evaluation</h3>
 <div>
 <p>
-Your presentation will be evaluated using the rubric and the two specific
-objectives (including using a new instruction) introduced last class.
+Come to class on Friday ready to show your git repos and discuss either how
+you solved this programming challenge or where you got stuck on it.
 </p>
 </div>
 </section -->
@@ -114,8 +107,18 @@ objectives (including using a new instruction) introduced last class.
 <h3>Classwork</h3>
 <div>
 <p>
-Today in class Chris and Nathan will present their program to find the
-index of the largest positive integer in a sequence of ten positive integers.
+We'll start class today with an introduction to the
+<a href="https://codeberg.org/GraceHopperCenter/Altair8800SimulatorHEXprogramConverter">MITS
+Altair Simulator Program Converter</a>. I spent the better part of the day
+Saturday adapting it to our
+<a href="https://www.openbookproject.net/books/demystcomp/_static/AltairSimulator/">Sim-8800:
+Altair 8800 Simulator</a>.
+</p><p>
+I'll show you how it works, and they we'll spend 30 minutes having you try it
+out with the programs you presented last class.
+</p><p>
+After that Chris and Nathan will present their program to find the index of the
+largest positive integer in a sequence of ten positive integers.
 </p><p>
 They will be introducing how both looping and branching are written in
 machine language using jump instructions.
@@ -128,12 +131,8 @@ and be able to use it to write your own programs soon.
 <h3>Homework / Evaluation</h3>
 <div>
 <p>
-Read the instructions for how to use the
-<a href="https://codeberg.org/GraceHopperCenter/Altair8800SimulatorHEXprogramConverter">MITS
-Altair Simulator Program Converter</a>. Then download
-<a href="https://codeberg.org/GraceHopperCenter/Altair8800SimulatorHEXprogramConverter/src/branch/master/programs/add2_16bit_numbers.spc">
-add2_16bit_numbers.spc</a>, convert it to binary, load it into the simulator,
-and run it.
+Study the program Chris and Nathan presented in class. Come to class Wednesday
+ready for a short quiz on this program.
 </p>
 </div>
 </section>
