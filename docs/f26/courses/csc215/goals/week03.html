@@ -114,8 +114,29 @@ Saturday adapting it to our
 <a href="https://www.openbookproject.net/books/demystcomp/_static/AltairSimulator/">Sim-8800:
 Altair 8800 Simulator</a>.
 </p><p>
-I'll show you how it works, and then we'll spend 30 minutes having you try it
-out with the programs you presented last class.
+I'll show you how it works using this example program,
+<code>count10from.spc</code>:
+</p><pre>
+01    # Load following 2 bytes into regs C and B 
+50
+00
+0A    # Load reg A with contents of mem addr in reg B and C (0x0050)
+11    # Load following 2 bytes into regs E and D 
+00
+0A
+3C    # START LOOP HERE: Increment reg A
+0C    # Increment reg C
+02    # Store reg A in mem addr from regs B and C
+15    # Decrement reg D
+C2    # LOOP: Jump if not zero back to START LOOP
+07
+00
+76    # HALT
+===
+50:20 # Start counting at 32 (0x20) 
+</pre><p>
+Then we'll spend 30 minutes having you try it out with the programs you
+presented last class.
 </p><p>
 After that Chris and Nathan will present their program to find the index of the
 largest positive integer in a sequence of ten positive integers.
