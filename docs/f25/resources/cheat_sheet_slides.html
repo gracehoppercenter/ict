@@ -10,7 +10,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Courier New', monospace;
             background-color: #f5f5f5;
@@ -20,7 +20,7 @@
             margin: 0 auto;
             font-size: 16px;
         }
-        
+
         /* Screen view - shows all slides in a grid */
         .slides-container {
             display: grid;
@@ -28,7 +28,7 @@
             gap: 20px;
             margin-bottom: 40px;
         }
-        
+
         .slide {
             background-color: white;
             border-radius: 10px;
@@ -44,71 +44,139 @@
         .section-header {
             display: none;
         }
-        
-        /* Print view - each slide on its own page */
+
+        /* Print-only container: one command-item per page. Built by JS from
+           the slides above so the wording only lives in one place. Kept out
+           of normal flow (and off-screen) so it doesn't affect the screen
+           layout, but still has real dimensions so we can measure text
+           against them before printing. */
+        #print-container {
+            visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+        }
+
+        @page {
+            size: letter landscape;
+            margin: 0.5in;
+        }
+
+        /* Print view - each command-item on its own page */
         @media print {
             body {
                 background-color: white;
                 padding: 0;
                 margin: 0;
+                max-width: none;
             }
 
-            .command-list {
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                max-height: 5in; /* Adjust based on your slide height needs */
-            }
-            
-            /* Hide everything except slides when printing */
-            .screen-only {
+            /* Hide everything except the generated print pages */
+            .screen-only,
+            .slides-container {
                 display: none !important;
             }
-            
-            /* Each slide becomes a page */
-            .slides-container {
-                display: block;
+
+            #print-container {
+                visibility: visible;
+                position: static;
+                left: auto;
+                overflow: visible;
             }
-            
-            .slide {
+
+            .print-page {
+                width: 10in;
+                height: 7.5in;
+                box-sizing: border-box;
+                padding: 0.6in;
+                display: flex;
+                flex-direction: column;
                 page-break-after: always;
                 break-after: page;
-                margin: 0;
-                padding: 0.5in;
-                border: none;
-                box-shadow: none;
-                border-radius: 0;
-                min-height: 7.5in; /* Letter paper landscape height minus margins */
-                height: 7.5in;
-                display: block;
+                border: 0.3in solid #2c3e50;
+                border-radius: 30px;
             }
-            
-            .section-header {
-                display: block;
-                text-align: center;
-                font-size: 36px;
-                font-weight: bold;
-                margin-bottom: 20px;
-                padding-bottom: 10px;
-                border-bottom: 4px solid;
+
+            .print-page:last-child {
+                page-break-after: auto;
+                break-after: auto;
             }
-            
-            .terminal .section-header {
-                color: #2ecc71;
+
+            .print-page.terminal {
                 border-color: #2ecc71;
             }
-            
-            .vim .section-header {
-                color: #3498db;
+
+            .print-page.vim {
                 border-color: #3498db;
             }
-            
-            .git .section-header {
-                color: #e74c3c;
+
+            .print-page.git {
                 border-color: #e74c3c;
             }
+
+            .print-page .command-item {
+                flex: 1 1 auto;
+                margin-bottom: 0;
+                padding: 0;
+                border-left: none;
+                background: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            .print-page .command {
+                font-size: 60px;
+                white-space: nowrap;
+                margin-bottom: 50px;
+                padding-bottom: 40px;
+                border-bottom: 5px solid #ddd;
+            }
+
+            .print-page .description {
+                font-size: 58px;
+                line-height: 1.4;
+                max-width: 8.4in;
+                color: #444;
+            }
+
+            .print-page .key {
+                font-size: 46px;
+                padding: 12px 24px;
+                margin: 0 10px;
+            }
+
+            .print-page .command p {
+                font-size: 36px;
+                margin: 14px 0;
+                color: #999;
+            }
+
+            .print-page .tip {
+                flex: 1 1 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 0;
+                background: none;
+                border-left: none;
+            }
+
+            .print-page .tip-title {
+                font-size: 60px;
+                margin-bottom: 30px;
+            }
+
+            .print-page .tip .description {
+                font-size: 52px;
+            }
         }
-        
+
         .slide-title {
             font-size: 24px;
             font-weight: bold;
@@ -117,27 +185,42 @@
             border-bottom: 2px solid;
             text-align: center;
         }
-        
+
         .terminal .slide-title {
             color: #2ecc71;
             border-color: #2ecc71;
         }
-        
+
         .vim .slide-title {
             color: #3498db;
             border-color: #3498db;
         }
-        
+
         .git .slide-title {
             color: #e74c3c;
             border-color: #e74c3c;
         }
-        
+
+        .terminal .section-header {
+            color: #2ecc71;
+            border-color: #2ecc71;
+        }
+
+        .vim .section-header {
+            color: #3498db;
+            border-color: #3498db;
+        }
+
+        .git .section-header {
+            color: #e74c3c;
+            border-color: #e74c3c;
+        }
+
         .command-list {
             list-style-type: none;
             flex-grow: 1;
         }
-        
+
         .command-item {
             margin-bottom: 15px;
             padding: 12px;
@@ -145,19 +228,19 @@
             border-radius: 5px;
             border-left: 4px solid;
         }
-        
+
         .terminal .command-item {
             border-left-color: #2ecc71;
         }
-        
+
         .vim .command-item {
             border-left-color: #3498db;
         }
-        
+
         .git .command-item {
             border-left-color: #e74c3c;
         }
-        
+
         .command {
             font-weight: bold;
             font-size: 30px;
@@ -165,13 +248,13 @@
             margin-bottom: 5px;
             font-family: 'Courier New', monospace;
         }
-        
+
         .description {
             font-size: 18px;
             color: #555;
             line-height: 1.4;
         }
-        
+
         .sub-title {
             font-size: 20px;
             margin-bottom: 15px;
@@ -179,7 +262,7 @@
             font-weight: bold;
             text-align: center;
         }
-        
+
         .key {
             display: inline-block;
             padding: 2px 8px;
@@ -190,7 +273,7 @@
             font-weight: bold;
             margin-right: 5px;
         }
-        
+
         .tip {
             background-color: #fffde7;
             padding: 15px;
@@ -198,64 +281,64 @@
             margin-top: 15px;
             border-left: 4px solid #f1c40f;
         }
-        
+
         .tip-title {
             font-weight: bold;
             color: #d35400;
             margin-bottom: 8px;
         }
-        
+
         .mode-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-gap: 10px;
             margin-top: 10px;
         }
-        
+
         .mode-item {
             padding: 8px;
             background-color: #f0f7ff;
             border-radius: 4px;
             font-size: 15px;
         }
-        
+
         .header {
             text-align: center;
             margin-bottom: 30px;
             padding-bottom: 20px;
             border-bottom: 2px solid #ddd;
         }
-        
+
         .header h1 {
             font-size: 2.5em;
             color: #2c3e50;
             margin-bottom: 10px;
         }
-        
+
         .header p {
             font-size: 1.2em;
             color: #7f8c8d;
             margin-bottom: 15px;
         }
-        
-        
+
+
     </style>
 </head>
 <body>
     <div class="header screen-only">
         <h1>Cheat Sheet Slides - Terminal, Vim & Git</h1>
-        <h2>This page is a work in progress. Please suggest changes!</h2>       
+        <h2>This page is a work in progress. Please suggest changes!</h2>
 
     </div>
-    
+
     <div class="slides-container">
         <!-- TERMINAL SLIDES -->
-        
+
         <!-- Terminal Slide 1: Navigation -->
         <div class="slide terminal">
             <div class="section-header">TERMINAL</div>
             <h2 class="slide-title">Terminal Navigation</h2>
-            
+
             <ul class="command-list">
                 <li class="command-item">
                     <div class="command">cd &lt;path&gt;</div>
@@ -284,7 +367,7 @@
         <div class="slide terminal">
             <div class="section-header">TERMINAL</div>
             <h2 class="slide-title">Terminal Navigation</h2>
-            
+
             <ul class="command-list">
                 <li class="command-item">
                     <div class="command">ls</div>
@@ -305,19 +388,19 @@
                     </div>
                 </li>
             </ul>
-            
+
             <div class="tip">
                 <div class="tip-title">Pro Tip:</div>
                 <div class="description">Use <span class="key">Tab</span> for auto-completion</div>
             </div>
-            
+
         </div>
-        
+
         <!-- Terminal Slide 2: File Operations -->
         <div class="slide terminal">
             <div class="section-header">TERMINAL</div>
             <h2 class="slide-title">File Operations</h2>
-            
+
             <ul class="command-list">
                 <li class="command-item">
                     <div class="command">mv &lt;source&gt; &lt;dest&gt;</div>
@@ -341,14 +424,14 @@
                 </li>
 
             </ul>
-            
+
         </div>
-        
+
         <!-- Terminal Slide 3: Essential Commands -->
         <div class="slide terminal">
             <div class="section-header">TERMINAL</div>
             <h2 class="slide-title">Essential Terminal Commands</h2>
-            
+
             <ul class="command-list">
                 <li class="command-item">
                     <div class="command">Ctrl+C</div>
@@ -363,16 +446,16 @@
                     <div class="description">Clear terminal screen</div>
                 </li>
             </ul>
-            
+
         </div>
-        
+
         <!-- VIM SLIDES -->
-        
+
         <!-- Vim Slide 1: File Operations & Basics -->
         <div class="slide vim">
             <div class="section-header">VIM</div>
             <h2 class="slide-title">File Operations</h2>
-            
+
             <ul class="command-list">
                 <li class="command-item">
                     <div class="command">vim &lt;file&gt;</div>
@@ -395,9 +478,9 @@
                     <div class="description">Edit a new file</div>
                 </li>
             </ul>
-            
+
         </div>
-        
+
 
         <!-- Vim Slide 2: Navigation -->
         <div class="slide vim">
@@ -406,10 +489,10 @@
             <ul class="command-list">
                 <li class="command-item">
                     <div class="command">
-                        <span class="key">h</span> <span class="key">j</span> 
+                        <span class="key">h</span> <span class="key">j</span>
                         <span class="key">k</span> <span class="key">l</span>
                         <p>or</p>
-                        <span class="key">←</span> <span class="key">↓</span> 
+                        <span class="key">←</span> <span class="key">↓</span>
                         <span class="key">↑</span> <span class="key">→</span>
                     </div>
                     <div class="description">Left, Down, Up, Right</div>
@@ -439,7 +522,7 @@
                     <div class="description">Go to last line of file</div>
                 </li>
             </ul>
-            
+
         </div>
         <!-- Vim Slide 2: Navigation -->
         <div class="slide vim">
@@ -449,21 +532,21 @@
                     <li class="command-item">
                     <div class="command">&lt;#&gt;&lt;command&gt;</div>
                         <div class="description">Repeat a command multiple
-                            times. Example: <span class="key">5k</span> 
+                            times. Example: <span class="key">5k</span>
                             moves up 5 lines.
                         </div>
                     </li>
-                
+
             </ul>
-            
+
         </div>
-        
+
         <!-- Vim Slide 3: Modes & Editing -->
         <div class="slide vim">
             <div class="section-header">VIM</div>
             <h2 class="slide-title">Mode Switching</h2>
             <ul class="command-list">
-      
+
                     <li class="command-item">
                         <div class="command">i</div>
                         <div class="description">Insert mode</div>
@@ -508,7 +591,7 @@
             <ul class="command-list">
                 <li class="command-item">
                     <div class="command">y</div>
-                    <div class="description">Yank (copy) selection (from visual 
+                    <div class="description">Yank (copy) selection (from visual
                         mode)</div>
                 </li>
                 <li class="command-item">
@@ -527,9 +610,9 @@
                 </li>
 
             </ul>
-            
+
         </div>
-        
+
         <div class="slide vim">
             <div class="section-header">VIM</div>
             <h2 class="slide-title">Helpful Shortcuts</h2>
@@ -544,7 +627,7 @@
                     <div class="description">Replace character under cursor</div>
                 </li>
             </ul>
-            
+
         </div>
         <div class="slide vim">
             <div class="section-header">VIM</div>
@@ -565,14 +648,14 @@
                     <div class="description">Play back register a</div>
                 </li>
             </ul>
-            
+
             <div class="tip">
                 <div class="tip-title">Pro Tip:</div>
                 <div class="description">Macros are just text in registers. Use
                 :reg to inspect all registers</div>
             </div>
         </div>
-        
+
         <div class="slide vim">
             <div class="section-header">VIM</div>
             <h2 class="slide-title">One-Line Shortcuts</h2>
@@ -592,14 +675,14 @@
                     lines.</div>
                 </li>
             </ul>
-            
+
         </div>
-        
+
         <!-- Vim Slide 4: Advanced Features -->
         <div class="slide vim">
             <div class="section-header">VIM</div>
             <h2 class="slide-title">Window Splits</h2>
-            
+
             <ul class="command-list">
                 <li class="command-item">
                     <div class="command">:vsp</div>
@@ -622,14 +705,14 @@
                     <div class="description">Equalize split sizes</div>
                 </li>
             </ul>
-            
+
         </div>
 
         <!-- Vim Slide 4: Advanced Features -->
         <div class="slide vim">
             <div class="section-header">VIM</div>
             <h2 class="slide-title">Tabs</h2>
-            
+
             <ul class="command-list">
                 <li class="command-item">
                     <div class="command">:tabnew</div>
@@ -648,7 +731,7 @@
                     <div class="description">Previous Tab</div>
                 </li>
             </ul>
-            
+
         </div>
 
         <!-- Vim Slide 4: Advanced Features -->
@@ -673,16 +756,16 @@
                     <div class="description">Switch to buffer number</div>
                 </li>
             </ul>
-            
+
         </div>
-        
+
         <!-- GIT SLIDES -->
-        
+
         <!-- Git Slide 1: Basic Workflow -->
         <div class="slide git">
             <div class="section-header">GIT</div>
             <h2 class="slide-title">Git Basic Workflow</h2>
-            
+
             <ul class="command-list">
                 <li class="command-item">
                     <div class="command">git status</div>
@@ -713,14 +796,14 @@
                     <div class="description">Clone a repository</div>
                 </li>
             </ul>
-            
+
         </div>
-        
+
         <!-- Git Slide 2: Branch Management -->
         <div class="slide git">
             <div class="section-header">GIT</div>
             <h2 class="slide-title">Git Branch Management</h2>
-            
+
             <ul class="command-list">
                 <li class="command-item">
                     <div class="command">git branch</div>
@@ -747,14 +830,14 @@
                     <div class="description">Push branch to remote and set upstream</div>
                 </li>
             </ul>
-            
+
         </div>
-        
+
         <!-- Git Slide 3: Useful Commands -->
         <div class="slide git">
             <div class="section-header">GIT</div>
             <h2 class="slide-title">Git Useful Commands</h2>
-            
+
             <ul class="command-list">
                 <li class="command-item">
                     <div class="command">git log --oneline</div>
@@ -787,13 +870,13 @@
                     </div>
                 </li>
             </ul>
-            
+
         </div>
-        
+
         <!-- SUMMARY SLIDE -->
         <div class="slide" >
             <h2 class="slide-title" >Config Files</h2>
-            
+
             <ul class="command-list">
                 <li class="command-item" style="border-left-color: #2ecc71;">
                     <div class="command">~/.bashrc or ~/.zshrc</div>
@@ -819,10 +902,111 @@
                     <div class="description">All of your SSH keys should live here</div>
                 </li>
             </ul>
-            
-            
+
+
         </div>
     </div>
-    
+
+    <!-- Print-only pages: built by the script below, one command-item per page -->
+    <div id="print-container"></div>
+
+    <script>
+        (function () {
+            const SECTION_CLASSES = ['terminal', 'vim', 'git'];
+            const MAX_COMMAND_FONT = 220;
+            const MIN_COMMAND_FONT = 26;
+            const WIDTH_SAFETY_FACTOR = 0.96;
+
+            function buildPrintPage(sectionClass, contentEl) {
+                const page = document.createElement('div');
+                page.className = 'print-page slide' + (sectionClass ? ' ' + sectionClass : '');
+                page.appendChild(contentEl);
+                return page;
+            }
+
+            function buildPrintPages() {
+                const container = document.getElementById('print-container');
+                container.innerHTML = '';
+
+                const slides = document.querySelectorAll('.slides-container > .slide');
+                slides.forEach(function (slide) {
+                    const sectionClass = SECTION_CLASSES.find(function (c) {
+                        return slide.classList.contains(c);
+                    });
+
+                    slide.querySelectorAll('.command-item').forEach(function (item) {
+                        const clone = item.cloneNode(true);
+                        clone.removeAttribute('style');
+                        container.appendChild(buildPrintPage(sectionClass, clone));
+                    });
+
+                    const tip = slide.querySelector('.tip');
+                    if (tip) {
+                        container.appendChild(buildPrintPage(sectionClass, tip.cloneNode(true)));
+                    }
+                });
+
+                fitCommandText(container);
+            }
+
+            // Shrinks each plain-text .command to the largest font size that
+            // still fits on one line, so nothing wraps when printed.
+            function fitCommandText(container) {
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+
+                function bestFit(text, availableWidth) {
+                    let size = MAX_COMMAND_FONT;
+                    for (; size > MIN_COMMAND_FONT; size -= 2) {
+                        ctx.font = "bold " + size + "px 'Courier New', monospace";
+                        if (ctx.measureText(text).width <= availableWidth) break;
+                    }
+                    return size;
+                }
+
+                // Every command in a category (terminal/vim/git/other) shares
+                // one font size: the largest that still fits the longest
+                // command in that category, so pages within a section match.
+                const groups = {};
+
+                container.querySelectorAll('.print-page').forEach(function (page) {
+                    const cmd = page.querySelector('.command');
+                    if (!cmd || cmd.children.length > 0) {
+                        return; // tip pages, and multi-part commands (key badges)
+                    }
+
+                    const text = cmd.textContent.trim();
+                    if (!text) return;
+
+                    const sectionClass = SECTION_CLASSES.find(function (c) {
+                        return page.classList.contains(c);
+                    }) || 'none';
+
+                    const availableWidth = cmd.clientWidth * WIDTH_SAFETY_FACTOR;
+                    const size = bestFit(text, availableWidth);
+
+                    if (!groups[sectionClass]) {
+                        groups[sectionClass] = { size: Infinity, elements: [] };
+                    }
+                    groups[sectionClass].size = Math.min(groups[sectionClass].size, size);
+                    groups[sectionClass].elements.push(cmd);
+                });
+
+                Object.keys(groups).forEach(function (key) {
+                    const group = groups[key];
+                    group.elements.forEach(function (cmd) {
+                        cmd.style.fontSize = group.size + 'px';
+                    });
+                });
+            }
+
+            if (document.readyState === 'complete') {
+                buildPrintPages();
+            } else {
+                window.addEventListener('load', buildPrintPages);
+            }
+            window.addEventListener('beforeprint', buildPrintPages);
+        })();
+    </script>
 </body>
 </html>
