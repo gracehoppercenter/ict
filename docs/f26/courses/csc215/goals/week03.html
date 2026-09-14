@@ -151,7 +151,8 @@ and be able to use it to write your own programs soon.
 
 <h3>Homework / Evaluation</h3>
 <div>
-<p>
+<ol>
+<li>
 Study the <code>count10from.spc</code> presented in the beginning of class.
 It uses the instruction <code>11H</code> (the
 <a href="https://ubuntourist.codeberg.page/Altair-8800/part-4.html#lxi">LXI</a>
@@ -161,9 +162,16 @@ the logic of the program, only register D is used in the computation.
 Replace the LXI instruction with an
 <a href="https://ubuntourist.codeberg.page/Altair-8800/part-4.html#mvi">MVI</a>
 instruction that only sets register D.
-</p><p>
+</li><li>
+Similarly, we only need the value of the byte at memory location
+<code>00 50 H</code> loaded into the accumulator.  Can you modify the program
+by substituting the initial <code>LXI</code> instruction with an
+<a href="https://ubuntourist.codeberg.page/Altair-8800/part-4.html#lda">LDA</a>
+instruction to accomplish this same aim? 
+</li><li>
 Study the program Chris and Nathan presented in class.
-</p><p>
+</li>
+</ol>
 Come to class Wednesday ready for a short quiz on these programs.
 </p>
 </div>
