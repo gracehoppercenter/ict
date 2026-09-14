@@ -1,3 +1,12 @@
+<!--Notes:
+Use power query to load the data: separate data from presentation
+
+Exploration prompts for the weather data (but we kind of ran out of time): 
+can you find the weather on the day you were born? 
+Why does the filter dialog for date not show all dates? (because it considers the first 10k records)
+-->
+
+
 ## Lesson Objectives
 By the end of this lesson, you should:
 
