@@ -163,11 +163,12 @@ Replace the LXI instruction with an
 <a href="https://ubuntourist.codeberg.page/Altair-8800/part-4.html#mvi">MVI</a>
 instruction that only sets register D.
 </li><li>
-Similarly, we only need the value of the byte at memory location
-<code>00 50 H</code> loaded into the accumulator.  Can you modify the program
-by substituting the initial <code>LXI</code> instruction with an
-<a href="https://ubuntourist.codeberg.page/Altair-8800/part-4.html#lda">LDA</a>
-instruction to accomplish this same aim? 
+The flip side of operating on a register pair when you only need a single
+register is operating on a single register when it is part of an address
+pair. That's what we are doing with the <code>0CH</code> instruction at
+byte <code>08H</code>. Instead of incrementing register B, we should be
+incrementing the BC register pair. See if you can find the instruction to do
+this and make the change.
 </li><li>
 Study the program Chris and Nathan presented in class.
 </li>
