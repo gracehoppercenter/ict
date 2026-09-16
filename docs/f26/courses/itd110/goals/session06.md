@@ -13,25 +13,41 @@ As usual, we'll start with a quiz. I'll tell you something that I want you to ad
 1. Use Vim to add the requested text to your index.html
 2. Use git to apply the same change to your repo on github.com
 
-While you're working today, I'll walk around and record everyone's github website URL. I'll go to your website to assign grades for this and the previous quiz.
+### Grades
 
-## What We'll Do In Class
+I've entered a grade into StudentVue for the repo setup assignment. Everyone
+got either a 5/5 or 0/5.
+
+You can see exactly what I see at this link <https://duck.apscs.org/file_list>.
+Just select which section you're in and click "Submit Query" - then click on the
+link that pops up next to your name.
+
+if you got a 0/5, that means your repo won't show up on that link, so I'll have no way to grade any of your assignments for the rest of the year. Please get this fixed ASAP!
+Let me know if you need help. Also let me know if you think you did everything
+right - it's very possible that the 🦆 is confused =)
+
+### gitignore
+
+There are a few files that we want to keep out of your repo. I'll show you how 
+to make a file that tells git to ignore these patterns:
+
+```
+.DS_Store
+# ---> Vim
+# Swap
+[._]*.s[a-v][a-z]
+# comment out the next line if you don't need vector files
+!*.svg
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+```
 
 ### Our First HTML Page!
 Now that you're comfortable with the terminal, vim, and git, we can finally start learning HTML.
 
 We'll go over a demo together where we'll write an HTML file in vim and view it in your browser.
-
-### Repo Organization
-I'm going to use an auto-grader in class this year. For this to work, it will be very important that all of our websites are organized exactly the same way. We'll spend a few minutes getting organized.
-
-By the end of class, I hope that your website directory will be organized like this:
-
-- website/
-    - practice/
-        - minimal.html
-    - index.html
-    - README.md
 
 ### Register for HTML course
 For the next several classes, we'll be following this online textbook: <https://edube.org/study/html-essentials>. Create an account on this website, register for this class, and start reading through Module 1.
