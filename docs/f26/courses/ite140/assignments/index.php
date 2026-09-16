@@ -64,7 +64,18 @@ Illustration by Martina Scapola, used under CC BY-SA 4.0.</figcaption>
             N/A
         </td>
     </tr>
-
+    <tr>
+        <td>
+            Summative
+        </td>
+        <td><a href="activity.php?id=02_grades">Grade Calculator</a></td>
+        <td>
+            8AM on Tuesday, September 29
+        </td>
+        <td>
+            N/A
+        </td>
+    </tr>
     </tbody>
 </table>
 
