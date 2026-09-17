@@ -53,12 +53,17 @@ main {
 }
 main h2 {
   font-size: 2.4vw;
-  margin-left: -2vw;
+  margin-left: -2.5vw;
 }
 main h3 {
   font-size: 2vw;
-  margin-left: -1vw;
+  margin-left: -2vw;
 }
+main h4 {
+  font-size: 1.8vw;
+  margin-left: -1.5vw;
+}
+
 main ol, main ul {
   margin-left: 1.4vw;
   margin-top: 1.4vw;
