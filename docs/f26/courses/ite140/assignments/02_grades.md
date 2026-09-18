@@ -9,7 +9,7 @@ Probably the most common question I get from my students is about grades. This q
 
 These are fundamental questions that should be much easier to answer than they are, and Excel is a fantastic tool to help answer this kind of question. I have a handy dandy Excel workbook that I whip out any time I get these kinds of questions. Instead of showing it to you, I'd like you to recreate it for yourself.
 
-For this assignment, pick a class that you're taking this year. Maybe the one where you think you'll be most likely to have to ask these kinds of questions. For that course, study the course syllabus to understand how your grade is calculated. Also review the [Official APS Grading Policy](https://go.boarddocs.com/vsba/arlington/Board.nsf/files/CPRJVG4F0341/$file/I-7.2.3.34%20PIP-2%20Reporting%20Student%20Progress%20and%20Grades%20(Secondary)%20.pdf) to understand the role that `quality points` play in grade calculation.
+For this assignment, pick a class that you're taking this year. Maybe the one where you think you'll be most likely to have to ask these kinds of questions. For that course, study the course syllabus to understand how your grade is calculated. Also review the [Official APS Grading Policy](https://go.boarddocs.com/vsba/arlington/Board.nsf/goto?open&id=B26QVF6B23A6#) to understand the role that `quality points` play in grade calculation.
 
 Then create a workbook where you can input each of your assignment grades and it will calculate your final grades for each quarter and for the year.
 

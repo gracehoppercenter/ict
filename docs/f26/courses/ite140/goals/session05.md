@@ -19,7 +19,7 @@ Instructor notes: class went well!
         - Given the average QP, lookup the final letter grade
 -->
 
-### What we'll do in class
+## What we'll do in class
 
 We'll start today by showing off the weather reports that we all made for our imaginary friends who are planning to move to Arlington. As before, we'll work hard to encourage and celebrate our peers' accomplishments.
 
