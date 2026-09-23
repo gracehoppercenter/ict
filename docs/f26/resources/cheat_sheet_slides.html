@@ -572,8 +572,8 @@
                         <div class="description">Insert at line end</div>
                     </li>
                     <li class="command-item print">
-                        <div class="command">o</div>
-                        <div class="description">Insert to new line below</div>
+                        <div class="command">o/O</div>
+                        <div class="description">Insert to new line below/above</div>
                     </li>
                     <li class="command-item">
                         <div class="command">v</div>
@@ -927,7 +927,7 @@
         (function () {
             const SECTION_CLASSES = ['terminal', 'vim', 'git'];
             const MAX_COMMAND_FONT = 260;
-            const MIN_COMMAND_FONT = 26;
+            const MIN_COMMAND_FONT = 100;
             const FONT_STEP = 2;
 
             // Fixed print-page geometry, in CSS px (96px/in), mirroring the
