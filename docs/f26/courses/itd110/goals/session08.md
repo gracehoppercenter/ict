@@ -9,51 +9,52 @@ By the end of this lesson, you should:
 ### Quiz
 As promised, we'll start class with a quiz where you'll demonstrate that you've learned about the HTML text tags from the reading.
 
-### Organization - validation, .gitignore, .vimrc
-Last class, we didn't get as far in our validation setup as I hoped. Today, we'll get the validator working and do a bit more organization in our github repos.
+### Show off some inspiring indieweb pages!
 
-I've been getting a lot of questions about `.swp` and `.DS_STORE` files. I'll talk about where those come from, and we'll tell git to ignore them. 
+I went through some of the pages you linked, and I really liked them! Let's
+share a few.
 
-Here's what your repo should look like at the end of this part:
+- <https://rcdb.com/>
+- <https://thesevereclimber.com/>
 
-- website/
-    - practice/
-        - minimal.html
-    - js/
-        - [validate.js](./resources/validate.js)
-    - index.html
-    - README.md
-    - .gitignore
 
-#### .gitignore
-I discussed this at length in class. If you were out, I still want you to create this file. Here is what it should look like: <https://github.com/cj0ne5/cj0ne5.github.io/blob/main/.gitignore>. You should read more about this file here: [gitignore Documentation](https://git-scm.com/docs/gitignore)
+### Bonus Terminal Tip of the Week - .vimrc
 
-#### vimrc
-In class, we also spent a while talking about our vimrc file. If you were out, here's what you might want to put in your vimrc file. You can read more about this file here: 
+You all really want to know how to automatically turn on syntax highlighting. I planned for this to be next week's tip, but it doesn't hurt
+to move a little extra fast =)
+
+You can read more about this file here: 
 [Vimrc | Learn Vim](https://learnvim.irian.to/customize/vimrc)
+
+I'll show you how to [follow the instructions on this page](https://linuxhandbook.com/vim-color-schemes/) to check out the color schemes available
+on your computer and pick one you like.
 
 ```
 syntax enable
 
-syntax enable
-
 filetype indent on
+" set autoindent width to 4 spaces (see
+" http://www.vim.org/tips/tip.php?tip_id=83)
+set et
+set sw=4
+set smarttab
 
 set background=dark
 colorscheme desert
 
+set columns=80
+set colorcolumn=80
+set nowrap
+
 set number
 ```
 
+### Document Object Model
+
+We'll discuss the [Document Object Model](https://en.wikipedia.org/wiki/Document_Object_Model) - an important concept that we use to understand and organize HTML pages. We'll play with [This DOM Visualizer](https://0xedward.github.io/dom-visualizer/).
+
 ### Practice
-Update your index.html page to include everything we've learned so far about HTML.
-
-By the beginning of next class, I'd like everyone to have an index.html page that includes:
-
-- My validation code, and passes the validation
-- At least one header, using the `<h1>` tag
-- Some text that introduces your website and what you plan to write about. Use `<p>` tags as appropriate.
-- Your favorite quote. Make sure to use `<q>`, `<blockquote>`, and/or `<cite>` tags appropriately!
+Update your index.html page to include everything we've learned so far about HTML. This time, add your favorite quote. Make sure to use `<q>`, `<blockquote>`, and/or `<cite>` tags appropriately!
 
 ## Homework
 
