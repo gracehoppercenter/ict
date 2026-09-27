@@ -1,4 +1,15 @@
-<?php require_once __DIR__ . '/../config.php'; ?>
+<?php
+require_once __DIR__ . '/../config.php';
+
+// Cache-bust: version fetched files by their modification time so edits show up immediately.
+header('Cache-Control: no-cache');
+$fileVersions = [];
+foreach (['../calendar/calendar.html', '../calendar/school_dates.json',
+          '../goals/session_topics.json', '../goals/session_dates.json',
+          'calendar.js', 'calendar.css'] as $f) {
+    $fileVersions[$f] = @filemtime(__DIR__ . '/' . $f) ?: time();
+}
+?>
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -6,8 +17,9 @@
 <title><?= COURSE_SHORT_NAME ?> Planning Calendar <?= SEMESTER ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
-<link rel="stylesheet" href="calendar.css">
-<script src="calendar.js"></script>
+<link rel="stylesheet" href="calendar.css?v=<?= $fileVersions['calendar.css'] ?>">
+<script>const FILE_VERSIONS = <?= json_encode($fileVersions, JSON_UNESCAPED_SLASHES) ?>;</script>
+<script src="calendar.js?v=<?= $fileVersions['calendar.js'] ?>"></script>
 <script src="../base/js/index.js"></script>
 <script>
 window.onload = function() {

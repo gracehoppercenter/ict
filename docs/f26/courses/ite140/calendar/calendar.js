@@ -1,10 +1,16 @@
 let monthYearMap = {};
 
+// Appends the file's modification time (set by index.php) so edited files bypass the browser cache.
+function versioned(url) {
+  const versions = typeof FILE_VERSIONS !== 'undefined' ? FILE_VERSIONS : {};
+  return versions[url] ? `${url}?v=${versions[url]}` : url;
+}
+
 async function loadCalendarHTML(semester='') {
   try {
 
 
-      const response = await fetch("../calendar/calendar.html");
+      const response = await fetch(versioned("../calendar/calendar.html"));
       const html = await response.text();
       document.getElementById('cal').innerHTML = html;
 
@@ -34,7 +40,7 @@ function scrollToToday() {
 
 async function loadDayDescriptions(semester='') {
   try {
-      const response = await fetch("../calendar/school_dates.json");
+      const response = await fetch(versioned("../calendar/school_dates.json"));
       const data = await response.json();
       data.forEach(dateEntry => {
           const dateElement = document.getElementById(dateEntry.date);
@@ -54,8 +60,8 @@ async function loadSessionTopics(sessionJsonUrl, dateJsonUrl) {
   console.log('starting load session topics');
   try {
       const [sessionData, dateData] = await Promise.all([
-          fetch(sessionJsonUrl).then(response => response.json()),
-          fetch(dateJsonUrl).then(response => response.json())
+          fetch(versioned(sessionJsonUrl)).then(response => response.json()),
+          fetch(versioned(dateJsonUrl)).then(response => response.json())
       ]);
 
       dateData.forEach(dateEntry => {

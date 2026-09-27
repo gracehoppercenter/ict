@@ -1,4 +1,13 @@
-<?php require_once __DIR__ . '/../config.php'; ?>
+<?php
+require_once __DIR__ . '/../config.php';
+
+// Cache-bust: version fetched files by their modification time so edits show up immediately.
+header('Cache-Control: no-cache');
+$num = preg_match('/^[\w-]+$/', $_GET['num'] ?? '') ? $_GET['num'] : '';
+$mdFile = __DIR__ . "/session$num.md";
+$mdVersion = is_file($mdFile) ? filemtime($mdFile) : time();
+$topicsVersion = filemtime(__DIR__ . '/session_topics.json');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +22,7 @@
 
 <script>
 window.onload = function() {
-    addHeader("./session_topics.json");
+    addHeader("./session_topics.json?v=<?= $topicsVersion ?>");
     setValidationLinks();
 };
 </script>
@@ -49,7 +58,7 @@ Illustration by Martina Scapola, used under CC BY-SA 4.0.</figcaption>
     const urlParams = new URLSearchParams(queryString);
     const num = urlParams.get('num');
     console.log(num);
-    md_to_html('session'+num+'.md');
+    md_to_html('session'+num+'.md?v=<?= $mdVersion ?>');
 
     prevLink = document.createElement('a');
     prevLink.href=location.origin + location.pathname+'?num=' + String(parseInt(num)-1).padStart(2, '0');
