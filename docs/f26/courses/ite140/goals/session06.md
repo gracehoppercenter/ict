@@ -14,4 +14,4 @@ This is our first big project, so we have to have our talk about academic integr
 
 ## Homework
 
-Start working on your 
+Start working on your grade calculator project!

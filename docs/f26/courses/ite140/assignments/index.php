@@ -70,7 +70,7 @@ Illustration by Martina Scapola, used under CC BY-SA 4.0.</figcaption>
         </td>
         <td><a href="activity.php?id=02_grades">Grade Calculator</a></td>
         <td>
-            8AM on Tuesday, September 29
+            8AM on Thursday, October 1
         </td>
         <td>
             N/A
