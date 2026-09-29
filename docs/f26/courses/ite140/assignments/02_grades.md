@@ -13,7 +13,7 @@ For this assignment, pick a class that you're taking this year. Maybe the one wh
 
 Then create a workbook where you can input each of your assignment grades and it will calculate your final grades for each quarter and for the year.
 
-We'll also use this project to practice the storytelling part of data analysis. So we'll each present our calculators in class on Tuesday, September 17.
+We'll also use this project to practice the storytelling part of data analysis. So we'll each present our calculators in class on Thursday, October 1.
 
 For this project, we're all working on recreating grade calculators for different class syllabus-es
 , so you should start your sharing by telling us about the class you've chosen to build a calculator for
@@ -26,19 +26,16 @@ Your grade calculator must include:
 
 - A documentation tab that includes the language from your course syllabus that explains how your grade is calculated
 - whatever functions and organization you need to accurately calculate your course grades (including both numerical average and quality points).
-- A scenario evaluation tab, with a few sample scenarios setup
+- Input the grades you've earned so far this year. During your presentation, show us that your calculation matches what you see in StudentVue.
+- A scenario evaluation tab, with a few sample scenarios that reflect how the rest of  your year might go.
 
 ## Sample Project
 In case it's helpful, [I've uploaded mine here](../goals/data/WebDev_Grade_Calculator.xlsx).
 
 ## Submission Instructions
-Submit your grade calculator by posting to your github repo and linking it from your website.
-
-Complete this before 8am on Tuesday, September 29
+Submit your grade calculator by posting to your github repo. Complete this before 8am on Thursday, October 1.
 
 ## Grading
-
-This is a first draft of my grading rubric. We'll discuss in class and I'll let you know when it's done!
 
 <style>
 table, th, td {
@@ -51,7 +48,7 @@ table, th, td {
 | **Documentation Tab**            | Thorough documentation, including clear, accurate language from the course syllabus on grade calculation.   | Documentation is mostly complete with minor details missing or unclear.                       | Some documentation is included, but it may be incomplete or unclear.                           | Minimal documentation, missing key elements or unclear explanations.                           | No documentation provided or largely inaccurate.                                                |
 | **Grade Calculation Accuracy**   | Calculator accurately calculates grades using both numerical averages and quality points.                   | Calculator mostly accurate, but may contain minor errors in grade calculation.                 | Calculator has several errors in grade calculation, but still functions somewhat.               | Calculator has major errors in grade calculation, barely functions as intended.                 | Calculator does not work or does not calculate grades accurately at all.                        |
 | **Scenario Evaluation Tab**      | Scenarios clearly set up and demonstrate different grade outcomes effectively.                             | Scenarios are mostly clear, with only minor issues in setup or outcomes.                       | Scenarios are incomplete or do not fully demonstrate the grade outcomes.                       | Scenarios are poorly set up or do not represent useful evaluations of grade outcomes.           | No scenarios are included or are entirely incorrect.                                            |
-| **Presentation**                 | Clear, confident presentation explaining the class chosen, grade policies, and the calculator functionality. | Presentation is mostly clear, with only minor issues in explanation or delivery.               | Presentation is somewhat unclear or incomplete, but covers the main points of the project.      | Presentation is unclear, lacks important details, or is not well-prepared.                     | No presentation or extremely poor explanation of the project and grade calculator functionality. |
+| **Presentation**                 | Clear, confident presentation and correct answers about how it works. | Presentation is mostly clear, with only minor issues in explanation or answers.               | Presentation is somewhat unclear or incomplete, but covers the main points of the project.      | Presentation is unclear, lacks important details, or is not well-prepared.                     | Presentation does not make it clear that you understand the project. |
 
 
 ## Footnotes

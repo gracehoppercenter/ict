@@ -4,7 +4,7 @@ By the end of this lesson, you should:
 - **Understand**: 👩‍💻 The importance of semantic HTML
 - **Understand**: 🌲 That the Document Object Model represents the structure of an HTML page
 
-## What We'll Do In Class
+## What Whttps://learnfrc.com/e'll Do In Class
 
 ### Quiz
 As promised, we'll start class with a quiz where you'll demonstrate that you've learned about the HTML text tags from the reading.
