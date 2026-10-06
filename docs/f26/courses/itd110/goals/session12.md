@@ -37,7 +37,7 @@ As you finish the pretests, take a look at the details for
 our first project. We'll discuss it more in class either today 
 when everyone finishes, or next class.
 
-[See the detailed instructions here](../projects/project.html?id=01_recipes).
+[See the detailed instructions here](../assignments/project.php?id=01_recipes).
 
 This is the first big project in my class, so we'll spend some time discussing 
 my grading procedure, which is described here: [Project homepage](../projects/index.html)

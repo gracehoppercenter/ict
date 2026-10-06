@@ -69,10 +69,10 @@ Illustration by Martina Scapola, used under CC BY-SA 4.0.</figcaption>
         </td>
         <td>(Tentative)<a href="project.php?id=01_recipes">Recipes</a></td>
         <td>
-            3PM on Thursday, October 9
+            Monday, October 19th at 8am
         </td>
         <td>
-            October 10
+            Tuesday, October 20th
         </td>
         </tr>
         <tr>
