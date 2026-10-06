@@ -15,8 +15,8 @@ we'll use a lot this year!
 The first API we'll look at is about earthquakes. For our first query against that API, click this link:
 <https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv>
 
-...then we'll take a look at the parameters that are documented here: [USGS Earthquake API Documentation](: 
-[USGS Earthquake API Documentation](https://earthquake.usgs.gov/fdsnws/event/1/#parameters))
+...then we'll take a look at the parameters that are documented here: 
+[USGS Earthquake API Documentation](https://earthquake.usgs.gov/fdsnws/event/1/#parameters)
 
 We'll build a nice visualizer in Google Sheets based on this data.
 

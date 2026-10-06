@@ -7,36 +7,37 @@ By the end of this lesson, you should:
 
 ## What We'll Do In Class
 
-### Reading Quiz
-As usual, we'll start class with a reading quiz. See the previous class for details on the reading assignment.
+### NO Reading Quiz
 
-### Housekeeping
+We need to take two pretests today. I figured that's enough
+testing, so we'll skip the scheduled reading quiz about links.
 
-As we prepare for the unit project, I've made a few tweaks to our validator and 
-our vimrc file. 
+### Pretests
 
-First, we'll add these two lines to our `.vimrc` file:
+We need to take pretests for both of the certification exams that we'll take this year. I'll spend a minute showing you some
+specifics about these two exams:
 
-```
-set columns=80
-set colorcolumn=80
-```
+- <https://jsinstitute.org/wde-certification> (Semester 1, HTML)
+- <https://jsinstitute.org/jse-certification> (Semester 2, JavaScript)
 
-Then we'll modify our validate.js to be this:
-```
-(function() {
-  var script = document.createElement("script");
-  script.src = "https://cdn.jsdelivr.net/gh/gracehoppercenter/validate@1.0.0/validate.js";
-  script.async = false;
-  document.head.appendChild(script);
-})();
-```
+Then I'll give you some time to work through the pretests. Here are direct links to them:
 
-I will explain both of these changes in more detail in class.
+- [HTML](https://edube.org/learn/web-dev-ess-html/course-completion-1?action=assessment)
+- [JS](https://edube.org/quiz/jse1-1-0-1/jse1-final-test-1)
+
+The grade you get on these pre-tests will not go in the gradebook, so don't stress about it. I'll use this to measure your growth through the year. 
+
+These tests are each timed for 40 minutes, so I'll give you the whole class period to complete them. 
+
+
 
 ### Project: Family Recipe Book
 
-We'll introduce our unit project. See more details about the project here: [See the detailed instructions here](../projects/project.html?id=01_recipes).
+As you finish the pretests, take a look at the details for
+our first project. We'll discuss it more in class either today 
+when everyone finishes, or next class.
+
+[See the detailed instructions here](../projects/project.html?id=01_recipes).
 
 This is the first big project in my class, so we'll spend some time discussing 
 my grading procedure, which is described here: [Project homepage](../projects/index.html)
