@@ -39,14 +39,84 @@ This week we will move from writing programs in hex to writing them in
 language</a>.
 </p>
 
-<!--
 <section>
 <h2>Thursday, October 8th</h2>
 
 <h3>Classwork</h3>
 <div>
 <p>
+We'll start today by comparing notes on how things went assembling the only
+captial letters and add two 16 bit integer programs. Then we will pair up
+again for our next project:
+</p><ul>
+<li><b>Pair A:</b> Giselle and Stephan</li>
+<li><b>Pair B:</b> Mason and Dimitri</li>
+<li><b>Pair C:</b> Waleed and Delaine</li>
+<li><b>Pair D:</b> Nathan and Chris</li>
+</ul>
+<h4 style="margin-left: -1vw;">Project: Using the Stack</h4>
+<p>
+Complete each of the following tasks:
+</p><ol>
+<li>
+Read
+<a href="https://en.wikipedia.org/wiki/Stack_(abstract_data_type)">Stack
+(abstract data type)</a>, and discuss this with your partner. Explain to each
+other what a stack is, and quiz each other on the two main stack operations,
+on what <b>LIFO</b> means, and what causes <b>stack underflow</b> and
+<b>stack overflow</b>.
+</li><li>
+<p>
+Assemble and run the following program:
+</p><pre>
+; SP WATCHER
+; Demonstrates PUSH/POP and SP movement.
+; Stack initialized to 2400H.
+; Watch SP and memory at 23F0H-23FFH during single-step.
+
+        ORG  0000H
+
+START:  LXI  SP, 2400H    ; 31 00 24  - Initialize stack pointer
+        LXI  H, 2400H     ; 21 00 24  - H = last SP value (for reference)
+
+; --- Load known values into register pairs ---
+        LXI  B, 1111H     ; 01 11 11  - BC = 1111
+        LXI  D, 2222H     ; 11 22 22  - DE = 2222
+        LXI  H, 3333H     ; 21 33 33  - HL = 3333
+
+; --- PUSH all three pairs ---
+        PUSH B            ; C5        - SP: 2400 -&gt; 23FE, mem[23FE]=11, mem[23FF]=11
+        PUSH D            ; D5        - SP: 23FE -&gt; 23FC, mem[23FC]=22, mem[23FD]=22
+        PUSH H            ; E5        - SP: 23FC -&gt; 23FA, mem[23FA]=33, mem[23FB]=33
+
+; --- PUSH the flags/accumulator ---
+        MVI  A, 44H       ; 3E 44     - A = 44
+        PUSH PSW          ; F5        - SP: 23FA -&gt; 23F8, mem[23F8]=44, mem[23F9]=flags
+
+; --- Now POP them back in reverse order ---
+        POP  PSW          ; F1        - SP: 23F8 -&gt; 23FA, A = 44
+        POP  H            ; E1        - SP: 23FA -&gt; 23FC, HL = 3333
+        POP  D            ; D1        - SP: 23FC -&gt; 23FE, DE = 2222
+        POP  B            ; C1        - SP: 23FE -&gt; 2400, BC = 1111
+
+; --- Done: SP should be back at 2400, registers restored ---
+        HLT               ; 76
+
+        END
+</pre><p>
+Study this program and discuss it with your partner until you convince each
+other you know how it works.
 </p>
+</li><li>
+Use your new understanding of the stack to write a program that is given a
+null-terminated character string as input and produces a string with characters
+in reverse order as output.
+</li><li>
+Be prepared to present your programs in class next Wednesday. In your
+presentation you should do a <i>step-by-step</i> whiteboard trace of your
+program.
+</li>
+</ol>
 </div>
 
 <h3>Homework / Evaluation</h3>
@@ -55,7 +125,6 @@ language</a>.
 </p>
 </div>
 </section>
--->
 
 <section>
 <h2>Monday, October 5th</h2>
