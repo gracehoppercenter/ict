@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GHC Locally Building Our Textbooks</title>
+<style>
+body {
+    margin: 2vw;
+}
+h1 {
+    text-align: center;
+    font-size: 2vw;
+}
+a, a:visited {
+    text-decoration: none;
+    color: #228;
+    font-weight: bold;
+}
+li {
+    margin-top: 0.3vh;
+}
+table {
+    width: 98%;
+    margin-left: 0;
+    margin-right: 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+th, td {
+    padding: 0.6vw;
+    font-size: 1.2vw;
+    border: 1px dotted #000;
+}
+th {
+    background-color: #EBE0FB;
+}
+footer {
+    margin-top: 3vw;
+    text-align: center;
+    font-size: 1.2vw;
+}
+footer>a, footer>a:visited {
+    text-decoration: none;
+    color: #777;
+}
+</style>
+</head>
+<body>
+<h1>GHC Locally Building Our Textbooks</h1>
+
+<table>
+<colgroup>
+  <col style="width: 20%">
+  <col style="width: 80%">
+</colgroup>
+<tr>
+  <th>Process</th>
+  <th>Description</th>
+</tr>
+<tr>
+  <th>Clone the Repo</th>
+  <td>
+  <p>
+  The repos for all our textbooks are on Codeberg:
+  </p><ul>
+  <li>
+  <a href="https://codeberg.org/OpenBookProject/web4betterwld">Web Publishing
+  for a Better World</a>
+  </li><li>
+  <a href="https://codeberg.org/OpenBookProject/bpp4awd">Beginning Python
+  Programming for Aspiring Web Developers</a>
+  </li><li>
+  <a href="https://codeberg.org/OpenBookProject/cppbook4ugcsm">A C++ Book
+  for Undergraduate Computer Science Majors</a>
+  </li><li>
+  <a href="https://codeberg.org/OpenBookProject/demystcomp">Demystifying
+  Computers</a>
+  </li>
+  </ul><p>
+  We should be able now to just tell you to <q>clone the repo</q> in a good
+  location and you should know what to do. (<i>Note:</i> If you don't, we have
+  failed in our misssion ;-)
+  </p>
+  </td>
+</tr>
+<tr>
+  <th>Build the Book</th>
+  <td>
+  <ol>
+  <li>
+  <code>% python3 -m venv venv</code>
+  </li><li>
+  <code>% source venv/bin/activate</code>
+  </li><li>
+  <code>(venv) % pip install sphinx</code>
+  </li><li>
+  <code>(venv) % make html</code>
+  </li>
+  </ol>
+  </td>
+</tr>
+<tr>
+  <th>Rename, Read and Enjoy!</th>
+  <td>
+  <p>
+  The new <code>build</code> directory created in the previous step contains
+  the textbook. Load the <code>index.html</code> in a web browser and enjoy!
+  </p>
+  </td>
+</tr>
+</table>
+
+<footer>
+<a href="http://validator.w3.org/check?uri=https://ict.gctaa.net/resources/scheduleFall2020.html">
+<strong> HTML </strong> Valid! </a> |
+<a href="http://jigsaw.w3.org/css-validator/validator?uri=https://ict.gctaa.net/resources/scheduleFall2020.html?profile=css3">
+<strong> CSS </strong> Valid! </a>
+</footer>
+</body>
+</html>
