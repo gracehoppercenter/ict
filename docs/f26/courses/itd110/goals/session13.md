@@ -10,15 +10,10 @@ By the end of this lesson, you should:
 
 You get a break from reading quizzes today. Instead, we'll play a little test practice game.
 
-### Grades Update
+### Calendar Updates
 
-I'm up to date on grades. The most recent classwork was to add an image to your `index.html`. Almost everyone got a failing grade on that one, so that must be my fault. To compensate, I'll allow you to try that assignment again. Go back and take another crack at that assignment (see the instructions and grading rubric in session 11), and then send me an email asking me to re-grade.
-
-The most common issues were:
-- Not adding the photos to github
-- Not attributing the source of your image
-
-You should make it a habit to check your public website when you complete an assignment - That's what i see when I grade!
+- I've moved our test date to Friday, October 16
+- I've updated the due date for our project to Monday, October 19th at 8am, and we'll have time to start on that project today. We'll do a writing activity in class on Tuesday, October 20.
 
 ### Test Prep
 
@@ -72,10 +67,9 @@ And here are the quizzes that we've had so far this year. These are certainly a 
 
 ### Project: Family Recipe Book
 
-You'll have most of the class time to work independently on your project. Remember to review the [detailed instructions here](../projects/project.html?id=01_recipes).
+You'll have most of the class time to work independently on your project. Remember to review the [detailed instructions here](../assignments/project.php?id=01_recipes)
 
 Remember to commit early and often!
-
 
 ## Homework
 
