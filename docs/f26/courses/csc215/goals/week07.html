@@ -5,6 +5,9 @@
 <title>GHC CSC 215 Week 7</title>
 <style>
 @import url(../../../css/goals.css);
+td {
+    padding-left: 1vw;
+}
 </style>
 <script src="../../../js/init.js"></script>
 <script>
@@ -64,12 +67,79 @@ this course, <code>CALL</code> and <code>RET</code>.
 <p>
 Today in class you will present the reverse string programs you were assigned
 in class <a href="week06.html">last week</a>.
+</p><table>
+<tr>
+  <th>Step</th><th>Instruction</th>
+  <th>SP before</th><th>SP after</th><th>Bytes written/read</th>
+</tr><tr>
+  <td>1</td><td>LXI SP,2400H</td><td>?</td><td>2400</td><td>-</td>
+</tr><tr>
+  <td>2</td><td>LXI H,2400H</td><td>2400</td><td>2400</td><td>-</td>
+</tr><tr>
+  <td>3</td><td>LXI B,1111H</td><td>2400</td><td>2400</td><td>-</td>
+</tr><tr>
+  <td>4</td><td>LXI D,2222H</td><td>2400</td><td>2400</td><td>-</td>
+</tr><tr>
+  <td>5</td><td>LXI H,3333H</td><td>2400</td><td>2400</td><td>-</td>
+</tr><tr>
+  <td>6</td><td>PUSH B</td><td>2400</td><td>?</td><td>mem[?]=11,mem[?]=11</td>
+</tr><tr>
+  <td>7</td><td>PUSH D</td><td>?</td><td>?</td><td>mem[?]=22,mem[?]=22</td>
+</tr><tr>
+  <td>8</td><td>PUSH H</td><td>?</td><td>?</td><td>mem[?]=33,mem[?]=33</td>
+</tr><tr>
+  <td>9</td><td>MVI a,44H</td><td>?</td><td>?</td><td>-</td>
+</tr><tr>
+  <td>10</td><td>PUSH PSW</td><td>?</td><td>?</td>
+  <td>mem[?]=44, mem[?]=flags</td>
+</tr><tr>
+  <td>11</td><td>POP PSW</td><td>?</td><td>?</td><td>-</td>
+</tr><tr>
+  <td>12</td><td>POP H</td><td>?</td><td>?</td><td>-</td>
+</tr><tr>
+  <td>13</td><td>POP D</td><td>?</td><td>?</td><td>-</td>
+</tr><tr>
+  <td>14</td><td>POP B</td><td>?</td><td>?</td><td>-</td>
+</tr><tr>
+  <td>15</td><td>HLT</td><td>?</td><td>?</td><td>-</td>
+</tr>
+</table><p>
+You should be able to fill in this table as you make your presentation,
+explaining each step as you go.
+</p><p>
+After we present that, we will form new pairs:
+</p><ul>
+<li><b>Pair A:</b> Giselle and Mason</li>
+<li><b>Pair B:</b> Delaine and Dimitri</li>
+<li><b>Pair C:</b> Waleed and Nathan</li>
+<li><b>Pair D:</b> Stephan and Chris</li>
+</ul><p>
+And work on the project described below.
 </p>
 </div>
 
-<h3>Homework / Evaluation</h3>
+<h3>Using the Teletype Model ASR-33</h3>
 <div>
 <p>
+Our simulator now provides us with an
+<a href="https://en.wikipedia.org/wiki/Teletype_Model_33">Teletype Model
+33</a>, the same one computer geeks at your ancient computer science teacher's
+<a href="https://en.wikipedia.org/wiki/Cherry_Hill_High_School_East">high
+school</a> back when he was in high school (and dinosaurs roamed the earth).
+Here's a picture of the setup an Altair user in the late 1970s might have had,
+and the one which our simulator will provide to us:
+</p><p style="text-align: center;">
+<img src="resources/Altair_8800_and_Model_33_ASR_Teletype.jpg"
+style="width: 40%;">
+</p><p>
+This provides us with a revolutionary new
+<a href="https://en.wikipedia.org/wiki/User_interface">user interface</a>,
+replacing switches and lights with
+<a href="https://en.wikipedia.org/wiki/ASCII">ASCII text</a>.
+</p><p>
+Our new simulator comes with several sample programs to help you learn this
+new tool. Your mission, should you decide to accept it, is to study those
+sample programs and to learn to use our ASR-33.
 </p>
 </div>
 </section>
