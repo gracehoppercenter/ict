@@ -22,6 +22,9 @@ and/or recipe project.
 See last class's page for all of the relevant information - I've fixed the links
 to the quizzes on that page.
 
+You can also take a look and make sure that your project is off to a good start
+at [this duck link](https://duck.apscs.org/file_list?path=projects/recipes/index.html)
+
 Let me know if you need help!
 
 ## Homework
