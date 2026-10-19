@@ -69,6 +69,14 @@ our first large project.
 <h3>Classwork</h3>
 <div>
 <p>
+Shout out to Ehan for being responsible and emailing us with a thoughtful
+question. I'll start class today by developing a solution to the
+<a href="https://www.openbookproject.net/books/bpp4awd/exercises/ch06/ch06s01.html#letter-counts">
+Letter Counts</a> exercise. Ehan also asked about exercises 6, 7 and 8, but I
+think it best we look at these one per day at the start of class. They require
+sustained attention to get much out of seeing a solution, and attention tends
+to wane if we try to do too much in one sitting.
+</p><p>
 I have radically updated our 
 <a href="../calendar/index.html">planning calendar</a> to allow for a lot
 more time for programming projects. Today we will choose pairs for our first
@@ -88,6 +96,21 @@ file</a> containing only Base64 characters as output.
 </p><p>
 When they feed this same output text file into your decoder, they want to get
 back an exact copy of their original binary file.
+</p><p>
+Assuming you have <img src="resources/GHClogoSmall.png" alt="Small GHC Logo"
+style="width: 50px;"> and your <code>base64encode</code> program in the same
+directory, a sample run of the program might look like this:
+</p><pre>
+$ ./base64encode GHClogoSmall.png
+</pre><p>
+producing
+<a href="resources/GHClogoSmall_b64_png.txt">GHClogoSmall_b64_png.txt</a>
+as output. Running:
+</p><pre>
+$ ./base64decode GHClogoSmall_b64_png.txt
+</pre><p>
+would generate the original <code>GHClogoSmall.png</code> exactly as it was
+originally.
 </p>
 </div>
 </section>
