@@ -1,77 +1,78 @@
-<!--
-Instructor notes: Internet simulation:
-
-- Arrange classroom into clusters of 2 or 3 desks
-- Each cluster has a number (a random number between 10-99, with no meaning), and then each desk in a cluster has a number. put these together to form an IP address (eg 77.1 means cluster 77, desk 1)
-- Make an excel sheet that we can use to randomly map sender to receiver
-- Draw a picture, tear it into 4 pieces, put the address each piece, and send them into the internet. Pass them aimlessly until they reach the destination
-- Build routing tables
-    - First, ping nearby tables. Tables should respond to ping with their own table number
-    - Then, build out the whole routing table by sending "neighbors" requests. When a table receives a "neighbors" request, it should respond with its immediate neighbors.
-    - Each table should continue sending "neighbors" requests until it has mapped the entire network. The goal of the routing table should be to look up the destination and find the next hop
-- Solve congestion by passing tokens:
-    - Each table has a rubber duck that they share and pass around
-    - When you have the duck, you may: receive one packet from another group and send one of your own packets to another group, then pass the duck to your neighbor.
-
--->
-
 ## Lesson Objectives
 By the end of this lesson, you should:
 
-- Understand the role of packets in networked communication
-- Understand the role that routers play on the network
-- Understand some of the problems that can occur in packet-switched networks
-- Know some of the information that is contained in the TCP/IP header
-
-### Today's Vocabulary
-- Protocol
-- Packet
-- Header
-- Payload
-- Router
-- Routing Table
+- Feel prepared for your test!
+- Be making good progress on your project
 
 ## What We'll Do In Class
 
-### No Reading Quiz
+### Calendar Update
 
-### Internet Simulation
-We'll spend most of the class working through an internet simulation. The simulation will helps us develop a better understanding of how protocols enable communication
-on the internet.
+I've decided to re-organize our course calendar. You all seem more excited about
+styles than my previous years, so I'm going to move the schedule around to add
+a mini-unit about CSS. I haven't actually updated the calendar yet, so if you go
+looking at the next few class sessions they will certainly be wrong. Stay tuned!
 
-### Notes
-When we finish the simulation, write an HTML page with some notes about what
-we learned in class. You should call this page `practice/network_notes.html`, 
-and this will count as today's classwork assignment.
+Also, I'll be out at a meeting for Thursday's class. You'll have a substitute and
+some activities related to styles, and to making your github profile look nice.
+Be sure to check the course page Thursday so that you know what you're working
+on!
 
-In your HTML page:
-- Define each of the words in the "Today's Vocabulary" 
-space above
-- Summarize each of the problems we discussed that can occur on a packet-switched
-network
-- Explain the protocols that we came up with in class, and how each helped ensure
-proper communication
+### Test Results
 
-Feel free to use whatever HTML tags you think are most semantic and appropriate.
+Our first test is behind us! Scores are in studentvue. Here is a summary:
 
-(We'll continue making notes like this as we learn more about the internet this 
-unit. Next time, I'll show you an easier way to write these pages)
+    - A's - 11
+    - B's - 14
+    - C's - 11
+    - D's - 7
+    - E's - 6
+
+I'm really happy with this distribution. This test was not easy, so
+I think you all should be proud
+of how you did. If you aren't happy with your score, there will be plenty more
+opportunities to improve your score (including the project that we'll be 
+writing about today!).
+
+Please let me know if you need help working on your study habits, or if you want
+to discuss withdrawing before the deadline on November 27.
+
+### Code Narrative
+
+As we've discussed in class, being able to explain your code is probably more 
+important than the code itself. To emphasize this importance, we'll do an 
+exercise that i'm calling the 'Code Narrative'. I've printed out all of the
+code that you wrote for the recipes project, and you'll need to answer some 
+questions about how the project works.
+
+Some of you did not submit completed work. For this exercise, you're welcome 
+to write new code on your paper and use that to answer the questions.
+
+I'll explain the exact process for this exercise in class.
+
+
+### Styling the zoo website
+
+We'll start by taking a look at a [sample zoo website](https://github.com/CJonesExample/CJonesExample.github.io/tree/main/practice/zoo). We'll work on adding some styles using the `style` attribute, and then we'll discuss better ways to write stylesheets. 
+
+### Colors
+We'll talk about a better way to express colors, using the RGB color model. We'll practice using RGB values to select colors. To practice, we'll play with [RGB Color Picker](https://rgbcolorpicker.com/).
 
 ## Homework
 
 ### Reading
-Please complete the below reading assignment, and prepare for a short, simple 
-reading quiz at the beginning of next class.
 
-### Read about the TCP/IP model
+This is the same reading I assigned on Monday. 
+We'll have a reading quiz next class, so make sure you get through these reading
+pages by then!
 
-There are two things that I want you to read for next class.
+- Favicons (in Module 6)
+- HTML Styling and Layout Parts 1-3 (in Module 4)
+- Global Attributes (in Module 4, just focus on `id` and `class` for now)
 
-- First, watch [This YouTube video](https://www.youtube.com/watch?v=AYdF7b3nMto&list=PLzdnOPI1iJNfMRZm5DDxco3UdsFegvuB7). This is a nice recap
-of the network concepts that we introduced today. If we have time,
-we might watch this together in class.
-- Read Chapter 2 of [This online textbook](https://do1.dr-chuck.net/net-intro/EN_us/net-intro.pdf). Specifically, I want you to understand the TCP/IP model, each of the four layers in the model, and the role that each plays. 
 
-If you're interested and curious, feel free to skim Chapter 1 in that book 
-(it mostly covers concepts we've already talked about) or to watch other videos 
-in that YouTube playlist - they're all great!
+
+## Homework
+
+### No Homework 
+
