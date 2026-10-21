@@ -1,15 +1,3 @@
-## Lesson Objectives
-
-By the end of this lesson, you should:
-- Understand the four layers of the TCP/IP model, and how they relate
-to each other
-- Be able to take notes using Markdown
-
-### Today's Vocabulary:
-
-- TCP / IP Mode
-- Markdown
-
 ## What We'll Do In Class
 
 ### Chris Out
@@ -39,7 +27,9 @@ section below).
 
 ### Github Profile
 
-As I've discussed lots of times in class, your Github account is a fantastic portfolio that you can use to connect with other programmers and demonstrate your experience to employers.
+As I've discussed lots of times in class, your Github account is a fantastic 
+portfolio that you can use to connect with other programmers and demonstrate 
+your experience to employers.
 
 So far this year, we've focused on using Pages to create a custom HTML page. Today, we'll add some customization to your profile on Github. As an example, take a look at this profile
 of a student who recently graduated: <https://github.com/BlueZeeKing>
