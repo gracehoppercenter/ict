@@ -62,17 +62,9 @@ We'll talk about a better way to express colors, using the RGB color model. We'l
 
 ### Reading
 
-This is the same reading I assigned on Monday. 
-We'll have a reading quiz next class, so make sure you get through these reading
-pages by then!
+Three new pages to read as we start our CSS unit. We'll have a reading quiz
+about these pages on Monday.
 
 - Favicons (in Module 6)
 - HTML Styling and Layout Parts 1-3 (in Module 4)
 - Global Attributes (in Module 4, just focus on `id` and `class` for now)
-
-
-
-## Homework
-
-### No Homework 
-

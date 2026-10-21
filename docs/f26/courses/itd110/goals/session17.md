@@ -12,48 +12,55 @@ to each other
 
 ## What We'll Do In Class
 
-### Quiz
+### Chris Out
 
-As usual, we'll start with a reading quiz to make sure you're comfortable with 
-the concepts that we learned last class, and that you read about for homework.
+I have an all-day meeting with staff from APS central office today. I'll be back
+on Friday, so feel free to come find me then, or to feel free to reach out by 
+email with any questions or concerns.
 
-### TCP/IP
+I have two activities queued up for you, and I think they're both fun and
+exciting. I'll count these together as a single classwork assignment, which I'll
+grade on Monday morning.
 
-Today, we'll start by discussing the four layers of the TCP/IP model
+### Favicons
 
-### Markdown
+Your website needs a favicon! 
 
-I'll finally admit to you that I almost never write HTML. HTML can be tedious, 
-so I usually write in a friendlier format and then use a converter to generate
-the HTML (that's how I wrote this page!)
+Draw your own icon using this website: <https://www.favicon.cc/> . It's totally
+possible that website is blocked - if that's the case, you can google to find a
+new one. If you find a good one, share with your classmates!
 
-That other format is called [Markdown](https://www.markdownguide.org/getting-started/), and Github has a nice Markdown-to-HTML
-converter built in. For last night's homework, you had to create an HTML page to
-reflect on our internet simulation. Going forward, you'll use Markdown for those
-kinds of notes.
+Remember, the website that we're building this year should be professional, 
+school-appropriate, and unique to you. Your favicon should be the same!
 
-First, we'll practice Markdown via our `README.md` file. Then, we'll setup a 
-Markdown journal that 
-you'll continue to use throughout this class. We'll write our first entry, a 
-"Hello World!" entry, together.
+And then add it to your website using the sample code from the edube reading 
+(if you didn't already do that reading, you should start there - see the homework
+section below).
 
-### Extension - check out Obsidian
+### Github Profile
 
-If you're interested in learning more about Markdown, I highly recommend 
-[Obsidan](https://obsidian.md/), a free and open source note taking app that I 
-use for everything.  
+As I've discussed lots of times in class, your Github account is a fantastic portfolio that you can use to connect with other programmers and demonstrate your experience to employers.
 
-### Journal Entry - TCP/IP Layers
+So far this year, we've focused on using Pages to create a custom HTML page. Today, we'll add some customization to your profile on Github. As an example, take a look at this profile
+of a student who recently graduated: <https://github.com/BlueZeeKing>
 
-We'll start writing this together in class. For classwork, finish filling
-in this with the rest of the details we learned today in class.
+I actually keep my personal profile on Codeberg (another website that works 
+almost exactly the same as Github and that we use in our other CS classes here).
+My profile is here: <https://codeberg.org/cjones>
+
+The best first step is to add a profile readme. To do that, follow the instructions here: [Profile Readme](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)
+
+You should also:
+- Update your avatar to something other than the default
+- Add a bio, [following these instructions](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/using-your-github-profile-to-enhance-your-resume#step-1-create-a-professional-bio)
+
+As always, the information that you're writing here is available on the public internet. I expect that everything you post here is professional, and I have no requirement that you share any personal information. Please let me know if you have any concerns with this assignment, or with our use of Github!
 
 ## Homework
 
-### Binary Practice
+These are the same three pages that I listed on Tuesday's page. Be prepared
+for a reading quiz at the start of class on Monday!
 
-Next class will be all about binary. To prepare for that, watch a short video:
-
-- Binary: [Watch this video](https://www.youtube.com/watch?v=USCBCmwMCDA) About 
-how information is stored on computers. I'll only expect that you go through 
-timestamp 3:30. Everything past that is bonus - but it's still very interesting!
+- Favicons (in Module 6)
+- HTML Styling and Layout Parts 1-3 (in Module 4)
+- Global Attributes (in Module 4, just focus on `id` and `class` for now)
