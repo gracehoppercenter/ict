@@ -1,0 +1,83 @@
+STATUS EQU 00H       ; status port for checking input/output
+DATA   EQU 01H       ; data port for receiving and sending characters
+STACK  EQU 0100H     ; memory location for the stack
+
+START:
+    LXI SP,STACK     ; initialize the stack pointer (put value of STACK into SP rp)
+
+MAIN:
+    LXI H,PROMPT     ; point HL to the prompt message
+    CALL PRINTMSG    ; print the prompt
+
+    MVI B,00H        ; reset the character counter (because we dont need to reverse the prompt)
+
+GETCH:
+    IN STATUS        ; check the input device status
+    ANI 01H          ; check the input-ready status bit
+    JNZ GETCH      ; wait until the input status allows reading
+
+    IN DATA          ; read the entered character
+    ANI 7FH          ; keep the 7-bit ASCII character (this line is a bit mask)
+    CPI 0DH          ; check if the character is Enter
+    JZ READY       ; jump to LoopTwo when Enter is pressed
+
+    PUSH PSW         ; push the character onto the stack
+    INR B            ; increase the character counter
+
+    MOV C,A          ; prepare the character for output (we will print from the C register)
+    CALL PUTCH       ; echo the character on the screen
+    JMP GETCH      ; repeat to read the next character
+
+READY:
+    MVI C,0DH        ; carriage return to move to the start of the line
+    CALL PUTCH	     ; print the carriage return on the teletype
+    MVI C,0AH        ; line feed to move to the next line
+    CALL PUTCH
+
+    LXI H,RESULT     ; point HL to the result (reversed) message
+    CALL PRINTMSG    ; print the message before the reversed string
+
+REV:
+    MOV A,B          ; check remaining characters
+    ORA A	     ; check if A is zero
+    JZ FINAL        ; jump to Finish subroutine when all characters printed
+
+    POP PSW          ; retrieve last character from top of stack
+    MOV C,A	     ; move character from A to C (output register, in this program)
+    CALL PUTCH       ; print character
+    DCR B            ; decrease character counter
+    JMP REV      ; continue reversing
+
+FINAL:
+    MVI C,0DH        ; carriage return
+    CALL PUTCH
+    MVI C,0AH        ; line feed
+    CALL PUTCH
+
+    JMP MAIN         ; prompt for another string
+
+PRINTMSG:
+    MOV A,M          ; load message character
+    ORA A            ; check for null terminator
+    RZ               ; return at 00H
+    MOV C,A	     ; if no null terminator, move character to output register C
+    CALL PUTCH
+    INX H	     ; go to next character in input string
+    JMP PRINTMSG     ; do this again (until input string is completely printed)
+
+PUTCH:
+    IN STATUS        ; check output status
+    ANI 80H          ; check output-ready bit
+    JNZ PUTCH        ; wait while busy
+    MOV A,C
+    OUT DATA         ; send character
+    RET
+
+PROMPT:
+    DB 'Enter a string: ', 0H
+
+RESULT:
+    DB 'Here is the reverse string: ', 0H
+
+    END
+
