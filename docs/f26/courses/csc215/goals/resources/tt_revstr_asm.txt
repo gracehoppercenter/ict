@@ -1,3 +1,15 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; NAME:     tt_revstr.asm 
+; AUTHORS:  Delaine and Giselle (a.k.a. The 67 Team) 
+; LASTMOD:  2026.10.21
+;
+; DESCRIPTION:
+;
+;     Prompt the user to enter a string and render the string in reverse. 
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
 STATUS EQU 00H       ; status port for checking input/output
 DATA   EQU 01H       ; data port for receiving and sending characters
 STACK  EQU 0100H     ; memory location for the stack
