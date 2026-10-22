@@ -51,6 +51,19 @@ I'm out today, but Chris will be here. You will spend both class time and
 homework time on your Base64 converter project. <span style="color: red;">Your
 commits for this week's evaluation are due by 11:59 pm on Sunday, October 25th.
 </span>
+</p><p>
+By the way, inspired by the discussion in class about using Python's built-in
+Base64 tools, I did a little digging and easily found the sourcecode.
+<a href="https://github.com/python/cpython/blob/main/Lib/base64.py">base64.py
+</a> contains Python source that does the file handling, but it utilizes
+<a href="https://github.com/python/cpython/blob/main/Modules/binascii.c">
+binascii.c"</a> to do the bit twiddling. You may recall I predicted this would
+be the case. Anyway, since the rules of this game are that you have to be able
+to explain any code you use in solving the encode / decode problem, you
+<i>could</i> study these source files until you understand them (if you can do
+that, Chris and I can ask you to start teaching the class ;-), but you will
+probably find it to be much easier to use Python's bitwise operators to
+implement it yourself. Either way, we will achieve our learning objectives.
 </p>
 </div>
 </section>
