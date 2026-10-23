@@ -18,4 +18,3 @@ dataset from the Arlington website, write a few queries, and make a few visualiz
 Keep this project simple - we're not using Pandas (or Seaborn, or any other fancy
 Python libraries) yet.
 
-I'll have a full write-up about this project for you next time!
