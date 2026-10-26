@@ -13,7 +13,7 @@ Yep.
 
 ### Styling the zoo website
 
-We'll spend the day continuing with our [sample zoo website](https://github.com/CJonesExample/CJonesExample.github.io/tree/main/zoo). 
+We'll spend the day continuing with our [sample zoo website](https://github.com/CJonesExample/CJonesExample.github.io/tree/main/practice/zoo). 
 
 This time, we'll try to keep all of our styles in an external stylesheet.
 
