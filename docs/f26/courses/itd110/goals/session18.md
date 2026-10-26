@@ -29,6 +29,18 @@ While we're playing with the zoo website, I'll introduce the box model
 which will be important as we start to understand
 how much space our elements take up on the page.
 
+### Vim Tip of the Week: Buffers
+
+While we're working today, we'll spend a lot of time switching between files.
+To make that less annoying, we'll learn how to use [vim buffers](https://stackoverflow.com/questions/24902724/how-do-i-navigate-buffers-in-vim) to quickly switch between files.
+
+After we play with it for a bit, I'll recommend that you add this line to
+your vimrc:
+
+```
+set hidden
+```
+
 ## Homework
 
 ### Practice with CSS selectors
