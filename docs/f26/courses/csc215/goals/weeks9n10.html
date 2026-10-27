@@ -33,13 +33,78 @@ CSC 215 Weekly Assignments:<br>Weeks 9 and 10</h1>
 <time datetime="2026-10-26">Two Weeks Beginning Monday, October 26, 2026</time>
 
 <h2>Overview</h2>
-<div>
 <p>
 During our last two weeks of Intel 8080 assembly language programming, you
 will be finishing your four function calculator projects.
 </p>
+
+<section>
+<h2>Tuesday, October 27th: A High Level View of Our Task</h2>
+<p>
+We'll do a check-in today on how progress is going with out calculator project,
+and I thought in preparation for that some high level discussion of the
+algorithms we will need for the task will be helpful.
+</p>
+
+<h3>Reverse Polish Notation</h3>
+<div>
+<p>
+<a href="https://en.wikipedia.org/wiki/Reverse_Polish_notation">Reverse Polish
+notation</a> also called <b>postfix notation</b> is a mathematical notation
+that places operators <i>after</i> their operands. It was used by several
+HP calculators in the late 1960s and 1970s, starting with the
+<a href="https://en.wikipedia.org/wiki/Hewlett-Packard_9100A">HP 9100A</a>.
+</p><p>
+Since postfix notation removes the ambiguity associated with
+<a href="https://en.wikipedia.org/wiki/Infix_notation">infix notation</a>, it
+eliminates the need to use parathensis for grouping. Here are some examples to
+illustrate this:
+</p><pre>
+Infix: (3 + 5) * (7 - 2)
+Postfix: 3 5 + 7 2 - *
+
+Infix: 1 + 2 * 3
+Postfix: 1 2 3 * + 
+
+Infix: (1 + 2) * 3
+Postfix: 1 2 + 3 * 
+
+Infix: (3 - 1) * (2 + 4) / 5
+Postfix: 3 1 - 2 4 + * 5 /
+</pre>
 </div>
 </section>
+
+<h3>A List of Subroutines</h3>
+<div>
+<p>
+To help make this problem more tractable, we should create a collection of
+subroutines, a list of which might include:
+</p><ul>
+<li>
+<code>ADD</code>
+</li><li>
+<code>SUB</code>
+</li><li>
+<code>MULT</code>
+</li><li>
+<code>DIV</code>
+</li><li>
+<code>INT</code> (To convert a sequence of digits into an integer)
+</li><li>
+<code>ISDIG</code>
+</li><li>
+<code>ISOP</code>
+</li><li>
+<code>PARSE</code> (To process the input string)
+</li><li>
+<code>EVAL</code> (To coordinate calling the appropriate subroutines)
+</li>
+</ul><p>
+We'll talk a bit about this in class today before letting you get back to work
+on the project.
+</p>
+</div>
 </main>
 
 <footer class="desktop">

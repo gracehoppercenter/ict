@@ -60,22 +60,60 @@ possibility of adding a curses interface to the program after we finish.
 <section>
 <h2>Tuesday, October 27th</h2>
 
-<h3>Classwork</h3>
+<h3>Classwork / Homework</h3>
 <div>
 <p>
-At the beginning of class you will be introduced to
-<a href="https://en.wikipedia.org/wiki/Pydoc">Pydoc</a> and learn how to use
-it to browse the Python source code available on your computer.
-</p><p>
-After that we'll check-in on our progress on the Base64 encoder / decoder
-programs. We should complete that project this week, so we'll talk in class
-about how to reach that goal.
+Chris tells me that many of you are still a bit lost as to what
+<a href="https://en.wikipedia.org/wiki/Binary_number">binary numbers</a> are
+and how they relate directly to my oft repeated statement that <q>It's all
+just bits!</q> The main learning objective of this entire project is to bridge
+that lack of understanding. So with that in mind, I'll help guide you by
+giving you more byte size tasks.
 </p>
-</div>
 
-<h3>Homework</h3>
+<h4>Base64 to int</h4>
 <div>
+<ol>
+<li>
+Working with your partner read and discuss the
+<a href="https://en.wikipedia.org/wiki/Base64">Base64</a> entry on Wikipedia,
+paying special attention to the <b>Base64 alphabet</b> table presented in
+the article.
+</li><li>
+Write a function body that will make the following doctests pass:
+<pre>
+def encode(s):
+    """
+      &gt;&gt;&gt; encode("W1sT/P")
+      [22, 53, 44, 19, 63, 15]
+      &gt;&gt;&gt; encode("ABCDEFG")
+      [0, 1, 2, 3, 4, 5, 6, 7]
+      &gt;&gt;&gt; encode("abcdefg")
+      [26, 27, 28, 29, 30, 31, 32]
+      &gt;&gt;&gt; encode("12345")
+      [53, 54, 55, 56, 57]
+    """
+
+def decode(nums):
+    """
+      &gt;&gt;&gt; decode([22, 53, 44, 19, 63, 15])
+      'W1sT/P'
+      &gt;&gt;&gt; decode([0, 1, 2, 3, 4, 5, 6, 7])
+      'ABCDEFG'
+      &gt;&gt;&gt; decode([26, 27, 28, 29, 30, 31, 32])
+      'abcdefg'
+      &gt;&gt;&gt; decode([53, 54, 55, 56, 57])
+      '12345'
+    """
+</pre>
+</li>
+</ol>
+<div>
+
 <p>
+I'll finish by taking a minute to introduce you to
+<a href="https://en.wikipedia.org/wiki/Pydoc">Pydoc</a>, which you can use
+to browse the Python source code available on your computer.
 </p>
 </div>
 </section>
