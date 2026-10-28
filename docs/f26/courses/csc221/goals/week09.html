@@ -38,24 +38,89 @@ This week we will finish our Base64 encoder / decoder projects, and discuss the
 possibility of adding a curses interface to the program after we finish.
 </p>
 
-<!--
 <section>
 <h2>Thursday, October 29th</h2>
 
-<h3>Classwork</h3>
+<h3>Classwork / Homework</h3>
 <div>
 <p>
+During class only six students were able to complete the assigned task during
+the class period. Since we want to maximize our learning and not get bogged
+down, everyone who finished during class earned an A for the task, and everyone 
+else earned a C.
 </p><p>
-</p>
-</div>
+I'll share a share a solution which we will discuss at the beginning of class.
+Please pay close attention during that discussion, and commit yourself to
+understanding how it works.
+</p><pre>
+DIGITS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
 
-<h3>Homework</h3>
-<div>
-<p>
-</p>
+
+def encode(s):
+    """
+      &gt;&gt;&gt; encode("W1sT/P")
+      [22, 53, 44, 19, 63, 15]
+      &gt;&gt;&gt; encode("ABCDEFG")
+      [0, 1, 2, 3, 4, 5, 6]
+       encode("abcdefg")
+      [26, 27, 28, 29, 30, 31, 32]
+      &gt;&gt;&gt; encode("12345")
+      [53, 54, 55, 56, 57]
+    """
+    ints = []
+    for ch in s:
+        ints.append(DIGITS.index(ch))
+    return ints
+
+
+def decode(nums):
+    """
+      &gt;&gt;&gt; decode([22, 53, 44, 19, 63, 15])
+      'W1sT/P'
+      &gt;&gt;&gt; decode([0, 1, 2, 3, 4, 5, 6])
+      'ABCDEFG'
+      &gt;&gt;&gt; decode([26, 27, 28, 29, 30, 31, 32])
+      'abcdefg'
+      &gt;&gt;&gt; decode([53, 54, 55, 56, 57])
+      '12345'
+    """
+    s = ""
+    for i in nums:
+        s += DIGITS[i]
+    return s
+
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
+</pre><p>
+Today during class we will complete a similar challenge with the same
+evaluation rules.
+</p><p>
+Add the following function header and doctests to the program you worked on
+last class, then during class add a function body which makes the doctests
+pass.
+<p><pre>
+def bits_to_base64(bitstr):
+    """
+      &gt;&gt;&gt; bits_to_base64('010101000110010101110011')
+      'VGVz'
+      &gt;&gt;&gt; bits_to_base64('01001101')
+      'TQ=='
+      &gt;&gt;&gt; bits_to_base64('0100110101100001')
+      'TWE='
+      &gt;&gt;&gt; s = '100111010110100101010011010111100111011110001110110101110011011'
+      &gt;&gt;&gt; result = bits_to_base64(s)
+      &gt;&gt;&gt; result
+      'nWlTXneO1zD'
+      &gt;&gt;&gt; s2 = '10110101100010110011010101010110111100011101101011100101'
+      &gt;&gt;&gt; result2 = bits_to_base64(s2)
+      &gt;&gt;&gt; result2
+      'tYs1VvHa5Q=='
+    """
+</pre>
 </div>
 </section>
--->
 
 <section>
 <h2>Tuesday, October 27th</h2>
