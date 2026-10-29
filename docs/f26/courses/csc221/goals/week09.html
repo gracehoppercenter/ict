@@ -44,14 +44,16 @@ possibility of adding a curses interface to the program after we finish.
 <h3>Classwork / Homework</h3>
 <div>
 <p>
-During class only six students were able to complete the assigned task during
-the class period. Since we want to maximize our learning and not get bogged
-down, everyone who finished during class earned an A for the task, and everyone 
-else earned a C.
+During our last class only six students were able to complete the assigned task
+during the class period. Since we want to maximize our learning and not get
+bogged down, everyone who finished during class earned an A for the task, and
+everyone else earned a C. We also didn't get to the Pydoc presentation I wanted
+to share. I'll do that first thing today.
 </p><p>
-I'll share a share a solution which we will discuss at the beginning of class.
-Please pay close attention during that discussion, and commit yourself to
-understanding how it works.
+Next I'll share a share solutions for the two functions from last class. Please
+pay close attention during that discussion, and commit yourself to
+understanding how it works. You'll need to understand them to complete today's
+task.
 </p><pre>
 DIGITS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
 
@@ -94,15 +96,13 @@ if __name__ == '__main__':
     import doctest
     doctest.testmod()
 </pre><p>
-Today during class we will complete a similar challenge with the same
-evaluation rules.
-</p><p>
-Add the following function header and doctests to the program you worked on
-last class, then during class add a function body which makes the doctests
-pass.
+Add the following function header and doctests to our program, then add a
+function body which makes the doctests pass.
 <p><pre>
 def bits_to_base64(bitstr):
     """
+      &gt;&gt;&gt; bits_to_base64('010001110100100001100111')
+      'R0hn'
       &gt;&gt;&gt; bits_to_base64('010101000110010101110011')
       'VGVz'
       &gt;&gt;&gt; bits_to_base64('01001101')
@@ -118,7 +118,22 @@ def bits_to_base64(bitstr):
       &gt;&gt;&gt; result2
       'tYs1VvHa5Q=='
     """
-</pre>
+</pre><p>
+This task will be evaluated using the following rubric:
+</p><ul>
+<li>
+<b>A</b>: You finish a function body that makes all tests pass.
+</li><li>
+<b>B</b>: You finish a function body that makes the first two tests pass. 
+</li><li>
+<b>C</b>: You work diligently all period long and are actively engaged in
+trying to understand the problem.
+</li><li>
+<b>D</b>: You're there in body, but not in spirit. 
+</li><li>
+<b>E</b>: No show. 
+</li>
+</ul>
 </div>
 </section>
 
@@ -137,7 +152,6 @@ giving you more byte size tasks.
 </p>
 
 <h4>Base64 to int</h4>
-<div>
 <ol>
 <li>
 Working with your partner read and discuss the
@@ -173,8 +187,6 @@ def decode(nums):
 </pre>
 </li>
 </ol>
-<div>
-
 <p>
 I'll finish by taking a minute to introduce you to
 <a href="https://en.wikipedia.org/wiki/Pydoc">Pydoc</a>, which you can use

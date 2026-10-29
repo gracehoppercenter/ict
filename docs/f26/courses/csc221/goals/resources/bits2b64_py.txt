@@ -3,6 +3,8 @@ DIGITS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
 
 def bits_to_base64(bitstr):
     """
+      >>> bits_to_base64('010001110100100001100111')
+      'R0hn'
       >>> bits_to_base64('010101000110010101110011')
       'VGVz'
       >>> bits_to_base64('01001101')
