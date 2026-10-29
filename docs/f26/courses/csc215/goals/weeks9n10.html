@@ -39,6 +39,36 @@ will be finishing your four function calculator projects.
 </p>
 
 <section>
+<h2>Thursday, October 29th</h2>
+<p>
+During class, we setup a shared repo at <a href="https://codeberg.org/GHC_Students/stackpancake">
+    https://codeberg.org/GHC_Students/stackpancake</a>. We added branch
+    protection to main, and agreed that we'll use PRs to submit code.
+</p>
+<p>
+We also discussed how all of the functions we're working on will
+interface with each other. Here's what we decided so far:
+</p>
+<ul>
+    <li>Each function will expect that when it's called, its operands are already
+        loaded into the register pairs BC/DE</li>
+        <li>After each function ends, it'll put its result in the HL register pair</li>
+        <li>Each function will preserve everything in memory, with the exception of Mult,
+            which needs to be able to store a counter at address 0x00FF</li>
+    <li>This means that main will be responsible for:
+        <ul>
+            <li>input/output</li>
+            <li>parsing the math expression into a stack and maintaining the stack</li>
+            <li>making sure that BC/DE are all set before calling a function, and grabbing results from HL</li>
+            <li>making sure that none of this interferes with the instructions in memory that start at 0x0000,
+                or with the single-byte counter at 0x00FF</li>
+        </ul>
+    </li>
+</ul>
+
+</section>
+
+<section>
 <h2>Tuesday, October 27th: A High Level View of Our Task</h2>
 <p>
 We'll do a check-in today on how progress is going with out calculator project,
