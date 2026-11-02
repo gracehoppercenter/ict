@@ -55,10 +55,53 @@ decoder program.
 
 <h3>Classwork / Homework</h3>
 <div>
-<p>
-<a href="resources/bits2b64_py.txt">Here</a> is a solution to the problem
-posed during last class.
+<p>We'll start with some quick review just to make sure that we're all 
+    along for the ride with this assignment. I know Jeff has spent time 
+    talking through this with you, so hopefully this will be nice review!
 </p>
+<p>
+
+<a href="resources/bits2b64_py.txt">Here</a> is a solution to the problem
+posed during last class. Chris will walk through it with you at the start of
+class. Pay close attention, since today's task is to run it in reverse.
+</p><p>
+Our <code>bits_to_base64</code> function gets us from bits to Base64, which is
+what the encoder needs. The decoder needs to go the other way. Add the
+following function header and doctests to our program, then add a function
+body which makes the doctests pass.
+</p><pre>
+def base64_to_bits(b64str):
+    """
+      &gt;&gt;&gt; base64_to_bits('R0hn')
+      '010001110100100001100111'
+      &gt;&gt;&gt; base64_to_bits('VGVz')
+      '010101000110010101110011'
+      &gt;&gt;&gt; base64_to_bits('TQ==')
+      '01001101'
+      &gt;&gt;&gt; base64_to_bits('TWE=')
+      '0100110101100001'
+      &gt;&gt;&gt; base64_to_bits('nWlTXneO1zD')
+      '100111010110100101010011010111100111011110001110110101110011000011'
+      &gt;&gt;&gt; s2 = '10110101100010110011010101010110111100011101101011100101'
+      &gt;&gt;&gt; base64_to_bits('tYs1VvHa5Q==') == s2
+      True
+    """
+</pre><p>
+This task will be evaluated using the following rubric:
+</p><ul>
+<li>
+<b>A</b>: You finish a function body that makes all tests pass.
+</li><li>
+<b>B</b>: You finish a function body that makes the first two tests pass.
+</li><li>
+<b>C</b>: You work diligently all period long and are actively engaged in
+trying to understand the problem.
+</li><li>
+<b>D</b>: You're there in body, but not in spirit.
+</li><li>
+<b>E</b>: No show.
+</li>
+</ul>
 </div>
 </section>
 </main>
