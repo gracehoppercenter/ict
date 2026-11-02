@@ -50,15 +50,8 @@ following parts, each with a markdown heading.
 - Before each query, write a markdown cell that states the question you're trying to answer.
 - After each query, write a markdown cell that explains what you learned.
 
-**Part 3: Summary stats**
 
-- Answer **at least 2 summary-statistics questions** by using a Python `for` loop to 
-  traverse the JSON data. For example: How many of each category are there? What's the 
-  earliest and latest date? What's the average of some numeric field? Which value shows 
-  up most often?
-- State the question in markdown before the code, and state the answer in markdown after.
-
-**Part 4: Visualizations**
+**Part 3: Visualizations**
 
 - Make **at least 2 different types of charts** using matplotlib
 - Pick charts that show something you actually find interesting. In markdown, explain 
