@@ -1,82 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slideshow Showcase</title>
-    <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Work Showcase</title>
+<style>
+  html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+    cursor: none;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  .slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slide.on { opacity: 1; }
+  .slide video,
+  .slide img.fit {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  /* Tall website screenshots fill the width and slowly scroll down */
+  .slide img.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(0);
+  }
+  .caption {
+    position: absolute;
+    left: 2vw;
+    bottom: 2vw;
+    padding: 0.4em 0.9em;
+    border-radius: 0.4em;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    font-size: clamp(14px, 1.6vw, 28px);
+    line-height: 1.3;
+  }
+  .caption small {
+    display: block;
+    opacity: 0.75;
+    font-size: 0.7em;
+  }
+  .caption:empty { display: none; }
+</style>
 </head>
 <body>
-    <script>
-        // JavaScript slideshow implementation
-        const slides = [
-          { type: 'url', url: 'https://a-virginian.github.io/projects.html' },
-          { type: 'url', url: 'https://catey-wrong.github.io/' },
-          { type: 'url', url: 'https://toemio.github.io/'},
-          { type: 'url', url: 'https://apscs.org/index.html?school=acc'},
-          { type: 'url', url: 'https://1bmedina.github.io/itd256/Projects/weaviate/media/diagram.png'},
-          { type: 'url', url: 'https://specreaper.github.io/java_script_stuff/game/js_game.html'},
-          { type: 'url', url: 'https://chrismjon.es/images/arl_2050_clusters.png'},
-          { type: 'url', url: 'https://ict.gctaa.net/f26/images/culinary.png'},
-          { type: 'url', url: 'https://ict.gctaa.net/f26/images/pycon.jpeg'},
-          { type: 'url', url: 'https://gracehoppercenter.github.io/ict/s26/courses/itd210/projects/game/Sir-Kittywhiskerkins-The-Wizard-Cat/'},
-          { type: 'url', url: 'https://koibots8230.github.io/website/index.html'},
-          { type: 'url', url: 'https://www.openbookproject.net/books/demystcomp/index.html'},
-          { type: 'url', url: 'https://ict.gctaa.net/f26/images/curses_game.png'},
-          { type: 'url', url: 'https://ghaynes429.github.io/'},
-        ];
+<script>
+  // Media lives in ./slideshow/. Game clips were captured from the ITD 210
+  // game projects (s26/courses/itd210/projects/game/); website images are
+  // full-page screenshots of student sites.
+  //
+  // type 'video': plays once, then advances
+  // type 'page':  full-width screenshot that scrolls top to bottom
+  // type 'image': shown whole (letterboxed) for `secs` seconds
+  const M = 'slideshow/';
+  const slides = [
+    { type: 'video', src: M + 'zombie.mp4',  title: 'ITD 210 game project', sub: 'zombie wave survival' },
+    { type: 'page',  src: M + 'jjjones64610_coder.jpg', title: 'Student portfolio' },
+    { type: 'video', src: M + 'fish.mp4',    title: 'Fishhhhhh!', sub: 'ITD 210 game project' },
+    { type: 'page',  src: M + 'a_virginian.jpg', title: 'Student portfolio' },
+    { type: 'video', src: M + 'kitty.mp4',   title: 'Sir Kittywhiskerkins the Wizard Cat', sub: 'ITD 210 game project' },
+    { type: 'page',  src: M + 'ghaynes429.jpg', title: 'Student portfolio' },
+    { type: 'image', src: 'https://1bmedina.github.io/itd256/Projects/weaviate/media/diagram.png', title: 'ITD 256 project' },
+    { type: 'video', src: M + 'titan.mp4',   title: "Titan's Reach", sub: 'ITD 210 game project' },
+    { type: 'page',  src: M + 'goldenmaca.jpg', title: 'Student portfolio' },
+    { type: 'video', src: M + 'chicken.mp4', title: 'Blocky Chicken Run & Jump', sub: 'JavaScript game' },
+    { type: 'page',  src: M + 'catey_wrong.jpg', title: 'Student portfolio' },
+    { type: 'image', src: 'https://chrismjon.es/images/arl_2050_clusters.png' },
+    { type: 'video', src: M + 'island.mp4',  title: 'Island Battle', sub: 'ITD 210 game project' },
+    { type: 'page',  src: M + 'koibots8230.jpg', title: 'KoiBots robotics team website' },
+    { type: 'image', src: '../images/culinary.png' },
+    { type: 'video', src: M + 'bee.mp4',     title: "Busy as a Honey Bee's Knees", sub: 'ITD 210 game project' },
+    { type: 'page',  src: M + 'molly_frog.jpg', title: 'Student portfolio' },
+    { type: 'video', src: M + 'bach.mp4',    title: 'Bach to Basics', sub: 'ITD 210 game project' },
+    { type: 'page',  src: M + 'toemio.jpg', title: 'Student portfolio' },
+    { type: 'image', src: '../images/pycon.jpeg' },
+    { type: 'video', src: M + 'orange.mp4',  title: 'Orange Slinger', sub: 'ITD 210 game project' },
+    { type: 'page',  src: M + 'greetingsplayer1.jpg', title: 'Student portfolio' },
+    { type: 'page',  src: M + 'apscs.jpg', title: 'APS CS courses site' },
+    { type: 'video', src: M + 'skyfall.mp4', title: 'Skyfall', sub: 'ITD 210 game project' },
+    { type: 'page',  src: M + 'jacehaberlach.jpg', title: 'Student portfolio' },
+    { type: 'image', src: '../images/curses_game.png', title: 'Python curses game' },
+    { type: 'page',  src: M + 'anguswwilliams.jpg', title: 'Student portfolio' },
+    { type: 'page',  src: M + 'f1showo.jpg', title: 'Student portfolio' },
+    { type: 'page',  src: M + 'openbookproject.jpg', title: 'Demystifying Computers' },
+    { type: 'page',  src: M + 'frostbitewofpotato.jpg', title: 'Student portfolio' },
+  ];
 
-        const slideContainer = document.createElement('iframe'); // For URL slides
-        slideContainer.style.width = '100%';
-        slideContainer.style.height = '100vh';
-        slideContainer.style.border = 'none';
-        slideContainer.style.display = 'block';
+  const PAGE_SECS = 9;     // time on each website screenshot
+  const IMAGE_SECS = 7;    // time on each plain image
+  const SCROLL_PX_PER_SEC = 160; // cap on scroll speed for very tall pages
 
-        document.body.appendChild(slideContainer);
+  // Two layers that alternate so each slide can crossfade over the last.
+  const layers = [0, 1].map(() => {
+    const el = document.createElement('div');
+    el.className = 'slide';
+    document.body.appendChild(el);
+    return el;
+  });
+  const caption = document.createElement('div');
+  caption.className = 'caption';
+  document.body.appendChild(caption);
 
-        const textContainer = document.createElement('div'); // For text slides
-        textContainer.style.width = '100%';
-        textContainer.style.height = '100vh';
-        textContainer.style.display = 'flex';
-        textContainer.style.justifyContent = 'center';
-        textContainer.style.alignItems = 'center';
-        textContainer.style.backgroundColor = 'black';
-        textContainer.style.color = 'white';
-        textContainer.style.fontSize = '3rem';
-        textContainer.style.fontFamily = 'Arial, sans-serif';
-        textContainer.style.display = 'none';
+  let index = -1, front = 0, timer = null;
 
-        document.body.appendChild(textContainer);
+  function preload(slide) {
+    if (slide.type === 'video') {
+      const v = document.createElement('video');
+      v.preload = 'auto';
+      v.src = slide.src;
+    } else {
+      new Image().src = slide.src;
+    }
+  }
 
-        let currentSlide = 0;
+  function setCaption(slide) {
+    caption.innerHTML = '';
+    if (!slide.title) return;
+    caption.textContent = slide.title;
+    if (slide.sub) {
+      const s = document.createElement('small');
+      s.textContent = slide.sub;
+      caption.appendChild(s);
+    }
+  }
 
-        function showSlide(index) {
-          const slide = slides[index];
+  function show(i) {
+    clearTimeout(timer);
+    index = (i + slides.length) % slides.length;
+    const slide = slides[index];
+    const layer = layers[1 - front];
+    layer.innerHTML = '';
 
-          if (slide.type === 'url') {
-            textContainer.style.display = 'none';
-            slideContainer.style.display = 'block';
-            slideContainer.src = slide.url;
-          } else if (slide.type === 'text') {
-            slideContainer.style.display = 'none';
-            textContainer.style.display = 'flex';
-            textContainer.textContent = slide.text;
-          }
+    const reveal = () => {
+      layers[front].classList.remove('on');
+      layer.classList.add('on');
+      front = 1 - front;
+      setCaption(slide);
+      // Stop any video still playing on the outgoing layer after the fade.
+      const old = layers[1 - front];
+      setTimeout(() => { if (!old.classList.contains('on')) old.innerHTML = ''; }, 900);
+      preload(slides[(index + 1) % slides.length]);
+    };
+    const next = secs => { timer = setTimeout(() => show(index + 1), secs * 1000); };
+
+    if (slide.type === 'video') {
+      const v = document.createElement('video');
+      v.muted = true;
+      v.playsInline = true;
+      v.src = slide.src;
+      v.onended = () => show(index + 1);
+      v.onerror = () => show(index + 1);
+      v.oncanplay = () => { v.oncanplay = null; reveal(); v.play(); };
+      layer.appendChild(v);
+      next(30); // safety net if the video stalls
+    } else {
+      const img = document.createElement('img');
+      img.onerror = () => show(index + 1);
+      img.onload = () => {
+        const shown = img.naturalHeight * (window.innerWidth / img.naturalWidth);
+        const overflow = shown - window.innerHeight;
+        if (slide.type === 'page' && overflow > 20) {
+          img.className = 'page';
+          const secs = Math.max(PAGE_SECS, overflow / SCROLL_PX_PER_SEC + 3);
+          // hold at the top for a moment, scroll, then hold at the bottom
+          img.style.transition = `transform ${secs - 3}s ease-in-out 1.5s`;
+          reveal();
+          requestAnimationFrame(() => requestAnimationFrame(() => {
+            img.style.transform = `translateY(${-overflow}px)`;
+          }));
+          next(secs);
+        } else {
+          img.className = 'fit';
+          reveal();
+          next(slide.type === 'page' ? PAGE_SECS : (slide.secs || IMAGE_SECS));
         }
+      };
+      img.src = slide.src;
+      layer.appendChild(img);
+    }
+  }
 
-        function nextSlide() {
-          currentSlide = (currentSlide + 1) % slides.length;
-          showSlide(currentSlide);
-        }
+  // Arrow keys / space to step manually (handy when presenting).
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === ' ') show(index + 1);
+    if (e.key === 'ArrowLeft') show(index - 1);
+  });
 
-        // Start slideshow
-        showSlide(currentSlide);
-        setInterval(nextSlide, 5000); // Change slide every 10 seconds
-    </script>
+  show(0);
+</script>
 </body>
 </html>
