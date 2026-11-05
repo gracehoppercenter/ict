@@ -1,4 +1,4 @@
-<!-- competencies: V2 V5 V7 V9 V14 V20 V38 V44 V45 V46 V47 V66 V67 V68 V69 V70 V72 V73 V74 V77 N8 N13 N30 N32 W1.5 W5.1 W5.3 W5.7 -->
+<!-- TODO: LIST COMPETENCIES HERE -->
 
 # Client Website Project: Agile Web Development
 
