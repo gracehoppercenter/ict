@@ -1,0 +1,874 @@
+{
+  "frameworks": [
+    {
+      "prefix": "V",
+      "name": "VDOE Competencies (Design, Multimedia, and Web Technologies 6630)",
+      "short": "VDOE",
+      "source": "Student Competency Record, Copyright 2021",
+      "groups": [
+        {
+          "name": "Demonstrating Personal Qualities and Abilities",
+          "items": [
+            {
+              "id": "V1",
+              "text": "Demonstrate creativity and innovation."
+            },
+            {
+              "id": "V2",
+              "text": "Demonstrate critical thinking and problem solving."
+            },
+            {
+              "id": "V3",
+              "text": "Demonstrate initiative and self-direction."
+            },
+            {
+              "id": "V4",
+              "text": "Demonstrate integrity."
+            },
+            {
+              "id": "V5",
+              "text": "Demonstrate work ethic."
+            }
+          ]
+        },
+        {
+          "name": "Demonstrating Interpersonal Skills",
+          "items": [
+            {
+              "id": "V6",
+              "text": "Demonstrate conflict-resolution skills."
+            },
+            {
+              "id": "V7",
+              "text": "Demonstrate listening and speaking skills."
+            },
+            {
+              "id": "V8",
+              "text": "Demonstrate respect for diversity."
+            },
+            {
+              "id": "V9",
+              "text": "Demonstrate customer service skills."
+            },
+            {
+              "id": "V10",
+              "text": "Collaborate with team members."
+            }
+          ]
+        },
+        {
+          "name": "Demonstrating Professional Competencies",
+          "items": [
+            {
+              "id": "V11",
+              "text": "Demonstrate big-picture thinking."
+            },
+            {
+              "id": "V12",
+              "text": "Demonstrate career- and life-management skills."
+            },
+            {
+              "id": "V13",
+              "text": "Demonstrate continuous learning and adaptability."
+            },
+            {
+              "id": "V14",
+              "text": "Manage time and resources."
+            },
+            {
+              "id": "V15",
+              "text": "Demonstrate information-literacy skills."
+            },
+            {
+              "id": "V16",
+              "text": "Demonstrate an understanding of information security."
+            },
+            {
+              "id": "V17",
+              "text": "Maintain working knowledge of current information-technology (IT) systems."
+            },
+            {
+              "id": "V18",
+              "text": "Demonstrate proficiency with technologies, tools, and machines common to a specific occupation."
+            },
+            {
+              "id": "V19",
+              "text": "Apply mathematical skills to job-specific tasks."
+            },
+            {
+              "id": "V20",
+              "text": "Demonstrate professionalism."
+            },
+            {
+              "id": "V21",
+              "text": "Demonstrate reading and writing skills."
+            },
+            {
+              "id": "V22",
+              "text": "Demonstrate workplace safety."
+            }
+          ]
+        },
+        {
+          "name": "Examining All Aspects of an Industry",
+          "items": [
+            {
+              "id": "V23",
+              "text": "Examine aspects of planning within an industry/organization."
+            },
+            {
+              "id": "V24",
+              "text": "Examine aspects of management within an industry/organization."
+            },
+            {
+              "id": "V25",
+              "text": "Examine aspects of financial responsibility within an industry/organization."
+            },
+            {
+              "id": "V26",
+              "text": "Examine technical and production skills required of workers within an industry/organization."
+            },
+            {
+              "id": "V27",
+              "text": "Examine principles of technology that underlie an industry/organization."
+            },
+            {
+              "id": "V28",
+              "text": "Examine labor issues related to an industry/organization."
+            },
+            {
+              "id": "V29",
+              "text": "Examine community issues related to an industry/organization."
+            },
+            {
+              "id": "V30",
+              "text": "Examine health, safety, and environmental issues related to an industry/organization."
+            }
+          ]
+        },
+        {
+          "name": "Addressing Elements of Student Life",
+          "items": [
+            {
+              "id": "V31",
+              "text": "Identify the purposes and goals of the student organization."
+            },
+            {
+              "id": "V32",
+              "text": "Explain the benefits and responsibilities of membership in the student organization as a student and in professional/civic organizations as an adult."
+            },
+            {
+              "id": "V33",
+              "text": "Demonstrate leadership skills through participation in student organization activities, such as meetings, programs, and projects."
+            },
+            {
+              "id": "V34",
+              "text": "Identify Internet safety issues and procedures for complying with acceptable use standards."
+            }
+          ]
+        },
+        {
+          "name": "Exploring Work-Based Learning",
+          "items": [
+            {
+              "id": "V35",
+              "text": "Identify the types of work-based learning (WBL) opportunities."
+            },
+            {
+              "id": "V36",
+              "text": "Reflect on lessons learned during the WBL experience.",
+              "optional": true
+            },
+            {
+              "id": "V37",
+              "text": "Explore career opportunities related to the WBL experience."
+            },
+            {
+              "id": "V38",
+              "text": "Participate in a WBL experience, when appropriate.",
+              "optional": true
+            }
+          ]
+        },
+        {
+          "name": "Demonstrating Knowledge of Hardware, Software, and Operating Systems",
+          "items": [
+            {
+              "id": "V39",
+              "text": "Compare word processing, graphic design, multimedia creation, and web page creation."
+            },
+            {
+              "id": "V40",
+              "text": "Evaluate operating systems and hardware for compatibility with common software applications."
+            },
+            {
+              "id": "V41",
+              "text": "Evaluate software used in graphic design, multimedia creation, and web page creation."
+            },
+            {
+              "id": "V42",
+              "text": "Use technical support to resolve problems encountered during the creation of digital projects."
+            },
+            {
+              "id": "V43",
+              "text": "Apply appropriate method to back up files."
+            }
+          ]
+        },
+        {
+          "name": "Applying Principles of Layout and Design",
+          "items": [
+            {
+              "id": "V44",
+              "text": "Identify project-management components."
+            },
+            {
+              "id": "V45",
+              "text": "Plan an effective design for a project."
+            },
+            {
+              "id": "V46",
+              "text": "Apply principles of design, layout, and typography appropriate for a project."
+            },
+            {
+              "id": "V47",
+              "text": "Enhance appearance of a project."
+            }
+          ]
+        },
+        {
+          "name": "Designing and Creating Visual Design Projects",
+          "items": [
+            {
+              "id": "V48",
+              "text": "Evaluate a print or graphic design project to determine whether it meets the designated guidelines."
+            },
+            {
+              "id": "V49",
+              "text": "Create original content for a digitally designed project."
+            },
+            {
+              "id": "V50",
+              "text": "Demonstrate proofing skills through use of online tools and individual critiquing to check for format, style, correctness, and clarity."
+            },
+            {
+              "id": "V51",
+              "text": "Import text, graphics, tables, and charts for use in a print or graphic design project."
+            },
+            {
+              "id": "V52",
+              "text": "Use time-saving features of print and/or graphic design programs."
+            },
+            {
+              "id": "V53",
+              "text": "Create documents utilizing a variety of layouts."
+            },
+            {
+              "id": "V54",
+              "text": "Create a variety of print and digital materials."
+            },
+            {
+              "id": "V55",
+              "text": "Publish digital images in various formats."
+            }
+          ]
+        },
+        {
+          "name": "Designing and Creating Multimedia Projects",
+          "items": [
+            {
+              "id": "V56",
+              "text": "Identify the components of an effective multimedia project."
+            },
+            {
+              "id": "V57",
+              "text": "Create a multimedia project."
+            },
+            {
+              "id": "V58",
+              "text": "Create an object, using graphic design software."
+            },
+            {
+              "id": "V59",
+              "text": "Incorporate assets into a multimedia project."
+            },
+            {
+              "id": "V60",
+              "text": "Enhance a multimedia project with advanced features."
+            },
+            {
+              "id": "V61",
+              "text": "Incorporate elements from other sources into a multimedia project."
+            },
+            {
+              "id": "V62",
+              "text": "Edit a multimedia project."
+            },
+            {
+              "id": "V63",
+              "text": "Deliver a multimedia presentation."
+            },
+            {
+              "id": "V64",
+              "text": "Evaluate a multimedia project to determine whether it meets the designated guidelines."
+            }
+          ]
+        },
+        {
+          "name": "Designing and Creating Websites",
+          "items": [
+            {
+              "id": "V65",
+              "text": "Evaluate the methods of creating websites."
+            },
+            {
+              "id": "V66",
+              "text": "Examine the concept of information architecture."
+            },
+            {
+              "id": "V67",
+              "text": "Apply structural requirements (i.e., information architecture) for development of a website."
+            },
+            {
+              "id": "V68",
+              "text": "Describe design of websites for accessibility and accommodation of persons with special needs."
+            },
+            {
+              "id": "V69",
+              "text": "Create a website, using design software or a programming language."
+            },
+            {
+              "id": "V70",
+              "text": "Apply website design features."
+            },
+            {
+              "id": "V71",
+              "text": "Create hyperlinks."
+            },
+            {
+              "id": "V72",
+              "text": "Edit a website."
+            },
+            {
+              "id": "V73",
+              "text": "Test a website."
+            },
+            {
+              "id": "V74",
+              "text": "Explain publishing, updating, and maintaining a website."
+            },
+            {
+              "id": "V75",
+              "text": "Describe methods and tools used in digital marketing.",
+              "optional": true
+            }
+          ]
+        },
+        {
+          "name": "Exploring Legal and Ethical Issues",
+          "items": [
+            {
+              "id": "V76",
+              "text": "Explain responsible use of design, multimedia, and web technologies."
+            },
+            {
+              "id": "V77",
+              "text": "Describe copyright issues and laws related to creating graphic design, multimedia, and website design projects."
+            },
+            {
+              "id": "V78",
+              "text": "Identify situations in which use of elements in projects is legal but may be unethical or inappropriate."
+            },
+            {
+              "id": "V79",
+              "text": "Describe licensing agreements associated with software usage."
+            }
+          ]
+        },
+        {
+          "name": "Preparing for Industry Certification",
+          "items": [
+            {
+              "id": "V80",
+              "text": "Describe the process and requirements for obtaining industry certifications related to the Design, Multimedia, and Web Technologies course."
+            },
+            {
+              "id": "V81",
+              "text": "Identify testing skills and strategies for a certification examination."
+            },
+            {
+              "id": "V82",
+              "text": "Demonstrate ability to complete selected practice examinations (e.g., practice questions similar to those on certification exams)."
+            },
+            {
+              "id": "V83",
+              "text": "Complete an industry certification examination representative of skills learned in this course (e.g., MOS, IC3, ACA, CIW).",
+              "optional": true
+            }
+          ]
+        },
+        {
+          "name": "Developing Employability Skills",
+          "items": [
+            {
+              "id": "V84",
+              "text": "Explore careers in the graphic design, multimedia, and website design fields."
+            },
+            {
+              "id": "V85",
+              "text": "Investigate uses of graphic design, multimedia, and web technologies in business and industry."
+            },
+            {
+              "id": "V86",
+              "text": "Investigate new and emerging trends in design, multimedia, and web technologies, including digital technologies."
+            },
+            {
+              "id": "V87",
+              "text": "Develop a résumé."
+            },
+            {
+              "id": "V88",
+              "text": "Create a professional electronic portfolio."
+            },
+            {
+              "id": "V89",
+              "text": "Describe basic employment activities."
+            },
+            {
+              "id": "V90",
+              "text": "Identify potential employment barriers for nontraditional groups and ways to overcome the barriers."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "prefix": "N",
+      "name": "NOVA ITD 110 Student Learning Outcomes",
+      "short": "NOVA",
+      "source": "https://www.nvcc.edu/courses/itd/itd110.html",
+      "groups": [
+        {
+          "name": "Getting Started with HTML",
+          "items": [
+            {
+              "id": "N1",
+              "text": "Describe the history of the WWW and HTML"
+            },
+            {
+              "id": "N2",
+              "text": "Use basic HTML syntax correctly"
+            },
+            {
+              "id": "N3",
+              "text": "Create headers, paragraphs, and lists"
+            },
+            {
+              "id": "N4",
+              "text": "Display HTML document in Web browser"
+            }
+          ]
+        },
+        {
+          "name": "Working with Cascading Style Sheets",
+          "items": [
+            {
+              "id": "N5",
+              "text": "Distinguish the proper type of stylesheet to implement"
+            },
+            {
+              "id": "N6",
+              "text": "Use inline styles"
+            }
+          ]
+        },
+        {
+          "name": "Formatting",
+          "items": [
+            {
+              "id": "N7",
+              "text": "Use embedded style sheets"
+            },
+            {
+              "id": "N8",
+              "text": "Use external style sheets"
+            },
+            {
+              "id": "N9",
+              "text": "Use font styles to change font size, color, and face"
+            },
+            {
+              "id": "N10",
+              "text": "Use styles to change text, background and link colors"
+            },
+            {
+              "id": "N11",
+              "text": "Use color names and values in specifying formats"
+            }
+          ]
+        },
+        {
+          "name": "Creating Links",
+          "items": [
+            {
+              "id": "N12",
+              "text": "Identify and use relative and absolute pathnames"
+            },
+            {
+              "id": "N13",
+              "text": "Link to a document in the same directory"
+            },
+            {
+              "id": "N14",
+              "text": "Link to a URL"
+            },
+            {
+              "id": "N15",
+              "text": "Link to a section of a document"
+            },
+            {
+              "id": "N16",
+              "text": "Link to e-mail addresses"
+            },
+            {
+              "id": "N17",
+              "text": "Link to folders"
+            },
+            {
+              "id": "N18",
+              "text": "Create a link using an image"
+            },
+            {
+              "id": "N19",
+              "text": "Create a link which will open in a new browser tab/window"
+            }
+          ]
+        },
+        {
+          "name": "Working with graphics",
+          "items": [
+            {
+              "id": "N20",
+              "text": "Demonstrate the use of GIF, JPG and PNG files"
+            },
+            {
+              "id": "N21",
+              "text": "Demonstrate the use of image properties and attributes as they relate to alignment, image size, spacing, ALT attributes, and borders"
+            },
+            {
+              "id": "N22",
+              "text": "Explain the difference between client-side and server-side image maps"
+            },
+            {
+              "id": "N23",
+              "text": "Create image map hotspots"
+            }
+          ]
+        },
+        {
+          "name": "Using Tables",
+          "items": [
+            {
+              "id": "N24",
+              "text": "Demonstrate an understanding of how tables affect content layout"
+            },
+            {
+              "id": "N25",
+              "text": "Effectively use tables to create a page layout"
+            },
+            {
+              "id": "N26",
+              "text": "Create pages using nested tables"
+            },
+            {
+              "id": "N27",
+              "text": "Demonstrate the ability to make cells span rows or columns"
+            },
+            {
+              "id": "N28",
+              "text": "Identify the tags required to create a table"
+            },
+            {
+              "id": "N29",
+              "text": "Demonstrate the ability to define cell size, spacing, and padding"
+            }
+          ]
+        },
+        {
+          "name": "Creating User Friendly Navigation",
+          "items": [
+            {
+              "id": "N30",
+              "text": "Discuss and identify the basics of navigational design"
+            },
+            {
+              "id": "N31",
+              "text": "Produce multiple versions of navigational menus"
+            },
+            {
+              "id": "N32",
+              "text": "Select the best navigational design for a specific purpose"
+            }
+          ]
+        },
+        {
+          "name": "Working with HTML Forms",
+          "items": [
+            {
+              "id": "N33",
+              "text": "Create forms using all form objects"
+            },
+            {
+              "id": "N34",
+              "text": "Create forms using the button, submit, and reset button tags"
+            },
+            {
+              "id": "N35",
+              "text": "Explain server-side processing"
+            }
+          ]
+        },
+        {
+          "name": "Design HTML and CSS for Multiple Devices",
+          "items": [
+            {
+              "id": "N36",
+              "text": "Identify the types of devices in use and how to adjust the design appropriately"
+            },
+            {
+              "id": "N37",
+              "text": "Apply appropriate designs for each device identified"
+            }
+          ]
+        },
+        {
+          "name": "Incorporate Audio and Video",
+          "items": [
+            {
+              "id": "N38",
+              "text": "Describe the common types of web audio"
+            },
+            {
+              "id": "N39",
+              "text": "Incorporate audio into the site design"
+            },
+            {
+              "id": "N40",
+              "text": "Describe the common types of web video"
+            },
+            {
+              "id": "N41",
+              "text": "Incorporate video in the site design"
+            }
+          ]
+        },
+        {
+          "name": "Publishing using FTP (File Transfer Protocol)",
+          "items": [
+            {
+              "id": "N42",
+              "text": "Upload files to a web server"
+            },
+            {
+              "id": "N43",
+              "text": "Manage folders and files on a web server"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "prefix": "W",
+      "name": "JS Institute WDE Exam Objectives (WDE-40-01)",
+      "short": "WDE",
+      "source": "https://github.com/CJonesExample/CJonesExample.github.io/blob/main/journal/entries/exam_prep.md",
+      "groups": [
+        {
+          "name": "Section 1: HTML Fundamentals",
+          "items": [
+            {
+              "id": "W1.1",
+              "text": "Describe the basic structure of an HTML document, including the <!DOCTYPE> declaration."
+            },
+            {
+              "id": "W1.2",
+              "text": "Understand the distinction between block-level and inline elements."
+            },
+            {
+              "id": "W1.3",
+              "text": "Identify and correctly use basic HTML entities."
+            },
+            {
+              "id": "W1.4",
+              "text": "Explain the importance of character encoding."
+            },
+            {
+              "id": "W1.5",
+              "text": "Utilize comments to document HTML code."
+            },
+            {
+              "id": "W1.6",
+              "text": "Demonstrate the use of basic tags (html, head, title, body)."
+            }
+          ]
+        },
+        {
+          "name": "Section 2: Text Formatting and Structure",
+          "items": [
+            {
+              "id": "W2.1",
+              "text": "Implement text formatting tags such as strong, em, u, del, sup, sub, and mark."
+            },
+            {
+              "id": "W2.2",
+              "text": "Demonstrate the use of headings (h1-h6) and their importance in structuring content and enhancing accessibility."
+            },
+            {
+              "id": "W2.3",
+              "text": "Structure content with paragraphs (p) and manage text flow."
+            },
+            {
+              "id": "W2.4",
+              "text": "Apply line breaks (br) and horizontal rules (hr) for content separation."
+            },
+            {
+              "id": "W2.5",
+              "text": "Use the blockquote, q, cite, and abbr tags appropriately."
+            },
+            {
+              "id": "W2.6",
+              "text": "Employ code, pre, kbd, and samp tags to display preformatted text, format code snippets and user input."
+            },
+            {
+              "id": "W2.7",
+              "text": "Create and manipulate ordered (ol), unordered (ul), and definition lists (dl), including nesting."
+            },
+            {
+              "id": "W2.8",
+              "text": "Create and manipulate tables (table, tr, td), focusing on headers (th), cell merging (colspan, rowspan), captions (caption), and table attributes (e.g., summary)."
+            }
+          ]
+        },
+        {
+          "name": "Section 3: Multimedia and Hyperlinks",
+          "items": [
+            {
+              "id": "W3.1",
+              "text": "Embed images with img tag (src), focusing on alt text (alt) and basic responsive design attributes (srcset, sizes, width, height)."
+            },
+            {
+              "id": "W3.2",
+              "text": "Create hyperlinks using the a tag, covering internal and anchor links, external links, email and telephone links, and link-specific attributes (href, target, download, rel, title)."
+            },
+            {
+              "id": "W3.3",
+              "text": "Embed multimedia content using audio and video elements (src, controls, width, height, autoplay, loop, preload), including considerations for cross-browser compatibility (the source element) and responsiveness (poster, media)."
+            },
+            {
+              "id": "W3.4",
+              "text": "Design interactive image maps with map and area tags."
+            },
+            {
+              "id": "W3.5",
+              "text": "Utilize figure and figcaption for associating media with captions."
+            },
+            {
+              "id": "W3.6",
+              "text": "Embed external web content with iframe, including making iframes responsive."
+            },
+            {
+              "id": "W3.7",
+              "text": "Integrate multimedia elements as clickable links."
+            },
+            {
+              "id": "W3.8",
+              "text": "Integrate favicons for brand identity and user recognition."
+            }
+          ]
+        },
+        {
+          "name": "Section 4: Forms and Styling",
+          "items": [
+            {
+              "id": "W4.1",
+              "text": "Design forms (form, label) with a variety of input types (input, type, name, id, text, email, url, number, password, checkbox, radio, submit, reset, textarea) and understand their specific use cases."
+            },
+            {
+              "id": "W4.2",
+              "text": "Discuss form submission methods (GET vs. POST) and their appropriate use cases."
+            },
+            {
+              "id": "W4.3",
+              "text": "Implement field grouping with fieldset and legend tags for enhanced form usability and use form-specific attributes to customize form behavior and appearance (value, placeholder, disabled, readonly)."
+            },
+            {
+              "id": "W4.4",
+              "text": "Use validation techniques and attributes (e.g., required, min, max, maxlength, autocomplete, etc.)."
+            },
+            {
+              "id": "W4.5",
+              "text": "Create dropdown menus with select and option tags."
+            },
+            {
+              "id": "W4.6",
+              "text": "Apply CSS for styling HTML elements, including the use of inline styles (the style attribute) and internal stylesheets (the style element)."
+            },
+            {
+              "id": "W4.7",
+              "text": "Explore the use of CSS classes (class) and IDs (id) for element styling."
+            },
+            {
+              "id": "W4.8",
+              "text": "Incorporate color (color, background-color) and font properties (font-weight, font-size, font-family, font-style) for consistent website styling."
+            },
+            {
+              "id": "W4.9",
+              "text": "Differentiate and apply the use of span and div for styling and layout."
+            },
+            {
+              "id": "W4.10",
+              "text": "Incorporate basic styling attributes to manipulate the appearance of containers (border, padding, margin)."
+            }
+          ]
+        },
+        {
+          "name": "Section 5: Accessibility, Best Practices, and Modern HTML",
+          "items": [
+            {
+              "id": "W5.1",
+              "text": "Explain the core principles of web accessibility and the importance of following WCAG guidelines."
+            },
+            {
+              "id": "W5.2",
+              "text": "Utilize ARIA roles (role), states, and properties (aria-expanded, aria-checked, aria-hidden) to make web content more accessible."
+            },
+            {
+              "id": "W5.3",
+              "text": "Implement semantic markup and integrate modern HTML5 structural elements for document organization (header, nav, main, article, section, aside, footer)."
+            },
+            {
+              "id": "W5.4",
+              "text": "Apply microformats (hCard, vCard), microdata, and schema.org (itemprop, itemscope) for enriched content semantics."
+            },
+            {
+              "id": "W5.5",
+              "text": "Understand and apply the basics of HTML APIs (Geolocation, Web Storage) in web applications."
+            },
+            {
+              "id": "W5.6",
+              "text": "Utilize SVG for scalable vector graphics, focusing on its benefits and basic syntax."
+            },
+            {
+              "id": "W5.7",
+              "text": "Discuss HTML5 development best practices, focusing on code readability and performance."
+            },
+            {
+              "id": "W5.8",
+              "text": "Understand and apply the basics of testing web accessibility."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

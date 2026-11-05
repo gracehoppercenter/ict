@@ -38,17 +38,164 @@ This week Chris will guide you through the completion of our Base64 encoder /
 decoder program.
 </p>
 
-<!--
 <section>
 <h2>Thursday, November 5th</h2>
 
 <h3>Classwork / Homework</h3>
 <div>
 <p>
+Today we put it all together! We already have the middle of our program:
+<code>bits_to_base64</code> and <code>base64_to_bits</code>. What's left is
+connecting them to real files:
+</p><pre>
+encode:  file --&gt; bit string --&gt; Base64 string --&gt; text file
+decode:  text file --&gt; Base64 string --&gt; bit string --&gt; file
+</pre>
+
+<h4>Step 0: Download the starter code</h4>
+<p>
+Download these three files into your project directory:
+</p><ul>
+<li><a href="resources/base64_starter/b64tools.py">b64tools.py</a></li>
+<li><a href="resources/base64_starter/base64encode">base64encode</a></li>
+<li><a href="resources/GHClogoSmall.png">GHClogoSmall.png</a></li>
+</ul><p>
+Or from the terminal:
+</p><pre>
+$ wget https://ict.gctaa.net/f26/courses/csc221/goals/resources/base64_starter/b64tools.py
+$ wget https://ict.gctaa.net/f26/courses/csc221/goals/resources/base64_starter/base64encode
+$ wget https://ict.gctaa.net/f26/courses/csc221/goals/resources/GHClogoSmall.png
+$ chmod +x base64encode
+</pre><p>
+Open <code>b64tools.py</code> and look around. Two functions,
+<code>file_to_bits</code> and <code>bits_to_file</code>, are already done.
+Chris will walk through them at the start of class.
+<code>file_to_bits</code> uses Python's
+<a href="https://www.openbookproject.net/books/bpp4awd/exercises/ch06/ch06s02.html">bitwise
+operators</a> <code>&amp;</code> (and) and <code>&lt;&lt;</code> (left shift)
+to check each of the 8 bits in a byte, one at a time.
+<code>bits_to_file</code> works just like your <code>bits_to_base64</code>,
+except it uses groups of 8 bits (one byte) instead of 6.
 </p>
+
+<h4>Step 1: Copy in your code</h4>
+<p>
+Copy the bodies of your <code>bits_to_base64</code> and
+<code>base64_to_bits</code> functions into the spots marked
+<code>TODO</code>. Then run:
+</p><pre>
+$ python3 b64tools.py
+</pre><p>
+If it prints nothing, every test passed. Don't go on until it does.
+</p>
+
+<h4>Step 2: Write <code>encode_file</code></h4>
+<p>
+Follow the numbered comments in <code>encode_file</code>. Each step is one
+line that calls a function already in the file. The only new thing is step 4,
+writing a string to a text file:
+</p><pre>
+    with open(outname, 'w') as outfile:
+        outfile.write(b64str)
+</pre><p>
+Then try it. <code>base64encode</code> is already finished, and it calls your
+<code>encode_file</code>:
+</p><pre>
+$ ./base64encode GHClogoSmall.png
+Wrote b64.txt
+$ cat b64.txt
+</pre><p>
+The output should start with <code>iVBORw0KGgo</code>.
+</p>
+
+<h4>Step 3: Write <code>decode_file</code> and <code>base64decode</code></h4>
+<p>
+Follow the numbered comments in <code>decode_file</code>. For step 1, reading
+a text file looks like this. <code>strip()</code> removes any newline at the
+end, which would confuse <code>base64_to_bits</code>.
+</p><pre>
+    with open(filename) as infile:
+        b64str = infile.read().strip()
+</pre><p>
+Next, copy <code>base64encode</code> to make <code>base64decode</code>:
+</p><pre>
+$ cp base64encode base64decode
+</pre><p>
+Open <code>base64decode</code> and change it to call <code>decode_file</code>
+instead of <code>encode_file</code>. Then test it:
+</p><pre>
+$ ./base64decode b64.txt
+Wrote file.bin
+$ cmp file.bin GHClogoSmall.png
+</pre><p>
+<code>cmp</code> compares two files byte by byte. If it prints nothing, the
+files are identical. <b>Your Base64 encoder and decoder work!</b> Commit and
+push <code>b64tools.py</code>, <code>base64encode</code>, and
+<code>base64decode</code> now.
+</p>
+
+<h4>Step 4: Real file names</h4>
+<p>
+Right now <code>encoded_filename</code> and <code>decoded_filename</code>
+always return <code>b64.txt</code> and <code>file.bin</code>. Our customer
+wants <code>GHClogoSmall.png</code> to encode to
+<code>GHClogoSmall_b64_png.txt</code>, and that file to decode back to
+<code>GHClogoSmall.png</code>. Add these doctests to the two functions, then
+replace the placeholder <code>return</code> lines with code that makes them
+pass:
+</p><pre>
+def encoded_filename(filename):
+    """
+      &gt;&gt;&gt; encoded_filename('GHClogoSmall.png')
+      'GHClogoSmall_b64_png.txt'
+      &gt;&gt;&gt; encoded_filename('notes.pdf')
+      'notes_b64_pdf.txt'
+    """
+
+
+def decoded_filename(filename):
+    """
+      &gt;&gt;&gt; decoded_filename('GHClogoSmall_b64_png.txt')
+      'GHClogoSmall.png'
+      &gt;&gt;&gt; decoded_filename('notes_b64_pdf.txt')
+      'notes.pdf'
+    """
+</pre><p>
+You already know everything you need from
+<a href="https://www.openbookproject.net/books/bpp4awd/ch03.html">chapter
+3</a>: <code>split</code>, slicing, and <code>+</code>. To test with real
+names, move the original out of the way first, so you know the decoder really
+made a new copy:
+</p><pre>
+$ ./base64encode GHClogoSmall.png
+Wrote GHClogoSmall_b64_png.txt
+$ mv GHClogoSmall.png original.png
+$ ./base64decode GHClogoSmall_b64_png.txt
+Wrote GHClogoSmall.png
+$ cmp GHClogoSmall.png original.png
+</pre><p>
+Commit and push again.
+</p><p>
+This task will be evaluated using the following rubric:
+</p><ul>
+<li>
+<b>A</b>: You finish Step 4. Real file names work and <code>cmp</code> prints
+nothing.
+</li><li>
+<b>B</b>: You finish Step 3. <code>base64encode</code> and
+<code>base64decode</code> are committed and copy the logo exactly to
+<code>file.bin</code>.
+</li><li>
+<b>C</b>: You work diligently all period long and are actively engaged in
+trying to understand the problem.
+</li><li>
+<b>D</b>: You're there in body, but not in spirit.
+</li><li>
+<b>E</b>: No show.
+</li>
+</ul>
 </div>
 </section>
--->
 
 <section>
 <h2>Monday, November 2nd</h2>

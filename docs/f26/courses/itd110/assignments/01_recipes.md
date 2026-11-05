@@ -1,3 +1,5 @@
+<!-- competencies: V1 V5 V14 V21 V43 V49 V50 V69 V71 V72 V73 V77 N3 N13 N21 N28 W1.5 W2.5 W2.7 W2.8 W3.1 W3.2 W5.3 -->
+
 # Family Recipes Project
 
 # Project Introduction
@@ -52,9 +54,9 @@ follow this format:
 
 As with our classwork, all submissions should be made as commits to your repo. I'll point my auto-grader at these three URLs as I'm grading:
 
-- `projects/recipes/index.html`
-- `projects/recipes/1.html`
-- `projects/recipes/2.html`
+- `projects/recipes/index.html` ([DUCK](https://duck.apscs.org/file_list?path=projects/recipes/index.html))
+- `projects/recipes/1.html` ([DUCK](https://duck.apscs.org/file_list?path=projects/recipes/1.html))
+- `projects/recipes/2.html` ([DUCK](https://duck.apscs.org/file_list?path=projects/recipes/2.html))
 
 Be sure
 to complete this before the deadline listed on the [Project Page](index.html)

@@ -1,3 +1,5 @@
+<!-- competencies: V44 V71 V80 V82 N13 N14 W3.2 -->
+
 ## Lesson Objectives
 By the end of this lesson, you should:
 

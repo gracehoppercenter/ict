@@ -1,3 +1,5 @@
+<!-- competencies: V1 V3 V20 V34 V58 V70 V88 W3.8 -->
+
 ## What We'll Do In Class
 
 ### Chris Out
@@ -10,41 +12,13 @@ I have two activities queued up for you, and I think they're both fun and
 exciting. I'll count these together as a single classwork assignment, which I'll
 grade on Monday morning.
 
-### Favicons
+### Favicons and Github Profile
 
-Your website needs a favicon! 
+Both activities are described on the [Favicon and Github Profile](../assignments/activity.php?id=02_favicon_profile)
+assignment page:
 
-Draw your own icon using this website: <https://www.favicon.cc/> . It's totally
-possible that website is blocked - if that's the case, you can google to find a
-new one. If you find a good one, share with your classmates!
-
-Remember, the website that we're building this year should be professional, 
-school-appropriate, and unique to you. Your favicon should be the same!
-
-And then add it to your website using the sample code from the edube reading 
-(if you didn't already do that reading, you should start there - see the homework
-section below).
-
-### Github Profile
-
-As I've discussed lots of times in class, your Github account is a fantastic 
-portfolio that you can use to connect with other programmers and demonstrate 
-your experience to employers.
-
-So far this year, we've focused on using Pages to create a custom HTML page. Today, we'll add some customization to your profile on Github. As an example, take a look at this profile
-of a student who recently graduated: <https://github.com/BlueZeeKing>
-
-I actually keep my personal profile on Codeberg (another website that works 
-almost exactly the same as Github and that we use in our other CS classes here).
-My profile is here: <https://codeberg.org/cjones>
-
-The best first step is to add a profile readme. To do that, follow the instructions here: [Profile Readme](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)
-
-You should also:
-- Update your avatar to something other than the default
-- Add a bio, [following these instructions](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/using-your-github-profile-to-enhance-your-resume#step-1-create-a-professional-bio)
-
-As always, the information that you're writing here is available on the public internet. I expect that everything you post here is professional, and I have no requirement that you share any personal information. Please let me know if you have any concerns with this assignment, or with our use of Github!
+- **Favicon:** draw your own icon and add it to your website.
+- **Github Profile:** add a profile readme, an avatar, and a professional bio.
 
 ## Homework
 

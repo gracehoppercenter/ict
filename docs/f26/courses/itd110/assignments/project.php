@@ -1,4 +1,12 @@
-<?php require_once __DIR__ . '/../config.php'; ?>
+<?php
+require_once __DIR__ . '/../config.php';
+require_once __DIR__ . '/../competencies/lib.php';
+
+// Competencies tagged in this assignment's markdown (<!-- competencies: ... -->).
+$id = preg_match('/^[\w-]+$/', $_GET['id'] ?? '') ? $_GET['id'] : '';
+$mdFile = __DIR__ . "/$id.md";
+$assignmentCompetencies = ($id && is_file($mdFile)) ? competency_ids_from_markdown(file_get_contents($mdFile)) : [];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,9 +40,11 @@ Illustration by Martina Scapola, used under CC BY-SA 4.0.</figcaption>
 </header>
 <hr>
 
-<p><a href="../calendar/">Back to Calendar</a></p>
+<p><a href="../calendar/">Back to Calendar</a> · <a href="index.php">All Assignments</a></p>
 
 <div id="md_to_html"></div>
+
+<?= competency_list_html($assignmentCompetencies) ?>
 <script>
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);

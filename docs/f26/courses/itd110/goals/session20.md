@@ -1,3 +1,5 @@
+<!-- competencies: V3 V50 V67 V70 V73 N10 N13 N30 N31 W2.7 W4.10 W5.3 -->
+
 ## Lesson Objectives
 
 By the end of this lesson, you should:
@@ -25,58 +27,10 @@ You can also check out [Flexbox Defense](http://www.flexboxdefense.com/) - I hav
 
 ### Part 2: A Flex Nav Bar for the Zoo (the rest of class)
 
-Open your zoo website (`practice/zoo/index.html`) and your zoo stylesheet. You
-should already have a `<nav>` that looks something like this:
-
-```html
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="animals.html">Animals</a></li>
-    </ul>
-</nav>
-```
-
-Right now, those links are stacked on top of each other with bullet points.
-Your goal is to turn this into a nice looking horizontal nav bar, like you'd see at the top
-of a real website. 
-
-Work through these steps in your external stylesheet:
-
-1. **Put the links in a row.** The flex container should be the element whose
-*children* you want to line up. Which element is that here? (Hint: it's not
-the `<a>` tags.)
-2. **Get rid of the bullets.** Research the `list-style` CSS property.
-3. **Remove the extra space.** The `<ul>` comes with some default margin and
-padding. Use what we learned about the box model to remove it.
-4. **Space out the links.** Use `justify-content` the same way you did in
-Flexbox Froggy. Try a few values (`center`, `space-around`,
-`space-between`, `space-evenly`) and keep the one you like best.
-5. **Make the links look like buttons.** Give each `<a>` some padding, a
-background color, and a border. Research the `text-decoration` CSS property to remove the
-underline.
-6. **Add more links.** A nav bar with two links is a little boring. Add at
-least two more (they can link to `#` for now, e.g. `<a href="#">Tickets</a>`).
-7. **Use the same nav on every page.** Make sure `animals.html` has the same nav bar and links to the same stylesheet.
-8. **Make the links change color when your mouse moves over them.** Look up the
-`:hover` pseudo-class on [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover).
-
-Validate your HTML and CSS when you're done!
-
-### Submit
-
-Commit and push your zoo website. This is a graded classwork assignment due at
-the beginning of next class. Here is how I'll grade it:
-
-- 5 points: The nav links are in a row, with no bullets, spaced with
-`justify-content`, styled like buttons, and on both pages
-- 4 points: The nav links are in a row with no bullets and some styling, but
-something is missing
-- 3 points: The nav links are in a row, but have no other styling
-- 2 points: You tried to use flex, but the links are still stacked
-- 0 points: No changes to the nav
-
-Use this link to make sure DUCK can see your page: <https://duck.apscs.org/file_list?path=practice/zoo/index.html>
+Spend the rest of class turning the plain list of links on your zoo website into
+a horizontal nav bar with flexbox. This is the [Zoo Flex Nav Bar](../assignments/activity.php?id=02_zoo_nav),
+a graded classwork assignment due at the beginning of next class. Follow the
+step-by-step instructions on the assignment page.
 
 ### When I Get Back
 

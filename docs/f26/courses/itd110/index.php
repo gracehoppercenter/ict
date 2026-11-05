@@ -56,6 +56,7 @@ Illustration by Martina Scapola, used under CC BY-SA 4.0.</figcaption>
 <ul>
 <li><a href="calendar/">Lesson Calendar</a></li>
 <li><a href="assignments/">Assignments</a></li>
+<li><a href="competencies/">Course Competencies</a></li>
 <li><b>Certification Exam</b>: <?= CERT_EXAM_DATE ?> during class.</li>
 </ul>
 </div>

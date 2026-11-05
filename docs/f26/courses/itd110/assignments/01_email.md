@@ -1,3 +1,5 @@
+<!-- competencies: V12 V20 V21 -->
+
 # Introduction Email
 
 # Assignment Purpose

@@ -1,3 +1,5 @@
+<!-- competencies: V18 V69 N27 N28 N29 W2.8 -->
+
 ## Lesson Objectives
 By the end of this lesson, you should:
 
@@ -39,18 +41,10 @@ And their normal mode variants that work on entire lines: `yy`, and `dd`.
 [Here's a nice guide that should help you out](https://www.warp.dev/terminus/vim-copy-paste), and I always recommend periodically reviewing vimtutor to pick up new tips and tricks.
 
 ### Table Practice
-Make a new HTML page called `practice/schedule.html`
-([DUCK Link](https://duck.apscs.org/file_list?path=practice/schedule.html)) that shows your class schedule. 
-Here is an example of what it should look like:
 
-![A screenshot of an HTML table that includes my class schedule](../base/images/table_practice.png)
-
-Hint: your goal is to produce "Table 2", but I recommend starting with "Table 1" and then modifying it.
-
-Be sure to include your validator and use the correct filename. I'll count this as
-a classwork assignment due at the beginning of next class.
-
-As always, there is no expectation that you publish any information that you aren't comfortable sharing with the world. If you aren't comfortable sharing this information, you can copy mine!
+Today's graded classwork is the [Class Schedule Table](../assignments/activity.php?id=01_schedule_table),
+due at the beginning of next class. See the assignment page for the requirements
+and an example of what it should look like.
 
 ## Homework
 

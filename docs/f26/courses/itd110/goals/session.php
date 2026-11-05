@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/../config.php';
+require_once __DIR__ . '/../competencies/lib.php';
 
 // Cache-bust: version fetched files by their modification time so edits show up immediately.
 header('Cache-Control: no-cache');
@@ -7,6 +8,9 @@ $num = preg_match('/^[\w-]+$/', $_GET['num'] ?? '') ? $_GET['num'] : '';
 $mdFile = __DIR__ . "/session$num.md";
 $mdVersion = is_file($mdFile) ? filemtime($mdFile) : time();
 $topicsVersion = filemtime(__DIR__ . '/session_topics.json');
+
+// Competencies tagged in this session's markdown (<!-- competencies: ... -->).
+$sessionCompetencies = is_file($mdFile) ? competency_ids_from_markdown(file_get_contents($mdFile)) : [];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -53,6 +57,8 @@ Illustration by Martina Scapola, used under CC BY-SA 4.0.</figcaption>
 <h2>Today's Topic</h2>
 <p id="topic"></p>
 <div id="md_to_html"></div>
+
+<?= competency_list_html($sessionCompetencies) ?>
 <script>
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);

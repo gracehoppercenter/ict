@@ -1,4 +1,7 @@
-<?php require_once __DIR__ . '/../config.php'; ?>
+<?php
+require_once __DIR__ . '/../config.php';
+require_once __DIR__ . '/../competencies/lib.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,67 +41,89 @@ Illustration by Martina Scapola, used under CC BY-SA 4.0.</figcaption>
 </header>
 <hr>
 
+<?php
+// Graded assignments, in due-date order.
+
+// Formative: [page, id, session introduced, title, due, duck paths]
+$formative = [
+    ['activity', '01_email', '02',            'Introduction Email',               '8AM on Tuesday, September 8',           []],
+    ['activity', '00_repo_setup', '04',       'Git Repo Setup',                   'Start of class, Tuesday, September 15', ['index.html']],
+    ['activity', '01_terminal_page', '09',    'Terminal / Vim Lesson Page',       '3PM on Wednesday, September 30',        ['practice/terminal.html']],
+    ['activity', '01_schedule_table', '10',   'Class Schedule Table',             'Start of class, Friday, October 2',     ['practice/schedule.html']],
+    ['activity', '01_responsive_image', '11', 'Responsive Homepage Image',        'Start of class, Tuesday, October 6',    ['index.html']],
+    ['activity', '02_favicon_profile', '17',  'Favicon and Github Profile',       '8AM on Monday, October 26',             ['index.html']],
+    ['activity', '02_box_model', '19',        'Box Model Challenge',              '8AM on Friday, October 30',             ['practice/box_model.html']],
+    ['activity', '02_zoo_nav', '20',          'Zoo Flex Nav Bar',                 'Start of class, Wednesday, November 4', ['practice/zoo/index.html']],
+    ['activity', '02_chocolates', '21',       'Grid Practice: Box of Chocolates', 'Start of class, Tuesday, November 10',    ['practice/chocolates.html']],
+];
+
+// Summative: [page, id, session introduced ('' if not yet), title, due, duck paths, in-class writing date]
+$summative = [
+    ['project', '01_recipes', '12',        'Recipes',                    '8AM on Monday, October 19',  ['projects/recipes/index.html', 'projects/recipes/1.html', 'projects/recipes/2.html'], 'Tuesday, October 20'],
+    ['project', '03_client_website', '',   '(Tentative) Client Website', '3PM on Tuesday, February 3', ['projects/client/index.html'], 'TBD'],
+];
+
+function session_link(string $session): string {
+    static $info = null;
+    $info = $info ?? competency_session_info();
+    if ($session === '') return 'TBD';
+    $date = $info[$session]['date'] ?? '';
+    return '<a href="../goals/session.php?num=' . $session . '">Session ' . $session . '</a>'
+        . ($date ? " ($date)" : '');
+}
+
+function duck_links(array $paths): string {
+    if (!$paths) return 'N/A (sent by email)';
+    $out = '';
+    foreach ($paths as $path) {
+        $out .= '<a href="https://duck.apscs.org/file_list?path=' . $path . '">' . $path . '</a><br>';
+    }
+    return $out;
+}
+?>
+<h2>Summative Assignments</h2>
 <table>
-    <caption>Assignment Listing</caption>
-    
     <thead>
     <tr>
-        <th>Type</th>
-        <th>Link</th>
+        <th>Assignment</th>
+        <th>Introduced</th>
         <th>Due</th>
+        <th>DUCK</th>
         <th>In-Class Writing Date</th>
     </tr>
     </thead>
     <tbody>
-        <tr>
-        <td>
-            Formative
-        </td>
-        <td><a href="activity.php?id=01_email">Introduction Email</a></td>
-        <td>
-            8AM on Tuesday, September 8
-        </td>
-        <td>
-            N/A
-        </td>
-        </tr>
+<?php foreach ($summative as [$page, $id, $session, $title, $due, $duck, $writing]): ?>
+    <tr>
+        <td><a href="<?= $page ?>.php?id=<?= $id ?>"><?= htmlspecialchars($title) ?></a></td>
+        <td><?= session_link($session) ?></td>
+        <td><?= $due ?></td>
+        <td><?= duck_links($duck) ?></td>
+        <td><?= $writing ?></td>
+    </tr>
+<?php endforeach; ?>
+    </tbody>
+</table>
 
-        <tr>
-        <td>
-            Summative
-        </td>
-        <td>(Tentative)<a href="project.php?id=01_recipes">Recipes</a></td>
-        <td>
-            Monday, October 19th at 8am
-        </td>
-        <td>
-            Tuesday, October 20th
-        </td>
-        </tr>
-        <tr>
-        <td>
-            Summative
-        </td>
-        <td>(Tentative)<a href="project.php?id=02_encryption">Encrypted Messaging</a></td>
-        <td>
-            3PM on Monday, November 17
-        </td>
-        <td>
-            November 19
-        </td>
-        </tr>
-        <tr>
-        <td>
-            Summative
-        </td>
-        <td>(Tentative)<a href="project.php?id=03_client_website">Client Website</a></td>
-        <td>
-            3PM on Tuesday, February 3
-        </td>
-        <td>
-            TBD
-        </td>
-        </tr>
+<h2>Formative Assignments</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Assignment</th>
+        <th>Introduced</th>
+        <th>Due</th>
+        <th>DUCK</th>
+    </tr>
+    </thead>
+    <tbody>
+<?php foreach ($formative as [$page, $id, $session, $title, $due, $duck]): ?>
+    <tr>
+        <td><a href="<?= $page ?>.php?id=<?= $id ?>"><?= htmlspecialchars($title) ?></a></td>
+        <td><?= session_link($session) ?></td>
+        <td><?= $due ?></td>
+        <td><?= duck_links($duck) ?></td>
+    </tr>
+<?php endforeach; ?>
     </tbody>
 </table>
 
@@ -111,7 +136,7 @@ Illustration by Martina Scapola, used under CC BY-SA 4.0.</figcaption>
 <li>50% of your grade will come from an in-class written exercise
     where you will explain how your code works</li>
 </ul>
-<p>The table above includes two dates: the deadline to submit the project, and the
+<p>The summative assignments table above includes two dates: the deadline to submit the project, and the
     date of the in-class writing exercise. For the in-class writing exercise, I
     will print your code and ask you to annotate it.</p>
 

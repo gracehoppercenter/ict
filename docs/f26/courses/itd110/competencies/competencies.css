@@ -1,0 +1,77 @@
+.competencies {
+  margin: 1vw 3vw;
+  font-size: 1.1rem;
+}
+.competencies table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.competencies th, .competencies td {
+  border: 1px solid #ccc;
+  padding: 0.35rem 0.6rem;
+  text-align: left;
+  vertical-align: top;
+}
+.competencies th {
+  background: #eee;
+}
+.competencies table.summary {
+  width: auto;
+}
+.competencies .bar {
+  width: 12rem;
+  height: 0.8rem;
+  background: #eee;
+  border: 1px solid #ccc;
+}
+.competencies .bar div {
+  height: 100%;
+  background: #4a8;
+}
+.competencies tr.group td {
+  background: #f5f5f5;
+  font-weight: bold;
+  font-style: italic;
+}
+.competencies td.id {
+  white-space: nowrap;
+}
+.competencies tr.uncovered td.sessions {
+  background: #fff4f4;
+}
+.competencies tr:target td {
+  background: #fff6c2;
+}
+.competencies .chip {
+  display: inline-block;
+  padding: 0.05rem 0.4rem;
+  margin: 0.1rem 0;
+  border: 1px solid #aac;
+  border-radius: 0.7rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+.competencies .chip span {
+  font-weight: normal;
+}
+.competencies .chip.bad {
+  border-color: #c44;
+  color: #c44;
+}
+.competencies .warning {
+  border: 2px solid #c44;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+.competencies .source {
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+}
+body.uncovered-only .competencies tr.covered {
+  display: none;
+}
+.competencies .chip.assignment {
+  border-color: #c9a227;
+  background: #fffbea;
+}

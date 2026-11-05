@@ -1,3 +1,5 @@
+<!-- competencies:  -->
+
 ## Lesson Objectives
 By the end of this lesson, you should:
 

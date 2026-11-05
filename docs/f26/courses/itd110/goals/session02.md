@@ -1,3 +1,5 @@
+<!-- competencies: V4 V17 V18 V20 V21 V27 N1 -->
+
 ## Lesson Objectives
 By the end of this lesson, you should:
 - ⌨ Understand the importance of the Terminal on your computer

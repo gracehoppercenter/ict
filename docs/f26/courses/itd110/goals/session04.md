@@ -1,3 +1,5 @@
+<!-- competencies: V18 V34 V43 V69 V74 V76 V88 N42 -->
+
 ## Lesson Objectives
 By the end of this lesson, you should:
 - 💻 Have github setup and installed on your computer
@@ -33,6 +35,8 @@ Here is a quick summary of what I plan to discuss in class:
 Today, we’ll be setting up GitHub accounts and learning how to use Git and GitHub to manage code. 
 
 There are a lot of steps to this process, so [I've made a helpful tutorial for you to follow here](../../../resources/git_on_github/index.html)
+
+This is the first part of the graded [Git Repo Setup](../assignments/activity.php?id=00_repo_setup) assignment.
 
 ## Homework
 

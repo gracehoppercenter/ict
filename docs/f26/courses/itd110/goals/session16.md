@@ -1,3 +1,5 @@
+<!-- competencies: V21 V47 N5 N6 N10 N11 W4.6 W4.8 -->
+
 ## Lesson Objectives
 By the end of this lesson, you should:
 

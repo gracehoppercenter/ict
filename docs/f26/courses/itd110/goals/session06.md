@@ -1,3 +1,5 @@
+<!-- competencies: V18 V69 N2 N4 W1.1 W1.6 -->
+
 ## Lesson Objectives
 By the end of this lesson, you should:
 - **Know**: 👩‍💻 That HTML is the language of web pages. 

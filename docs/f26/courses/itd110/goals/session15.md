@@ -1,3 +1,5 @@
+<!-- competencies: V81 -->
+
 ## Lesson Objectives
 By the end of this lesson, you should:
 

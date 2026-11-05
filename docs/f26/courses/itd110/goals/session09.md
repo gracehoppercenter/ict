@@ -1,3 +1,5 @@
+<!-- competencies: V15 V21 V49 V69 N3 W1.2 W1.3 W2.6 W2.7 W5.3 -->
+
 ## Lesson Objectives
 By the end of this lesson, you should:
 
@@ -58,33 +60,9 @@ With the help of layouter.dev, we'll work on what i'm calling the minimal *seman
 
 ## Today's Classwork
 
-It's time to practice with some of our new HTML skills.
-
-To do this, make a new HTML page in your repo called `practice/terminal.html`. 
-In this page, write a nice html page that I might use to teach one of my lessons 
-next year on either the Terminal or Vim. Produce a new HTML file that 
-summarizes what we learned. You can start by looking at the session calendar,
-but I'll expect that you include more code snippets and examples that you gained
-from vimtutor and/or terminus.
-
-For example, you might make an HTML page about vim - I would expect that page to
-include instructions about how to open/close vim, how to save files, and some of
-the most useful vim commands.
-
-I'll expect that your page has:
-- All of the minimal semantic elements we learned today.
-- A list, and an unordered list, used appropriately
-    - e.g. use an ordered list to give specific instruction steps, and an unordered list to provide a list of features
-- A few `<pre>` / `<code>` elements, used appropriately
-    - pay attention to the way that they used `&lt;` in the `<pre>` element in the page titled "Paragraphs and Text Formatting – Part 4"
-- A few `<kbd>` / `<samp>` tags, used appropriately
-
-This will be **Due** at the beginning of next class. It will count as a classwork grade,
-and must be valid for full credit.
-
-Remember that we haven't really learned CSS yet. I expect that this page will
-just be black text on a white background - we're focusing on semantic correctness
-first!
+It's time to practice with some of our new HTML skills. Today's graded classwork
+is the [Terminal / Vim Lesson Page](../assignments/activity.php?id=01_terminal_page), due at the beginning
+of next class. See the assignment page for the full requirements.
 
 ### Read the next few pages in Module 2
 

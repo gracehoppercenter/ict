@@ -1,3 +1,5 @@
+<!-- competencies: V2 V5 V7 V9 V14 V20 V38 V44 V45 V46 V47 V66 V67 V68 V69 V70 V72 V73 V74 V77 N8 N13 N30 N32 W1.5 W5.1 W5.3 W5.7 -->
+
 # Client Website Project: Agile Web Development
 
 ## Project Overview
@@ -51,7 +53,7 @@ Deliver the final website to your client, and incorporate any last-minute tweaks
 
 This project should all go inside your github repo in a new directory called `projects/client`. In there, I'll expect to see:
 
-- `index.html`
+- `index.html` ([DUCK](https://duck.apscs.org/file_list?path=projects/client/index.html))
 - At least two other HTML pages
 - `style.css`
 - `process.md` - where you'll document the development process, include photos/screenshots of your design mock-ups, and document your check-ins.

@@ -1,3 +1,5 @@
+<!-- competencies: V1 V46 V47 W4.9 -->
+
 ## Welcome Back
 
 Hope you had a nice day off yesterday! It was a dramatic day for me - [I came
@@ -25,15 +27,5 @@ We'll look at some examples of grid in the wild,
 Just like our last activity, we'll place shapes on a page - but this time we'll
 use grid to keep our shapes a little more orderly.
 
-To save today, I've written you some starter code: 
-<https://github.com/cj0ne5/cj0ne5.github.io/blob/main/practice/chocolates.html>.
-
-Copy this to your own `practice/chocolates.html`.
-
-For classwork, fill in the rest of the chocolate box, using divs that you 
-shape with code from <https://css-shape.com/>. There are a lot of boxes to fill,
-so feel free to add a big chocolate bar that spans a few boxes, and to repeat
-shapes.
-
-This will be today's graded assignment. You can check your submission on
-DUCK here: <https://duck.apscs.org/file_list?path=practice%252Fchocolates.html>
+This is today's graded assignment: [Grid Practice: Box of Chocolates](../assignments/activity.php?id=02_chocolates).
+See the assignment page for the starter code and instructions.

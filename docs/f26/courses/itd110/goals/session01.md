@@ -1,3 +1,5 @@
+<!-- competencies: V12 V16 V20 -->
+
 ## Today's objectives
 By the end of this lesson, you should:
 

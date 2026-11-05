@@ -1,3 +1,5 @@
+<!-- competencies: V13 V18 V43 V72 N42 N43 -->
+
 <!--
 Instructor notes: 
 Make sure to reset the CJonesExample repo before class
@@ -35,17 +37,12 @@ We will **NOT** start today's class with a quiz. I know that last class's git tu
 
 ### Repo Collection
 
-Your classwork/homework was to setup your repo. To give you credit for that 
+Your classwork/homework was to setup your repo. To give you credit for that
 assignment (and every assignment we'll do for the rest of the year), I need you
-to tell me your repo.
+to tell me your repo, using our auto-grader, <https://duck.apscs.org>.
 
-To do that, I'll introduce you to our auto-grader, <https://duck.apscs.org>.
-You'll make an account on DUCK and share your git account and your repo's name.
-
-We'll have a short chat about repo organization. 
-The auto-grader i strict about organization, so I'll be strict about making 
-sure that
-our repos all have the same structure.
+We'll have a short chat about repo organization. All of the details are on the
+[Git Repo Setup](../assignments/activity.php?id=00_repo_setup) assignment page.
 
 ### Git Practice
 

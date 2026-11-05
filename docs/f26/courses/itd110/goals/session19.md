@@ -1,3 +1,5 @@
+<!-- competencies: V2 V47 V70 W4.9 W4.10 -->
+
 ## Lesson Objectives
 
 By the end of this lesson, you should:
@@ -9,24 +11,12 @@ By the end of this lesson, you should:
 
 ### Box Model Practice
 
-For today's practice, try to recreate this image:
-
-<img src="../base/images/box_model_challenge.png" alt="box model challenge" style="height:400px">
-
+For today's practice, you'll recreate an image of boxes using the box model.
 We'll do the first box together, and then I'll let you play with the rest
 on your own.
 
-A few hints:
-- The content of each box is 100px/100px
-- Each box has `background-clip:content-box;` (which stops the color from
-showing up on in the padding).
-- Each box has `border:2px solid;`
-
-If you need more review, here is a good resource: <https://www.w3schools.com/Css/css_boxmodel.asp>
-
-In your repo, commit this page to: `practice/box_model.html`. This is
-a graded classwork assignment, due Friday at 8am. Here is a 
-link you can use to confirm that DUCK will see it: <https://duck.apscs.org/file_list?path=practice/box_model.html>
+This is the [Box Model Challenge](../assignments/activity.php?id=02_box_model), a graded classwork
+assignment due Friday at 8am. See the assignment page for the image and hints.
 
 ### Flex
 

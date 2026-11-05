@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+import sys
+from b64tools import decode_file
+
+if len(sys.argv) != 2:
+    print(f'Usage: {sys.argv[0]} FILE')
+    sys.exit(1)
+
+outname = decode_file(sys.argv[1])
+print(f'Wrote {outname}')
