@@ -21,7 +21,7 @@ Illustration by Martina Scapola, used under CC BY-SA 4.0.</figcaption>
 </figure>
 <div class="desktop">
 <h1 style="font-size: 3vw; margin-top: 1.8vw; margin-left: 0;">
-CSC 215 Weekly Assignments: Week 11</h1>
+CSC 215 Weekly Assignments: Week 12</h1>
 </div>
 <div class="mobile">
 <h1>CSC 215</h1>
@@ -34,59 +34,34 @@ CSC 215 Weekly Assignments: Week 11</h1>
 
 <h2>Overview</h2>
 <p>
-Chris here - Jeff is out, so I'm taking over this week. In other words:
+This week we <i>may</i> move to the computing environment we will be using for
+the rest of the course (and beyond), the Altair Z80 with
+<a href="https://en.wikipedia.org/wiki/CP/M">CP/M</a>. Whether we do that this
+week or next will depend on our ability to finish the postfix calculator.
 </p>
-<blockquote>I'm the captain now</blockquote>
-<p>
-Jeff has tasked us with getting the postfix calculator working by the end of
-the week, so that's our goal.
-</p> 
 
+<!--
 <section>
 <h2>Thursday, November 12th</h2>
 
 <h3>Classwork</h3>
 <div>
 <p>
-3 Cheers to Mason, who did the work to stitch everyone's code together into a
-single working program,
-<a href="https://codeberg.org/GHC_Students/stackpancake/src/branch/8-beggs-convert-to-hex/input.asm#">
-here</a>.
 </p>
-<p>
-<a href="https://wixette.github.io/8800-simulator/#zip=eJw1izFPwkAAhd9xOGAk4NQ4QWunVlJlcCCBlREGEhMSQsPiwADRBZTGjcWf4dCxg0sZHKA69NIOSCAGxiYsLjq4nuZycXl5ed_3Ln7T6teBhpQKBDoMpG5Pb8y1s8kP5HgM7LAnCx07sn_gWaaDm2wKXhJhiLDYFCvCiwJl2RSb827Qlq-2fBVXhOX-YRmUHCL2UQFtdR6FuyLzJTejJ_BS5IIbkQ9uRR9odYIcev1M-Da2GiOrfrR4RrrXz8xDFajlf8aF91ecePdK90658kaF-rjQ-K4uXiC4ZtNavtykXqVJXWaRarlJpRlfEm1IDZt6otnUGNKJv03gzLYJ1p-xi6XkZ-IqBWaRIIGcQ0cZTJTr8A-M3XQR">
-Here's a direct link to the simulator with Mason's code loaded</a>
-</p>
-<p>
-We started class with Mason talking us through the code. It works pretty well,
-with a few caveats:
-</p>
-<ul>
-  <li>As we discussed last class, we're focusing on positive integers</li>
-  <li>Output to the cli doesn't work yet - when the input ends, we can
-  find the answer (in hex) at memory address 0x04FD which is the bottom of
-  the stack.
-  </li>
-</ul>
-  <p>
-  We had a good discussion about this code. We agreed that we understand the
-  high-level structure but will need to spend individual study time to really
-  grok it. We spent the rest of the class discussing in small groups.
-  </p>
-  <p>
-  We'll wait on Jeff to set plans for next week. But Chris suggested that Jeff
-  might want to give us a quiz about Mason's code. We're intimidated by that
-  possibility, but we'll do the best to make sure we're prepared.
-  </p>  
 </div>
 
 <h3>Homework / Evaluation</h3>
 <div>
 <p>
+Our <a href="https://www.openbookproject.net/books/demystcomp/">textbook</a>
+has been updated with an
+<a href="https://www.openbookproject.net/books/demystcomp/app_c.html">
+appendix</a> describing how to setup our new computing environment. We will
+spend today going through that.
 </p>
 </div>
 </section>
-
+-->
 
 <section>
 <h2>Monday, November 9th</h2>
@@ -94,36 +69,42 @@ with a few caveats:
 <h3>Classwork</h3>
 <div>
 <p>
-First, our friend Wixette reached out to me to share some cool updates to the
-Altair simulator. I'd like to share some feedback, so we'll spend a few minutes
-playing with:
-</p>
-<ul>
-  <li>3d mode on the Altair simulator</li>
-  <li>This new simulator of the
-  <a href="https://github.com/wixette/leibniz-stepped-reckoner">Leibniz
-  Calculator</a></li>
-  <li>This new simulator of the
-  <a href="https://github.com/wixette/jacquard-loom-simulator">Jacquard
-  Loom</a></li>
-</ul>
-<p>
-After that, we worked together to come up with a strategy for the `main` loop
-of our postfix calculator. We did this together as a class, in Python.  Delanie
-was the driver and scribe, so this code is in Delanie's computer. We had some
-internet issues, so hopefully Delanie will commit to our shared repo soon!  I
-think at the end of this, we all had a better understanding of how this worked.
-</p>
-<p>
-Finally, everyone worked on getting their add/subtract/multiply/divide
-functions merged into the shared repo.
-</p>
+I read Chris's comments about where you are on completing the calculator
+program. I also looked at
+<a href="https://codeberg.org/GHC_Students/stackpancake/src/branch/8-beggs-convert-to-hex/input.asm#">
+Mason's source code</a>.  I'll confirm with Chris when I see him Monday
+morning, but it seems clear to me that one more day to bring this to final
+form is more than warranted.
+</p><p>
+The <q>full smash</q> would be a program that:
+</p><ol>
+<li>
+Loads and sends a welcome message to the TTY followed by a blank line, and
+then a prompt that looks like this: <code>=&gt; </code>.
+</li><li>
+The user would then be able to enter a postfix expression, like this:
+<pre>
+=&gt; 3 4 + 5 *
+</pre>
+</li><li>
+When the user sent the <code>Enter</code> key, they would then see:
+<pre>
+35
+=&gt; 
+</pre>
+</li><li>
+Lather, rinse, repeat ;-)  If we think we can reach this <i>Holly Grail</i> in
+the near future, I vote we continue our quest.
+</li>
+</ol>
 </div>
 
 <h3>Homework / Evaluation</h3>
 <div>
 <p>
-Keep on keepin' on!
+Instead of a quiz, I think we should make a working version of the program as
+described above our success metric, and give everyone who worked on the project
+an <q>A</q> upon delivery. Let's discuss this at the beginning of class.
 </p>
 </div>
 </section>

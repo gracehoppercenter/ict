@@ -32,11 +32,100 @@ CSC 215 Weekly Assignments:<br>Weeks 9 and 10</h1>
 <main>
 <time datetime="2026-10-26">Two Weeks Beginning Monday, October 26, 2026</time>
 
-<h2>Overview</h2>
+<h2>Overview I</h2>
 <p>
 During our last two weeks of Intel 8080 assembly language programming, you
 will be finishing your four function calculator projects.
 </p>
+
+<h2>Overview II</h2>
+<p>
+Chris here - Jeff is out, so I'm taking over this week. In other words:
+</p>
+<blockquote>I'm the captain now</blockquote>
+<p>
+Jeff has tasked us with getting the postfix calculator working by the end of
+the week, so that's our goal.
+</p> 
+
+<section>
+<h2>Thursday, November 12th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+3 Cheers to Mason, who did the work to stitch everyone's code together into a
+single working program,
+<a href="https://codeberg.org/GHC_Students/stackpancake/src/branch/8-beggs-convert-to-hex/input.asm#">
+here</a>.
+</p>
+<p>
+<a href="https://wixette.github.io/8800-simulator/#zip=eJw1izFPwkAAhd9xOGAk4NQ4QWunVlJlcCCBlREGEhMSQsPiwADRBZTGjcWf4dCxg0sZHKA69NIOSCAGxiYsLjq4nuZycXl5ed_3Ln7T6teBhpQKBDoMpG5Pb8y1s8kP5HgM7LAnCx07sn_gWaaDm2wKXhJhiLDYFCvCiwJl2RSb827Qlq-2fBVXhOX-YRmUHCL2UQFtdR6FuyLzJTejJ_BS5IIbkQ9uRR9odYIcev1M-Da2GiOrfrR4RrrXz8xDFajlf8aF91ecePdK90658kaF-rjQ-K4uXiC4ZtNavtykXqVJXWaRarlJpRlfEm1IDZt6otnUGNKJv03gzLYJ1p-xi6XkZ-IqBWaRIIGcQ0cZTJTr8A-M3XQR">
+Here's a direct link to the simulator with Mason's code loaded</a>
+</p>
+<p>
+We started class with Mason talking us through the code. It works pretty well,
+with a few caveats:
+</p>
+<ul>
+  <li>As we discussed last class, we're focusing on positive integers</li>
+  <li>Output to the cli doesn't work yet - when the input ends, we can
+  find the answer (in hex) at memory address 0x04FD which is the bottom of
+  the stack.
+  </li>
+</ul>
+  <p>
+  We had a good discussion about this code. We agreed that we understand the
+  high-level structure but will need to spend individual study time to really
+  grok it. We spent the rest of the class discussing in small groups.
+  </p>
+  <p>
+  We'll wait on Jeff to set plans for next week. But Chris suggested that Jeff
+  might want to give us a quiz about Mason's code. We're intimidated by that
+  possibility, but we'll do the best to make sure we're prepared.
+  </p>  
+</div>
+</section>
+
+<section>
+<h2>Monday, November 9th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+First, our friend Wixette reached out to me to share some cool updates to the
+Altair simulator. I'd like to share some feedback, so we'll spend a few minutes
+playing with:
+</p>
+<ul>
+  <li>3d mode on the Altair simulator</li>
+  <li>This new simulator of the
+  <a href="https://github.com/wixette/leibniz-stepped-reckoner">Leibniz
+  Calculator</a></li>
+  <li>This new simulator of the
+  <a href="https://github.com/wixette/jacquard-loom-simulator">Jacquard
+  Loom</a></li>
+</ul>
+<p>
+After that, we worked together to come up with a strategy for the `main` loop
+of our postfix calculator. We did this together as a class, in Python.  Delanie
+was the driver and scribe, so this code is in Delanie's computer. We had some
+internet issues, so hopefully Delanie will commit to our shared repo soon!  I
+think at the end of this, we all had a better understanding of how this worked.
+</p>
+<p>
+Finally, everyone worked on getting their add/subtract/multiply/divide
+functions merged into the shared repo.
+</p>
+</div>
+
+<h3>Homework / Evaluation</h3>
+<div>
+<p>
+Keep on keepin' on!
+</p>
+</div>
+</section>
 
 <section>
 <h2>Thursday, October 29th</h2>
@@ -50,22 +139,26 @@ We also discussed how all of the functions we're working on will
 interface with each other. Here's what we decided so far:
 </p>
 <ul>
-    <li>Each function will expect that when it's called, its operands are already
-        loaded into the register pairs BC/DE</li>
-        <li>After each function ends, it'll put its result in the HL register pair</li>
-        <li>Each function will preserve everything in memory, with the exception of Mult,
-            which needs to be able to store a counter at address 0x00FF</li>
-    <li>This means that main will be responsible for:
-        <ul>
-            <li>input/output</li>
-            <li>parsing the math expression into a stack and maintaining the stack</li>
-            <li>making sure that BC/DE are all set before calling a function, and grabbing results from HL</li>
-            <li>making sure that none of this interferes with the instructions in memory that start at 0x0000,
-                or with the single-byte counter at 0x00FF</li>
-        </ul>
-    </li>
+<li>
+Each function will expect that when it's called, its operands are already
+loaded into the register pairs BC/DE
+</li><li>
+After each function ends, it'll put its result in the HL register pair
+</li><li>
+Each function will preserve everything in memory, with the exception of Mult,
+which needs to be able to store a counter at address 0x00FF
+</li><li>
+This means that main will be responsible for:
+  <ul>
+  <li>input/output</li>
+  <li>parsing the math expression into a stack and maintaining the stack</li>
+  <li>making sure that BC/DE are all set before calling a function, and
+  grabbing results from HL</li>
+  <li>making sure that none of this interferes with the instructions in memory
+  that start at 0x0000, or with the single-byte counter at 0x00FF</li>
+  </ul>
+</li>
 </ul>
-
 </section>
 
 <section>
