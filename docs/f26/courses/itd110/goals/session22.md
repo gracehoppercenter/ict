@@ -47,7 +47,7 @@ score for each topic:
 [WDE Exam Prep: Self-Assessment](../assignments/activity.php?id=02_exam_prep).
 
 (Note - I'm trying to be better about keeping all of our assignments on [the 
-assignments page](../assignments/index.html) - the goal is that should be an easier
+assignments page](../assignments/index.php) - the goal is that should be an easier
 way for you to see every assignment. Check there for the DUCK link for today's assignment!)
 
 Your file should be at `practice/exam_prep.md`, and it's due at **8AM on Tuesday, November 10**.
