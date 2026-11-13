@@ -57,6 +57,7 @@ $formative = [
     ['activity', '02_chocolates', '21',       'Grid Practice: Box of Chocolates', 'Start of class, Tuesday, November 10',    ['practice/chocolates.html']],
     ['activity', '02_exam_prep', '22',        'WDE Exam Prep: Self-Assessment',   '8AM on Tuesday, November 10',           ['practice/exam_prep.html']],
     ['activity', '02_clone', '23',            'Layout Clone',                     'Start of class, Friday, November 13',   ['practice/clone.html']],
+    ['activity', '02_top_chef', '24',        'Top Chef',                        '8AM on Tuesday, November 17',           ['practice/top_chef.html']],
 ];
 
 // Summative: [page, id, session introduced ('' if not yet), title, due, duck paths, in-class writing date]
