@@ -119,6 +119,6 @@ You may need to add some `div`/`span` elements to help apply these styles.
 
 ## Homework
 
-### Finish Your Zoo Fonts
+### Finish Your Homepage Fonts
 
-For practice, Commit your updated zoo website before next class. I will not use this as a graded assignment.
+For practice, Commit your updated homepage before next class. I will not use this as a graded assignment.
