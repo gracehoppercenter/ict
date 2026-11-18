@@ -8,6 +8,11 @@ By the end of this lesson, you should:
 
 ## What we'll do in class
 
+We'll continue in our same groups as last time. Folks with me will work on reviewing Python lists and loops. As homework, this group will read through the rest of the chapter on lists.
+
+
+The rest of the class will work independently on an assignment about NumPy efficiency, and will come prepared to make a short presentation at the beginning of next class.
+
 ### Assignment: Explore NumPy Efficiency
 We'll keep working in the groups we set up last class.
 
