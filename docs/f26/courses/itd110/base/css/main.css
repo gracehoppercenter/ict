@@ -121,3 +121,13 @@ footer a strong {
     margin-bottom: 1.4vw;
   }
 }
+
+/* Tables rendered from markdown (rubrics, reference tables) */
+#md_to_html table {
+  border-collapse: collapse;
+}
+#md_to_html th, #md_to_html td {
+  border: 1px solid black;
+  padding: 0.4rem;
+  vertical-align: top;
+}
