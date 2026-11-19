@@ -63,7 +63,8 @@ $formative = [
 // Summative: [page, id, session introduced ('' if not yet), title, due, duck paths, in-class writing date]
 $summative = [
     ['project', '01_recipes', '12',        'Recipes',                    '8AM on Monday, October 19',  ['projects/recipes/index.html', 'projects/recipes/1.html', 'projects/recipes/2.html'], 'Tuesday, October 20'],
-    ['project', '03_client_website', '',   '(Tentative) Client Website', '3PM on Tuesday, February 3', ['projects/client/index.html'], 'TBD'],
+    ['project', '02_zen_garden', '26',     'Zen Garden',                 '8AM on Thursday, December 3', ['projects/zen_garden/index.html', 'projects/zen_garden/style.css'], 'Friday, December 4'],
+    ['project', '03_client_website', '',  '(Tentative) Client Website', '3PM on Tuesday, February 3', ['projects/client/index.html'], 'TBD'],
 ];
 
 function session_link(string $session): string {
