@@ -50,6 +50,7 @@ the CSS does the work. So:
 
 If you want to hide something (for example, the submenus in the nav bar), you
 can use CSS to do that. But think about whether your visitors still need it!
+(See "The Navigation Menu" below.)
 
 ## The Disclaimer
 
@@ -149,6 +150,67 @@ So here's our rule:
 Also try out the "Skip to Content" link at the top of the page: it's the
 very first thing you'll reach when you press Tab. Lots of designers hide it
 until it's focused. If you hide it, make sure it still shows up when someone tabs to it!
+
+## The Navigation Menu
+
+The main nav (`#main-nav`) is a big nested list. Each `.menu-item` has a
+link, and most of them also have a `.submenu` with more links inside. If you
+show everything at once, it's a *lot*. Most real websites hide the submenus
+until you need them, in a drop-down menu.
+
+You can build a drop-down menu with just CSS. Hide each submenu, and show it
+when someone hovers over its menu item:
+
+```css
+.submenu {
+    display: none;
+}
+
+.menu-item:hover .submenu,
+.menu-item:focus-within .submenu {
+    display: block;
+}
+```
+
+That second selector is new. `:focus-within` matches an element when it,
+**or anything inside it**, has keyboard focus. So when someone presses Tab and
+lands on "Discover AT", its submenu opens. It stays open while they Tab
+through the submenu's links, and it closes when they Tab past the end. Without
+`:focus-within`, keyboard users could never reach the links in your submenus!
+
+A few tips:
+
+- **Try your menu with a mouse *and* with the Tab key.** Can you reach every
+  link in every submenu both ways?
+- **Watch out for gaps.** If there's empty space between a menu item and its
+  submenu, the hover ends when the mouse crosses the gap, and the submenu
+  disappears before you can click it. Use `padding` instead of `margin` to
+  close the gap.
+- **Submenus usually sit on top of the page.** Look up `position: absolute`
+  and `z-index` if you want your submenus to cover the content below them
+  instead of pushing it down. (Add a comment explaining them!)
+- **You don't have to use drop-downs.** You could show everything as a big
+  "mega menu", or put the nav in a sidebar. It's your design.
+
+### It's okay if it isn't perfect
+
+A real drop-down menu (or a "hamburger" menu that opens when you tap it)
+needs a button that *remembers* whether the menu is open. CSS can't remember
+anything, so that takes JavaScript, which we'll learn later this year. For
+now, a CSS-only menu is all we're asking for.
+
+That means your menu won't work perfectly everywhere, and that's fine. For
+example, phones don't really have "hover", and tapping a menu item will
+follow its link instead of opening its submenu. On a small screen, you might
+show the submenus all the time, in a simple stacked list, or you might hide
+them and show only the main links. Either way:
+
+- Every main link in the nav must still be visible and work, on a computer
+  *and* on a phone.
+- On a computer, every submenu link must be reachable with the mouse *and*
+  the Tab key.
+- If you hide the submenus on phones, add a comment in your CSS that explains
+  your choice.
 
 ## Adding Your Own Images
 
