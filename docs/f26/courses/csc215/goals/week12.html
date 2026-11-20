@@ -30,32 +30,112 @@ CSC 215 Weekly Assignments: Week 12</h1>
 <hr>
 
 <main>
-<time datetime="2026-11-16">Week of Monday, November 16, 2026</time>
+<time datetime="2026-11-16">Long week beginning Monday, November 16, 2026</time>
 
 <h2>Overview</h2>
 <p>
 This week we <i>will</i> move to the computing environment we will be using for
 the rest of the course (and beyond), the Altair Z80 with
-<a href="https://en.wikipedia.org/wiki/CP/M">CP/M</a>.
+<a href="https://en.wikipedia.org/wiki/CP/M">CP/M</a>. Since there is only one
+meeting day during Thanksgiving week, we'll tack that on to this one.
 </p>
 
-<!--
 <section>
-<h2>Friday, November 20th</h2>
+<h2>Friday, November 20th and Tuesday, November 24th</h2>
 
-<h3>Classwork</h3>
+<h3>Classwork / Homework / Evaluation</h3>
 <div>
 <p>
-</p>
-</div>
+Let's give ourselves the goal of finishing with assembly programming on the
+on CP/M by Tuesday, December 1st.  That will give us three more classes -
+today, next Tuesday, and December 1st.
+</p><p>
+To get things started, I'll share a few simple assembly programs we can
+assemble and run.  We'll begin with the classic <q>Hello World!</q> program.
+</p><pre>
+; HELLO.ASM - Print a string to the console
+BDOS    EQU     0005H       ; BDOS entry point
+PRTSTR  EQU     09H         ; BDOS function 9: Print String
 
-<h3>Homework / Evaluation</h3>
-<div>
-<p>
+        ORG     0100H       ; CP/M programs always start at 100H
+
+START:  LXI     D, MSG      ; Load address of message into DE
+        MVI     C, PRTSTR   ; Load function 9 into C
+        CALL    BDOS        ; Call CP/M to print the string
+        RET                 ; Return to CP/M prompt (CCP)
+
+MSG:    DB      'HELLO FROM THE ALTAIR 8800!$'
+
+        END     START
+</pre><p>
+Here's one that echos keys and traps <code>^C</code> to quit.
+</p><pre>
+; ECHO.ASM - Echo keystrokes until Ctrl+C is pressed
+BDOS    EQU     0005H       ; BDOS entry point
+CONIN   EQU     01H         ; BDOS function 1: Console Input
+CONOUT  EQU     02H         ; BDOS function 2: Console Output
+CTRLC   EQU     03H         ; ASCII code for Ctrl+C
+
+        ORG     0100H
+
+LOOP:   MVI     C, CONIN    ; Read character into A (also echoes automatically)
+        CALL    BDOS
+        CPI     CTRLC       ; Compare A with Ctrl+C
+        JZ      EXIT        ; If Ctrl+C, exit to CP/M
+
+        ; Print brackets around the character to show our program processed it
+        PUSH    PSW         ; Save the character in A on the stack
+        MVI     E, '['      ; Load '[' into E
+        MVI     C, CONOUT   ; Print '['
+        CALL    BDOS
+
+        POP     PSW         ; Restore the typed character into A
+        MOV     E, A        ; Move it to E for printing
+        MVI     C, CONOUT   ; Print the character
+        CALL    BDOS
+
+        MVI     E, ']'      ; Load ']' into E
+        MVI     C, CONOUT   ; Print ']'
+        CALL    BDOS
+
+        JMP     LOOP        ; Repeat forever
+
+EXIT:   JMP     0000H       ; Warm boot CP/M (safe exit)
+
+        END     LOOP
+</pre><p>
+And this one prints the ASCII characters from 'A' to 'Z'.
+</p><pre>
+; ALPHA.ASM - Print A through Z
+BDOS    EQU     0005H
+CONOUT  EQU     02H
+
+        ORG     0100H
+
+START:  MVI     B, 'A'      ; Starting character
+        MVI     D, 26       ; Loop counter (26 letters)
+
+NEXT:   MOV     E, B        ; Move current letter to E for BDOS
+        MVI     C, CONOUT   ; Function 2: Console Output
+
+        PUSH    B           ; Save B and C (BDOS destroys registers!)
+        PUSH    D           ; Save D and E
+        CALL    BDOS        ; Print character
+        POP     D           ; Restore D and E
+        POP     B           ; Restore B and C
+
+        INR     B           ; Increment ASCII character ('A' -&gt; 'B')
+        DCR     D           ; Decrement loop counter
+        JNZ     NEXT        ; Jump back to NEXT if D is not zero
+
+        RET                 ; Return to CP/M
+
+        END     START
+</pre><p>
+That should be enough to get you going. Have fun!
 </p>
 </div>
 </section>
--->
 
 <section>
 <h2>Wednesday, November 18th</h2>
